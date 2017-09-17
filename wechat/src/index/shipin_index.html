@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>首页</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="/static/wechat/assets/css/base.css">
+		<link rel="stylesheet" type="text/css" href="/static/wechat/page/swiper/swiper-3.3.1.min.css">
+		<link rel="stylesheet" type="text/css" href="shipin_index.css">
+		<link rel="stylesheet" type="text/css" href="/static/wechat/page/iscroll5/iscroll.css">
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/iscroll5/iscroll5.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/swiper/swiper-3.3.1.min.js"></script>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div id="iscroll" style="position:relative;">
+				<!-- 头部 -->
+				<div id="top">
+					<div class="top-div">
+						<span id="ranking-list">排行榜</span>
+						<span>首页</span>
+						<span id='self'>个人中心</span>
+					</div>
+				</div>
+				<!-- 轮播 -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+					</div>
+					<div class="swiper-pagination" style="position:absolute;left:0px;top:13rem;width:100%;"></div>
+				</div>
+				<!-- 八大选项 -->
+				<div id="options">
+					<div class="optionsbox">
+						<div class="option-top clearfix">
+							<div class="option option-1" name="1">
+								<a href="javascript:;"><i id="image_1"></i>
+									<p id="fenlei_one"></p>
+								</a>
+							</div>
+							<div class="option option-2" name="2">
+								<a href="javascript:;"><i id="image_2"></i>
+									<p id="fenlei_two"></p>
+								</a>
+							</div>
+							<div class="option option-3" name="3">
+								<a href="javascript:;"><i id="image_3"></i>
+									<p id="fenlei_three"></p>
+								</a>
+							</div>
+							<div class="option option-4" name="4">
+								<a href="javascript:;"><i id="image_4"></i>
+									<p id="fenlei_four"></p>
+								</a>
+							</div>
+						</div>
+						<div class="option-fot clearfix">
+							<div class="option option-5" name="5">
+								<a href="javascript:;"><i id="image_5"></i>
+									<p id="fenlei_five"></p>
+								</a>
+							</div>
+							<div class="option option-6" name="6">
+								<a href="javascript:;"><i id="image_6"></i>
+									<p id="fenlei_six"></p>
+								</a>
+							</div>
+							<div class="option option-7" name="7">
+								<a href="javascript:;"><i id="image_7"></i>
+									<p id="fenlei_seven"></p>
+								</a>
+							</div>
+							<div class="option option-8" name="8">
+								<a href="javascript:;"><i id="image_8"></i>
+									<p id="fenlei_eight"></p>
+								</a>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="live">
+					<img src="/static/wechat/assets/images/live_banner.jpg" class="livephoto">
+					<div class="live_cover"></div>
+					<img src="/static/wechat/assets/images/live_playbtn.png" class="live_playbtn">
+					<div class="count-down-box">
+						<div class="count-down">
+							<span>倒计时：</span>
+							<strong id="live_day_show">0天</strong>&nbsp;<strong id="live_hour_show">00</strong>:<strong id="live_minute_show">00</strong>:<strong id="live_second_show">00</strong>
+							<a class="fr appointment appointment-btn" href="javascript:;">预约</a>
+							<a class="fr appointment appointment-num" href="javascript:;">预约</a>
+						</div>
+					</div>
+				</div>
+				<div class="images_group">
+					<div class="special_right">
+						<span class="title zc_title">众筹</span>
+						<span class="title sd_title">闪电购</span>
+						<img src="" class="shop_banner">
+						<img src="" class="light_banner">
+						<div class="count-down-box">
+							<div class="count-down">
+								<p>
+									距结束仅剩
+								</p>
+								<strong id="hour_show">00</strong>:<strong id="minute_show">00</strong>:<strong id="second_show">00</strong>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<!--<img src="" style="width:100%" class="ly_banner">-->
+				<!-- 专栏列表 -->
+				<div class="module" id="special_list">
+					<div class="module-top" style="z-index:2;">
+						<p></p>
+						<p>专栏订阅<span class="fr special_more">更多&gt;&gt;</span></p>
+					</div>
+					<div class="module-contexts">
+						<ul>
+							
+						</ul>
+					</div>
+
+				</div>
+				<div class="clear"></div>
+
+				<!-- 热门推荐 -->
+
+				<div class="module" id="hot">
+					<div class="module-top" style="z-index:2;">
+						<p></p>
+						<p>热门推荐</p>
+					</div>
+					<div class="module-contexts">
+
+					</div>
+
+				</div>
+				<div class="clear"></div>
+				<!--<div class="company">
+		   	   <p>Copyright © 2016 北京博睿思远网络科技有限公司All Rights Reserved</p>
+		   	   <p>京ICP备1602489</p>
+	   </div>-->
+				<!-- 下载app -->
+
+				<div id="scroller-pullUp">
+					<span id="up-icon" class="icon-double-angle-up pull-up-icon"></span>
+					<span id="pullUp-msg" class="pull-up-msg">上拉刷新</span>
+				</div>
+			</div>
+		</div>
+		<div class="download" id="footer">
+			<p>
+				<img src="/static/wechat/assets/images/index_logo.png">
+				<span class="button" class="download" onclick="down()">下载APP</span>
+			</p>
+		</div>
+		<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+		<script type="text/javascript" src="shipin_index.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+		<script>
+			loaded();
+		</script>
+	</body>
+
+</html>

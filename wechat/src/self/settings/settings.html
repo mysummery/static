@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>设置</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="/static/wechat/assets/css/base.css">
+		<link href="/static/wechat/assets/css/lr.css" type="text/css" rel="stylesheet">
+		<link href="/static/wechat/assets/css/settings.css" type="text/css" rel="stylesheet">
+		<link href="settings_now.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/bootbox.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+	</head>
+	<body>
+		<div class="logo"> <img src="/static/wechat/assets/images/logo.png"> </div>
+		<div class="wid">
+			<ul class="form">
+				<li>
+					<a href="settings_password.html" id="settings_password">修改密码</a>
+				</li>
+				<!--     <li><a href="javascript:;" id="clear_cache">清除缓存</a></li> -->
+				<li>
+					<a href="settings_feedback.html" style="border-bottom:none;" class="feedback">意见反馈</a>
+				</li>
+			</ul>
+			<ul class="form bottom">
+				<li>
+					<a href="javascript:;" id="contact_us" class="contact">联系我们</a>
+				</li>
+				<li>
+					<a href="settings_about.html" class="about">关于我们</a>
+				</li>
+			</ul>
+			<p class="form">
+				<button class="button" id="exit" onclick="clearCookie()">退出登录</button>
+			</p>
+		</div>
+		<!--遮盖层-->
+		<div id="cover"></div>
+
+		<!--弹出框-联系我们-->
+		<div class="explain" id="contact">
+			<h2>400-9009-365</h2>
+			<p class="know" id="contact_y"> <span class="g" id="cancel_cantact">取消</span> <span class="a" id="confirm_contact"><a href="tel:400-9009-365" style="color:#ff9600;">呼叫</a></span></p>
+		</div>
+		<!--弹出框-清除缓存-->
+		<div class="explain" id="clear">
+			<h2 class="q">清除缓存</h2>
+			<p>清除加载过的所有视频封面图片</p>
+			<p class="know" id="clear_y"> <span class="a" id="confirm_clear">确定</span> <span class="g" id="cancel_clear">取消</span> </p>
+		</div>
+		<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	</body>
+
+</html>
+<script>
+	$('#clear_cache').click(function() {
+		$('#cover').show();
+		$('#clear').show();
+	});
+	$('#contact_us').click(function() {
+		$('#cover').show();
+		$('#contact').show();
+	});
+	$('#cancel_clear').click(function() {
+		$('#cover').hide();
+		$('#clear').hide();
+	});
+	$('#cancel_cantact').click(function() {
+		$('#cover').hide();
+		$('#contact').hide();
+	});
+</script>

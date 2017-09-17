@@ -1,0 +1,599 @@
+@charset "UTF-8";
+
+/*清除默认样式*/
+
+body,
+p,
+ul,
+a,
+i {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #f1f0f8;
+	color: #333333;
+}
+
+a {
+	text-decoration: none;
+}
+
+html,
+body {
+	min-width: 240px;
+	font-family: "Microsoft YaHei UI", "微软雅黑";
+	background: #f1f0f8;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#wrapper {
+	top: 1px !important;
+	bottom: 0 !important;
+}
+
+
+/*头部*/
+
+#top {
+	width: 100%;
+	height: 3rem;
+	color: #333333;
+	line-height: 3rem;
+	background: white;
+	text-align: center;
+	overflow: hidden;
+}
+
+#top .top-div {
+	width: 92.1%;
+	height: 3rem;
+	display: inline-flex;
+	justify-content: space-between;
+	position: relative;
+	margin: 0 auto;
+}
+
+
+/*#top span:nth-of-type(1){
+	 float: left;
+	 display: line-block;
+     height: 1.3rem;
+     width: 1.5rem;
+     background:url(../images/seek.png)  no-repeat;
+     margin-top: 0.8rem;
+     background-size: 100%;   
+}*/
+
+#top span:nth-of-type(2) {
+	font-size: 1.5rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -1.5rem;
+}
+
+#top span:nth-of-type(3) {
+	display: inline-block;
+	float: right;
+	cursor: pointer;
+	color: #333333;
+	font-size: 1rem;
+}
+
+
+/*轮播*/
+
+.swiper-container1 {
+	width: 100%;
+	height: 17.15rem;
+}
+
+.swiper-container1 .swiper-slide {
+	height: 17.15rem;
+	width: 100%;
+	text-align: center;
+}
+
+.swiper-container1 .swiper-img {
+	height: 100%;
+	width: 100%;
+}
+
+.swiper-pagination1 .swiper-pagination-bullet {
+	/*background: transparent;*/
+	border: 0.05rem solid #fff;
+}
+
+.swiper-container1 .swiper-pagination-bullet-active {
+	border: 0.05rem solid #fff;
+}
+
+
+/*今日推荐*/
+
+.distance {
+	width: 100%;
+	height: 0.8rem;
+	background: #f2f8fa;
+}
+
+.today {
+	width: 100%;
+	background: white;
+	/*margin-top: 0.9rem;*/
+	/*padding: 0 0.9rem;*/
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.today-top {
+	height: 4.25rem;
+	line-height: 4.25rem;
+	padding-left: 3.25rem;
+	font-size: 1.45rem;
+	box-sizing: border-box;
+	font-family: "Adobe 黑体 Std";
+	position: relative;
+}
+
+.light-content img {
+	width: 100%;
+	height: 9.35rem;
+}
+
+.to-content {
+	padding: 0 0.3rem 0 0.5rem;
+}
+
+.today-top b {
+	display: inline-block;
+	width: 1.8rem;
+	height: 1.8rem;
+	position: absolute;
+	top: 1.1rem;
+	left: 0.5rem;
+	background: url("/static/wechat/assets/images/lightingbuy.png") no-repeat center;
+	background-size: 100%;
+}
+
+.swiper-container2 {
+	width: 100%;
+	/*height: 14.65rem;*/
+}
+
+.swiper-container2 .swiper-slide {
+	height: 9rem;
+	width: 12.5rem;
+	text-align: center;
+	margin-bottom: 1.5rem;
+}
+
+.swiper-container2 .swiper-slide img {
+	width: 100%;
+	/*background: pink;*/
+	height: 7rem;
+	/*border-radius: 0.4rem;*/
+}
+
+.swiper-container2 .swiper-slide p {
+	margin-top: 0.75rem;
+	color: #333;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+
+/*.swiper-container2 .swiper-img {
+	
+	width: 100%;
+}
+*/
+
+
+/*最新众筹*/
+
+.crowd {
+	width: 100%;
+	background: white;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin-bottom: 1.5rem;
+}
+
+.crowd-top {
+	height: 4.9rem;
+	line-height: 4.9rem;
+	padding-left: 3.25rem;
+	font-size: 1.45rem;
+	box-sizing: border-box;
+	font-family: "Adobe 黑体 Std";
+	position: relative;
+}
+
+.crowd-con {
+	margin-left: 0.7rem;
+}
+
+.to-content {
+	padding: 0 0.6rem;
+}
+
+.crowd-top b {
+	display: inline-block;
+	width: 1.8rem;
+	height: 1.8rem;
+	position: absolute;
+	top: 1.5rem;
+	left: 0.5rem;
+	background: url("/static/wechat/assets/images/newcorwd.png") no-repeat center;
+	background-size: 100%;
+}
+
+.crowd-box {
+	float: left;
+	/*margin: 0 0.35rem;*/
+	/*margin-left: 0.4rem;*/
+	background: #fff;
+	box-shadow: 0 1px 3px #a5a5a5;
+	margin-bottom: 1.5rem;
+	border-radius: 0.4rem;
+	width: 14.75rem;
+	overflow: hidden;
+}
+
+.crowd-box:nth-child(odd) {
+	margin-right: 1.05rem;
+}
+
+.crowd-box img {
+	width: 14.75rem;
+	height: 8.25rem;
+}
+
+.crowd-text {
+	/*padding: 0 0.5rem;*/
+	padding: 0 0.4rem 0 0.35rem;
+	margin-bottom: 0.3rem;
+	width: 14rem;
+}
+
+.crowd-text p {
+	font-size: 1.1rem;
+	line-height: 1.8rem;
+	height: 1.8rem;
+	color: #333;
+	margin-top: 0.1rem;
+	margin-bottom: -0.8rem;
+	font-family: "microsoft yahei";
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+.radius {
+	border-radius: 0.5rem 0.5rem 0.25rem 0.25rem;
+	overflow: hidden;
+}
+
+.crowd-text>span {
+	display: inline-block;
+	width: 100%;
+	height: 0.25rem;
+	border-radius: 0.2rem;
+	background: #90dcff;
+	position: relative;
+	overflow: hidden;
+}
+
+.crowd-text>span b {
+	top: 0;
+	left: 0;
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	border-radius: 0.2rem;
+	background: #00a0e9;
+}
+
+.crowd-num span {
+	color: #00a0e9;
+	/*float:left;*/
+}
+
+.crowd-num {
+	color: #666;
+	/*margin-top: 0.25rem;*/
+	font-size: 1rem;
+}
+
+.crowd-num b {
+	font-weight: normal;
+	float: right;
+	color: #00a0e9;
+}
+
+.swiper-container2 {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-container2 a {
+	display: inline-block;
+	width: 100%;
+}
+
+.swiper-container2 .swiper-slide {
+	text-align: center;
+	/*font-size: 18px;*/
+	background: #fff;
+	/*width: 40%;*/
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+
+/*超市专区*/
+
+.super {
+	width: 100%;
+	background: white;
+	box-sizing: border-box;
+	overflow: hidden;
+	margin-bottom: 1.5rem;
+}
+.super-out {
+    width: 97%;
+    margin: 0 auto;
+    margin-bottom:1.5rem;
+    border-bottom: 1px solid  #E3E3E3;
+}
+.super-type-out {
+    width: 97%;
+    margin: 0 auto;
+
+    margin-bottom:1.5rem;
+}
+.super-type {
+    /*margin-left: .3rem;*/
+}
+.super-top {
+	height: 4.9rem;
+	line-height: 4.9rem;
+	padding-left: 3.25rem;
+	font-size: 1.45rem;
+	box-sizing: border-box;
+	font-family: "Adobe 黑体 Std";
+	position: relative;
+}
+
+.super-con {
+	margin-left: 0.7rem;
+}
+
+.to-content {
+	padding: 0 0.6rem;
+}
+
+.super-top b {
+	display: inline-block;
+	width: 1.8rem;
+	height: 1.8rem;
+	position: absolute;
+	top: 1.5rem;
+	left: 0.5rem;
+	background: url("/static/wechat/assets/images/supermaket.png") no-repeat center;
+	background-size: 100%;
+}
+.super-type>ul {
+	width:100%;
+	height:5.98rem;
+	display:flex;
+	
+}
+.super-type li {
+	/*flex:5;*/
+	width:5.38rem;
+	height:100%;
+	background: #F2F8FA;
+border-radius: 0.2rem;
+	margin-right: 1rem;
+}
+.super-type .current {
+	/*flex:5;*/
+
+	background: #00A0E9;
+
+}
+.super-type li:nth-child(5){
+		margin-right: 0;
+}
+
+.super-type p {
+	text-align:center;
+	color:#666;
+	font-size:1rem;
+}
+.super-type .current p{
+	text-align:center;
+	color:#fff;
+	font-size:1rem;
+}
+.super-type li b{
+	display: block;
+	width:2.13rem;
+	height:2.13rem;
+	margin-top:1.06rem;
+	margin: 1.06rem auto;
+}
+.super-type li:nth-child(1) b{
+	background: url("/static/wechat/assets/images/all.png") no-repeat center;
+	background-size: 100%;
+}
+.super-type li:nth-child(2) b{
+		background: url("/static/wechat/assets/images/food.png") no-repeat center;
+	background-size: 100%;
+}
+.super-type li:nth-child(3) b{
+	background: url("/static/wechat/assets/images/skin.png") no-repeat center;
+		
+	background-size: 100%;
+}
+.super-type li:nth-child(4) b{
+		background: url("/static/wechat/assets/images/decoration.png") no-repeat center;
+	background-size: 100%;
+}
+.super-type li:nth-child(5) b{
+	background: url("/static/wechat/assets/images/cloth.png") no-repeat center;
+		
+	background-size: 100%;
+}
+.super-type li:nth-child(1).current b{
+	
+	background: url("/static/wechat/assets/images/all_focus.png") no-repeat center;
+	background-size: 100%;
+}
+.super-type li:nth-child(2).current b{
+		background: url("/static/wechat/assets/images/food_focus.png") no-repeat center;
+	background-size: 100%;
+}
+.super-type li:nth-child(3).current b{
+		background: url("/static/wechat/assets/images/skin_focus.png") no-repeat center;
+	background-size: 100%;
+}
+.super-type li:nth-child(4).current b{
+		background: url("/static/wechat/assets/images/decoration_focus.png") no-repeat center;
+	background-size: 100%;
+}
+.super-type li:nth-child(5).current b{
+		background: url("/static/wechat/assets/images/cloth_focus.png") no-repeat center;
+	background-size: 100%;
+}
+.super-box {
+	float: left;
+	background: #fff;
+	box-shadow: 0 1px 3px #a5a5a5;
+	margin-bottom: 1.5rem;
+	border-radius: 0.4rem;
+	width: 14.75rem;
+	overflow: hidden;
+}
+
+.super-box:nth-child(odd) {
+	margin-right: 1.05rem;
+}
+
+.super-box img {
+	width: 14.75rem;
+	height: 8.25rem;
+}
+
+.super-text {
+	/*padding: 0 0.5rem;*/
+	padding: 0 0.4rem 0 0.35rem;
+	margin-bottom: 0.3rem;
+	width: 14rem;
+}
+
+.super-text p {
+	font-size: 1.1rem;
+	line-height: 1.8rem;
+	color: #333;
+	margin-top: 0.1rem;
+	/*	margin-bottom: -0.8rem;*/
+	font-family: "microsoft yahei";
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+.radius {
+	border-radius: 0.5rem 0.5rem 0.25rem 0.25rem;
+	overflow: hidden;
+}
+
+.super-text>span {
+	display: inline-block;
+	width: 100%;
+	height: 0.25rem;
+	border-radius: 0.2rem;
+	background: #90dcff;
+	position: relative;
+	overflow: hidden;
+}
+
+.super-text>span b {
+	top: 0;
+	left: 0;
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	border-radius: 0.2rem;
+	background: #00a0e9;
+}
+
+.super-num del {
+	display: inline-block;
+	margin-left: 0.6rem;
+	color: #999;
+}
+
+.super-num {
+	color: #666;
+	/*margin-top: 0.25rem;*/
+	font-size: 1rem;
+}
+
+.super-num b {
+	font-weight: normal;
+	/*float: right;*/
+	color: #00a0e9;
+	margin-left: -0.2rem;
+	font-size: 1.3rem;
+}
+/*申请微店*/
+.shopentry {
+	position: fixed;
+	right: -2.5rem;
+	z-index: 99;
+	width: 7.05rem;
+	height: 3.55rem;
+	bottom: 8.5rem;
+	background: rgba(51,51,51,0.7);
+	border-radius: 51px;
+	color: #fff;
+}
+.shopentry a {
+	position:absolute;
+
+	width:100%;
+	height:100%;
+	
+}
+.applyshop {
+	width: 3.4rem;
+	height: 100%;
+	margin-left: 1.3rem;
+	margin-top: .4rem;
+	font-size:1.2rem;
+	line-height: 1.4rem;
+}

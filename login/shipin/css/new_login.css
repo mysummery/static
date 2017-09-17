@@ -1,0 +1,190 @@
+.header-top {
+	width: 100%;
+	background: #eff2fd;
+}
+.header .login {
+    color: #3d64e3;
+}
+.header {
+	width: 1200px;
+	height: 40px;
+	margin: 0 auto;
+	text-align: right;
+	line-height: 40px;
+	color:#666;
+}
+
+.header .tel {
+	padding-left: 25px;
+	margin-left: 10px;
+	background: url("../images/tel.png") no-repeat 0px 10px;
+	height: 30px;
+	display: inline-block;
+}
+
+.header .register {
+	color: #666;
+}
+
+.login-bg {
+	width: 100%;
+	height: 610px;
+	background: url("../images/newlogin.png")no-repeat center center;
+	
+}
+
+.login-bg .wrap {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+	top: 0;
+}
+
+.wrap .con-login {
+	position: absolute;
+	top: 140px;
+	right: 50px;
+	width: 400px;
+	border: 1px solid transparent;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 0 8px #999;
+	padding: 50px 48px 50px 48px;
+	box-sizing: border-box;
+}
+
+.con-login input {
+	width: 100%;
+	height: 36px;
+	border: 1px solid #d3d3d3;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+
+.con-login .name {
+	background: url("../images/logusername.png") no-repeat 272px center;
+}
+
+.con-login .password {
+	background: url("../images/logpassword.png") no-repeat 272px center;
+}
+
+.con-login .check {
+	overflow: hidden;
+}
+
+.con-login .checkCode {
+	width: 180px;
+	height: 36px;
+}
+.con-login .phoneCode {
+	width: 180px;
+	height: 36px;
+}
+.con-login .btnCode {
+	width: 110px;
+	height: 38px;
+	background: #ffa800;
+	color: #fff;
+	border-radius: 5px;
+}
+.con-login .imgCode {
+	width: 110px;
+	height: 38px;
+	border: 1px solid #ccc;
+}
+
+.con-login .item {
+	line-height: 4px;
+	margin: 0 0 15px 0;
+}
+.con-login #checkbox-1 {
+	display: none;
+}
+
+.con-login label {
+	border: 1px solid #d7d7d7;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	position: relative;
+    top:2px;
+}
+
+.con-login #checkbox-1+ label {
+	background: #fff;
+}
+
+.con-login #checkbox-1:checked+ label {
+	background: url("../images/loginchecked.png") no-repeat center center;
+	background-size: 50%;
+}
+
+.con-login .agree {
+	color: #666666;
+	font-size: 14px;
+	
+}
+
+.con-login .agree a {
+
+	font-size:14px;
+	color:#999999;
+}
+.con-login .regist-btn {
+	width: 100%;
+	height: 36px;
+	background: #ffa800;
+	font-size: 14px;
+	color: #fff;
+	border-radius: 5px;
+	margin-bottom: 10px;
+}
+
+.con-login a {
+	color: #666;
+	font-size: 14px;
+}
+
+.footer {
+	width: 100%;
+}
+
+.footer-wrap {
+	width: 1200px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 40px 235px 40px 235px;
+}
+
+.footer-wrap .about-us {
+	overflow: hidden;
+	margin-bottom: 30px;
+	padding-left:145px;
+}
+
+.footer-wrap li {
+	padding: 0 45px;
+	float: left;
+	border-right: 1px solid #666;
+}
+
+.footer-wrap .one {
+	border-left: 1px solid #666;
+}
+
+.footer-wrap a {
+	font-size: 14px;
+	color: #666;
+}
+
+.footer-bottom p {
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+	line-height:23px;
+}
+.footer-bottom span {
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,381 @@
+body {
+	font-family: '微软雅黑';
+	font-size: 1.1rem;
+}
+
+.swiper-slide {
+	height: 300px;
+}
+
+.swiper-slide-active {
+	height: auto;
+}
+
+.edit-msg {
+	position: fixed;
+	bottom: -3rem;
+	left: 0;
+	width: 100%;
+	height: 3rem;
+	z-index: 9;
+}
+
+#send-msg {
+	width: 80%;
+	height: 3rem;
+	outline: none;
+	border: none;
+}
+
+#send {
+	width: 20%;
+	height: 3rem;
+	border: none;
+}
+
+.msg-content {
+	position: fixed;
+	bottom: 3rem;
+	left: 0;
+	height: 5rem;
+	color: #fff;
+	display: none;
+}
+
+.msg-control {
+	position: absolute;
+	bottom: 3rem;
+	right: 10rem;
+	display: none;
+	width: 3rem;
+	height: 3rem;
+	background-color: rgba(0, 0, 0, .5);
+	background-image: url('/static/wechat/assets/images/talk.png');
+	background-repeat: no-repeat;
+	background-size: 2rem 1.9rem;
+	background-position: center center;
+	border-radius: 50%;
+}
+
+.exit-control {
+	position: absolute;
+	bottom: 3rem;
+	right: 5rem;
+	/*display: none;*/
+	width: 3rem;
+	height: 3rem;
+	background-color: rgba(0, 0, 0, .5);
+	background-image: url('/static/wechat/assets/images/talk.png');
+	background-repeat: no-repeat;
+	background-size: 2rem 1.9rem;
+	background-position: center center;
+	border-radius: 50%;
+}
+
+.msg-content {
+	position: absolute;
+	left: 1rem;
+	bottom: 5.5rem;
+	width: 94%;
+	height: 12rem;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, .2);
+}
+
+
+/*倒计时*/
+
+.count-down-box {
+	width: 100%； height: 2.5rem;
+	line-height: 2.5rem;
+	background-color: #f2f8fa;
+}
+
+.count-down {
+	width: 94%;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	margin: 0 auto;
+	color: #f8b500;
+	font-size: .9rem;
+}
+
+.count-down strong:first-child {
+	width: 1.9rem;
+	margin-right: 1rem;
+}
+
+.count-down strong {
+	
+	padding: 0.1rem 0.3rem;
+	line-height: 1.6rem;
+	text-align: center;
+	color: #fff;
+	background-color: #f8b500;
+	border-radius: 5px;
+	font-weight: normal;
+}
+
+.count-down a {
+	display: inline-block;
+	height: 1.6rem;
+	line-height: 1.6rem;
+	margin-top: .45rem;
+	text-align: center;
+	color: #fff;
+	background-color: #f8b500;
+	border-radius: 5px;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+}
+
+.mine-msg span {
+	color: green;
+}
+
+
+/*评论及简介*/
+
+.introduction-comment {
+	background-color: #fff;
+	padding-bottom: 10rem;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.tabs {
+	width: 92%;
+	margin: 0 auto;
+	height: 3.3rem;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.tabs a {
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+}
+
+.tabs a span {
+	display: inline-block;
+	width: 6.3rem;
+	height: 3.1rem;
+	line-height: 3.3;
+	color: #999;
+	font-size: 1.3rem;
+}
+
+.tabs a.current span {
+	color: #00a0e9;
+	border-bottom: 3px solid #00a0e9;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.live-teacher {
+	width: 94%;
+	margin: 0 auto;
+	padding-top: 1.6rem;
+	font-size: 1.3rem;
+	color: #333;
+}
+
+.live-teacher i {
+	display: inline-block;
+	width: 4px;
+	height: 1.3rem;
+	margin-right: .5rem;
+	background-color: #00a0e9;
+	vertical-align: sub;
+}
+
+.teacher-information {
+	width: 94%;
+	margin: .8rem auto;
+}
+
+.teacher-information img {
+	width: 4.3rem;
+	height: 4.3rem;
+	margin-right: .8rem;
+	border-radius: 50%;
+}
+
+.teacher-information p {
+	margin-top: .5rem;
+	font-size: 1.1rem;
+	color: #666;
+	line-height: 1.8;
+}
+
+.class-information p {
+	margin-top: .4rem;
+	line-height: 1.8;
+	font-size: 1.1rem;
+	color: #666;
+}
+
+button.appointment-btn,
+.comment-btn {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 4.3rem;
+	line-height: 4.3rem;
+	font-size: 1.45rem;
+	text-align: center;
+	background-color: #00a0e9;
+	color: #fff;
+	border: none;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	z-index: 999;
+}
+
+.comment-btn {
+	display: none;
+}
+
+
+/*评论内容*/
+
+.comment_headephoto {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+}
+
+.top_img {
+	width: 100%;
+	position: relative;
+}
+
+.top_img_bac {
+	/*height:17rem;*/
+	width: 100%;
+}
+
+.live_playbtn {
+	position: absolute;
+	cursor: pointer;
+	left: 50%;
+	top: 50%;
+	width: 4.8rem;
+	height: 4.8rem;
+	margin-left: -2.4rem;
+	margin-top: -2.4rem;
+	z-index: 10;
+	display: none;
+}
+
+#wrapper {
+	top: 0px;
+	bottom: auto;
+}
+
+.headphoto_container {
+	position: relative;
+	display: inline-block;
+	width: 3.2rem;
+	height: 3.2rem;
+}
+
+.communication_icon {
+	width: 2.4rem;
+	height: 0.8rem;
+	bottom: -0.4rem;
+	position: absolute;
+	left: 0.3rem;
+}
+
+.top_cover {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background: rgba(0, 0, 0, 0.3);
+	z-index: 1;
+	display: none;
+}
+
+.comment_top {
+	padding-top: 0.5rem;
+}
+
+.comment_top span {
+	display: inline-block;
+	line-height: 3.2rem;
+	float: left;
+	font-size: 1.2rem;
+}
+
+.comment_contents {
+	padding: 1rem 1.3rem 0 1.3rem;
+}
+
+.comment_contents li {
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.comment_bottom {
+	line-height: 2rem;
+}
+
+.comment_top span.comment_username {
+	margin-left: 1rem;
+}
+
+.comment_top span.comment_time {
+	color: #999999;
+	float: right;
+}
+
+.comment_bottom {
+	color: #666666;
+	padding-bottom: 1rem;
+	padding-top: 0.8rem;
+}
+
+.communication_comments {
+	color: #333333;
+	padding-top: 1.3rem;
+}
+
+.users {
+	padding-top: 0px;
+}
+
+.send_contents {
+	width: 86%;
+	height: 3rem;
+	border: 1px solid #e5e5e7;
+}
+
+.comments-btn {
+	padding-left: 0.3rem;
+	padding-right: 0.9rem;
+	background: #f2f2f4;
+	display: none;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 4.3rem;
+	line-height: 4.3rem;
+	font-size: 1.45rem;
+	text-align: center;
+	color: #fff;
+	border: none;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	z-index: 999;
+}
+
+.send_comment {
+	border: none;
+	font-size: 1.4rem;
+	color: #00a0e9;
+	height: 3rem;
+	background: none;
+}

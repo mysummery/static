@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>我的团队</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="/static/wechat/assets/css/base.css">
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="/static/wechat/page/iscroll5/iscroll.css">
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/iscroll5/iscroll5.js"></script>
+		<link href="team.css" type="text/css" rel="stylesheet">
+
+	</head>
+
+	<body onload="loaded()">
+		<div class="wid" id="wrapper">
+			<div id="iscroll" style="position:relative;">
+				<div class="search clearfix">
+					<div class="search_group fl"><input type="text" id="search_input" placeholder="点击搜索"><span onClick="loadData()"></span></div>
+					<button id="search" class="fl" onclick="search_()">搜索</button>
+				</div>
+
+				<ul class="count clearfix">
+					<li>
+						<p>当前级别：<span id="second_count">一</span>级</p>
+					</li>
+					<li>
+						<p>当前权限：<span id="first_count"></span>1、2级</p>
+					</li>
+					<li>
+						<p>总收益：<span id="total_income">0</span>元</p>
+					</li>
+					<li>
+						<p>学员积分：<span id="integral">0</span>积分</p>
+					</li>
+
+				</ul>
+
+				<table id="indent_table_id" class="table" border="0" cellspacing="0" cellpadding="0" style="position:relative;">
+					<thead>
+						<tr>
+							<td>序号</td>
+							<td>
+								<div class="clearfix li">
+									<div class="select">
+										<span id="price">
+											等级<img src="/static/wechat/assets/images/team_slide.png"/>
+										</span>
+										<dl class="option clearfix">
+											<dd>
+												<span class="team-active">全部</span>
+											</dd>
+											<dd><span>普通学员</span></dd>
+											<dd><span>VIP学员</span></dd>
+											<dd><span>创客</span></dd>
+											<dd><span>助理讲师</span></dd>
+											<dd><span>讲师</span></dd>
+											<dd><span>国内游</span></dd>
+											<dd><span>海外游</span></dd>
+										</dl>
+									</div>
+								</div>
+							</td>
+							<td>姓名</td>
+							<td>
+								<div class="clearfix li">
+									<div class="select">
+										<span id="student">学员<img src="/static/wechat/assets/images/team_slide.png"/></span>
+										<dl class="student-option clearfix">
+											<dd><span class="team-active">注册时间</span></dd>
+											<dd><span>人数升序</span></dd>
+											<dd><span>人数降序</span></dd>
+										</dl>
+									</div>
+								</div>
+							</td>
+							<td>手机号</td>
+						</tr>
+					</thead>
+					<tbody></tbody>
+				</table>
+
+			</div>
+		</div>
+		<div id="cover"></div>
+		<input type="hidden" id="rows">
+		<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+		<script type="text/javascript" src="team-iscroll.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	</body>
+
+</html>

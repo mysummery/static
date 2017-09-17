@@ -1,0 +1,173 @@
+body {
+	font-size: 1.3rem;
+	font-family: '微软雅黑';
+	background: #f2f8fa;
+}
+a,
+input {
+	-webkit-tap-highlight-color:transparent;
+}
+section {
+	margin-top: 1rem;
+	background: #fff;
+}
+.add-address-container {
+	padding-left: 1.4rem;
+	color: #666;
+}
+.add-address-receiver,
+.add-address-sex,
+.add-address-tel,
+.add-address-city {
+	height: 4.5rem;
+	line-height: 4.5rem;
+	border-bottom: 1px solid #ececec;
+}
+.add-address-city {
+	position: relative;
+}
+.add-address-city > img {
+	position: absolute;
+	top: 1.65rem;
+	right: 1.3rem;
+	width: .8rem;
+	height: 1.2rem;
+}
+.add-address-receiver > span,
+.add-address-sex > span,
+.add-address-tel > span,
+.add-address-city > span {
+	display: inline-block;
+	width: 6.9rem;
+}
+.add-address-receiver > input,
+.add-address-tel > input,
+.add-address-city > input {
+	font-size: 1.2rem;
+	color: #333;
+	vertical-align: initial;
+	border: none;
+	outline: none; 
+}
+.add-address-city > input {
+	width: 70%;
+}
+.add-address-sex a {
+	color: #999;
+	font-size: 1.2rem;
+}
+.add-address-sex a:last-child {
+	margin-left: 2rem;
+}
+.add-address-sex a.current {
+	color: #333;
+}
+.add-address-sex a i {
+	display: inline-block;
+	width: 1.3rem;
+	height: 1.3rem;
+	margin-right: 1rem;
+	border: 1px solid #999;
+	border-radius: 50%;
+	vertical-align: text-bottom;
+}
+.add-address-sex a.current i {
+	border-color: #00a0e9;
+	background-image: url('/static/wechat/assets/images/invoice.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: .8rem .6rem; 
+}
+.add-address-street {
+	height: 7.3rem;
+	padding-top: .8rem;
+}
+.add-address-street > span {
+	display: inline-block;
+	width: 6.9rem;
+	vertical-align: top;
+}
+.add-address-street > textarea {
+	width: 70%;
+	height: 100%;
+	font-size: 1.2rem;
+	color: #999;
+	border: none;
+	resize: none;
+}
+.set-default-address {
+	height: 3.9rem;
+	line-height: 3.9rem;
+	margin-top: 2rem;
+	padding-left: 1.4rem;
+	color: #666;
+	background: #fff;	
+}
+.set-default-address i {
+	float: right;
+	display: inline-block;
+	width: 1.3rem;
+	height: 1.3rem;
+	margin-top: 1.3rem;
+	margin-right: 1.3rem;
+	border: 1px solid #999;
+	border-radius: 50%;
+	vertical-align: sub;
+}
+.set-default-address i.current {
+	border-color: #00a0e9;
+	background-image: url('/static/wechat/assets/images/invoice.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: .8rem .6rem; 
+}
+/*选择城市*/
+.tooth {
+	color: #333;
+}
+.area_ctrl {
+	background: #fff;
+}
+.area_roll {
+	background: #fff;
+	font-family: '微软雅黑';
+	-webkit-mask: -webkit-gradient(linear,0 50%,0 100%,from(#fff),to(rgba(255,255,255,0)));
+    -webkit-mask: -webkit-linear-gradient(top,#fff 50%,rgba(255,255,255,0));
+}
+.area_roll > div {
+	height: 17.5rem;
+}
+.area_grid {
+	top: 6em;
+}
+.area_roll > div .gear {
+	margin-top: 6em;
+}
+.area_roll_mask {
+	-webkit-mask: -webkit-gradient(linear,0 40%,0 0,from(#fff),to(rgba(255,255,255,0)));
+    -webkit-mask: -webkit-linear-gradient(bottom,#fff 50%,rgba(255,255,255,0));
+}
+.area_btn {
+	font-family: '微软雅黑';
+	color: #00a0e9;
+}
+/*选择城市 end*/
+.save-address {
+	margin-top: 5rem;
+    padding-bottom: 7.8rem;
+    text-align: center;
+}
+.save-address button {
+    width: 70%;
+    height: 4rem;
+    line-height: 4rem;
+    color: #fff;
+    font-family: '微软雅黑';
+    font-size: 1.4rem;
+    background: #00a0e9;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

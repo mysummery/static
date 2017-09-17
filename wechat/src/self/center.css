@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.wid ul.form li:nth-child(3) a {
+	border-bottom: 1px solid #d3d3d3;
+}
+
+.wid ul.form li:last-child a {
+	border-bottom: none;
+}
+
+.logo {
+	width: 100%;
+	background: url(/static/wechat/assets/images/self_bg.png) no-repeat top center;
+}
+
+.logo .head #imgurl {
+	width: 20%;
+	margin-left: 38.5%;
+	margin-top: 2rem;
+	background: rgba(255, 255, 255, 0.5);
+	padding: 0.5rem;
+	border-radius: 50%;
+}
+
+.logo img.write {
+	width: 3.6%;
+	position: relative;
+	top: 0px;
+	left: 12px;
+}
+
+#icon {
+	width: 20%;
+	position: absolute;
+	top: -6rem;
+	left: 57%;
+}
+
+.logo .information p {
+	position: relative;
+	text-align: center;
+	font-size: 1.3rem;
+	color: #fff;
+}
+
+.logo .information p:nth-child(2) {
+	font-size: 1rem;
+	padding-top: 0.7rem;
+	padding-bottom: 2rem;
+}
+
+#deadline {
+	margin-left: 0.25rem;
+	margin-right: 1.5rem;
+}
+
+#invite {
+	margin-left: 0.5rem;
+}
+
+.form {
+	margin-top: 1rem;
+}
+
+#myteam {
+	background: url(/static/wechat/assets/images/self_team.png) no-repeat 0.5rem center;
+	background-size: 6%;
+}
+
+#group {
+	background: url(/static/wechat/assets/images/self_group.png) no-repeat 0.5rem center;
+	background-size: 6%;
+}
+
+#mywallet {
+	background: url(/static/wechat/assets/images/self_wallet.png) no-repeat 0.5rem center;
+	background-size: 6%;
+}
+
+#myindent {
+	background: url(/static/wechat/assets/images/self_indent.png) no-repeat 0.6rem center;
+	background-size: 5%;
+}
+
+#mycollection {
+	background: url(/static/wechat/assets/images/self_collection.png) no-repeat 0.5rem center;
+	background-size: 6%;
+}
+
+#notice {
+	background: url(/static/wechat/assets/images/self_inform.png) no-repeat 0.5rem center;
+	background-size: 6%;
+}
+
+#settings {
+	background: url(/static/wechat/assets/images/self_settings.png) no-repeat 0.5rem center;
+	background-size: 6%;
+}
+
+#myhonor {
+	background: url(/static/wechat/assets/images/honor.png) no-repeat 0.5rem center;
+	background-size: 6%;
+}
+
+#letter {
+	background: url(/static/wechat/assets/images/self_letter.png) no-repeat 0.5rem center;
+	background-size: 6%;
+}
+#myindent_sw {
+	background: url(/static/wechat/assets/images/self_xn.png) no-repeat 0.5rem center;
+	background-size: 5%;
+}
+#myshop {
+    background: url(/static/wechat/assets/images/self_shop.png) no-repeat 0.5rem center;
+    background-size: 6%;
+}
+.level {
+	position: relative;
+	top: -0.7rem;
+	z-index: 10;
+	text-align: center;
+	width: 100%;
+}
+
+#level {
+	overflow: hidden;
+	display: block;
+}
+
+#level img {
+	width: 1.4rem;
+	margin-left: 5px;
+}
+
+#level_icon {
+	width: 7.8rem;
+}
+
+
+/*
+ *  临时签到
+ */
+
+.sigin {
+	position: relative;
+	top: -13rem;
+	left: 2rem;
+	border: 1px solid #4068e6;
+	width: 4rem;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	border-radius: 10px;
+	background: #4068e6;
+}
+
+.sigin a {
+	color: #fff;
+}
+
+body {
+	padding-bottom: 2.4rem;
+}
+
+.wid {
+	margin-top: -15px;
+	padding-bottom: 2.6rem;
+}
+
+.form1 p span b {
+	color: #112976;
+}
+
+.form1 .button {
+	margin-top: 0.9rem;
+	background: #ff9600;
+	text-align: center;
+	border: none;
+	border-radius: 0.5rem;
+	color: #fff;
+	width: 23%;
+	height: 2rem;
+	font-size: 1.2rem;
+	margin-top: 0.75rem;
+	float: right;
+	margin-right: 1.25rem;
+}
+
+.form1 p img {
+	margin-left: 1.25rem;
+	width: 8%;
+}
+
+.form1 {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.7);
+	padding-top: 0.6rem;
+	padding-bottom: 0.6rem;
+	font-size: 1.2rem;
+	display: none;
+}

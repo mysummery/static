@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>账户管理</title>
+		<link rel="stylesheet" href="/static/pc/assets/css/common.css" />
+		<link rel="stylesheet" href="/static/pc/assets/css/base.css" />
+		<link rel="stylesheet" href="/static/pc/page/jbox/jbox.css" />
+		<link rel="stylesheet" href="/static/pc/src/self/wallet/new_purse.css" />
+	</head>
+
+	<body>
+		<div class="newaccountManager">
+			<div class="header">
+
+			</div>
+			<div class="navpart">
+
+			</div>
+
+			<div class="center">
+				<div class="center-con">
+					<a href="javascript:;">个人中心</a>
+				</div>
+			</div>
+			<div class="wrap">
+				<div class="wrap-left wrap-left-photo fl">
+
+				</div>
+				<div class="wrap-right fr">
+					<div class="tittle">
+						<a href="/static/pc/src/self/wallet/new_purse.html">钱包管理></a>
+						<a href="/static/pc/src/self/wallet/new_purse.html">账户管理</a>
+					</div>
+					<div class="mess-form">
+						<div class="mess-top">
+							<div class="mess-con">
+								<div class="fl balance">
+									<div class="bal_tit">账户余额</div>
+									<div class="bal_num"></div>
+								</div>
+								<div class="fl way">
+									<a href="/static/pc/src/self/wallet/bank/manageBank/new_manageBank.html">银行卡</a>
+									<a  onclick="transferRecord()" href="javascript:;">转账</a>
+									<a href="javascript:;" class="tzchongzhi">充值</a>
+									<a onclick="withdraw()" href="javascript:;">提现</a>
+								</div>
+							</div>
+							<div class="mess-hide">
+								<div class="fl balance">
+									<div class="bal_tit">账户余额</div>
+									<div class="bal_n">****</div>
+								</div>
+								<div class="fl way">
+									<a href="/static/pc/src/self/wallet/bank/manageBank/new_manageBank.html">银行卡</a>
+									<a onclick="transferRecord()"  href="javascript:;">转账</a>
+									<a href="javascript:;" class="tzchongzhi">充值</a>
+									<a onclick="withdraw()" class="tixian" href="javascript:;">提现</a>
+								</div>
+							</div>
+							<span class="fr switch on">隐藏</span>
+						</div>
+						<div class="tittle">
+							<a href="/static/pc/src/self/wallet/new_purse.html">钱包管理></a>
+							<a href="javascript:;">交易记录</a>
+						</div>
+						<div class="nav-record">
+							<ul>
+								
+								<li id="transferRecord">转账记录 </li>
+								<li id="rechargerRecord">充值记录</li>
+								<li id="withdrawRecord">提现记录</li>
+								<li id="gainRecord">收益记录</li>
+								<li id="allRecord">查看所有交易记录</li>
+								<li class="fr total" style="display:none"><span class="tomoney"></span></li>
+							</ul>
+						</div>
+						<div class="record-box">
+							<div class="box-tittle" id="tittle-more">
+								<ul>
+									<li class="time">时间</li>
+									<li>账户</li>
+									<li>类型</li>
+									<li>金额</li>
+									<li>状态</li>
+									<li>详情</li>
+
+								</ul>
+							</div>
+							<div class="box-tittle" id="tittle-income">
+								<ul>
+									<li class="time">时间</li>
+									<li>账户</li>
+									<li>类型</li>
+									<li>金额</li>
+									<li>状态</li>
+									<li>用户名</li>
+
+								</ul>
+							</div>
+							<div class="box-cont">
+								<ul>
+
+								</ul>
+							</div>
+							
+						</div>
+						<div class="page">
+								<ul class="pager">
+									
+								</ul>
+
+							</div>
+
+					</div>
+
+				</div>
+
+			</div>
+			<div class="footer">
+
+			</div>
+
+		</div>
+	</body>
+
+	<script src="/static/pc/page/jquery-1.8.3.min.js"></script>
+	<script src="/static/pc/assets/js/top_bottom.js"></script>
+	<script src="/static/pc/assets/js/common.js"></script>
+	<script src="/static/pc/src/self/new_usercenter.js"></script>
+	<script src="/static/wechat/assets/js/app.js"></script>
+	<script src="/static/pc/page/jbox/jquery.jBox-2.3.min.js"></script>
+	<script src="/static/pc/page/jbox/jquery.jBox-zh-CN.js"></script>
+	<script src="/static/pc/src/self/wallet/new_purse.js"></script>
+
+</html>

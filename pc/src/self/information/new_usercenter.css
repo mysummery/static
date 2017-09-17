@@ -1,0 +1,127 @@
+/*.wrap .wrap-right .allCon {
+	margin:0 auto;
+}*/
+
+.wrap .wrap-right .mess-total {
+	margin-left: 239px;
+	margin-top: 50px;
+	position:relative;
+}
+
+.wrap .mess-total .edit-bg {
+	position: absolute;
+	top: 92px;
+	left: 89px;
+	width: 88px;
+	height: 22px;
+	z-index: 99;
+	background: url("/static/pc/assets/images/edit-bg.png");
+}
+
+.wrap .mess-total .edit-bg a {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+
+.wrap .wrap-right .photo-bg {
+	width: 114px;
+	height: 114px;
+	/*position: relative;*/
+	background: url("/static/pc/assets/images/photoperson-bg.png");
+	margin-bottom: 40px;
+	margin-left: 20px;
+	overflow: hidden;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+
+.wrap .wrap-right .mess-form {
+	margin-top: 204px;
+	margin-left: 239px;
+}
+
+.wrap .mess-form div {
+	height: 40px;
+	margin-bottom: 22px;
+}
+
+.wrap .mess-form div input[type=text] {
+	font-size: 14px;
+	height: 30px;
+	width: 380px;
+	border: 1px solid #cbcbcb;
+	box-shadow: inset 0px 1px 4px #cbcbcb;
+	border-bottom: 1px solid #efefef;
+	padding-left: 5px;
+}
+
+.wrap .mess-form div input:focus {
+	border: 1px solid #ffa800;
+	box-shadow: 0 0 1px #ffa800;
+}
+
+.wrap .mess-form #day,
+#month {
+	width: 60px;
+	height: 31px;
+	font-size: 18px;
+	-webkit-appearance: none;
+}
+
+.wrap .mess-form #year {
+	width: 75px;
+	height: 31px;
+	font-size: 18px;
+}
+
+.wrap .mess-form span {
+	display: inline-block;
+	width: 75px;
+	line-height: 40px;
+	font-size: 14px;
+}
+
+.wrap .reserve a {
+	display: inline-block;
+	width: 85px;
+	height: 35px;
+	background: #ffa800;
+	border-radius: 10px;
+	color: #fff;
+	line-height: 35px;
+	text-align: center;
+	margin: 70px 0 0 294px;
+}
+
+.wrap .mess-form textarea {
+	width: 375px;
+	height: 100px;
+	margin-left: 8px;
+	border: 1px solid #cbcbcb;
+	box-shadow: inset 0px 1px 4px #cbcbcb;
+	border-bottom: 1px solid #efefef;
+}
+
+.wrap .mess-form textarea:focus {
+	border: 1px solid #ffa800;
+	box-shadow: 0 0 1px #ffa800;
+}
+
+.wrap #reserve {
+	color: #fff;
+	display: inline-block;
+	background: #ffa800;
+	cursor: pointer;
+	height: 34px;
+	line-height: 34px;
+	font-size: 14px;
+	text-align: center;
+	width: 86px;
+	cursor: pointer;
+	margin:93px 0 0 470px;
+	border-radius: 5px;
+}

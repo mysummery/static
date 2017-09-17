@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.logo {
+	background: url(/static/wechat/assets/images/group_wallet.png) no-repeat top center #fff;
+	background-size: 100%;
+}
+
+.logo .information p {
+	padding-top: 3.5rem;
+}
+
+.logo .information p:nth-child(2) {
+	color: #112976;
+	padding-bottom: 0px;
+	padding-top: 0px;
+}
+
+.logo .information p.already_sell {
+	padding-top: 0px;
+	padding-bottom: 1rem;
+	color: #666666;
+	font-size: 1.2rem;
+}
+
+.wid ul.form li #mygroupbuying {
+	background: url(/static/wechat/assets/images/mygroup_buying.png) no-repeat 0.5rem center;
+	background-size: 6%;
+}
+
+.wid ul.form li #mysplit {
+	background: url(/static/wechat/assets/images/mysplit.png) no-repeat 0.5rem center;
+	background-size: 6%;
+	border-bottom: 1px solid #dfdfdf;
+}
+
+.wid ul.form li #mycommission {
+	background: url(/static/wechat/assets/images/mycommission.png) no-repeat 0.5rem center;
+	background-size: 6%;
+}
+
+.wid ul.form li #mygift {
+	background: url(/static/wechat/assets/images/mygift.png) no-repeat 0.5rem center;
+	background-size: 6%;
+}
+
+.button {
+	background: #ff9600;
+	width: 89%;
+	text-align: center;
+	line-height: 3rem;
+	font-size: 1.3rem;
+	border: none;
+	border-radius: 0.5rem;
+	color: #fff;
+	margin-left: 5.5%;
+	margin-top: 4rem;
+}
+
+.wid ul.form li:last-child a {
+	border-bottom: none;
+}
+
+.button_want a {
+	color: #fff;
+}
+
+
+/*#go_split {
+	margin-top: 1rem;
+	background: none;
+	border: 1px solid #ff9600;
+}
+#go_split a {
+	color: #ff9600;
+}*/
+
+b {
+	font-weight: normal;
+}
+
+.bgl {
+	display: inline-block;
+	background: url(/static/wechat/assets/images/count_bgl.png) no-repeat left center;
+	background-size: contain;
+}
+
+.bgr {
+	display: inline-block;
+	background: url(/static/wechat/assets/images/count_bgr.png) no-repeat left center;
+	background-size: conver;
+}
+
+.total {
+	line-height: 2.6rem;
+	height: 2.6rem;
+	display: inline-block;
+}
+
+.surplus {
+	height: 2.6rem;
+	line-height: 2.6rem;
+	display: inline-block;
+}
+
+.card_count {
+	height: 2.6rem;
+	color: #666666;
+}
+
+.purple {
+	color: #5a19ff;
+}
+
+.all {
+	width: 49.9%;
+	text-align: center;
+	float: left;
+}
+
+.big {
+	width: 63%;
+	text-align: center;
+	float: left;
+	background-size: cover;
+}
+
+.small {
+	width: 36.9%;
+	text-align: center;
+	float: left;
+	background-size: auto;
+}
+
+.wid ul.button_group {
+	border: none;
+	background: #fff;
+	padding-top: 1.2rem;
+	padding-bottom: 1.2rem;
+}
+
+.wid ul.button_group li {
+	float: left;
+	width: 33.2%;
+	padding-left: 0px;
+	text-align: center;
+	background: none;
+	border-bottom: none;
+	line-height: 1.8rem;
+}
+
+.wid ul.button_group li a {
+	border-bottom: none;
+	background: none !important;
+	padding-left: 0px;
+	font-size: 1.3rem;
+}
+
+.wid ul.button_group li a img {
+	width: 1.8rem;
+}
+
+.wid ul.button_group li:nth-child(2) {
+	border-left: 1px solid #dfdfdf;
+	border-right: 1px solid #dfdfdf;
+}
+
+@media screen and (max-width:990px) {
+	.wid ul.button_group li {
+		width: 33%;
+	}
+}

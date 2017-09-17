@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>账户安全</title>
+		<link rel="stylesheet" href="/static/pc/assets/css/common.css" />
+		<link rel="stylesheet" href="/static/pc/assets/css/base.css" />
+		<link rel="stylesheet" href="/static/pc/page/jbox/jbox.css" />
+		<link rel="stylesheet" href="new_useraccountsafe.css" />
+		<script src="/static/pc/page/jquery-1.8.3.min.js"></script>
+		<script src="/static/pc/assets/js/top_bottom.js"></script>
+		<script src="/static/pc/assets/js/common.js"></script>
+		<script src="/static/wechat/assets/js/app.js"></script>
+		<script src="/static/pc/src/self/new_usercenter.js"></script>
+		<script src="/static/pc/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script src="/static/pc/page/jbox/jquery.jBox-zh-CN.js"></script>
+		<script src="new_accountsafe.js"></script>
+
+	</head>
+	<style>
+		.wrap-right p {
+			margin-top: 95px;
+			margin-left: 325px;
+			color: #333;
+			font-size: 20px;
+			font-family: "Microsoft YaHei";
+		}
+	</style>
+
+	<body>
+		<div class="newusercenter">
+			<div class="header">
+
+			</div>
+		</div>
+		<div class="navpart">
+
+		</div>
+
+		<div class="center">
+			<div class="center-con">
+				<a href="javascript:0;">个人中心</a>
+			</div>
+		</div>
+		<div class="wrap">
+			<div class="wrap-left wrap-left-photo fl">
+
+			</div>
+
+			<div class="wrap-right wrap-info fr">
+				<div class="tittle">
+					账户安全
+				</div>
+				<div class="step">
+					<ul>
+						<li>
+							<span>身份审核</span>
+							<a href="/static/pc/src/self/safe/upload/new_identity.html">请上传您的身份证</a>
+						</li>
+						<li>
+							<span>登录密码</span>
+							<a href="/static/pc/src/self/safe/update_login/new_reviselogin.html">修改登录密码</a>
+						</li>
+						<li>
+							<span>支付密码</span>
+							<a onclick="revisepay()" href="javascript:;">修改支付密码</a>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+		<div class="footer">
+
+		</div>
+
+		</div>
+		<script>
+			$(function() {
+				$(".accountsafe").addClass("current");
+
+			});
+		</script>
+	</body>
+
+</html>

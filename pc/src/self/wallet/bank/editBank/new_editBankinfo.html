@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>填写银行卡信息</title>
+		<link rel="stylesheet" href="/static/pc/assets/css/common.css" />
+		<link rel="stylesheet" href="/static/pc/assets/css/base.css" />
+		<link rel="stylesheet" href="/static/pc/page/jbox/jbox.css" />
+		<link rel="stylesheet" href="/static/pc/src/self/wallet/bank/editBank/new_editBankinfo.css" />
+	</head>
+	<style>
+		
+	</style>
+
+	<body>
+		<div class="newmanagebank">
+			<div class="header">
+
+			</div>
+			<div class="navpart">
+
+			</div>
+
+			<div class="center">
+				<div class="center-con">
+					<a href="javascript:;">个人中心</a>
+				</div>
+			</div>
+			<div class="wrap">
+				<div class="wrap-left wrap-left-photo fl">
+
+				</div>
+				<div class="wrap-right fr">
+					<div class="tittle">
+						<a href="/static/pc/src/self/wallet/new_purse.html">钱包管理></a>
+						<a href="/static/pc/src/self/wallet/new_purse.html">账户管理></a>
+						<a href="/static/pc/src/self/wallet/bank/manageBank/new_manageBank.html">管理银行卡></a>
+						<a href="/static/pc/src/self/wallet/bank/editBank/new_editBankinfo.html">填写银行卡信息</a>
+					</div>
+					<div class="mess-form">
+						<div>
+							<span>真实姓名</span>
+							<span class="idcardname"></span>
+						</div>
+						<div>
+							<span>银行卡号</span>
+							<input type="text" id="cardNum" maxlength="30"/>
+						</div>
+						<div>
+							<span>卡类型</span>
+							<input type="text" id="cardType" readonly="readonly"/>
+						</div>
+						<div class="item">
+							<div>
+								<span>手机号码</span>
+								<input type="text" id="bankPhone" />
+							</div>
+							<span class="prompt">请填写该银行卡预留的手机号码</span>
+
+						</div>
+						<div>
+							<span>开户行</span>
+							<input id="bank" type="text"  maxlength="30"/>
+						</div>
+						<div>
+							<span>所属银行</span>
+							<input type="text" id="parentbank" readonly="readonly"/>
+						</div>
+						<div style="display:none;">
+							<span>验证码</span>
+							<input placeholder="请输入验证码" id="identiCode" type="text" />
+							<button type="button">获取验证码</button>
+						</div>
+
+					</div>
+					<div class="bankreserve">
+						<!--<button class="reserve" type="button" onclick="bankreserve()">保存</button>-->
+						<button id="bankreserve" onclick="bankreserve()" type="button">保存</button>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="footer">
+
+			</div>
+
+		</div>
+	</body>
+	<script src="/static/pc/page/jquery-1.8.3.min.js"></script>
+	<script src="/static/pc/assets/js/top_bottom.js"></script>
+	<script src="/static/pc/assets/js/common.js"></script>
+	<script src="/static/pc/src/self/new_usercenter.js"></script>
+	<script src="/static/wechat/assets/js/app.js"></script>
+	<script src="/static/pc/page/jbox/jquery.jBox-2.3.min.js"></script>
+	<script src="/static/pc/page/jbox/jquery.jBox-zh-CN.js"></script>
+	<script src="/static/pc/src/self/wallet/bank/editBank/new_editBankinfo.js"></script>
+
+</html>

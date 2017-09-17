@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<title>我要拆分</title>
+		<link rel="stylesheet" type="text/css" href="/static/wechat/assets/css/base.css">
+		<link rel="stylesheet" href="/static/wechat/src/self/wantgroup/split.css">
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+	</head>
+
+	<body>
+		<div class="wid">
+			<p class="prompt">友情提示：您还有<span id="split_count"></span>个团购卡可供拆分</p>
+			<ul>
+				<li>
+					<div class="li"><span class="text">拆分对象邀请码</span>
+						<input type="text" placeholder="请输入对象邀请码" class="split" id="split_code" style="position:relative;top:-0.05rem;">
+					</div>
+				</li>
+				<li>
+					<div class="clearfix li"> <span class="fl text">拆分级别</span>
+						<select class="split_jibie">
+							<option code="1">4500元团购</option>
+							<option code="2">2.5万元团购</option>
+							<option code="3">6.5万元团购</option>
+						</select>
+					</div>
+					
+				</li>
+			</ul>
+			<p class="agree">
+				<input type="checkbox" id="checkbox-1" checked type="hidden" />
+				<label for="checkbox-1" id="lab" style="display:none;"></label>
+			</p>
+				<button class="button" id="confirm_split">提交</button>
+		</div>
+		<script src="/static/wechat/assets/js/app.js"></script>
+		<script type="text/javascript" src="iwantto_split.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	</body>
+
+</html>

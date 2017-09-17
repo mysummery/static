@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>我的微店</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link href="/static/wechat/assets/css/base.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<link rel="stylesheet" href="my_shop.css" type="text/css" />
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+	</head>
+
+	<body>
+		<div class="myshop">
+			<div class="header">
+				<div class="shopanswer"><a href="/static/wechat/src/self/myshop/my_shop_explain.html"></a></div>
+				<div class="tittle">购物佣金（元）</div>
+				<div class="total">
+					<span class="spprice">
+								<b class="beprice">0</b><b class="dot">.</b><b class="afprice">0</b>
+				             </span>
+				</div>
+				<div class="item itemOne">
+					<ul>
+						<li class="fl">
+							<div class="thaw">0</div>
+							<div class="action">已转入余额</div>
+						</li>
+						<li class="fl">
+							<div class="freeze">0</div>
+							<div class="action">待转入金额</div>
+						</li>
+					</ul>
+				</div>
+				<div class="item itemTwo">
+					<ul>
+						<li class="fl">
+							<div class="thaw">0</div>
+							<div class="action">已转入余额</div>
+						</li>
+						<li class="fl">
+							<div class="freeze">00</div>
+							<div class="action">待转入金额</div>
+						</li>
+						<li class="fl">
+							<div class="endtime">天</div>
+							<div class="action">有效期</div>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<!--各项菜单-->
+			<div class="content">
+				<ul>
+					<li>
+						<a href="/static/wechat/src/self/myshop/my_commission/my_commission.html" id="commission"><span>佣金记录</span></a>
+
+					</li>
+					<li>
+						<a href="/static/wechat/src/self/myshop/my_coupon/my_counpon.html" id="counpon"><span>我的现金券</span>
+							<!--<span class="money fr">1000.00</span>-->
+						</a>
+
+					</li>
+					<li style="display: none;">
+						<a href="javascript:;" id="cancelshop"><span class="fl">取消微店</span><span class="verify fr"></span>
+							
+						</a>
+
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+		<script type="text/javascript" src="my_shop.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>取消微店</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="/static/wechat/assets/css/base.css"/>
+	<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css"/>
+	<link rel="stylesheet" href="cancel_shop.css"/>
+</head>
+<body>
+	<section id="cancel-container">
+		
+		<p>为了确保您的权益，请输入您的支付密码</p>
+		
+		<div class="alieditContainer" id="payPassword_container">
+		    <input minlength="6" maxlength="6" tabindex="1" id="payPassword_rsainput" name="payPassword_rsainput" class="ui-input i-text" oncontextmenu="return false" onpaste="return false" oncopy="return false" oncut="return false" autofocus autocomplete="off" value="" type="password" pattern="[0-9]*" onkeyup="this.value=this.value.replace(/[^\d]/g,'');">
+		    <div class="sixDigitPassword" tabindex="0">
+		        <i class="active"><b></b></i>
+		        <i><b></b></i>
+		        <i><b></b></i>
+		        <i><b></b></i>
+		        <i><b></b></i>
+		        <i><b></b></i>
+		        <span class="input-cursor" style="left:0px;"></span>
+		    </div>
+		</div>
+
+	</section>
+
+
+	<script src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+	<script src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+	<script src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+	<script src="/static/wechat/assets/js/app.js"></script>
+	<script src="/static/wechat/assets/js/media.js"></script>
+	<script src="cancel_shop.js"></script>
+
+</body>
+</html>

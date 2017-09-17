@@ -1,0 +1,109 @@
+body {
+	font-size: 1.2rem;
+	font-family: '微软雅黑';
+	background-color: none;
+}
+a,
+input {
+	-webkit-tap-highlight-color:transparent;
+}
+.address-list {
+	margin-bottom: .8rem;
+	padding-top: 1.2rem;
+	background: #fff;
+}
+.address-list-container {
+	width: 94.6%;
+	margin: 0 auto;
+}
+.user-name {
+	color: #333;
+}
+.user-sex {
+	margin: 0 1.1rem 0 1.5rem;
+	color: #666;
+}
+.user-tel {
+	color: #999;
+}
+.address-address {
+	margin-top: .5rem;
+}
+.address-address > p {
+	display: -webkit-box;
+	max-height: 3rem;
+	font-size: 1.1rem;
+	color: #666;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+}
+.address-address > span {
+	font-size: 1.1rem;
+}
+.address-handle {
+	height: 3.8rem;
+	line-height: 3.8rem;
+	margin-top: 1rem;
+	color: #999;
+	border-top: 1px solid #e3e3e3;
+}
+.address-handle > a {
+	font-size: 1rem;
+	color: #999;
+}
+.address-handle > a > i {
+	display: inline-block;
+	width: 1.3rem;
+	height: 1.3rem;
+	margin-right: 1rem;
+	border: 1px solid #999;
+	border-radius: 50%;
+	vertical-align: text-bottom;
+}
+.address-handle > a.current > i {
+	border-color: #00a0e9;
+	background-image: url('/static/wechat/assets/images/invoice.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: .8rem .6rem;
+}
+.address-delete i,
+.address-edit i {
+	display: inline-block;
+	width: 1.3rem;
+	height: 1.3rem;
+	margin-right: .5rem; 
+	background-image: url('/static/wechat/assets/images/address_delete.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	vertical-align: sub;
+}
+/*.address-edit {
+	margin-right: 2.5rem;
+}*/
+.address-edit i {
+	background-image: url('/static/wechat/assets/images/address_edit.png');
+}
+.add-address {
+	padding-top: 5rem;
+    padding-bottom: 7.8rem;
+    text-align: center;
+}
+.add-address button {
+    width: 70%;
+    height: 4rem;
+    line-height: 4rem;
+    color: #fff;
+    font-family: '微软雅黑';
+    font-size: 1.4rem;
+    background: #00a0e9;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.choose_address {
+	cursor: pointer;
+}

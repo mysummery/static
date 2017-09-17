@@ -1,0 +1,31 @@
+html,
+body {
+	min-width: 240px;
+	font-family: "Microsoft YaHei UI", "微软雅黑";
+	background: #f7edd4;
+	width: 100%;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+}
+.top_bg img {
+	width: 100%;
+}
+.now_login {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}	
+.now_login a {
+	width: 11rem;
+	background: #8a6144;
+	display: block;
+	margin: auto;
+	text-align: center;
+	height: 3.2rem;
+	border-radius: 15px;
+	font-size: 1.3rem;
+	line-height: 3.2rem;
+	color: #fff;
+	margin-top: 3rem;
+}

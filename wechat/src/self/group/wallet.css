@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+.wid ul.form li:nth-child(3) a {
+	border-bottom: 1px solid #d3d3d3;
+}
+.logo {
+	width: 100%;
+	background: url(../images/wallet_bg.png) no-repeat top center #fff;
+	background-size: 100%;
+}
+.logo .head img {
+	width: 6%;
+	margin-left: 90%;
+	margin-top: 1rem;
+}
+.logo .information p {
+	text-align: center;
+	padding-top: 6rem;
+	font-size: 1.2rem;
+}
+.logo .information p:nth-child(2) {
+	font-size: 2rem;
+	padding-top:0.7rem;
+	padding-bottom: 1.5rem;
+	color: #ff9600;
+}
+.form {
+	margin-top: 1rem;
+}
+.wid ul.form li a span {
+	padding-right: 10%;
+	color: #999999;
+}
+.wid ul.form li #mycard {
+	background: url(../images/bankcard.png) no-repeat 0.5rem center;
+	background-size:6%;
+}
+.wid ul.form li #allincome {
+	background: url(../images/income.png) no-repeat 0.5rem center;
+	background-size:6%;
+}
+.wid ul.form li #already {
+	background: url(../images/already.png) no-repeat 0.5rem center;
+	background-size:6%;
+}
+.wid ul.form li #turn {
+	background: url(../images/transfer.png) no-repeat 0.6rem center;
+	background-size:5%;
+}
+.buttons {
+	background: #fff;
+	border-bottom: 1px solid #d3d3d3;
+	border-top: 1px solid #d3d3d3;
+}
+.buttons a {
+	float: left;
+	display: inline-block;
+	height: 4rem;
+	line-height: 4rem;
+	font-size: 1.5rem;
+	width: 49%;
+	text-align: center;
+	color: #000;
+}
+.buttons a img {
+	width: 12%;
+	margin-right: 0.5rem;
+}
+.buttons a:nth-child(2) {
+	border-left: 1px solid #d3d3d3;
+}

@@ -1,0 +1,37 @@
+.share
+{
+    background:url("../images/share.gif") no-repeat scroll 0 0 transparent;
+    height:18px;
+    width:18px;
+    margin-right:0px !Important;
+    display:inline-block;
+}
+
+.share_email
+{
+    background-position:0 -30px;
+}
+
+.share_kaixin
+{
+    background-position:0 -60px;
+}
+
+.share_sina
+{
+    background-position:0 -120px;
+}
+
+.share_douban
+{
+    background-position:0 -150px;
+}
+
+.share_renren
+{
+    background-position:0 -90px;
+}
+.share_qq
+{
+    background-position:0 -180px;
+}

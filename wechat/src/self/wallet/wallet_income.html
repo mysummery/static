@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>收益记录</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="/static/wechat/assets/css/base.css">
+		<link href="team.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/static/wechat/page/iscroll5/iscroll.css">
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/iscroll5/iscroll5.js"></script>
+		<style>
+			#header {
+				position: absolute;
+				z-index: 2;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 45px;
+				line-height: 45px;
+				padding: 0;
+				color: #eee;
+				font-size: 20px;
+				text-align: center;
+				font-weight: bold;
+			}
+			
+			#footer {
+				position: absolute;
+				z-index: 2;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 48px;
+				line-height: 48px;
+				text-align: center;
+				background: darkred;
+				padding: 0;
+				border-top: 1px solid #444;
+			}
+			
+			#wrapper {
+				top: 0px;
+				background: none;
+			}
+			
+			.wid {
+				padding-top: 0px;
+			}
+			
+			
+			
+			.table {
+				border-collapse: collapse;
+				border-top: 1px solid #dfdfdf;
+			}
+			
+			.table tr {
+				border-bottom: 1px solid #dfdfdf;
+			}
+		</style>
+	</head>
+
+	<body onload="loaded()">
+		<div class="wid" id="wrapper">
+			<div id="iscroll" style="position:relative;">
+				<table id="indent_table_id" class="table income_table" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td>时间</td>
+						<td>付款人</td>
+						<td>金额</td>
+					</tr>
+				</table>
+				<div id="scroller-pullUp">
+					<span id="up-icon" class="icon-double-angle-up pull-up-icon"></span>
+					<span id="pullUp-msg" class="pull-up-msg">上拉刷新</span>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+		<script type="text/javascript" src="wallet_income.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	</body>
+
+</html>

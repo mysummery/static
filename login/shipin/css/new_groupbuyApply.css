@@ -1,0 +1,145 @@
+	.wrap-right .tittle a {
+			color: #3d64e3;
+			display: inline-block;
+			float: left;
+		}
+		
+		.mess-form div {
+			height: 40px;
+			margin-bottom: 22px;
+		}
+		
+		.mess-form>div>span {
+			width: 110px;
+			font-size: 14px;
+			display: inline-block;
+		}
+		
+		.mess-form .item>div>span {
+			width: 110px;
+			font-size: 14px;
+			display: inline-block;
+		}
+		
+		.mess-form .level i {
+			font-style: normal;
+			margin-right: 30px;
+			font-size: 14px;
+			color: #999;
+			cursor: pointer;
+		}
+		
+		.mess-form .level .groupbuyApply-current {
+			font-style: normal;
+			padding: 7px 7px;
+			color: #ffa800;
+			border: 1px solid #ffa800;
+			border-radius: 8px;
+		}
+		
+		.mess-form .level span {
+			width: 110px;
+			font-size: 14px;
+			display: inline-block;
+		}
+		
+		.wrap-right .mess-form {
+			margin-top: 50px;
+			margin-left: 150px;
+		}
+		
+		.mess-form .item {
+			height: 60px;
+		}
+		
+		.mess-form .prompt {
+			font-size: 12px;
+			margin-left: 124px;
+			width: 380px;
+			line-height: 20px;
+			color: #999;
+		}
+		
+		.mess-form .custom input {
+			width: 150px;
+		}
+		
+		.mess-form .item>div {
+			margin-bottom: 0;
+		}
+		
+		.mess-form div input {
+			font-size: 14px;
+			height: 30px;
+			width: 340px;
+			border: 1px solid #cbcbcb;
+			box-shadow: inset 0px 1px 4px #cbcbcb;
+			border-bottom: 1px solid #efefef;
+			padding-left: 5px;
+		}
+		
+		.mess-form .promp-num {
+			color: red;
+		}
+		
+		.mess-form div input:focus {
+			border: 1px solid #ffa800;
+			box-shadow: 0 0 1px #ffa800;
+		}
+		
+		.mess-form #identiCode {
+			width: 265px;
+		}
+		
+		.mess-form #checkbox-1 {
+			display: none;
+		}
+		
+		.mess-form label {
+			border: 1px solid #d7d7d7;
+			display: inline-block;
+			width: 15px;
+			height: 15px;
+			position: relative;
+			top: 2px;
+		}
+		
+		.mess-form #checkbox-1+ label {
+			background: #fff;
+		}
+		
+		.mess-form #checkbox-1:checked+ label {
+			background: url("../images/duihao.png") no-repeat center center;
+			background-size: 70%;
+		}
+		.agree {
+			margin-left:118px;
+		}
+		.agree a {
+			color: #999;
+		}
+		.agree span {
+			color:#ffa800;
+		}
+		
+		.mess-form button {
+			width: 100px;
+			height: 35px;
+			color: #ffa800;
+			background: #fff;
+			border-radius: 10px;
+			border: 1px solid #ffa800;
+		}
+		
+		.wrap #new-groupbuyApply-reserve {
+			background: #ffa800;
+			color: #fff;
+			width: 85px;
+			height: 35px;
+			border: none;
+			margin: 56px 0 0 293px;
+			border-radius: 10px;
+			font-size: 14px;
+			display: block;
+			margin: 40px auto;
+		}

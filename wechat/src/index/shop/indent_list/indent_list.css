@@ -1,0 +1,314 @@
+body {
+	font-family: '微软雅黑';
+	font-size: 1.4rem;
+	background: #f2f8fa;
+}
+
+#wrapper {
+	top: 0;
+	bottom: 0;
+	background: #f2f8fa;
+	-webkit-transform:translate3d(0,0,0);
+	-webkit-backface-visibility: hidden;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	-webkit-tap-highlight-color:transparent;
+	-webkit-overflow-scrolling: touch;
+	
+}
+.indent-list-container {
+	-webkit-transform:translate3d(0,0,0);
+}
+.indent-sublist {
+	-webkit-transform:translate3d(0,0,0);
+}
+.header {
+	background: #fff;
+}
+.indent-list-tab {
+	width: 95.1%;
+	margin: 0 auto;
+}
+.indent-list-tab > ul {
+	overflow: hidden;
+	background: #fff;
+	padding-bottom: .3rem;
+}
+.indent-list-tab > ul li {
+	float: left;
+	margin-right: .3rem;
+	padding: .9rem .8rem .6rem .8rem;
+}
+.indent-list-tab > ul li.current {
+	border-bottom: 2px solid #00a0e9;
+}
+.indent-list-tab > ul li a {
+	color: #999;
+	font-size: 1.4rem;
+}
+.indent-list-tab > ul li:last-child{
+	margin-right: 0;
+}
+.indent-list-tab > ul li.current a {
+	color: #00a0e9;
+}
+.indent-sublist {
+	margin-top: 1rem;
+	background: #fff;
+}
+.indent-sublist-state {
+	width: 94.6%;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	font-size: 1.2rem;
+	margin: 0 auto;
+	color: #00a0e9;
+	text-align: right;
+}
+.indent-sublist-state .indent-sublist-state-red {
+	color: #ff4c4c;
+}
+.indent-sublist-state .indent-sublist-state-gray {
+	color: #999;
+}
+.indent-sublist-information {
+	    /* width: 94.6%; */
+    height: 8.9rem;
+    margin: 0 auto;
+    /* border-top: 1px solid #ececec; */
+    padding-left: 2.2%;
+    padding-right: 2.2%;
+    background: #f8f8f8;
+}
+.indent-sublist-img {
+	width: 8.9rem;
+	height: 8.9rem;
+}
+.indent-sublist-img img {
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+}
+.indent-sublist-text {
+	width: 13.3rem;
+	margin-left: 1rem;
+	font-size: 1.2rem;
+}
+.indent-sublist-text>p {
+	height: 3.2rem;
+	margin-top: 1rem;
+	color: #333;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.indent-sublist-text h5 {
+	margin-top: 1.3rem;
+	font-size: 1rem;
+	line-height: 1;
+	font-weight: normal;
+	color: #666;
+	text-overflow: ellipsis;
+	white-space:nowrap; 
+	overflow: hidden;
+}
+.indent-sublist-text h5 span {
+	color: #999;
+}
+.indent-sublist-text h6 {
+	margin-top: .4rem;
+	font-size: 1rem;
+	font-weight: normal;
+	line-height: 1;
+	color: #666;
+	text-overflow: ellipsis;
+	white-space:nowrap; 
+	overflow: hidden;
+}
+.indent-sublist-text h6 span {
+	color: #999;
+}
+.indent-sublist-text h6 span:first-child {
+	margin-right: 1rem;
+}
+.indent-sublist-money {
+	position: relative;
+	height: 8.9rem;
+}
+.indent-sublist-money p {
+	position: absolute;
+	right: 0;
+	top: 2.7rem;
+	font-size: 1rem;
+	color: #999;
+}
+.indent-sublist-money p span {
+	color: #00a0e9;
+	font-size: 1.7rem;
+}
+.indent-sublist-money h6 {
+	position: absolute;
+	bottom: .9rem;
+	right: 0;
+	font-weight: normal;
+	font-size: 1rem;
+	color: #999;
+}
+.indent-sublist-handle {
+	width: 94.6%;
+	height: 3.4rem;
+	line-height: 3.4rem;
+	margin: 0 auto;
+	font-size: 1.2rem;
+	text-align: right;
+	color: #333;
+	/*border-top: 1px solid #ececec;*/
+}
+.indent-sublist-handle > a {
+	display: inline-block;
+	width: 6rem;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	font-size: 1.2rem;
+	color: #fff;
+	background: #00a0e9;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.indent-sublist-handle > span a {
+	display: inline-block;
+	width: 6rem;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	font-size: 1.2rem;
+	color: #fff;
+	background: #00a0e9;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.indent-sublist-handle > span {
+	color: #00a0e9;
+}
+
+.indent-sublist-handle > i {
+	float: left;
+	font-style: normal;
+	font-size: 1.2rem;
+	color: #00a0e9;
+	cursor: pointer;
+}
+
+#mark {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .5);
+	z-index: 9;
+	display: none;
+}
+
+.reason-box {
+	position: absolute;
+	top: 50%;
+	left: 17%;
+	width: 66%;
+	margin-top: -5rem;
+	background: #fff;
+	border-radius: 5px;
+}
+
+.reason-box-information h5 {
+	height: 4.5rem;
+	line-height: 4.5rem;
+	color: #333;
+	text-align: center;
+	font-size: 1.5rem;
+	font-weight: 550;
+}
+
+.reason-box-information p {
+	width: 86%;
+	margin: 0 auto;
+	padding-bottom: 1rem;
+	color: #999;
+	font-size: 1.1rem;
+}
+
+.reason-box-sure {
+	height: 4rem;
+	line-height: 4rem;
+	font-size: 1.5rem;
+	text-align: center;
+	border-top: 1px solid #e7e7e7;
+	color: #00a0e9;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.indent-sublist-handle > span .indent-sublist-sure {
+	margin-left: 1rem;
+}
+
+.indent-sublist-no {
+	text-align: center;
+}
+
+.indent-sublist-no img {
+	width: 8rem;
+	height: 10rem;
+	margin-top: 14rem;
+	margin-bottom: 1.5rem;
+}
+
+.indent-sublist-no p {
+	font-size: 1.5rem;
+	color: #999;
+	text-align: center;
+}
+
+@media only screen and (max-width: 370px) {
+	.indent-list-tab > ul li {
+		padding: .9rem .66rem;
+	}
+}
+
+@media only screen and (min-width: 320px) and (max-width: 329px) {
+	.indent-list-tab > ul li {
+		padding: .9rem .8rem;
+	}
+}
+
+@media only screen and (min-width: 330px) and (max-width: 360px) {
+	.indent-sublist-text p {
+		font-size: 1.3rem;
+		height: 3.1rem;
+	}
+	.indent-list-tab > ul li {
+		padding: .9rem .75rem;
+	}
+}
+.sd{
+	padding-left: 2.3rem;
+    background: url(/static/wechat/assets/images/sd_icon.png) no-repeat left center;
+    background-size: 1.6rem;
+    color: #333333;
+}
+.zc{
+	padding-left: 2.2rem;
+    background: url(/static/wechat/assets/images/zc_icon.png) no-repeat left center;
+    background-size: 1.6rem;
+    color: #333333;
+}
+.cs{
+	padding-left: 2.2rem;
+    background: url(/static/wechat/assets/images/cs_icon.png) no-repeat left center;
+    background-size: 1.6rem;
+    color: #333333;
+}

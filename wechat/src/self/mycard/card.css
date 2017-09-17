@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+.wid {
+	width: 100%;
+}
+.agree {
+	padding-left: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 0.5rem;
+}
+.wid .form p input {
+	border: none;
+	width: 68%;
+	float: right;
+	margin-bottom: 0px;
+}
+.wid .form p span {
+	font-size: 1.2rem;
+	float: left;
+	display: inline-block;
+	height: 3.5rem;
+	line-height: 3.5rem;
+}
+.wid .form p:nth-child(2) {
+	border: 1px solid #d5d5d5;
+	background: #fff;
+	padding-left: 4%;
+	margin-bottom: 1.3rem;
+}
+.wid .form p:nth-child(3) {
+	border: 1px solid #d5d5d5;
+	background: #fff;
+	padding-left: 4%;
+}
+.wid .form p:nth-child(4) {
+	text-align: center;
+}
+.wid .form .button {
+	width: 80%;
+}
+ 

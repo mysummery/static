@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>新增地址</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="/static/wechat/assets/css/base.css">
+	<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+	<link rel="stylesheet" href="/static/wechat/src/index/shop/address/add_address/LArea.min.css">
+	<link rel="stylesheet" href="/static/wechat/src/index/shop/address/add_address/add_address.css">
+</head>
+<body>
+	<section>
+		<div class="add-address-container">
+			<div class="add-address-receiver">
+	            <span>收货人</span>
+	            <input type="text" id="receiver-man" placeholder="输入收货人姓名" maxlength="8">
+			</div>
+			<div class="add-address-sex">
+				<span>性别</span>
+				<a class="current" href="javascript:;" data-sex='先生'><i></i>先生</a>
+				<a href="javascript:;" data-sex='女士'><i></i>女士</a>
+			</div>
+			<div class="add-address-tel">
+				<span>联系电话</span>
+				<input type="tel" id="receiver-tel" placeholder="输入联系电话" maxlength="11">
+			</div>
+			<div class="add-address-city">
+				<span>所在地区</span>
+				<input id="city" type="text" readonly="readonly" placeholder="省份 城市 县区"/>
+	        	<input id="city-value" type="hidden" value="2,2288"/>
+	        	<img src="/static/wechat/assets/images/right.png" alt="">
+			</div>
+			<div class="add-address-street">
+				<span>街道</span>
+				<textarea name="" id="" placeholder="5-60个字符，且不能全部为数字" maxlength="60"></textarea>
+			</div>
+		</div>
+	</section>
+	<!-- 设置为默认地址 -->
+	<div class="set-default-address clearfix">
+		<span>设置成默认收货地址</span>
+		<i class="current"></i>
+	</div>
+	<!-- 保存 -->
+	<div class="save-address">
+		<button>保存</button>
+	</div>
+	
+
+
+
+	
+	<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+	<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+	<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+	<script src="/static/wechat/src/index/shop/address/add_address/LAreaData1.js"></script>
+    <script src="/static/wechat/src/index/shop/address/add_address/LAreaData2.js"></script>
+    <script src="/static/wechat/src/index/shop/address/add_address/LArea.js"></script>
+	<script src="/static/wechat/src/index/shop/address/add_address/add_address.js"></script>
+</body>
+</html>

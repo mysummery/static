@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>直播</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" href="http://g.alicdn.com/de/prismplayer/1.5.7/skins/default/index-min.css" />
+	<link rel="stylesheet" type="text/css" href="/static/wechat/page/swiper/swiper-3.3.1.min.css">
+	<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="/static/wechat/assets/css/base.css">
+	<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+	<link rel="stylesheet" href="/static/wechat/live/live/show.css">
+	<script>window["WEB_XHR_POLLING"] = true</script>
+	<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="http://g.alicdn.com/de/prismplayer/1.5.7/prism-min.js"></script>
+	<script src="https://cdn.ronghub.com/RongIMLib-2.2.5.min.js"></script>
+	<script src="https://cdn.ronghub.com/RongEmoji-2.2.5.min.js"></script>
+	
+</head>
+<body>
+	<header>
+		<div id="J_prismPlayer" class="prism-player"></div>
+		<div>
+			<canvas id="test"></canvas>
+		</div>
+	</header>
+	
+	<section>
+		<!-- 聊天室人数 -->
+		<div class="chatroom-information clearfix">
+			<div class="teacher-img fl">
+				<img src="/static/wechat/assets/images/live_play.png" alt="">
+			</div>
+			<div class="chatroom-num fl">
+				<p></p>
+				<p><span></span>人</p>
+			</div>
+		</div>
+		<!-- 聊天室人员头像 -->
+		<div class="chatroom-img"></div>
+
+		<!-- 问题列表 -->
+		<div id="tabs-container" class="swiper-container swiper-container-horizontal">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide swiper-slide-active">
+					<div class="question-list-content">
+					</div>
+				</div>
+
+				<!-- 全部问题列表 -->
+				<div class="swiper-slide swiper-slide-next">
+					<div class="all-question-list"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="all-question-go-back">右滑返回</div>
+		<!-- 聊天框 -->
+		<div class="msg-content">
+			<p class="entry-hint">友情提示：<span>发布广告、低俗、违法、色情、骂人、暴力等信息都会被禁言或者封禁帐号，管理员会一直在线巡查！</span></p>
+		</div>
+
+		<!-- 问题竞价 -->
+		<div class="question-bid">
+			<img src="/static/wechat/assets/images/live_ask_question.png" alt="">
+		</div>
+		
+		<!-- 聊天输入框 -->
+		<div class="chatroom-input">
+			<input type="text" id="send-msg" maxlength="100">
+			<button type="button" id="send-btn">发送</button>
+			<button type="button" id="manager-btn">发送</button>
+			<button type="button" id="login-btn">登录后才可以发言哦</button>
+		</div>
+		
+		<!-- 提问问题&赞助 -->
+		<div class="ask-question-content">
+			<div class="ask-qusetion-close">
+				<img src="/static/wechat/assets/images/live_close.png" alt="">
+			</div>
+			<!-- 输入问题 -->
+			<div class="ask-question-entry">
+				<p>请输入您的问题</p>
+				<div class="ask-question-textarea">
+					<textarea name="" id="" placeholder="" maxlength="50"></textarea>
+				</div>
+			</div>
+			<!-- 赞助问题 -->
+			<div class="support-question">
+				<p>为<span></span>的问题：<span></span>进行赞助，赞助越多的问题排名越靠前！</p>
+			</div>
+
+			
+			<!-- 选择金额 -->
+			<div class="ask-question-money">
+				<p>请选择金额</p>
+				<div class="change-money">
+					<ul class="clearfix">
+						<li class="fl">￥<span>50</span></li>
+						<li class="fl">￥<span>100</span></li>
+						<li class="fl">￥<span>200</span></li>
+						<li class="fl">￥<span>300</span></li>
+						<li class="fl">￥<span>500</span></li>
+						<li class="fl">自定义</li>
+					</ul>
+				</div>
+				<div class="custom-money">
+					<span>￥</span>
+					<input type="text" pattern="[0-9]*" onkeyup="this.value=this.value.replace(/[^\d]/g,'');"  maxlength="20" style="ime-mode:Disabled">
+				</div>
+				<!-- 提问&赞助 -->
+				<div class="ask-question-btn">
+					<button type="button">提问</button>
+				</div>
+
+				<div class="support-question-btn">
+					<button type="button">赞助</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- 登录modal -->
+		<div class="chatroom-login">
+			<div class="chatroom-login-box">
+				<p>前往登录页面</p>
+				<a href="javascript:;">确认</a><a href="javascript:;">取消</a>
+			</div>
+		</div>
+	</section>
+	
+	<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+	<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+	<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+	<script src="/static/wechat/page/swiper/swiper-3.3.1.min.js"></script>
+	<script src="/static/wechat/live/live/md5.js"></script>
+	<script src="/static/wechat/live/live/show.js"></script>
+ 
+</body>
+</html>

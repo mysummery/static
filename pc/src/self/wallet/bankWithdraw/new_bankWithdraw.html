@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>提现</title>
+		<link rel="stylesheet" href="/static/pc/assets/css/common.css" />
+		<link rel="stylesheet" href="/static/pc/assets/css/base.css" />
+		<link rel="stylesheet" href="/static/pc/page/jbox/jbox.css" />
+		<link rel="stylesheet" href="new_bankWithdraw.css" />
+
+	</head>
+
+	<body>
+		<div class="bankWithdraw">
+			<div class="header">
+
+			</div>
+			<div class="navpart">
+
+			</div>
+
+			<div class="center">
+				<div class="center-con">
+					<a href="javascript:0;">个人中心</a>
+				</div>
+			</div>
+			<div class="wrap">
+				<div class="wrap-left wrap-left-photo fl">
+
+				</div>
+				<div class="wrap-right fr">
+					<div class="tittle">
+						<a href="/static/pc/src/self/wallet/new_purse.html">钱包管理></a>
+						<a href="/static/pc/src/self/wallet/bankWithdraw/new_bankWithdraw.html">提现</a>
+					</div>
+					<div class="mess-form">
+						<div>
+							<span>真实姓名</span>
+							<span class="idcardname">陈泽功</span>
+						</div>
+						<div>
+							<div>
+								<span class="myCard fl">我的银行卡</span>
+								<div class="chooseCard fl"></div>
+								<span class="btnChoose"  onclick="selectBank()">选择银行卡</span>
+							</div>
+							<div class="selectBank" style="display:none;">
+								<ul>
+									
+								</ul>
+							</div>
+
+						</div>
+						<div class="item">
+							<div>
+								<span>输入金额</span>
+								<input type="text" id="withdrawMoney"  onkeyup="clearNoNum(this)"/>
+							</div>
+							<span class="prompt">温馨提示：本次提现收取0.01的手续费</span>
+							<p>可提现金额￥<span class="number"></span>，<span class="allMoney">全部提现</span>，1-2个工作日内审核通过</p>
+							
+
+						</div>
+						<div class="check">
+							<span class="fl">图片验证码</span>
+							<input type="text" placeholder="输入图片验证码"  class="checkCode fl" id="c_checkCode" />
+							<img  id="imgCheckCode" onclick="selectCodeCheck();" class="imgCode fl" src="https://dev-api.liqiang365.com/validcode/get" alt="" />	
+						</div>
+						<input type="hidden" value="0" id="objval"/>
+						<div>
+							<span>验证码</span>
+							<input placeholder="请输入验证码" id="checkcode" type="text" />
+							<button type="button" onclick="getCheckcode()">获取验证码</button>
+						</div>
+
+					</div>
+					<div class="reserve">
+						<button class="" type="button" value="保存" id="withdrawReserve" onclick="withdrawReserve()">确认提现</button>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="footer">
+
+			</div>
+
+		</div>
+	</body>
+	<script src="/static/pc/page/jquery-1.8.3.min.js"></script>
+	<script src="/static/pc/assets/js/top_bottom.js"></script>
+	<script src="/static/pc/assets/js/common.js"></script>
+	<script src="/static/pc/src/self/new_usercenter.js"></script>
+	<script src="/static/wechat/assets/js/app.js"></script>
+	<script src="/static/pc/page/jbox/jquery.jBox-2.3.min.js"></script>
+	<script src="/static/pc/page/jbox/jquery.jBox-zh-CN.js"></script>
+	<script src="/static/pc/src/self/wallet/bank/manageBank/check_cardname.js"></script>
+	<script src="/static/pc/src/self/wallet/bankWithdraw/new_bankWithdraw.js"></script>
+</html>

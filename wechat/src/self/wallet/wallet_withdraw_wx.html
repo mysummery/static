@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>微信提现</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="/static/wechat/assets/css/base.css">
+		<link href="/static/wechat/assets/css/lr.css" type="text/css" rel="stylesheet">
+		<link href="/static/wechat/assets/css/settings.css" type="text/css" rel="stylesheet">
+		<link href="/static/wechat/assets/css/confirm.css" type="text/css" rel="stylesheet">
+		<link href="withdraw.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script src="/static/wechat/page/bootstrap/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+
+	</head>
+
+	<body>
+		<div id="div_load_bg" align="center"></div>
+		<div id="div_load_show" align="center"><img src="/static/wechat/assets/images/loading.gif" style="width: 50px; height: 50px" /><span style="color:#fff;">正在发起请求...</span></div>
+
+		<div class="logo">
+			<p class="amount clearfix">到账账户<span id="bankcode" class="bankcode"><img
+            src="/static/wechat/assets/images/wxwallet.png"></span></p>
+
+		</div>
+		<div class="wid">
+			<div class="logo white">
+				<p class="amount">提现金额</p>
+				<p class="clearfix"><span class="money fl">&yen;</span> <input type="text" class="charge fl" id="charge"></p>
+				<p class="all"><span class="balance">钱包余额&yen;<b id="money"></b>，每次提现1.02-200.00元，每天最多5次,每次提现手续费1%</span></p>
+
+			</div>
+			<p class="all tx">
+				<a href="javascript:;" id="card_withdraw" onClick="card()">银行卡提现</a>
+				</span>
+			</p>
+			<div class="clear"></div>
+			<div class="tc_password">
+				<p class="top">请输入支付密码</p>
+				<input type="password" class="input_bg" maxlength="8" id="zf_password">
+			</div>
+			<p class="form">
+				<button class="button" id="widthdraw" onclick="tixianSubmit()">提现</button>
+			</p>
+		</div>
+		<script src="/static/wechat/assets/js/app.js"></script>
+		<script type="text/javascript" src="wallet_withdraw_wx.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	</body>
+
+</html>

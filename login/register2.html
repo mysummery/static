@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<style type="text/css">
+			html,
+			body,
+			* {
+				font-family: 'Microsoft YaHei', 宋体, Tahoma, Helvetica, Arial, 宋体, sans-serif;
+			}
+			
+			html,
+			body {
+				position: relative;
+				margin: 0;
+				padding: 0;
+				height: 100%;
+				font-size: 62.5%;
+				background-color: #f5f5f5;
+			}
+			
+			._input {
+				height: 50px;
+				border: none;
+				border-radius: 5px;
+				box-shadow: none;
+				text-shadow: none;
+				outline: none;
+				padding: 0 0 0 5%;
+				font-size: 18px;
+			}
+		</style>
+		<script type="text/javascript" src="/static/js/jquery-1.8.3.min.js"></script>
+		<!-- 提示框 start -->
+		<script src="/static/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="/static/js/jbox/css/Blue/jbox.css" type="text/css" />
+		<script type="text/javascript" src="/static/js/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/js/jbox/jquery.jBox-zh-CN.js"></script>
+		<!-- 提示框 end -->
+		<script src="/static/login/weixin/js/frontajaxSubmit.js"></script>
+		<!--<script src="//api.html5media.info/1.1.8/html5media.min.js"></script> -->
+		<link href="/static/login/js/video-js.css" rel="stylesheet">
+		<script type="text/javascript" src="/static/wechat/assets/js/cookie.js"></script>
+		<script type="text/javascript" src="/static/login/js/video.js"></script>
+
+		<script type="text/javascript" src="/static/login/register2.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+				$("#menu2 li a").wrapInner('<span class="out"></span>');
+
+				$("#menu2 li a").each(function() {
+					$('<span class="over">' + $(this).text() + '</span>').appendTo(this);
+				});
+
+				$("#menu2 li a").hover(function() {
+					$(".out", this).stop().animate({
+						'top': '48px'
+					}, 300); // move down - hide
+					$(".over", this).stop().animate({
+						'top': '0px'
+					}, 300); // move down - show
+
+				}, function() {
+					$(".out", this).stop().animate({
+						'top': '0px'
+					}, 300); // move up - show
+					$(".over", this).stop().animate({
+						'top': '-48px'
+					}, 300); // move up - hide
+				});
+				initEdit();
+			});
+		</script>
+
+		<script type="text/javascript">
+			if(window.innerWidth)
+				winWidth = window.innerWidth;
+			else if((document.body) && (document.body.clientWidth))
+				winWidth = document.body.clientWidth;
+			// 获取窗口高度
+			if(window.innerHeight)
+				winHeight = window.innerHeight;
+			else if((document.body) && (document.body.clientHeight))
+				winHeight = document.body.clientHeight;
+			// 通过深入 Document 内部对 body 进行检测，获取窗口大小
+			if(document.documentElement && document.documentElement.clientHeight && document.documentElement.clientWidth) {
+				winHeight = document.documentElement.clientHeight;
+				winWidth = document.documentElement.clientWidth;
+			}
+		</script>
+	</head>
+
+	<body>
+		<div style="text-align: center;">
+			<img id="jjImg" style="width: 100%;" src="images/share.jpg" alt=""></div>
+		<p style="padding-left:3%;  padding-right:3%;">
+			<font color="#0071c1">
+				<h3 style="padding-left: 2%;font-size:14px;">&nbsp &nbsp &nbsp &nbsp &nbsp通向成功的殿堂一段文字</h3></font>
+		</p>
+		<p style="padding-left:3%;  padding-right:3%;font-size: 15px">
+			<font color="#0071c1"><br/>&nbsp &nbsp &nbsp &nbsp您对自己的生活满意吗？您想用碎片的时间来改变自己一生吗？</font>
+			<font color="#0071c1">注册并加入李强365，让您完成一件“一本万利”的伟大事情，学习是一比一百的回报，如果您耐心的看完这段话，相信您的人生从此会变得更加完美。</font>
+		</p>
+		<p style="padding-left:3%;  padding-right:3%;font-size: 15px;">
+			&nbsp &nbsp &nbsp &nbsp
+			<font color="#0071c1">如果您身为一名普通的职工，</font>
+			<font color="#0071c1">在忙碌的工作和生活中或许应停一停自己的脚步了，静静的思考一下，展望自己的未来，</font>
+			<font color="#0071c1">是前途无量？还是一事无成？想一想您此时所走的路，是通向成功的还是碌碌无为的？您想知道答案吗？</font>
+			<font color="#0071c1">来到李强365可以解决您的所有的疑惑，让您豁然开朗，寻找到正确的人生的道路。这里有最著名的企业家导师“李强”和您分享成功的经验，助您找对方向，避开障碍、避开弯路走向成功。</font><br/>&nbsp &nbsp &nbsp &nbsp
+			<font color="#0071c1">如果您身为一名企业家，虽然家财万贯，但您是否真正的快乐？您的家庭是否美满？或许最让您牵挂的不是金钱，而是您的家人或子女。加入李强365可以和中国最著名的感恩教育专家“李强”共同体会成功的人生，让您了解到自己内心深处的牵挂，告诉您如何让子女健康快乐的成长，让您成为一个事业和家庭共赢的人。</font>
+		</p>
+		<iframe style="width:100%" src="http://www.56.com/iframe/MTQxMzY0ODYy" frameborder="0" allowfullscreen="true"></iframe>
+		<img id="jjImg" style="width: 100%;" src="images/head.jpg" alt=""></div>
+
+		<img id="jjImg" style="width: 100%;" src="http://www.liqiang365.com:80/uploadtemp/image/2016/6/7e06a25c97ad00.jpg" alt="">
+		<div style="padding: 20px 5%;">
+			<input id="name" class="_input" style="width: 95%;margin-bottom: 20px;" type="text" placeholder="请输入姓名">
+			<input id="account" class="_input" style="width: 95%;margin-bottom: 20px;" type="text" placeholder="请输入手机号码">
+			<input id="password" class="_input" style="width: 95%;margin-bottom: 20px;" type="password" placeholder="请设置登录密码">
+			<input id="checkcode" name="checkcode" class="_input" style="width: 55%;margin-bottom: 20px;" type="text" placeholder="请输入短信验证码">
+			<button class="_input" style="height: 50px;background-color: #A5DE37;width: 36%;margin-left: 2%;font-size: 17px;color: #f8f8f8;padding: 0;float:right;" onclick="getCheckcode()">获取验证码</button>
+			<p style="margin: 0; background-color: #E0DEDE; line-height: 50px; color: #A7A7A7;margin-bottom: 20px;" class="_input">
+				<span>邀请人 :</span><span style="padding-left:5px;" id="yaoqingren"></span>
+			</p>
+			<p style="margin: 0; background-color: #E0DEDE; line-height: 50px; color: #A7A7A7;" class="_input">
+				<span>邀请码 :</span><span style="padding-left:5px;" id="beicode">95643a</span>
+			</p>
+
+			<div style="margin-top: 10px;font-size: 15px;color: #333;">
+				<input id="check1" type="checkbox" checked><span>我已经阅读并同意</span>
+				<a style="cursor: pointer;" href="registerxy.html">《用户注册协议》</a>
+			</div>
+			<button class="_input" style="width: 100%; background-color: #1b9af7;color: #f8f8f8;padding: 0;margin-top: 10px;" onclick="saveForm()">注册</button>
+			<!--8.17 zmy 增加登录按钮-->
+			<button class="_input" style="width: 100%;color:#1b9af7;padding: 0;margin-top: 10px;border:1px solid #1b9af7;background:none; font-size:16px;" onclick="gologin()">普通会员在此登录激活账号
+
+</button>
+		</div>
+		</br>
+		<!--8.17 zmy 去掉二维码-->
+		<!-- <img  style="width: 30%; margin-left:9%; margin-right:9%;" src="images/android.png">
+
+ <img  style="width: 30%; margin-left:9%; margin-right:9%;" src="images/ios.png">
+ </br>
+ <a href="http://d4.hackhome.org/h12/qff/liqiang36.apk"><img  style="width: 30%; margin-left:9%; margin-right:9%;margin-top:5%;margin-bottom:9%;" src="images/android_download.png" ></a>
+
+ <img  style="width: 30%; margin-left:9%; margin-right:9%;margin-top:5%;margin-bottom:9%;" src="images/ios_download.png">-->
+	</body>
+
+</html>

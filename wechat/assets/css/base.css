@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	padding: 0px;
+	margin: 0px;
+}
+html, body {
+	min-width: 240px;
+	font-family: "Microsoft YaHei UI", "微软雅黑";
+	background: #f1f0f8;
+	width: 100%;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+}
+ul, ol li {
+	list-style: none;
+}
+img {
+	border: 0px;
+}
+img, input, textarea, button {
+	vertical-align: middle;
+}
+.clear {
+	clear: both;
+}
+.clearfix:after {
+	content: "";
+	height: 0px;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+.fr {
+	float: right;
+}
+.fl {
+	float: left;
+}
+.wid {
+	width: 82%;
+	margin: 0 auto;
+}
+.q {
+	color: #112976;
+}
+.a {
+	color: #FF9600;
+}
+.g {
+	color: #d3d3d3;
+}
+a,
+input {
+	-webkit-tap-highlight-color:transparent;
+}
+input[type=button], input[type=submit], input[type=file], button { 
+	cursor: pointer; 
+	-webkit-appearance: none; 
+} 

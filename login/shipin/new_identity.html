@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>请上传身份证</title>
+		<link rel="stylesheet" href="./css/new_identity.css" />
+		<link rel="stylesheet" href="./css/common.css" />
+		<link rel="stylesheet" href="./css/base.css" />
+		<link rel="stylesheet" href="./css/jbox.css" />
+	</head>
+
+	<body>
+		<div class="newusercenter">
+			<div class="header">
+
+			</div>
+			<div class="navpart">
+
+			</div>
+
+			<div class="center">
+				<div class="center-con">
+					<a href="javascript:0;">个人中心</a>
+				</div>
+			</div>
+			<div class="wrap">
+				<div class="wrap-left wrap-left-photo fl">
+				
+				</div>
+				<div class="wrap-right fr first">
+					<div class="tittle">
+						身份审核
+					</div>
+					<div class="step">
+						<ul>
+							<li class="current">
+								上传身份证照片
+							</li>
+							<li>
+								<span>2</span> 身份证审核
+							</li>
+							<li>
+
+								<span>3</span> 审核结果
+							</li>
+						</ul>
+					</div>
+					<div class="upload">
+
+						<form action="" id="positiveform">
+							<div class="uploader-left fl" id="boxpositive">
+								<div class="xiangji" id="photopositive">
+									<b></b> 身份证正面
+									<img id="imgheadpositive" alt="">
+								</div>
+								<input type="file" id="idcardpositive" name="uploadFile" />
+
+								<div class="idcard-mark">
+									<img src="./images/wait.gif" alt="">
+								</div>
+							</div>
+						</form>
+						<form action="" id="negativeform">
+							<div class="uploader-right fl" id="boxnegative">
+								<div class="xiangji" id="photonegative">
+									<b></b> 身份证反面
+									<img id="imgheadnegative" alt="">
+								</div>
+								<input type="file" id="idcardnegative" name="uploadFile">
+							</div>
+						</form>
+						
+						<p>开户人持有本人有效二代身份证；拍摄时确保身份证边框完整、字体清晰、亮度均匀。</p>
+
+						<input type="button" id="reserveImg" class="reserve" value="保存">
+					</div>
+
+				</div>
+				<div class="wrap-right fr second" style="display:none;">
+					<div class="tittle">
+						身份审核
+					</div>
+					<div class="step">
+						<ul>
+							<li>
+								<span>1</span> 上传身份证照片
+							</li>
+							<li class="current">
+								身份证审核
+							</li>
+							<li>
+								<span>3</span> 审核结果
+							</li>
+						</ul>
+					</div>
+					<div class="identitynow">
+						<img src="./images/newtime.png" alt="" />
+						<p>正在验证您的身份信息...</p>
+					</div>
+
+				</div>
+				<div class="wrap-right fr three" style="display:none">
+					<div class="tittle">
+						身份审核
+					</div>
+					<div class="step">
+						<ul>
+							<li>
+								<span>1</span> 上传身份证照片
+							</li>
+							<li>
+								<span>2</span> 身份证审核
+							</li>
+							<li class="current">
+								审核结果
+							</li>
+						</ul>
+					</div>
+					<div class="idenfaliure">
+						<img src="./images/newfailure.png" alt="" />
+						<p>审核失败</p>
+					</div>
+					<input type="button" id="reupload" class="reupload" value="重新上传" />
+
+				</div>
+
+			</div>
+
+		</div>
+		<div class="footer">
+			
+		</div>
+
+	</div>
+
+		<script src="./js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="./shipinjs/common.js"></script>
+		<script src="/static/wechat/assets/js/app.js"></script>
+		<script src="./shipinjs/top_bottom.js"></script>
+		<script src="./shipinjs/new_usercenter.js"></script>
+		<script src="./js/jquery.jBox-2.3.min.js"></script>
+		<script src="./js/jquery.jBox-zh-CN.js"></script>
+		<script type="text/javascript" src="./shipinjs/new_identity.js"></script>
+	</body>
+
+</html>

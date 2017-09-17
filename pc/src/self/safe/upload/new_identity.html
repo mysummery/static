@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>请上传身份证</title>
+		<link rel="stylesheet" href="/static/pc/assets/css/base.css" />
+		<link rel="stylesheet" href="/static/pc/assets/css/common.css" />
+		<link rel="stylesheet" href="/static/pc/page/jbox/jbox.css" />
+		<link rel="stylesheet" href="new_identity.css" />
+	</head>
+
+	<body>
+		<div class="newusercenter">
+			<div class="header">
+
+			</div>
+			<div class="navpart">
+
+			</div>
+
+			<div class="center">
+				<div class="center-con">
+					<a href="javascript:0;">个人中心</a>
+				</div>
+			</div>
+			<div class="wrap">
+				<div class="wrap-left wrap-left-photo fl">
+				
+				</div>
+				<div class="wrap-right fr first" style="display: none;">
+					<div class="tittle">
+						身份审核
+					</div>
+					<div class="step">
+						<ul>
+							<li class="current">
+								上传身份证照片
+							</li>
+							<li>
+								<span>2</span> 身份证审核
+							</li>
+							<li>
+
+								<span>3</span> 审核结果
+							</li>
+						</ul>
+					</div>
+					<div class="upload">
+						<div class="edit-name">
+							<span>身份证姓名</span>
+							<input type="text" id="icardname">
+						</div>
+						<form action="" id="positiveform">
+							<div class="uploader-left fl" id="boxpositive">
+								<div class="xiangji" id="photopositive">
+									<b></b> 身份证正面
+									<img id="imgheadpositive" alt="">
+								</div>
+								<input type="file" id="idcardpositive" name="uploadFile" />
+
+								<div class="idcard-mark">
+									<img src="/static/pc/assets/images/wait.gif" alt="">
+								</div>
+							</div>
+						</form>
+						<form action="" id="negativeform">
+							<div class="uploader-right fl" id="boxnegative">
+								<div class="xiangji" id="photonegative">
+									<b></b> 身份证反面
+									<img id="imgheadnegative" alt="">
+								</div>
+								<input type="file" id="idcardnegative" name="uploadFile">
+							</div>
+						</form>
+						
+						<p>开户人持有本人有效二代身份证；拍摄时确保身份证边框完整、字体清晰、亮度均匀。</p>
+
+						<input type="button" id="reserveImg" class="reserve" value="保存">
+					</div>
+
+				</div>
+				<div class="wrap-right fr second" style="display:none;">
+					<div class="tittle">
+						身份审核
+					</div>
+					<div class="step">
+						<ul>
+							<li>
+								<span>1</span> 上传身份证照片
+							</li>
+							<li class="current">
+								设置支付密码
+							</li>
+							<li>
+								<span>3</span> 审核结果
+							</li>
+						</ul>
+					</div>
+					<div class="edit_paypassword">
+						<p>
+							<span>新密码</span>
+							<input type="password" id="newpaypsd">
+						</p>
+						<p>
+							<span>确认密码</span>
+							<input type="password" id="confirmpaypsd">
+						</p>
+					</div>
+					<div class="save-information">
+						<input type="button" id="save-information" value="保存">
+					</div>
+
+				</div>
+				<div class="wrap-right fr third" style="display: none;">
+					<div class="tittle">
+						身份审核
+					</div>
+					<div class="step">
+						<ul>
+							<li>
+								<span>1</span> 上传身份证照片
+							</li>
+							<li>
+								<span>2</span> 身份证审核
+							</li>
+							<li class="current">
+								审核结果
+							</li>
+						</ul>
+					</div>
+					<div class="identitynow" style="display: none;">
+						<img src="/static/pc/assets/images/newtime.png" alt="" />
+						<p>正在验证您的身份信息...</p>
+					</div>
+					<div class="idenfaliure" style="display: none;">
+						<img src="/static/pc/assets/images/newfailure.png" alt="" />
+						<p>审核失败</p>
+						<p id="fail-reason"></p>
+						<input type="button" id="reupload" class="reupload" value="重新上传" />
+					</div>
+					
+
+				</div>
+
+			</div>
+
+		</div>
+		<div class="footer">
+			
+		</div>
+
+	</div>
+
+		<script src="/static/pc/page/jquery-1.8.3.min.js"></script>	
+		<script src="/static/wechat/assets/js/app.js"></script>
+		<script src="/static/pc/assets/js/top_bottom.js"></script>
+		<script src="/static/pc/assets/js/common.js"></script>
+		<script src="/static/pc/src/self/new_usercenter.js"></script>
+		<script src="/static/pc/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script src="/static/pc/page/jbox/jquery.jBox-zh-CN.js"></script>
+		<script type="text/javascript" src="new_identity.js"></script>
+		<script src="jquery.form.js"></script>
+	</body>
+
+</html>

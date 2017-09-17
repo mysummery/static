@@ -1,0 +1,17 @@
+
+.wid ul.form li a.yb{
+	border-bottom:none;
+}
+.wid ul.form li a.wx{
+	background: url(/static/wechat/assets/images/pay_chat.png) no-repeat 0.5rem center;
+    background-size: 6%;
+    border-bottom:1px solid #dfdfdf;
+}
+.wid ul.form li a.yb{
+	background: url(/static/wechat/assets/images/pay_yi.png) no-repeat 0.5rem center;
+    background-size: 6%;
+}
+.wid ul.form li a.ye{
+	background: url(/static/wechat/assets/images/pay_ye.png) no-repeat 0.5rem center;
+    background-size: 6%;
+}

@@ -1,0 +1,32 @@
+.explain h2 {
+	font-weight: bold;
+	color: #333333;
+	padding-top: 1rem;
+}
+
+.explain p {
+	text-align: center;
+	color: #666666;
+}
+
+.explain p.know {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.explain p.know span {
+	display: inline-block;
+	width: 48%;
+}
+
+.explain p.know span:first-child {
+	border-right: 1px solid #dfdfdf;
+}
+
+#clear {
+	display: none;
+}
+
+.wid .form .button {
+	margin-top: 4rem;
+}

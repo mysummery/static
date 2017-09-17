@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>申请小微店主</title>
+	<meta name="applicable-device" content="mobile">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="/static/wechat/assets/css/base.css"/>
+	<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css"/>
+	<link rel="stylesheet" href="/static/wechat/src/index/shop/address/add_address/LArea.min.css">
+	<link rel="stylesheet" href="apply_shop.css"/>
+</head>
+<body>
+	<!-- 填写信息 -->
+	<section id="apply-edit">
+
+		<div class="apply-name">
+			<span>真实姓名</span>
+			<input type="text" id="edit-name" readonly="readonly" placeholder="输入姓名" maxlength="8">
+		</div>
+
+		<div class="apply-tel">
+			<span>联系电话</span>
+			<input type="tel" id="edit-tel" placeholder="输入联系电话" maxlength="11">
+		</div>
+
+		<div class="apply-city">
+			<span>店铺地址</span>
+			<input id="address" type="text" readonly="readonly" placeholder="省份 城市 县区">
+			<input id="address-value" type="hidden" value="2,2288">
+			<img src="/static/wechat/assets/images/right.png" alt="">
+		</div>
+
+		<div class="apply-street">
+			<span>街道</span>
+			<textarea name="" id="edit-street" placeholder="5-60个字符，且不能全部为数字" maxlength="60"></textarea>
+		</div>
+
+	</section>
+	
+	<section id="apply-apply">
+		<div id="agree-agreement">
+			<i class="active"></i>阅读并同意<a href="/static/wechat/src/service/agency_agreement.html">《365商城小微店主协议》</a>
+		</div>
+		<button id="apply-btn">申请</button>
+		<p>注：根据您当前的等级，需要支付<span></span>元，才能成为店主。<span>（其中<b class="microusercost"></b>元为购买现金券<em>；<b class="microuserServiceCharge"></b>元为年度服务费；<b class="microuserDepostit"></b>元为店铺押金。</em>）</span></p>
+	</section>
+
+	
+
+	<script src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+	<script src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+	<script src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+	<script src="/static/wechat/src/index/shop/address/add_address/LAreaData1.js"></script>
+	<script src="/static/wechat/src/index/shop/address/add_address/LAreaData2.js"></script>
+	<script src="/static/wechat/src/index/shop/address/add_address/LArea.js"></script>
+	<script src="/static/wechat/assets/js/app.js"></script>
+	<script src="/static/wechat/assets/js/media.js"></script>
+	<script src="apply_shop.js"></script>
+</body>
+</html>

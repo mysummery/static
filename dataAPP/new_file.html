@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link href="/static/wechat/assets/css/base.css" type="text/css" rel="stylesheet">
+		<link href="/static/dataAPP/css/register_count.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script src="/static/wechat/assets/js/media.js"></script>
+		<script src="js/echarts.js"></script>
+	</head>
+	<body>
+		<div id="main">
+			<canvas></canvas>
+		</div>
+		<script>
+		var font=$('html').css('font-size');
+		var len=font.length-2;
+		font=font.substring(0,len);
+		fontcommon=font*1.2;
+		//公用字体大小，1.2rem
+		var legendleft=font*6;//lengend的左间距
+		
+		var myChart = echarts.init(document.getElementById('main'));
+		option = {
+			
+			 tooltip : {
+            trigger: 'item'
+        	},
+			dataZoom: [
+            {
+                type: 'slider',
+                show: true,
+                start: 0,
+                end: 45,
+                handleSize: 8
+            },
+//          {
+//              type: 'inside',
+//              start: 0,
+//              end: 50
+//          },
+            
+        ],
+	    title : {
+	        text: '一  时间',
+	        subtext: '丨  数据',
+	        padding:[0,font],
+	        textStyle:{
+	        	color:'#ffffff',
+	        	fontSize:font*1.1,
+	        	fontWeight:'normal'
+	        	
+	        },
+	        subtextStyle:{
+	        	color:'#ffffff',
+	        	fontSize:font*1.1,
+	        	fontWeight:'normal'
+	        }
+	    },
+	   
+	    legend: {
+	    	left:legendleft,
+	    	icon:'cricle',
+       		textStyle:{
+	        	color:'#ffffff',
+	        	fontSize:font*1.1,
+	        	fontWeight:'normal'
+	        	
+	        },
+	        data:['VIP数量','注册量']
+	    },
+	    
+	    calculable : true,
+	    xAxis : [
+	        {
+	        	//max:7,
+	            type : 'category',
+	            boundaryGap : false,
+	            axisLabel: {
+                            show: true,
+                            textStyle: {
+                                color: '#fff',
+                                fontSize:font
+                            }
+                       },
+	            data : ['周一','周二','周三','周四','周五','周六','周日','周一','周二','周三','周四','周五','周六','周日',]
+	        }
+	    ],
+	    yAxis : [
+	        {	
+	        	interval:2000,
+	        	position:'right',
+	            type : 'value',
+	            axisLabel: {
+                          show: true,
+                          textStyle: {
+                              color: '#fff',
+                              fontSize:font
+                          }
+                     },
+	            max:14000
+	        }
+	    ],
+	     series : [
+        {
+            name:'邮件营销',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[120, 132, 101, 134, 90, 230, 210]
+        },
+        {
+            name:'联盟广告',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[220, 182, 191, 234, 290, 330, 310]
+        },
+        {
+            name:'视频广告',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[150, 232, 201, 154, 190, 330, 410]
+        },
+        {
+            name:'直接访问',
+            type:'line',
+            stack: '总量',
+            areaStyle: {normal: {}},
+            data:[320, 332, 301, 334, 390, 330, 320]
+        },
+        {
+            name:'搜索引擎',
+            type:'line',
+            stack: '总量',
+            label: {
+                normal: {
+                    show: true,
+                    position: 'top'
+                }
+            },
+            areaStyle: {normal: {}},
+            data:[820, 932, 901, 934, 1290, 1330, 1320]
+        }
+    ]
+};
+                    
+			
+ 		myChart.setOption(option);
+ 		$('#main canvas').css('top',font+'px');
+ 		$('#main div').css({overflow:'auto',height:font*27+'px'});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,551 @@
+a {
+	color: #666;
+}
+
+.nav-con {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.nav-con .logo {
+	width: 128px;
+	height: 42px;
+	margin-right: 30px;
+}
+
+.nav-con li {
+	width: 114px;
+	float: left;
+	border-right: 1px solid #dfdfdf;
+}
+
+.nav-con li a {
+	display: block;
+	width: 114px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+}
+
+.nav-con .current {
+	background: url("../images/bg_nav.png");
+	height: 36px;
+	width: 114px;
+}
+
+.nav-con .current a {
+	color: #fff;
+}
+
+
+.nav-con .nav ul {
+	float: left;
+}
+
+
+
+
+.header .login {
+	color: #3d64e3;
+}
+
+.banner {
+	position: relative;
+	width: 100%;
+}
+
+
+/*ul的上级盒子*/
+
+.banner-con {
+	min-width: 1200px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+
+/*这个pic是ul*/
+
+.banner-con ul {
+	width: 910%;
+	position: relative;
+}
+
+.banner-con ul li {
+	width: 11.1%;
+	float: left;
+	height: 491px;
+}
+
+.banner-con ul li a {
+	display: block;
+	height: 100%;
+	width: 100%;
+}
+
+.banner-con ul li img {
+	width: 100%;
+	height: 100%;
+}
+
+.banner-nav {
+	position: absolute;
+	width: 1200px;
+	top: 0;
+	left: 50%;
+	margin-left: -600px;
+}
+
+.banner .nav-list {
+	position: absolute;
+	top: 35px;
+	left: 80px;
+}
+
+.banner-page {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-bottom: 10px;
+	transform: translateX(-50%);
+}
+
+.banner-page span {
+	display: inline-block;
+	width: 30px;
+	height: 8px;
+	border-radius:3px;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+.banner-page .on {
+	background: #fff;
+}
+
+.nav-list li {
+	width: 198px;
+	height: 52px;
+	color: #fff;
+	background: rgba(51, 51, 51, 0.7);
+	line-height: 52px;
+	text-align: center;
+}
+
+.nav-list li a {
+	color: #fff;
+}
+
+.nav-list .current {
+	background: #333;
+}
+
+.nav-list li {
+	position: relative;
+	border-bottom: 1px solid #999;
+}
+
+.nav-list .bn {
+	border-bottom: none;
+}
+
+.nav-list a {
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+
+.nav-list .one {
+	padding-left: 20px;
+	background: url("../images/new0.png") no-repeat 52px center;
+}
+
+.nav-list .two {
+	padding-left: 20px;
+	background: url("../images/new1.png") no-repeat 52px center;
+}
+
+.nav-list .three {
+	padding-left: 20px;
+	background: url("../images/new2.png") no-repeat 52px center;
+}
+
+.nav-list .four {
+	padding-left: 20px;
+	background: url("../images/new3.png") no-repeat 52px center;
+}
+
+.nav-list .five {
+	padding-left: 20px;
+	background: url("../images/new4.png") no-repeat 52px center;
+}
+
+.nav-list .six {
+	padding-left: 20px;
+	background: url("../images/new5.png") no-repeat 52px center;
+}
+
+.nav-list .seven {
+	padding-left: 20px;
+	background: url("../images/new6.png") no-repeat 52px center;
+}
+
+.nav-list .eight {
+	padding-left: 20px;
+	background: url("../images/new7.png") no-repeat 52px center;
+	border-bottom: 0;
+}
+
+
+/*八大版块*/
+
+.eightcon {
+	background: #eff2fd;
+	padding-bottom: 60px;
+	width: 100%;
+	background: #fff;
+	margin-bottom: 60px;
+}
+
+.eightcon .eightmain {
+	width: 1200px;
+	margin: 40px auto 60px;
+	width: 922px;
+	height: 166px;
+	background: url("../images/index-bg.png") no-repeat center center;
+}
+
+.eightmain .tittle {
+	text-align: center;
+	padding-top: 40px;
+	margin-bottom: 20px;
+	margin: 0 auto;
+}
+
+.eightmain .tittle .tit {
+	font-size: 40px;
+	color: #3d64e3;
+	font-family: Microsoft YaHei;
+	margin-bottom: 10px;
+}
+
+.eightmain .tittle .stu {
+	font-weight: normal;
+	font-size: 20px;
+	color: #a5a7ac;
+	font-family: Microsoft YaHei;
+	margin-bottom: 40px;
+}
+
+.eightpic {
+	width: 1200px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.lunbo-con {
+	width: 5000px;
+	position: relative;
+}
+
+.eightlunbo-one,
+.eightlunbo-two {
+	float: left;
+}
+
+.eightpic li {
+	height: 435px;
+	float: left;
+}
+
+.eightpic li img {
+	width: 279px;
+	height: 435px;
+	float: left;
+}
+
+.eight-shadow {
+	width: 1099px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.lunbo-con li {
+	position: relative;
+}
+
+.lunbo-con img {
+	transition: all 1s;
+	-ms-transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+}
+
+.lunbo-con li:hover img {
+	transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	/* IE 9 */
+	-moz-transform:scale(1.1);
+	/* Firefox */
+	-webkit-transform: scale(1.1);
+	/* Safari 和 Chrome */
+	-o-transform: scale(1.1);
+}
+
+.lunbo-con .mask {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: none;
+	top: 0;
+	left: 0;
+	background: #c9ccd5;
+	opacity: 0.2;
+}
+
+.eightlunbo a {
+	display: inline-block;
+}
+
+.eightpic .arrright {
+	position: absolute;
+	right: -14px;
+	top: 184px;
+	width: 41px;
+	text-align: center;
+	height: 49px;
+	padding-top: 12px;
+}
+
+.eightpic .arrleft {
+	position: absolute;
+	left: -14px;
+	top: 179px;
+	width: 41px;
+	text-align: center;
+	height: 49px;
+	padding-top: 12px;
+}
+
+.circle {
+	position: absolute;
+	left: 0;
+	bottom: -35px;
+	left: 50%;
+	margin-left: -11px;
+}
+
+.circle span {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 10px;
+	border: 1px solid #ffc066;
+	margin-right: -50px;
+}
+
+.circle .current {
+	background-color: #ffc066;
+}
+
+.grouppic {
+	width: 100%;
+	height: 324px;
+	text-align: center;
+	background: url("../images/table-bg.png") no-repeat center center;
+}
+
+.grouppic img {
+	margin-top: 30px;
+	box-shadow: 0px 0px 13px #93adff;
+}
+
+.group-con {
+	margin: 0 auto;
+}
+
+.group-con .tittle {
+	width: 1200px;
+	margin: 40px auto 60px;
+	width: 922px;
+	height: 166px;
+	padding-top: 40px;
+	box-sizing: border-box;
+	text-align: center;
+	background: url("../images/index-bg.png") no-repeat center center;
+}
+
+.group-con .tittle .tit {
+	font-size: 40px;
+	color: #3d64e3;
+	font-family: Microsoft YaHei;
+	margin-bottom: 10px;
+}
+
+.group-con .tittle .stu {
+	font-weight: normal;
+	font-size: 20px;
+	color: #a5a7ac;
+	font-family: Microsoft YaHei;
+	margin-bottom: 40px;
+}
+
+.group-con .des {
+	line-height: 25px;
+	font-size: 14px;
+	color: #7a7a7a;
+}
+
+.team {
+	width: 100%;
+	overflow: hidden;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.team .team-con .tittle {
+	width: 1200px;
+	margin: 40px auto 60px;
+	width: 922px;
+	height: 166px;
+	padding-top: 40px;
+	box-sizing: border-box;
+	text-align: center;
+	background: url("../images/index-bg.png") no-repeat center center;
+}
+
+.team-con .tittle .tit {
+	font-size: 40px;
+	color: #3d64e3;
+	font-family: Microsoft YaHei;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.team-con .tittle .stu {
+	font-weight: normal;
+	font-size: 20px;
+	color: #a5a7ac;
+	font-family: Microsoft YaHei;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.team-pic {
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.team-pic .pic {
+	display: block;
+	width: 286px;
+	height: 160px;
+	margin-bottom: 10px;
+}
+
+ .team-pic .tittle {
+	color: black;
+}
+
+.team-pic li {
+	float: left;
+	width: 286px;
+	text-align: center;
+	margin: 0 7px 20px 7px;
+	position:relative;
+}
+
+.team-pic li p {
+	width: 286px;
+	height: 24px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+	font-size: 16px
+}
+
+.team-pic .click {
+	height: 20px;
+	background: rgba(0, 0, 0, .4);
+	width: 286px;
+	bottom: 34px;
+	left: 0;
+	position: absolute;
+}
+
+.team-pic .click .arr {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-left: 9px solid #fff;
+	position: absolute;
+	right: 43px;
+	top: 4px;
+}
+
+.team-pic .click .num {
+	display: inline-block;
+	height: 100%;
+	position: absolute;
+	right: 7px;
+	color: #fff;
+}
+
+.create {
+	width: 1200px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+
+.team .arrright {
+	top: 345px;
+	position: absolute;
+	right: -14px;
+	width: 41px;
+	text-align: center;
+	height: 49px;
+	padding-top: 12px;
+}
+
+.team .arrleft {
+	position: absolute;
+	left: -14px;
+	top: 345px;
+	width: 41px;
+	text-align: center;
+	height: 49px;
+	padding-top: 12px;
+}
+
+
+.create .tittle .tit {
+	margin-top: 60px;
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.create .tittle .stu {
+	font-weight: normal;
+	font-size: 20px;
+	color: #a5a7ac;
+	font-family: Microsoft YaHei;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.create li {
+	float: left;
+	padding: 20px 10px;
+}
+
+.create img {
+	width: 280px;
+	height: 410px;
+}

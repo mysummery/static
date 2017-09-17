@@ -1,0 +1,67 @@
+.new_advice .wrap {
+	margin-top: 20px;
+	height: 800px;
+}
+
+.wrap .advice-con {
+	margin-top: 30px;
+}
+
+.wrap .advice-con span {
+	font-size: 14px;
+	display: inline-block;
+	width: 60px;
+	height: 39px;
+	line-height: 39px;
+}
+
+.wrap .ad-describe {
+	position: relative;
+}
+
+.wrap .ad-describe .numlen {
+	position: absolute;
+	right: 11px;
+	top: 271px;
+}
+
+.wrap .wrap-right input:focus {
+	border: 1px solid #ffd79e;
+}
+
+.wrap .advice-con input {
+	width: 830px;
+	height: 33px;
+	margin-left: 6px;
+	border: 1px solid #cbcbcb;
+	box-shadow: inset 0px 1px 4px #cbcbcb;
+	border-bottom: 1px solid #efefef;
+}
+
+.ad-tittle {
+	margin-bottom: 30px;
+}
+
+.ad-describe textarea {
+	width: 826px;
+	height: 290px;
+	margin-left: 15px;
+	margin-bottom: 30px;
+	border: 1px solid #cbcbcb;
+	box-shadow: inset 0px 1px 4px #cbcbcb;
+	border-bottom: 1px solid #efefef;
+}
+
+.ad-submit {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.ad-submit button {
+	width: 85px;
+	height: 35px;
+	background: #ffa800;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 14px;
+}

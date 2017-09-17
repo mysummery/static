@@ -1,0 +1,345 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+html {
+	background: none;
+}
+
+body {
+	background: url(/static/forAPP/turntable/images/bg_3.23.png) no-repeat top center #ff2727;
+	background-size: 100%;
+	padding-bottom: 1rem;
+}
+
+.g-content .g-lottery-case {
+	width: 90%;
+	/*	height: 22rem;*/
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.g-content .g-lottery-case .g-left h2 {
+	position: relative;
+	top: -4rem;
+	font-size: 1rem;
+	line-height: 3.6rem;
+	font-weight: normal;
+	height: 4.5rem;
+	width: 62%;
+	left: 20%;
+}
+
+.g-content .g-lottery-case .g-left {
+	/*width: 27rem;
+	margin-top: 98%;*/
+	    width: 98%;  
+    margin-top: 90%;
+}
+
+.g-lottery-box {
+	width: 24rem;
+	height: 24rem;
+	margin-left: 1.8rem;
+	position: relative;
+	background: url(/static/forAPP/turntable/images/ly-plate-c.gif) no-repeat;
+	background-size: 100%;
+}
+
+.g-lottery-box .g-lottery-img {
+	width: 20.4rem;
+	height: 20.4rem;
+	position: relative;
+	background: url(/static/forAPP/turntable/images/bg-lottery.png) no-repeat;
+	left: 1.8rem;
+	top: 1.8rem;
+	background-size: 100%;
+}
+
+.g-lottery-box .playbtn {
+	width: 11.16rem;
+	height: 11.16rem;
+	position: absolute;
+	top: 3.1rem;
+	left: 4.56rem;
+	background: url(/static/forAPP/turntable/images/playbtn.png) no-repeat;
+	background-size: 100%;
+	z-index: 2;
+}
+
+.g-content .g-lottery-case .g-left h2 img {
+	width: 4rem;
+	position: relative;
+	z-index: 2;
+}
+
+.g-content .g-lottery-case .g-left h2 p {
+	font-weight: bold;
+	word-spacing: 2px;
+	letter-spacing: 2px;
+	display: inline-block;
+	background: #980202;
+	width: 15rem;
+	height: 2.7rem;
+	line-height: 2.5rem;
+	position: absolute;
+	top: 1rem;
+	left: 3rem;
+	z-index: 1;
+	padding-left: 1.6rem;
+	border-radius: 1rem;
+	color: #fff;
+	font-size: 1.2rem;
+}
+
+
+
+.bottons button {
+	box-shadow: 1px 1px 12px 3px rgba(255, 255, 255, 0.3);
+	width: 13rem;
+	height: 3.8rem;
+	background: #fd3434;
+	color: #fff;
+	font-size: 2rem;
+	border: none;
+	border-radius: 1rem;
+	font-weight: bold;
+	margin-left: 2rem;
+}
+
+.bottons .active {
+	box-shadow: none;
+	background: url(/static/forAPP/turntable/images/active.png) no-repeat left center;
+	background-size: contain;
+	color: #ff2727;
+}
+
+.btns {
+	background-size: 100%;
+	margin-top: 1.2rem;
+}
+
+.gifts {
+	text-align: center;
+	margin-top: 1.2rem;
+	height: 11.2rem;
+	background: url(/static/forAPP/turntable/images/list_bg.png) top center no-repeat;
+	background-size: 25.8rem;
+}
+
+.gifts ul {
+	position: relative;
+	top: 2.6rem;
+	margin: 0 auto;
+	width: 13rem;
+}
+
+.gifts ul li {
+	text-align: left;
+	line-height: 1.7rem;
+	font-size: 1rem;
+	color: #ff2727;
+}
+
+.lists {
+	overflow: hidden;
+	background: url(/static/forAPP/turntable/images/list_bg.png) top center no-repeat;
+	background-size: 94%;
+	height: 18rem;
+	text-align: center;
+	margin-top: 1.2rem;
+	padding-top: 1.8rem;
+}
+
+.lists ul li {
+	line-height: 1.7rem;
+	font-size: 1rem;
+	color: #5f5f5f;
+}
+
+.lists ul li span:first-child {
+	margin-left: 2.5rem;
+	display: inline-block;
+	width: 4rem;
+	text-align: left;
+}
+
+.lists ul li span:nth-child(2) {
+	margin-left: 1rem;
+	display: inline-block;
+	width: 7rem;
+}
+
+.lists ul li span:last-child {
+	margin-left: 1rem;
+	display: inline-block;
+	width: 9rem;
+	text-align: left;
+}
+
+.rules {
+	width: 92%;
+	margin-left: 4%;
+	position: relative;
+	top: 1rem;
+}
+
+.rules h3 {
+	width: 11rem;
+	background: #fce100;
+	height: 3rem;
+	line-height: 3rem;
+	text-align: center;
+	color: #ff4424;
+	border-radius: 1rem;
+	font-size: 1.6rem;
+	position: absolute;
+	top: -1.5rem;
+	left: 9rem;
+	box-shadow: 0px 4px 15px 3px #6c6c6c;
+}
+
+.rules ul {
+	list-style: decimal outside;
+	background: #ffbfbf;
+	padding-left: 2.5rem;
+	padding-right: 1.5rem;
+	padding-top: 3rem;
+	padding-bottom: 1rem;
+	border-radius: 1rem;
+	font-size: 1.2rem;
+}
+
+.rules ul li {
+	line-height: 1.9rem;
+	font-size: 90%;
+}
+
+
+.alert {
+	display: none;
+}
+
+.alert .top {
+	position: relative;
+}
+
+.alert .top span {
+	position: absolute;
+	right: 2.6rem;
+	top: -0.4rem;
+	font-size: 2rem;
+	color: #666;
+}
+
+.alert {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	left: 0px;
+	background: url(/static/forAPP/turntable/images/alert_bg.png) no-repeat top center;
+	z-index: 4;
+	height: 45rem;
+	text-align: center;
+	line-height: 4rem;
+	font-size: 1.6rem;
+	background-size: 100%;
+}
+
+.cover {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 3;
+	top: 0px;
+	left: 0px;
+	display: none;
+}
+
+.red {
+	color: #ff0000;
+}
+
+.gift_name {
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+
+.gift_img {
+	width: 70%;
+	margin-top: -2rem;
+}
+
+.go {
+	background: url(/static/forAPP/turntable/images/button_bg.png) no-repeat top center;
+	background-size: cover;
+	width: 10rem;
+	height: 3.5rem;
+	border: none;
+	border-radius: 0.5rem;
+	margin-top: 110%;
+}
+
+.orange {
+	color: #ff9600;
+}
+
+.fill_img {
+	width: 16%;
+	margin-top: 2.5rem;
+}
+
+#fill .orange {
+	font-family: "黑体";
+	font-weight: normal;
+	font-size: 1.6rem;
+	margin-bottom: 0.5rem;
+}
+
+#fill_no .gift_name {
+	font-weight: normal;
+	font-size: 1.6rem;
+	margin-bottom: 1rem;
+	margin-top: 2rem;
+}
+
+.dj_bottom {
+	width: 11.16rem;
+	height: 11.16rem;
+	position: absolute;
+	top: 4.56rem;
+	left: 4.56rem;
+	z-index: 1;
+}
+
+#indemo {
+	overflow: hidden;
+	height: 11rem;
+	margin-top:3rem;
+}
+
+#fill {
+	background: url(/static/forAPP/turntable/images/alert_bg1.png) no-repeat top center;
+	background-size: 100%;
+}
+.continue{
+	    background: url(/static/forAPP/turntable/images/button_bg1.png) no-repeat top center;
+    	background-size: cover;
+}
+#fill .nums{
+	position: absolute;top:66%;text-align:center;width:100%;color:#fff400;font-size:3rem;font-weight: bold;
+}
+#win{
+	background: url(/static/forAPP/turntable/images/alert_bg2.png) no-repeat top center;
+	background-size: 100%;
+}
+#win .nums{
+	position: absolute;top:66%;text-align:center;width:100%;color:#fff400;font-size:3rem;font-weight: bold;
+}
+#goto_recive{
+	position: relative;
+	background: url(/static/forAPP/turntable/images/button_bg2.png) no-repeat top center;
+    	background-size: cover;
+    	margin-top:115%;
+}

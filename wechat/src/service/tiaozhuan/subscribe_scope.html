@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>支付授权跳转</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<link rel="stylesheet" href="/static/wechat/src/service/subscribe_pay/alert_common.css" type="text/css" />
+		<!--<link rel="stylesheet" href="/static/js/jbox/css/Blue/jbox.css" type="text/css" />-->
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/ajaxSubmit.js"></script>
+		<!--<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />-->
+		<!--<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>-->
+		<!--<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>-->
+		<!--<script src="/static/forAPP/js/icheck.min.js"></script>-->
+		<script src="/static/wechat/assets/js/app.js"></script>
+		<!--<script type="text/javascript" src="/static/forAPP/js/lib.js"></script>-->
+		<!--<script type="text/javascript" src="/static/forAPP/js/jquery.SuperSlide.js"></script>-->
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	</head>
+
+	<body class="body_">
+		
+		<div style="margin-top: 200px">
+			<center>正在发起支付...</center>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				var action_jsapi_config = weixingz_jsapi + "?url=" + encodeURIComponent(location.href.split('#')[0]);
+				$.getJSON(action_jsapi_config, null, function(json) {
+					//alert(json);
+					var ret = json.resobj;
+					wx.config({
+						debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+						appId: appid, // 必填，公众号的唯一标识
+						timestamp: ret.timestamp, // 必填，生成签名的时间戳
+						nonceStr: ret.nonceStr, // 必填，生成签名的随机串
+						signature: ret.signature, // 必填，签名，见附录1
+						jsApiList: ['chooseWXPay'] // 必填，需要使用的JS接口列表，所有JS接口列表见附录2
+					});
+				});
+			});
+			wx.error(function(res) {
+				alert(res);
+			});
+			wx.ready(function() {
+				var code = getUrlArgs('code');
+				var arg = getUrlArgs('arg');
+				var uid = arg.split(":")[0];
+				var mycode = arg.split(":")[1];
+				var beicode = arg.split(":")[2];
+				var orderId = arg.split(":")[3];
+				var xuliehaoType = arg.split(":")[4];
+				var shareTag = arg.split(":")[5];
+				var token = arg.split(":")[6];
+				var from=arg.split(":")[7];
+				var openid = '';
+				//获取openid
+				//				var action_getOpenid = "/appweix/getUserOpenid.ph?code=" + code;
+				var obj = "";
+				var action_getOpenid = getUserOpenid + "?code=" + code;
+				$.getJSON(action_getOpenid, null, function(json) {
+					openid = json.openid;
+					//微信支付
+					var actions = weixin_sign;
+					ajaxPostAsyncData_share(actions, {
+						"token":token,
+						"uid": uid,
+						"orderId": orderId,
+						"openid": openid,
+						"channelType": "H5"
+					}, true, function(datas) {
+						obj = datas.resobj;
+//						alert(obj.timeStamp);
+//						alert(obj.nonceStr);
+//						alert(obj.package);
+//						alert(obj.signType);
+//						alert(obj.paySign);		
+   						//alert(openid);
+					wx.chooseWXPay({
+                           "timestamp": obj.timeStamp, //时间戳，自1970年以来的秒数
+                           "nonceStr": obj.nonceStr, //支付签名随机串，不长于 32 位
+                           "package": obj.package, //统一支付接口返回的prepay_id参数值，提交格式如：prepay_id=***）
+                           "signType": obj.signType, //微信签名方式：MD5
+                           "paySign": obj.paySign, //微信支付签名
+							
+							success: function(res) {
+								//alert(1);
+//								if (shareTag == '1') {
+//									window.location.href = "/static/forAPP/share_last.html";
+//								} else {
+//									window.location.href = "/static/wechat/src/index/shipin_index.html"; //支付成功，跳转的页面
+//								}
+								//var from=getQueryString("from");
+								
+								if(from=='vip'){
+									window.location.href="/static/wechat/src/index/shipin_index.html";
+								}else if(from=='charge'){
+									window.location.href="/static/wechat/src/self/indent/indent.html?paystate=success";
+								}else if(from=='live'){
+										window.location.href="/static/wechat/live/live/show.html";
+								}else if(from=='myshop'){
+										window.location.href="/static/wechat/src/self/myshop/apply_shop/apply_success/apply_success.html";
+									}
+								else{
+									var subid = getCookie("cookie_brsy_h5_subid");
+									var courseid = getCookie("cookie_brsy_h5_courseid");
+									window.location.href="/static/wechat/src/index/special/special_play/special_play.html?subid="+subid+"&courseid="+courseid+"&freestate=2";
+								}
+								
+//								ajaxPostAsyncData(subjectuserget, {
+//								"uid": uid,
+//								"subid":subid
+//							}, false, function(data) {
+//								var rows=data.resobj;
+//								if($.trim(data.code) == "40000") {
+//									var state=rows.state;
+//									if(state==1){
+//									window.location.href="/static/wechat/src/index/special/special_play/special_play.html?courseid="+courseid+"&freestate=2";
+//										//有权限，看收费的
+//									}else{
+//										window.location.href = "/static/wechat/src/index/special/special_liyang.html"; //支付成功，跳转的页面//无权限，看免费的
+//									}
+//									
+//								} else {
+//									$.jBox.tip(data.info, 'error');
+//								}
+//							}, 'json');	
+								
+							}
+							
+						});
+					}, function(er) {
+						
+					});
+
+				});
+			})
+
+			function getUrlArgs(arg) {
+				var reg = new RegExp("(^|&)" + arg + "=([^&]*)(&|$)");
+				var r = window.location.search.substr(1).match(reg);
+				if(r != null) return unescape(r[2]);
+				return null;
+			}
+			function success(){
+				window.location.href="subscribe_pay.html";
+			}
+			function download(){
+				window.location.href="/static/wechat/src/index/shipin_index.html";
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="/static/wechat/assets/css/base.css">
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<link rel="stylesheet" href="//g.alicdn.com/de/prismplayer/1.5.6/skins/default/index.css" />
+    	<script type="text/javascript" src="//g.alicdn.com/de/prismplayer/1.5.6/prism-min.js"></script>
+		<script src="https://cdn.ronghub.com/RongIMLib-2.2.5.min.js"></script>
+		<script src="https://cdn.ronghub.com/RongEmoji-2.2.5.min.js"></script>
+		<style>
+			#notice{
+				width:20rem;
+				height:3rem;
+			}
+			#send,#join{
+				width:5rem;
+				height:3rem;
+				font-size:1.2rem;
+			}
+			li {
+				font-size:1.2rem;
+				line-height:2rem;
+			}
+			.list {
+				padding-top:3rem;
+			}
+			.emojis {
+				display:none;
+				position:absolute;
+				top:3rem;
+				left:0px;
+				background:#ffffff;
+			}
+			.emojitotal {
+				position:relative;
+			}
+			video {
+				object-fit: fill;
+			}
+		</style>
+	</head>
+	<body>
+	<div id="J_prismPlayer" class="prism-player"></div>
+	<canvas id="canvas"></canvas>
+	
+		<div style="position: fixed; width: 100%; height: 50px; background: #fff; bottom: 300px; left: 0; z-index: 999">3333</div>
+
+
+
+		<div style="position: fixed; bottom: 100px; left: 0; height: 300px; overflow: hidden;">
+			<ul class="list">
+				
+			</ul>
+			<div class="emojitotal">
+				<div class="emojis">
+				
+				</div>
+			</div>
+			
+		</div>
+		<input type="text" id="notice" style="position: fixed; bottom: 0; left: 0;"><span onclick="showemoji()" style="position: fixed; bottom: 0; left: 0; height: 24px; width: 24px; display: inline-block; font-size: 20px !important; text-align: center; vertical-align: middle;overflow: hidden; line-height: 24px;" class="RongIMExpression_rinning" name="[大笑]"><b class="RC_Expression" style="background-position: 0px 0px;"></b></span>
+		<button id="send" onclick="send()" style="position: fixed; bottom: 0; right: 0;">发送</button>
+		<button id="join" onclick="join()" style="position: fixed; bottom: 0; right: 5rem;">加入</button>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+		<script src="zb1.js"></script>
+	</body>
+</html>

@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+ 
+/*logo*/
+.wid .logo img {
+	width: 100%;
+}
+/*登录输入框*/
+.wid .form p input {
+	font-size: 1.3rem;
+	width: 85%;
+	padding-left: 14%;
+	border: 1px solid #dfdfdf;
+	height: 3.4rem;
+	border-radius: 0.5rem;
+	color: #999999;
+	margin-bottom: 1rem;
+}
+.wid .form p .phone {
+	background: url(/static/wechat/assets/images/phone.png) no-repeat 0.9rem center #ffffff;
+	background-size: 6.5%;
+}
+.wid .form p .password {
+	background: url(/static/wechat/assets/images/lock.png) no-repeat 0.9rem center #ffffff;
+	background-size: 6.5%;
+}
+.wid .form p .beicode {
+	background: url(/static/wechat/assets/images/invite_code.png) no-repeat 0.9rem center #ffffff;
+	background-size: 6.5%;
+}
+.wid .form p .name {
+background:url(/static/wechat/assets/images/real_name.png) no-repeat 0.9rem center #ffffff;
+background-size: 6.5%;
+}
+.wid .form p a {
+	text-decoration: underline;
+	font-size: 1rem;
+}
+.wid .form p a:first-child {
+	color: #112976;
+	float: left;
+}
+.wid .form p a:last-child {
+	color: #00a0e9;
+	float: right;
+}
+.wid .form .button {
+	background: #00a0e9;
+	text-align: center;
+	border: none;
+	border-radius: 0.5rem;
+	color: #fff;
+	width: 100%;
+	height: 3rem;
+	font-size: 1.3rem;
+	margin-top: 2.3rem;
+}
+.wid .form #login {
+	margin-top: 4rem;
+}
+/*注册输入框*/
+.wid .form p #gain {
+	width: 33%;
+	float: right;
+	margin-top: 0px;
+	height: 3.5rem;
+}
+.wid .form p .code {
+	width: 50%;
+	background: url(/static/wechat/assets/images/code.png) no-repeat 0.9rem center #ffffff;
+	background-size: 10%;
+}
+.wid .form p .codeCheck {
+	width: 50%;
+	background: url(/static/wechat/assets/images/codeCheck.png) no-repeat 0.9rem center #ffffff;
+	background-size: 10%;
+}
+.wid .form p.agree {
+	font-size: 1rem;
+	color: #999999;
+}
+.wid .form p.agree a {
+	float: none;
+	text-decoration: none;
+}
+/*遮盖层和弹出框*/
+#cover {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.2);
+	top: 0px;
+	left: 0px;
+	z-index: 10;
+}
+.explain {
+	display: none;
+	position: fixed;
+	width: 76%;
+	background: #ffffff;
+	top: 25%;
+	left: 12%;
+	z-index: 11;
+	border-radius: 0.25rem;
+}
+.explain h2 {
+	font-size: 1.5rem;
+	line-height: 5rem;
+	text-align: center;
+	font-weight: normal;
+}
+.explain p {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	line-height: 1.75rem;
+	font-size: 0.9rem;
+}
+.explain p.know {
+	color: #112976;
+	font-size: 1.5rem;
+	line-height: 3.5rem;
+	height: 3.5rem;
+	border-top: 1px solid #dfdfdf;
+	text-align: center;
+	margin-top: 0.5rem;
+}

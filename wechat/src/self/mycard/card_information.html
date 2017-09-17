@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>填写银行卡信息</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link href="/static/wechat/assets/css/base.css" type="text/css" rel="stylesheet">
+		<link href="/static/wechat/assets/css/lr.css" type="text/css" rel="stylesheet">
+		<link href="card.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<link href="card_information.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script src="/static/wechat/page/bootstrap/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+		<style>
+			.wid .form p input {
+    			width: 74%;
+			    float: left;
+			    margin-bottom: 0px;
+			    padding-left:10%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="wid">
+			<div class="form">
+				<p class="agree">请选择银行卡类型</p>
+				<div class="white">
+					<p class="clearfix type"><span>卡类型</span>
+						<input type="text"  id="card_type" readonly="readonly">
+					</p>
+					<p class="clearfix phone bank" style="border-bottom:none;"><span>手机号</span>
+						<input type="text" placeholder="请输入银行预留手机号" id="bank_phone" maxlength="11">
+					</p>
+				</div>
+				<div class="white" style="margin-top:1rem;">
+					<p class="clearfix bank"><span>开户行</span>
+						<input type="text" placeholder="*省*市（自治区）*银行*支行（营业部）" id="bank_k" maxlength="30">
+					</p>
+					<p class="clearfix "><span>所属银行</span>
+						<input type="text"  id="bank_belong" maxlength="30" readonly="readonly">
+					</p>
+				</div>
+				<P style="margin-left:0px;">
+					<button class="button" id="sub" onClick="next()" style="margin-left:0px;">提交</button>
+				</P>
+			</div>
+		</div>
+		<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+		<script type="text/javascript" src="card_information.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	</body>
+
+</html>

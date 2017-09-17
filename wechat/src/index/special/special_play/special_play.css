@@ -1,0 +1,148 @@
+.list video {
+	width: 100%;
+	height: 17rem;
+	background:url(/static/wechat/assets/images/special_play_bg.png) no-repeat;
+	background-size:100%;
+}
+
+.scstate {
+	position: absolute;
+    z-index: 10;
+    right: 1rem;
+    top: -0.5rem;
+}
+.intro b{
+	font-weight:normal;
+	margin-right:1.6rem;
+}
+.list_play {
+    background: url(/static/wechat/assets/images/special_date.png) left center no-repeat;
+    background-size:1rem;
+    }
+.list_time {
+	margin-left:1rem;
+    background: url(/static/wechat/assets/images/special_time.png) left center no-repeat;
+    background-size:1rem;
+    }
+.count li .p{
+	width:94%;
+}
+.count li .p .video_img{
+	line-height:5rem;
+	position:relative;
+	height:5rem;
+}
+.blue {
+	color: #00a0e9;
+}
+.count li .p .video_img .current{
+	
+	width:46%;
+	left:27%;
+	top:2.5rem;
+	z-index:10;
+}
+.current_box{
+	display:block;
+	position:absolute;
+	margin-top: 0.1rem;
+    width: 100%;
+    top: 0px;
+    background: rgba(0,0,0,0.3);
+    height: 5rem;
+}
+.bottom span{
+	color:#999999;
+}
+.count{
+	background:#fff;
+	margin-top:0px;
+	border-top:none;
+}
+#iscroll{
+	     border-top: 1px solid #dfdfdf; 
+	     background:#fff;
+}
+#iscroll h3{
+	padding-top:1.5rem;
+	padding-left:3%;
+}
+.count li .p dl{
+	width:63%;
+}
+.list_play{
+	width:8rem;
+}
+.out{
+	position:relative;
+	border:none;
+	background:none;
+	float:right;
+	top:0.5rem;
+	width:1.5rem;
+	height:1.5rem;
+}
+.download {
+	display:none;
+    width: 100%;
+    height: 4.25rem;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    background: #1c1b20;
+}
+.download p {
+    width: 92.18%;
+    height: 4.25rem;
+    margin: 0 auto;
+    overflow: hidden;
+    background: #1c1b20;
+    line-height: 5.6rem;
+}
+.download p img {
+    margin-top: 0.5rem;
+    width: 8.9rem;
+    float: left;
+}
+.download p .button {
+    display: inline-block;
+    border-radius: 0.5rem;
+    text-align: center;
+    width: 7.3rem;
+    height: 1.9rem;
+    float: right;
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+    margin: 1.1rem 0;
+    font-family: "微软雅黑";
+    border: 1px solid #fff;
+}
+.count li .p .video_img>img{
+	height:5rem;
+}
+.list .video-tittle {
+	padding-left: 1.3rem;
+	padding-right: 1.3rem;
+	/*line-height: 3rem;*/
+	font-size: 1.4rem;
+	color: #333333;
+	position:relative;
+}
+
+.list .video-tittle span {
+	margin-right: 0.6rem;
+	    display: inline-block;
+    width: 90%;
+}
+.top span {
+    line-height: 2rem;
+    overflow: hidden;
+    word-break:break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+        margin-top: 0.5rem;
+        text-align:left;
+    }

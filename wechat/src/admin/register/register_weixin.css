@@ -1,0 +1,44 @@
+
+#gologin {
+	background: none;
+	border: 1px solid #00a0e9;
+	color: #00a0e9;
+	margin-top: 1rem;
+}
+
+#checkbox-1 {
+	display: none;
+}
+
+label {
+	border: 1px solid #112976;
+	display: inline-block;
+	width: 2.9%;
+	height: 0.79rem;
+	position: relative;
+	top: 0.1rem;
+}
+
+#checkbox-1+ label {
+	background: #fff;
+}
+
+#checkbox-1:checked+ label {
+	background: url(/static/wechat/assets/images/split_agree.png) no-repeat center center;
+	background-size: 90%;
+}
+
+.agree {
+	color: #666666;
+	font-size: 1rem;
+	padding-left: 1%;
+	margin-top: 0.8rem;
+	line-height: 1.2rem;
+}
+
+.agree a {
+	color: #112976;
+}
+.hidecode{
+	display:none;
+}

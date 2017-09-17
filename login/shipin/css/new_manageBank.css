@@ -1,0 +1,110 @@
+.newmanagebank .tittle {
+	margin-bottom:60px;
+}
+.newmanagebank .tittle a {
+    color: #3d64e3;
+    display: inline-block;
+    float: left;
+}
+
+#cardBox {
+	
+	height: 130px;
+    width: 289px;
+	    border-radius: 10px;
+    /*overflow: hidden;*/
+     box-shadow: 0 1px 3px #a5a5a5;
+    border-top: 1px solid #f0f0f0;
+    background: #fff;
+        position: relative;
+        margin:0 20px 20px 0;
+        float:left;
+}
+.card-info:nth-child(3n){
+	margin-right:0;
+}
+#cardBox .card-top {
+	overflow:hidden;
+	position:relative;
+	width:290px;
+	color:#fff;
+	height:58px;
+	font-size:16px;
+	.card-top {
+    overflow: hidden;
+}
+	
+	background-image: linear-gradient(to left, #16c7a5, #35afaa);
+	
+}
+
+.card-top .tit {
+	    font-family: "microsoft yahei";
+    padding-top: 8px;
+    position: absolute;
+    top: 24px;
+    left: 83px;
+}
+
+.card-top .type {
+    position: absolute;
+    top: 19px;
+    padding: 2px;
+    right: 9px;
+    background: rgba(255,255,255,.5);
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.card-bottom{
+margin:10px 0 0 30px;
+}
+.card-bottom p {
+	height: 25px;
+	color:#999999;
+	font-size:14px;
+	font-family:"microsoft yahei";
+	
+	
+	
+}
+.card-bottom span {
+	font-size:18px;
+	font-family:"microsoft yahei";
+	color:#666666;
+	
+}
+.addCard {
+	height:130px;
+	width:290px;
+	    border-radius: 10px;
+     position: relative;
+     box-shadow: 0 1px 3px #a5a5a5;
+    border-top: 1px solid #f0f0f0;
+    background: #fff;
+    text-align:center;
+    float:left;
+    
+}
+.addCard a {
+	display:block;
+	width:100%;
+	height:100%;	
+}
+.addCard b {
+	display:block;
+	width:40px;
+	height:40px;
+	background:url("../images/tianjiabank.png") no-repeat center center;
+	position:absolute;
+	top: 20px;
+    left: 120px;
+}
+.addCard p {
+	position:absolute;
+	color:#ffa800;
+	top:70px;
+	left:102px;
+	
+	
+}

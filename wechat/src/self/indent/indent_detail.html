@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>订单详情</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link href="/static/wechat/assets/css/base.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<link rel="stylesheet" href="indent_detail.css" type="text/css" />
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+	</head>
+
+	<body>
+		<div class="total">
+
+		</div>
+		<div class="total number">
+			<div>
+				<p class="number_top">
+					<span>订单编号： <b class="indent_number">111111111111111</b></span>
+					<b class="fr blue indent_state">完成</b>
+				</p>
+				<div class="clearfix con-box">
+					<img src="" class="goods_img fl">
+					<div class="fr goods_details">
+						<p class="one">
+							<span class="fl text-tit"></span>
+							<span class="fr price">￥<span>199.00</span></span>
+						</p>
+						<p class="two">
+							<span class="fl text-time"></span>
+							<span class="fr num">×1</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="total content">
+			<div class="wid">
+				<div class="pay_send">
+					<p class="pay clearfix">
+						<span class="fl">支付方式</span>
+						<span class="fr payWay">支付宝</span>
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="total content content_bottom">
+			<div class="wid">
+				<div class="otherdetail">
+					<p class="invoice clearfix">
+						<span class="fl">商品金额</span>
+						<span class="fr dosign">￥<b class="price blue">300.00</b></span>
+					</p>
+					<p class="pay clearfix">
+						<span class="fl">商品数量</span>
+						<span class="fr">共计<b class="goods_num blue">1</b>件</span>
+					</p>
+				</div>
+				<div class="weshop">
+					<p class="invoice clearfix">
+						<span class="fl">现金券费用</span>
+						<span class="fr shopPrice">￥10000.00</span>
+					</p>
+					<div class="servicemoney">
+						<p class="pay clearfix">
+							<span class="fl">店铺服务费</span>
+							<span class="fr shopPrice">￥1000.00</span>
+						</p>
+						<p class="pay clearfix">
+							<span class="fl">店铺押金</span>
+							<span class="fr shopPrice">￥1000.00</span>
+						</p>
+					</div>
+
+				</div>
+
+				<!--<p class="send clearfix">
+					<span class="fl">+运费:</span>
+					<span class="fr dosign">￥<b class="goods_yf">0.00</b></span>
+				</p>-->
+				<div class="pay_total">
+					<p><span>需付款：<span class="dosign">￥</span></span><span class="total_money blue">300.00</span></p>
+					<p>订单时间：<span class="indent_date">2017-05-01  13:22:56</span></p>
+				</div>
+				<div class="fail_reason">
+					<p>
+						<span>退款失败原因:</span>
+						<span class="fail_reason_content">您支持的众筹已经发货无法退款，不支持售后，详情请阅读《支持者协议》。</span>
+					</p>
+				</div>
+				<!--按钮-->
+				<!--订单完成-->
+				<div class="buttons done">
+					<button class="button" id="done_delete">删除订单</button>
+				</div>
+				<!--待付款-->
+				<div class="buttons wait_pay">
+					<button class="button" id="cancel_indent">取消订单</button>
+					<button class="button">立即支付</button>
+				</div>
+			</div>
+		</div>
+		<div class="cover">
+
+		</div>
+		<div class="cancel_tc" id="cancel_tc">
+
+			<p class="cancel_title">取消订单<span class="close"><span class="close"><img src="/static/wechat/assets/images/close.png"></span></p>
+			<p class="cancel_title1">请选择取消订单原因（必选）：</p>
+			<p class="chooses" onclick="label(this)">
+				<i class="wrapper">
+						<span class="span">
+	      					<input type="checkbox" class="input_check" id="check1" name="iCheck" value="1"  onclick="check_input(this)" checked="checked">
+	      					<label for="check1" class="checked che"  value="1"></label>
+	     				</span>
+	     				<span class="reson">订单不能按预计时间送达</span>
+					</i>
+			</p>
+			<p class="chooses" onclick="label(this)">
+				<i class="wrapper">
+						<span class="span">
+	      					<input type="checkbox" class="input_check" id="check2" name="iCheck" value="2"  onclick="check_input(this)" >
+	      					<label for="check2" class="che"  value="2"></label>
+	     				</span>
+	     				<span class="reson">商品买错了（颜色、型号、数量等弄错了）；</span>
+					</i>
+			</p>
+			<p class="chooses" onclick="label(this)">
+				<i class="wrapper">
+						<span class="span">
+	      					<input type="checkbox" class="input_check" id="check3" name="iCheck" value="3"  onclick="check_input(this)" >
+	      					<label for="check3" class="che"  value="3"></label>
+	     				</span>
+	     				<span class="reson">重复下单/误下单；</span>
+					</i>
+			</p>
+			<p class="chooses" onclick="label(this)">
+				<i class="wrapper">
+						<span class="span">
+	      					<input type="checkbox" class="input_check" id="check4" name="iCheck" value="4"  onclick="check_input(this)" >
+	      					<label for="check4" class="che"  value="4"></label>
+	     				</span>
+	     				<span class="reson">支付方式有误/无法支付。</span>
+					</i>
+			</p>
+			<p class="bottom_buttons">
+				<button class="button submit">提交</button>
+			</p>
+
+		</div>
+		<div class="cancel_tc pay_tc" id="pay_tc">
+
+			<p class="cancel_title">付款方式<span class="close"><img src="/static/wechat/assets/images/close.png"></span></p>
+			<p class="chooses" onclick="label(this)">
+				<i href="javascript:;" class="wrapper ye">
+						<span class="span">
+	      					<input type="checkbox" class="input_check" id="check1" name="iCheck" value="1"  onclick="check_input(this)" checked="checked">
+	      					<label for="check1" class="checked che"  value="1"></label>
+	     				</span>
+	     				<span class="reson">余额支付</span><span id="yue"></span>
+					</i>
+			</p>
+			<p class="chooses" onclick="label(this)">
+				<i href="javascript:;" class="wrapper wx">
+						<span class="span">
+	      					<input type="checkbox" class="input_check" id="check1" name="iCheck" value="2"  onclick="check_input(this)" >
+	      					<label for="check1" class="che"  value="2"></label>
+	     				</span>
+	     				<span class="reson">微信支付</span>
+					</i>
+			</p>
+			<p class="chooses" onclick="label(this)">
+				<i href="javascript:;" class="wrapper yl">
+						<span class="span">
+	      					<input type="checkbox" class="input_check" id="check1" name="iCheck" value="3"  onclick="check_input(this)" >
+	      					<label for="check1" class="che"  value="3"></label>
+	     				</span>
+	     				<span class="reson">银联支付</span>
+					</i>
+			</p>
+			<p class="pay_bottom">
+				<span>需付款：<b class="blue">￥</b><b class="total_money blue">310.00</b></span>
+			</p>
+			<p class="bottom_buttons">
+				<button class="button submit">确认付款</button>
+			</p>
+
+		</div>
+		<!--删除订单-->
+		<div class="choose cancel_indent_tc">
+			<p>确认删除订单？</p>
+			<p><button class="one delete_indent_confirm">确认删除</button></p>
+			<p><button class="close_choose">暂不删除</button></p>
+		</div>
+		<div class="choose quxiao_indent_tc">
+			<p>确认取消订单？</p>
+			<p><button class="one quxiao_indent_confirm">确认取消</button></p>
+			<p><button class="close_choose">暂不取消</button></p>
+		</div>
+		<div class="choose indent_number_tc">
+			<p>订单号</p>
+			<p class="numbers"></p>
+		</div>
+		<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+		<script type="text/javascript" src="indent_detail.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	</body>
+
+</html>

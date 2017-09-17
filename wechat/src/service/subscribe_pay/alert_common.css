@@ -1,0 +1,53 @@
+.cover{
+	display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 113%;
+    background-color: black;
+    z-index: 1001;
+    -moz-opacity: 0.7;
+    opacity: .70;
+}
+.choose{
+	display: none;
+    position: absolute;
+    padding: 8px;
+    /*top: 96rem;*/
+    left: 52%;
+    margin-left: -93px;
+    overflow: auto;
+    text-align: center;
+    z-index: 1002;
+    color: #fff;
+}
+.choose p {
+    text-indent: 1rem;
+    letter-spacing: 1px;
+    line-height: 3rem;
+}
+.choose .rePay {
+    width: 14rem;
+    height: 3rem;
+    background: #00a0ea;
+    border: 1px solid #00a0ea;
+    line-height: 3rem;
+    border-radius: 5px;
+    }
+.choose .close {
+    width: 14rem;
+    height: 3rem;
+    border: 1px solid #00a0ea;
+    line-height: 3rem;
+    border-radius: 5px;
+    margin-top: 17px;
+}
+.choose .vippay {
+    width: 14rem;
+    height: 3rem;
+    background: #00a0ea;
+    border: 1px solid #00a0ea;
+    line-height: 3rem;
+    border-radius: 5px;
+}

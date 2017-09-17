@@ -1,0 +1,103 @@
+<html>
+
+	<head>
+		<title>支付结果</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<style>
+		div,
+		img,
+		p,
+		a {
+			margin: 0;
+			padding: 0;
+		}
+		
+		@media only screen and (min-width: 320px) {
+			html {
+				font-size: 12.8px;
+			}
+		}
+		
+		@media only screen and (min-width: 360px) {
+			html {
+				font-size: 14.4px;
+			}
+		}
+		
+		@media only screen and (min-width: 375px) {
+			html {
+				font-size: 15px;
+			}
+		}
+		
+		@media only screen and (min-width: 414px) {
+			html {
+				font-size: 16.56px;
+			}
+		}
+		
+		@media only screen and (min-width: 640px) {
+			html {
+				font-size: 21.3px;
+			}
+		}
+		
+		img {
+			width: 5.28rem;
+			margin: 0 auto;
+			display: block;
+			margin-bottom: 3rem;
+		}
+		
+		.content {
+			margin-top: 6rem;
+			text-align: center;
+		}
+		
+		.content a {
+			display: block;
+			width: 23.4rem;
+			height: 3.2rem;
+			line-height: 3.2rem;
+			background: #14d32f;
+			text-decoration: none;
+			margin: 0 auto;
+			border-radius: 0.4rem;
+			font-size: 1.44rem;
+			color: #fff;
+		}
+		
+		.content p {
+			margin-bottom: 1rem;
+		}
+	</style>
+	</head>
+  
+	<body>
+		<div class="content">
+			<img src="./icon.jpg">
+			<p>恭喜，您已经支付成功！</p>
+
+			<a href="" id="done">完成</a>
+
+		</div>
+		<script src="/static/pc/page/jquery-1.8.3.min.js"></script>
+<script src="/static/wechat/assets/js/app.js"></script>
+		<script>
+			var zhifupgrade = getCookie('cookie_brsy_pc_zhifupgrade');
+			var value1 = getCookie('cookie_brsy_pc_chongzhi');
+			if(zhifupgrade) {
+				var huiyuan = "2";
+				setCookie('cookie_brsy_pc_huiyuan', huiyuan, 7);
+					document.getElementById("done").setAttribute("href",api+"/static/pc/src/self/information/new_usercenter.html"); 
+			} else {
+            
+					document.getElementById("done").setAttribute("href",api+"/static/pc/src/self/wallet/new_purse.html"); 
+			
+			}
+		</script>
+	</body>
+
+</html>

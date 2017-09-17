@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/static/wechat/assets/css/base.css">
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<link rel="stylesheet" href="//g.alicdn.com/de/prismplayer/1.5.6/skins/default/index.css" />
+    	<script type="text/javascript" src="//g.alicdn.com/de/prismplayer/1.5.6/prism-min.js"></script>
+		<script src="https://cdn.ronghub.com/RongIMLib-2.2.5.min.js"></script>
+		<script src="https://cdn.ronghub.com/RongEmoji-2.2.5.min.js"></script>
+		<style>
+			#notice{
+				width:20rem;
+				height:3rem;
+			}
+			#send,#join{
+				width:5rem;
+				height:3rem;
+				font-size:1.2rem;
+			}
+			li{
+				font-size:1.2rem;
+				line-height:2rem;
+			}
+			.list{
+				padding-top:3rem;
+			}
+			.emojis{
+				display:none;
+				position:absolute;
+				top:3rem;
+				left:0px;
+				background:#ffffff;
+			}
+			.emojitotal{
+				position:relative;
+			}
+			
+		</style>
+	</head>
+	<body>
+	<div id="J_prismPlayer" class="prism-player"></div>
+	
+
+		<div>
+			<ul class="list">
+				
+			</ul>
+			<div class="emojitotal">
+				<div class="emojis">
+				
+				</div>
+			</div>
+			
+		</div>
+		<input type="text" id="notice" ><span onclick="showemoji()" style="height: 24px; width: 24px; display: inline-block; font-size: 20px !important; text-align: center; vertical-align: middle;overflow: hidden; line-height: 24px;" class="RongIMExpression_rinning" name="[大笑]"><b class="RC_Expression" style="background-position: 0px 0px;"></b></span>
+		<button id="send" onclick="send()">发送</button>
+		<button id="join" onclick="join()">加入</button>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+		<script src="zb.js"></script>
+	</body>
+</html>

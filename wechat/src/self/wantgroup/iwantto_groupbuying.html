@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<title>我要团购</title>
+		<link href="/static/wechat/assets/css/base.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="split.css">
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+	</head>
+	<body>
+		<div class="wid">
+			<ul class="top">
+				<li class="group_grade">
+					<div class="clearfix li"> <span class="fl text">请选择团购级别</span>
+						<!--<div class="select fr"> <span id="price">4500元团购</span>
+							<dl class="option">
+								<dd>2.5万元团购</dd>
+								<dd>6.5万元团购</dd>
+								<dd>18万元团购</dd>
+								<dd class="self_check">自定义数量</dd>
+							</dl>
+						</div>-->
+						<select class="split_jibie">
+							<option code="0">4500元团购</option>
+							<option code="1">2.5万元团购</option>
+							<option code="2">6.5万元团购</option>
+							<option code="3">19.8万元团购</option>
+							<option code="4" class="self_check">自定义数量</option>
+						</select>
+					</div>
+				</li>
+			</ul>
+			<ul class="top self_account">
+				<li>
+					<div class="li"><span class="text">自定义数量</span>
+						<input type="text" placeholder="请输入39~2475之间的数字" class="split" id="teambuy_selfaccount">
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<div class="li"><span class="text">姓名</span>
+						<input type="text" placeholder="请输入姓名" class="split" id="teambuy_name" maxlength="10">
+					</div>
+				</li>
+				<li>
+					<div class="li"><span class="text">联系电话</span>
+						<input type="text" placeholder="请输入联系电话" class="split" id="teambuy_phone" maxlength="11">
+					</div>
+				</li>
+				<li>
+					<div class="li"><span class="text">平台VIP账号</span>
+						<input type="text" placeholder="" class="split" id="teambuy_account" disabled>
+					</div>
+				</li>
+
+			</ul>
+			<p class="agree">
+				<input type="checkbox" id="checkbox-1" checked/>
+				<label for="checkbox-1" id="lab"></label>
+				<span>同意</span>
+				<a href="/static/wechat/src/service/service.html">《李强365团购服务条款》</a>
+			</p>
+			<button class="button" id="confirm_groupbuying" onclick="submitPost()">提交</button>
+		</div>
+		<script src="/static/wechat/assets/js/app.js?ver=2016121313"></script>
+		<script type="text/javascript" src="iwantto_groupbuying.js?ver=2016121313"></script>
+
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	</body>
+
+</html>

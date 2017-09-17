@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>课程类别</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link href="/static/wechat/assets/css/base.css" type="text/css" rel="stylesheet">
+		<link href="/static/wechat/assets/css/team.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/iscroll5/iscroll5.js"></script>
+		<link rel="stylesheet" type="text/css" href="/static/wechat/page/iscroll5/iscroll.css">
+		<link href="/static/wechat/assets/css/video.css" type="text/css" rel="stylesheet">
+	</head>
+
+	<body onLoad="loaded()">
+		<div class="wid">
+			<div class="top">
+				<p>
+					<span class="all" onClick="all_lessons()"><img src="/static/wechat/assets/images/video_all_choosed.png" id="all" class="lesson_gray"></span>
+					<span class="type blue" id="date" data="1">更新时间</span>
+					<span class="type" id="play" data="2">播放量</span>
+					<span class="type" id="download" data="3">下载量</span>
+				</p>
+			</div>
+			<div class="left-lessons">
+				<ul class="all_lessons">
+				</ul>
+				<dl class="second-lessons">
+				</dl>
+			</div>
+			<div id="wrapper" style="top:5rem;">
+				<div id="iscroll" style="position:relative;">
+
+					<ul class="count clearfix" id="indent_table_id">
+						<li>
+							<div class="p clearfix">
+								<p class="video_img">
+									<img src="http://www.liqiang365.com:80/uploadtemp/image/2016/6/7e068411ca1e00.jpg">
+								</p>
+								<dl class="fl">
+									<dd class="top clearfix">
+										<span class="video_name fl">让自己有所成就</span>
+										<span class="video_count fr blue">5集</span>
+									</dd>
+									<dd class="bottom clearfix">
+										<span class="video_date fl gray video_lesson_date">07-26</span>
+										<span class="video_play fl gray">12390</span>
+										<span class="video_download fl gray">0</span>
+									</dd>
+								</dl>
+							</div>
+						</li>
+					</ul>
+					<div id="scroller-pullUp">
+						<span id="up-icon" class="icon-double-angle-up pull-up-icon"></span>
+						<span id="pullUp-msg" class="pull-up-msg">上拉刷新</span>
+					</div>
+				</div>
+			</div>
+			<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+			<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+			<script type="text/javascript" src="lessons.js"></script>
+			<script type="text/javascript">
+				$(function() {
+					loadData();
+					loaded();
+				})
+			</script>
+	</body>
+
+</html>

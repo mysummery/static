@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>提交订单</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link href="/static/wechat/assets/css/base.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<link rel="stylesheet" href="indent_confirm.css" type="text/css" />
+		<link rel="stylesheet" href="indent_submit.css" type="text/css" />
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+	</head>
+	<body onload="clear()">
+		<div class="total">
+			<div class="wid addresses">
+				<p class="address_top">
+					<img src="/static/wechat/assets/images/shop_address.png" class="address_img">
+					<span class="name"></span>
+					<span class="phone"></span>
+				</p>
+				<p class="address_bottom"></p>
+				
+			</div>
+			
+		</div>
+		<div class="total number">
+			<div class="wid">
+				
+				<div class="clearfix">
+					<img src="/static/wechat/assets/images/indent_submit_goods.jpg" class="goods_img fl">
+					<div class="fr goods_details">
+						<p class="goods_name"></p>
+						<p class="goods_price">￥<span class="price blue"></span></p>
+						<p class="goods_xq">
+							<a id="indent-sub-num-minus" class="fl" href="javascript:;">-</a>
+							<input type="tel" id="indent-sub-num-input" class="indent-sub-num-input fl" pattern="[0-9]*" value="1" onkeyup="checkinput_zzjs(event)" autocomplete="off">
+							<a id="indent-sub-num-add" class="fr" href="javascript:;">+</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="total">
+			<div class="wid">
+				<!-- 选择颜色 -->
+			<div class="indent-sub-change indent-sub-change-color clearfix">
+				<div class="indent-sub-title fl">
+					<span>规格</span>
+				</div>
+				<div class="indent-sub-type fl">
+					<ul class="colors">
+						
+					</ul>
+				</div>
+			</div>
+			<!-- 选择型号 -->
+			<div class="indent-sub-change indent-sub-change-model clearfix">
+				<div class="indent-sub-title fl">
+					<span>型号</span>
+				</div>
+				<div class="indent-sub-type fl">
+					<ul class="types">
+						
+					</ul>
+				</div>
+			</div>
+			<div class="indent-sub-invoice">
+				<!-- 开具发票 -->
+				<div class="need-indent clearfix">
+					<span>开具发票</span>
+					<div class="item-input fr">
+						<label class="label-switch">
+							<input type="checkbox" autocomplete="off">
+							<div class="checkbox"></div>
+						</label>
+					</div>
+				</div>
+				<!-- 发票所有信息 -->
+				<div class="invoice-information-all">
+					<!-- 发票类型 -->
+					<div class="indent-sub-invoice-type">
+						<span>发票类型</span>
+						纸质发票
+					</div>
+					<!-- 发票信息 -->
+					<div class="indent-sub-invoice-information">
+						<span>发票信息</span>
+						<div class="invoice-information-change">
+							<a class="current" href="javascript:;"><i></i>个人</a>
+							<a href="javascript:;"><i></i>单位</a>
+						</div>
+					</div>
+					<!-- 公司名称 -->
+					<div class="edit-corporate-name">
+						<input type="text" placeholder="请输入公司名称" class="company_name" maxlength="100">
+						<p class="xy_title">纳税人识别号</p>
+  						<input type="text" placeholder="请输入纳税人识别号或统一社会信用代码" class="xy_number" maxlength="20">
+					</div>
+					<!-- 发票内容 -->
+					<div class="indent-sub-invoice-content">
+						<p>发票内容</p>
+						<ul class="contents_choose clearfix">
+							<li class="current"><a href="javascript:;"><i></i><span>电脑配件</span></a></li>
+							<li><a href="javascript:;"><i></i><span>耗材</span></a></li>
+							<li><a href="javascript:;"><i></i><span>明细</span></a></li>
+							<!--<li><a href="javascript:;"><i></i><span>办公用品</span></a></li>-->
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="tips">
+					<textarea placeholder="请输入您的留言" maxlength="150"></textarea>
+				</div>
+			</div>
+		</div>
+		
+		<div class="total content content_bottom">
+			<div class="wid">
+				<p class="commission clearfix ">
+					<span class="fl blue">返佣金</span>
+					<span class="fr blue">￥<b class="commissionprice">0</b></span>
+				</p>
+				<p class="invoice clearfix">
+					<span class="fl">商品金额</span>
+					<span class="fr">￥<b class=" blue total_money" ></b></span>
+				</p>
+				<p class="pay clearfix">
+					<span class="fl">商品数量</span>
+					<span class="fr">共计<span class="goods_num blue" value="1" disabled="disabled" autocomplete="off">1</span>件</span>
+				</p>
+				<p class="send clearfix">
+					<span class="fl">+运费</span>
+					<span class="fr">￥<b class="goods_yf">0.00</b></span>
+				</p>
+				
+				
+				<!--按钮-->
+				
+				<!--确认订单-->
+				<div class="buttons confirm ">
+					<span>需付款：￥</span><b class="total_money  blue"></b><button class="button pay_go" >提交订单</button>
+				</div>
+				
+			</div>
+		</div>
+		<div class="cover">
+			
+		</div>
+		
+		<div class="cancel_tc pay_tc" id="pay_tc">
+			
+				<p class="cancel_title">付款方式<span class="close"><img src="/static/wechat/assets/images/close.png"></span></p>
+				<p class="chooses hover" onclick="label(this)">
+					<i href="javascript:;" class="wrapper ye" >
+						<span class="span">
+	      					<input type="checkbox" class="input_check" id="check1" name="iCheck" value="1"  onclick="check_input(this)" checked="checked">
+	      					<label for="check1" class="checked che"  value="1"></label>
+	     				</span>
+	     				<span class="reson">余额支付</span><span id="yue"></span>
+					</i>
+				</p>
+				<p class="chooses" onclick="label(this)">
+					<i href="javascript:;" class="wrapper wx" >
+						<span class="span">
+	      					<input type="checkbox" class="input_check" id="check1" name="iCheck" value="2"  onclick="check_input(this)" >
+	      					<label for="check1" class="che"  value="2"></label>
+	     				</span>
+	     				<span class="reson">微信支付</span>
+					</i>
+				</p>
+				<p class="chooses" onclick="label(this)">
+					<i href="javascript:;" class="wrapper yl" >
+						<span class="span">
+	      					<input type="checkbox" class="input_check" id="check1" name="iCheck" value="3"  onclick="check_input(this)" >
+	      					<label for="check1" class="che"  value="3"></label>
+	     				</span>
+	     				<span class="reson">银联支付</span>
+					</i>
+				</p>
+				<p class="pay_bottom">
+					<span>需付款：<b class="blue">￥</b><b class="total_money blue">310.00</b></span>
+				</p>
+				<p class="bottom_buttons">
+					<button class="button submit">确认付款</button>
+				</p>
+			
+		</div>
+		<p class="commissionprice_hide" style="display: none;"></p>
+		<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+		<script type="text/javascript" src="indent_submit.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	</body>
+</html>

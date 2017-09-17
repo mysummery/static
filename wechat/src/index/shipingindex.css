@@ -1,0 +1,406 @@
+@charset "UTF-8";
+
+/*清除默认样式*/
+
+body,
+p,
+ul,
+a,
+i {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #f1f0f8;
+	color: #333333;
+}
+
+a {
+	text-decoration: none;
+}
+
+html,
+body {
+	min-width: 240px;
+	font-family: "Microsoft YaHei UI", "微软雅黑";
+	background: #f1f0f8;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#wrapper {
+	top: 1px !important;
+}
+
+
+/*头部*/
+
+#top {
+	width: 100%;
+	height: 3rem;
+	color: #333333;
+	line-height: 3rem;
+	background: white;
+	text-align: center;
+	overflow: hidden;
+}
+
+#top .top-div {
+	width: 92.1%;
+	height: 3rem;
+	display: inline-flex;
+	justify-content: space-between;
+	position: relative;
+	margin: 0 auto;
+}
+
+
+/*#top span:nth-of-type(1){
+	 float: left;
+	 display: line-block;
+     height: 1.3rem;
+     width: 1.5rem;
+     background:url(../images/seek.png)  no-repeat;
+     margin-top: 0.8rem;
+     background-size: 100%;   
+}*/
+
+#top span:nth-of-type(2) {
+	font-size: 1.5rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -1.5rem;
+}
+
+#top span:nth-of-type(3) {
+	display: inline-block;
+	float: right;
+	cursor: pointer;
+	color: #333333;
+	font-size: 1rem;
+}
+
+
+/*轮播*/
+
+.swiper-container {
+	width: 100%;
+	height: 14.65rem;
+}
+
+.swiper-slide {
+	height: 14.65rem;
+	width: 100%;
+	text-align: center;
+}
+
+.swiper-img {
+	/*height: 100%;*/
+	width: 100%;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+	/*background: transparent;*/
+	border: 0.05rem solid #fff;
+}
+
+.swiper-pagination-bullet-active {
+	border: 2px solid #fff;
+}
+
+
+/*八大选项*/
+
+#options {
+	height: 14rem;
+	width: 100%;
+	background: white;
+	overflow: hidden;
+}
+
+.optionsbox {
+	overflow: hidden;
+	height: 12.65rem;
+	width: 92.18%;
+	margin: 1.6rem auto;
+}
+
+.option-top,
+.option-fot {
+	width: 100%;
+	height: 50%;
+}
+
+.option-top {
+	align-items: flex-start;
+}
+
+.option-fot {
+	align-items: flex-end
+}
+
+#options .option {
+	width: 25%;
+	/*	margin-right: 8.125%;*/
+	float: left;
+}
+
+#options .option a {
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	color: #333333;
+}
+
+#options .option a i {
+	display: inline-block;
+	width: 3.5rem;
+	height: 3.5rem;
+}
+
+.option-1 a i {
+	background: url(/static/wechat/assets/images/options_01.png) no-repeat center;
+	background-size: 100%;
+}
+
+.option-2 a i {
+	background: url(/static/wechat/assets/images/options_02.png) no-repeat center;
+	background-size: 100%;
+}
+
+.option-3 a i {
+	background: url(/static/wechat/assets/images/options_03.png) no-repeat center;
+	background-size: 100%;
+}
+
+.option-4 a i {
+	background: url(/static/wechat/assets/images/options_04.png) no-repeat center;
+	background-size: 100%;
+}
+
+.option-5 a i {
+	background: url(/static/wechat/assets/images/options_05.png) no-repeat center;
+	background-size: 100%;
+}
+
+.option-6 a i {
+	background: url(/static/wechat/assets/images/options_06.png) no-repeat center;
+	background-size: 100%;
+}
+
+.option-7 a i {
+	background: url(/static/wechat/assets/images/options_07.png) no-repeat center;
+	background-size: 100%;
+}
+
+.option-8 a i {
+	background: url(/static/wechat/assets/images/options_08.png) no-repeat center;
+	background-size: 100%;
+}
+
+#options div a {
+	background-size: 100%
+}
+
+
+/*模块*/
+
+.module {
+	width: 100%;
+	background: white;
+	margin-top: 0.9rem;
+}
+
+.module-top {
+	height: 1.7rem;
+	width: 92.18%;
+	margin: 0 auto;
+	display: -webkit-flex;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	overflow: hidden;
+	position: relative;
+	font-size: 1.4rem;
+}
+
+.module-top p:nth-of-type(1) {
+	width: 1rem;
+	height: 1.5rem;
+	background: url(/static/wechat/assets/images/left.png) no-repeat;
+	background-size: 100%;
+}
+
+.module-top p:nth-of-type(2) {
+	position: absolute;
+	left: 2rem;
+	bottom: 0rem;
+}
+
+.module-top p:nth-of-type(3) {
+	width: 0.75rem;
+	height: 1.5rem;
+	background: url(/static/wechat/assets/images/right.png) no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+}
+
+.module-context {
+	overflow: hidden;
+	min-width: 200%;
+	height: 13rem;
+	margin-left: 1.3rem;
+	margin-top: 0.4rem;
+}
+
+.module-img {
+	width: 13.3rem;
+	height: 12.4rem;
+	float: left;
+	margin-right: 0.8rem;
+}
+
+.module-img .img {
+	width: 13.3rem;
+	height: 8.6rem;
+	background-size: 100%;
+	border-radius: 0.8rem;
+	background: orange;
+}
+
+.module-img .img img {
+	width: 100%;
+	height: 100%;
+}
+
+.module-img p {
+	font-size: 1.2rem;
+	margin-top: 0.4rem;
+}
+
+
+/*团购*/
+
+#mygroup {
+	margin-top: 0.9rem;
+	height: 16.2rem;
+	width: 100%;
+	background: url(../images/group.png) no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	line-height: 16.2rem;
+	margin-bottom: 4.25rem;
+}
+
+#mygroup a {
+	color: #333333;
+	font-size: 1.5rem;
+}
+
+.download {
+	width: 100%;
+	height: 4.25rem;
+	position: fixed;
+	bottom: 0;
+	z-index: 2;
+	background: #1c1b20;
+}
+
+.download p {
+	width: 92.18%;
+	height: 4.25rem;
+	margin: 0 auto;
+	overflow: hidden;
+	background: #1c1b20;
+	line-height: 5.6rem;
+}
+
+.download p img {
+	margin-top: 0.5rem;
+	width: 8.9rem;
+	float: left;
+}
+
+.download p .button {
+	display: inline-block;
+	border-radius: 0.5rem;
+	text-align: center;
+	line-height: ;
+	width: 7.3rem;
+	height: 1.9rem;
+	float: right;
+	color: #fff;
+	font-size: 1.2rem;
+	line-height: 1.9rem;
+	margin: 1.1rem 0;
+	font-family: "微软雅黑";
+	border: 1px  solid #fff;
+}
+
+.company {
+	width: 100%;
+	height: 6.1rem;
+	box-sizing: border-box;
+	/* Firefox */
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-top: 0.05rem solid #dfdfdf;
+	background: url(../images/company.png) no-repeat;
+	background-size: 100%;
+	color: #818182;
+	margin-bottom: 4.25rem;
+	text-align: center;
+	font-size: 0.7rem;
+	overflow: hidden;
+}
+
+.company p:nth-of-type(1) {
+	margin-top: 3.4rem;
+}
+
+
+/*简单版本*/
+
+.module-contexts {
+	overflow: hidden;
+	min-width: 100%;
+	margin-left: 1.3rem;
+	margin-top: 0.4rem;
+}
+
+.module-imgs {
+	width: 45%;
+	margin-bottom: 0.75rem;
+	float: left;
+}
+
+.module-imgs:nth-child(odd) {
+	width: 45%;
+	float: left;
+	margin-right: 5%;
+	margin-right: 1rem;
+}
+
+.module-imgs .imgs {
+	width: 100%;
+	background-size: 100%;
+	border-radius: 0.8rem;
+}
+
+.module-imgs .imgs img {
+	width: 100%;
+	height: 10rem;
+}
+
+.module-imgs p {
+	font-size: 1.2rem;
+	margin-top: 0.4rem
+}
+
+#hot {
+	width: 100%;
+	float: left;
+}

@@ -1,0 +1,156 @@
+
+.wrap .person-mess a {
+	font-size:14px;
+	color:#333333;
+}
+.wrap .mess-total p{
+	margin-top:50px;
+	font-size:14px;
+	
+}
+.wrap .wrap-right .tittle {
+	height:40px;
+     line-height: 40px;
+	background:#eff2fd;
+	width:910px;
+	padding-left:58px;
+	color:#3d64e3;
+	font-size:18px;
+	box-sizing:border-box;
+}
+.wrap .wrap-right .step {
+	font-size:14px;
+	 margin:50px 0 0 100px;
+	 overflow:hidden;
+}
+.wrap .wrap-right .step li {
+	font-family:"microsoft yahei";
+	color:#bfbfbf;
+	float:left;
+	font-size:18px;
+   margin-right:50px;
+    padding:25px 25px 50px 25px;
+}
+
+.wrap .wrap-right .step .current {
+    padding: 25px 20px 48px 73px;
+    color: #ffd37f;
+    border-bottom: 2px solid #ffd37f;
+    background: url("../images/newsuccess.png")no-repeat 20px 15px;
+}
+.wrap .wrap-right .step span {
+	margin-right:10px;
+}
+.wrap .wrap-right .uploader-left{
+	position: relative;
+	border:1px dashed #ccc;
+	width:345px;
+	height:220px;
+	margin:30px 0 10px 80px;
+	overflow:hidden;
+}
+
+.wrap .wrap-right .uploader-right{
+	position: relative;
+	border:1px dashed #ccc;
+	width:345px;
+	height:220px;
+	margin:30px 45px 10px 80px;
+	overflow:hidden;
+}
+.wrap .uploader-left .xiangji {
+	text-align:center;
+	margin-top:130px;
+	position:relative;
+}
+.wrap .uploader-right .xiangji {
+	text-align:center;
+	margin-top:130px;
+	position:relative;
+}
+.wrap .upload {
+	position:relative;
+}
+.wrap .upload p {
+	padding-left:80px;
+	font-size:12px;
+	color:#999;
+}
+.wrap .upload b {
+	display:block;
+	width:42px;
+	height:35px;
+	position:absolute;
+	top:-50px;
+	left:152px;
+  background: url("../images/newxiangji.png")no-repeat;
+}
+.wrap .upload .reserve {
+	width:85px;
+	height:35px;
+	position:absolute;
+	top:360px;
+	left:427px;
+	background:#ffa800;
+	color:#fff;
+	font-size:14px;
+	border-radius:10px;
+	outline: none; 
+	border: 1px solid #eee; 
+	cursor: pointer;
+}
+
+#idcardpositive , #idcardnegative {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 345px;
+	height: 220px;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	font-size: 200px;
+}
+
+.identitynow , .idenfaliure {
+	text-align: center;
+}
+.identitynow > img , .idenfaliure > img {
+	margin-top: 70px;
+	margin-bottom: 23px;
+}
+.reupload {
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+	width:85px;
+	height:35px;
+	background:#ffa800;
+	color:#fff;
+	font-size:14px;
+	border-radius:10px;
+	outline: none; 
+	border: 1px solid #eee; 
+	cursor: pointer;
+}
+
+.idcard-mark {
+	display: none;
+	position: absolute;
+	top: 31px;
+	left: 81px;
+	width: 345px;
+	height: 220px;
+	background: #000;
+	opacity: .5;
+	filter: alpha(opacity = 50);
+}
+
+.idcard-mark img {
+	width: 100%;
+	height: 100%;
+	max-width: 100%; 
+}
+
+.first , .second , .three {
+	width: 910px;
+}

@@ -1,0 +1,23 @@
+.new_aboutus .wrap {
+	height:785px;
+	margin-top:20px;
+}
+.wrap .wrap-right {
+	width:910px;
+}
+
+.wrap .wrap-right .mess {
+	margin-top:10px;
+}
+.wrap .wrap-right .mess-con {
+	padding-top:10px;
+	height:500px;
+	line-height:30px;
+}
+.wrap .wrap-right p {
+	text-indent:2em;
+	font-size:16px;
+	 text-align:justify;
+	  text-justify:inter-ideograph;
+	
+}

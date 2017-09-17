@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>我要推广</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link href="/static/wechat/assets/css/base.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/qrcode.js?ver=20161211"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/j.js?ver=20161211"></script>
+
+		<style>
+			.bg img {
+				width: 100%;
+				height: 100%;
+			}
+			
+			.wid {
+				position: absolute;
+				top: 0px;
+				left: 9%;
+			}
+			
+			.top img {
+				width: 50%;
+				margin-top: 88%;
+				margin-left: 25%;
+				border-radius: 6px;
+				border: 6px solid #fff;
+			}
+			
+			.top p {
+				line-height: 3rem;
+				font-size: 1.4rem;
+				color: #fff;
+				text-align: center;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="bg">
+			<img src="/static/wechat/assets/images/generalize.png">
+		</div>
+		<div class="wid">
+			<div class="top" id="top">
+				<div id="t_code">
+
+				</div>
+				<p>所学即所得 扫到好生活</p>
+			</div>
+		</div>
+		<script>
+			document.ready = function() {
+				//                              var uid = getCookie('cookie_brsy_h5_uid');
+				var usertype = getCookie('cookie_brsy_h5_usertype');
+				var mycode = getCookie("cookie_brsy_h5_mycode");
+				var name = getCookie("cookie_brsy_h5_name");
+				
+				if(mycode == null || name == '') {
+					window.location.href = "/static/wechat/src/admin/login/upgrade_login.html?tg=tg";
+				} else {
+
+					$('.top img').css("margin-top", window.height * 0.75 + 'px');
+					var qrcode = new QRCode(document.getElementById("t_code"), {
+						width: 308, //设置宽高
+						height: 308
+					});
+
+					if(usertype == 1) {
+						qrcode.makeCode(api + "/static/forAPP/register.html?mycode=" + mycode + "&name=" + name); //分享注册
+					} else {
+						qrcode.makeCode(api + "/static/wechat/src/admin/register/upgrade_register.html?"); //
+
+					}
+
+				}
+			}
+		</script>
+	</body>
+
+</html>
+<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>

@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>团购管理</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link href="/static/wechat/assets/css/base.css" type="text/css" rel="stylesheet">
+		<link href="/static/wechat/assets/css/lr.css" type="text/css" rel="stylesheet">
+		<link href="/static/wechat/assets/css/settings.css" type="text/css" rel="stylesheet">
+		<link href="wallet.css" type="text/css" rel="stylesheet">
+		<link href="manage.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/iscroll5/iscroll5.js"></script>
+	</head>
+
+	<body>
+		<div class="logo">
+			<div class="head">
+				<a href="rules.html"><img src="/static/wechat/assets/images/group_why.png"></a>
+			</div>
+			<div class="information">
+				<p>团购卡余量</p>
+				<p class="q" id="teamBuyCanCount">0</p>
+				<p class="already_sell">已拆分<span id="card_count1">0</span>张，已零售<span id="card_count2">0</span>张，激活量<span id="jihuocount">0</span>张</p>
+			</div>
+			<div class="card_count clearfix">
+				<div class="gift_all all bgl">
+					<div class="gift_card total">
+						<p>礼品卡总量<span class="q gift_total">50</span>张</p>
+					</div>
+					<div class="gift surplus">
+						<p>余量<span class="q gift_surplus">30</span>张</p>
+					</div>
+				</div>
+				<!--<div class="clear clear_top"></div>-->
+				<div class="study_all all bgr">
+					<div class="study_card total">
+						<p>学习卡总量<span class="purple study_total">50</span>张</p>
+					</div>
+					<div class="study surplus">
+						<p>余量<span class="purple study_surplus">30</span>张</p>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<!--<div class="buttons clearfix"> <a href="iwantto_groupbuying.html" class="recharge">我要团购</a> <a href="iwantto_split.html" class="widthdraw">我要拆分</a> </div>!-->
+		<div class="wid">
+			<ul class="form button_group clearfix">
+				<li>
+					<a href="javascript:void(0);" id="go_groupbuying" onclick="toTeamBuy()" class="clearfix"><img src="/static/wechat/assets/images/manage_icon_buy.png">
+						<p>我要团购</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" id="go_split" onclick="toSplit()" class="clearfix"><img src="/static/wechat/assets/images/manage_icon_split.png">
+						<p>我要拆分</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" id="go_turn" onclick="toTurn()" class="clearfix"><img src="/static/wechat/assets/images/manage_icon_turn.png">
+						<p>我要转换</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="wid">
+			<ul class="form">
+				<li>
+					<a href="/static/wechat/src/self/mygroup/gruopbuying_racord.html" id="mygroupbuying" class="clearfix">我的团购<span class="fr">累计<b class="q" id="groupbuy_count"></b>张</span></a>
+				</li>
+				<li>
+					<a href="/static/wechat/src/self/mysplit/split_racord.html" id="mysplit" class="clearfix">我的拆分<span class="fr">累计<b class="q" id="split_count"></b>张</span></a>
+				</li>
+				<li>
+					<a href="/static/wechat/src/self/mycommission/commission_racord.html" id="mycommission" class="clearfix">我的佣金</a>
+				</li>
+				<li>
+					<a href="/static/wechat/src/self/mygift/my_gift.html" id="mygift" class="clearfix">我的礼品卡</a>
+				</li>
+			</ul>
+		</div>
+		<!--<div class="button_want">
+      <button class="button" id="go_groupbuying" onclick="toTeamBuy()">
+      <a href="iwantto_groupbuying.html">我要团购</a>
+      </button>
+      <button class="button" id="go_split" onclick="toSplit()">
+      <a href="iwantto_split.html" class="widthdraw">我要拆分</a>
+      </button>
+    </div>-->
+		<script src="/static/wechat/assets/js/app.js"></script>
+		<script type="text/javascript" src="groupbuying_manage.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	</body>
+
+</html>

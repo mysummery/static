@@ -1,0 +1,87 @@
+.headerSign {
+	background-image: url(/static/wechat/assets/images/sigin-back.png);
+	background-size: 100%;
+	height: 18rem;
+}
+
+.headerRaiders {
+	background: url(/static/wechat/assets/images/sigin-gl.png) right center no-repeat;
+	position: relative;
+	right: 1.2rem;
+	background-position-y: 1.1rem;
+	background-size: 19%;
+	height: 3rem;
+}
+
+.clickSign {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: -14rem;
+}
+
+.clickSign img {
+	width: 6rem;
+	position: relative;
+}
+
+.signNumber {
+    text-align: center;
+    position: relative;
+    top: -12.5rem;
+    color: #fff;
+}
+
+.signList {
+	text-align: center;
+	position: relative;
+	top: -10.5rem;
+}
+
+.signList>div {
+	background: url(/static/wechat/assets/images/signYes.png) center no-repeat;
+	height: 2rem;
+	background-size: 4%;
+}
+
+.signList ul {
+	display: inline-block;
+}
+
+.signList ul>li {
+	float: left;
+}
+
+.signList ul>li>img {
+	width: 1.4rem;
+}
+
+.signList ul>li>span {
+    display: block;
+    width: 1.3rem;
+    height: 1px;
+    float: right;
+    border-bottom: 1px solid #ffe3bc;
+    border-top: 1px solid #ffe3bc;
+    position: relative;
+    top: 0.7rem;
+    background: #ffe3bc;
+}
+.signList>ul>li:last-child>img: {
+    position: absolute;
+    top: -2rem;
+}
+.signBody {
+    position: relative;
+    top: -10.5rem;
+}
+.signBody img {
+    width: 100%;
+}
+.signList ul:last-child {
+    margin-right: 1rem;
+}
+.signList>ul:last-child > li {
+    margin-left: 1.1rem;
+    color: #ffb955;
+}

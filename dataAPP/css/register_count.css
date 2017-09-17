@@ -1,0 +1,114 @@
+html,
+body {
+	font-size: 1.2rem;
+	background: #88a2ff;
+}
+
+#main canvas {
+	background: #88a2ff;
+
+}
+
+#main {
+	width: 100%;
+	height: 25rem;
+
+	/*width: 600px;
+	height: 400px;*/
+}
+
+#main div {
+	
+}
+.top{
+	text-align:center;
+	background:#ffffff;
+	height:16rem;
+	padding-top:1rem;
+}
+.top .tabs{
+	
+	margin-left:4.6rem;
+	width:22rem;
+	height:2.4rem;
+	border:2px solid #4c70e5;
+	border-radius:0.5rem;
+}
+.top .tabs li{
+	float:left;
+	width:33%;
+	height:2.4rem;
+	line-height:2.4rem;
+	color:#4c70e5;
+}
+.top .tabs li.tab_bg{
+	background:#4c70e5;
+	color:#ffffff;
+}
+.top .tabs li:first-child{
+	border-radius:0.5rem 0 0 0.5rem;
+	border-right:2px solid #4c70e5;
+}
+.top .tabs li:last-child{
+	float:right;
+	border-radius:0 0.5rem 0.5rem 0;
+	border-left:2px solid #4c70e5;
+}
+.circle{
+
+	margin:1.5rem auto;
+	color:#ffffff;
+	width:8.3rem;
+	height:8.3rem;
+	text-align:center;
+	border-radius:50%;
+	background:linear-gradient(#d1dcff,#4c70e6);
+}
+.circle p:first-child{
+	padding-top:1.6rem;
+	font-size:1.2rem;
+}
+.circle .register_count{
+	font-size:2rem;
+	font-weight:bold;
+}
+.previous{
+	-moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    -o-transform:scaleX(-1);
+    transform:scaleX(-1);
+    /*IE*/
+    filter:FlipH;
+}
+.date{
+	padding:0 6.3rem;
+}
+.choose_date{
+	padding-bottom:1.7rem;
+	font-size:1.2rem;
+}
+.choose_date img{
+	width:1rem;
+}
+#main1 {
+	width: 100%;
+	height: 6.5rem;
+	margin-top:3rem;
+	/*width: 600px;
+	height: 400px;*/
+
+}
+.main1_total{
+	height:8rem;
+	background:#ffffff;
+}
+.titles{
+	padding-left:12%;
+	color:#4c70e5;
+	font-size:1.2rem;
+}
+.titles span{
+	display: inline-block;
+	width:28%;
+	text-align:center;
+	}

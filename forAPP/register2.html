@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link rel="stylesheet" type="text/css" href="/static/forAPP/css/register2.css">
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<img id="jjImg" src="images/share.jpg" alt="">
+		<p>
+			<h3 class="title">通向成功的殿堂一段文字</h3>
+		</p>
+		<p>您对自己的生活满意吗？您想用碎片的时间来改变自己一生吗？</p>
+		<p>注册并加入李强365，让您完成一件“一本万利”的伟大事情，学习是一比一百的回报，如果您耐心的看完这段话，相信您的人生从此会变得更加完美。</p>
+		<p>如果您身为一名普通的职工，在忙碌的工作和生活中或许应停一停自己的脚步了，静静的思考一下，展望自己的未来，是前途无量？还是一事无成？想一想您此时所走的路，是通向成功的还是碌碌无为的？您想知道答案吗？来到李强365可以解决您的所有的疑惑，让您豁然开朗，寻找到正确的人生的道路。这里有最著名的企业家导师“李强”和您分享成功的经验，助您找对方向，避开障碍、避开弯路走向成功。如果您身为一名企业家，虽然家财万贯，但您是否真正的快乐？您的家庭是否美满？或许最让您牵挂的不是金钱，而是您的家人或子女。加入李强365可以和中国最著名的感恩教育专家“李强”共同体会成功的人生，让您了解到自己内心深处的牵挂，告诉您如何让子女健康快乐的成长，让您成为一个事业和家庭共赢的人。</p>
+		</div>
+		<iframe src="http://www.56.com/iframe/MTQxMzY0ODYy" frameborder="0" allowfullscreen="true"></iframe>
+		<img id="jjImg" src="images/head.jpg" alt="">
+		
+		<img id="jjImg" src="http://www.liqiang365.com:80/uploadtemp/image/2016/6/7e06a25c97ad00.jpg" alt="">
+		<div class="container">
+			<input id="name" class="_input"  type="text" placeholder="请输入姓名">
+			<input id="account" class="_input"  type="text" placeholder="请输入手机号码">
+			<input id="password" class="_input" type="password" placeholder="请设置登录密码">
+			<div class="flx">
+				<input style="width: 55%;margin-bottom: 20px;" class="_input" id="checkCode" placeholder="请输入图片验证码">
+				<img id="imgCheckCode" onclick="selectCodeCheck();" src="/appVcode/getCode" style="height: 50px;background-color: #A5DE37;width: 36%;margin-left: 2%;font-size: 17px;color: #f8f8f8;padding: 0;float:right;">
+			</div>
+			<input id="checkcode" name="checkcode" class="_input checkcode"  type="text" placeholder="请输入短信验证码">
+			<button class="_input button_" onclick="getCheckcode()">获取验证码</button>
+			<p class="_input load">
+				<span>邀请人 :</span><span class="texts"  id="yaoqingren"></span>
+			</p>
+			<p class="_input load">
+				<span>邀请码 :</span><span class="texts"  id="beicode">95643a</span>
+			</p>
+
+			<div class="agree">
+				<input id="check1" type="checkbox" checked><span>我已经阅读并同意</span>
+				<a class="goXy" href="registerxy.html">《用户注册协议》</a>
+			</div>
+			<button class="_input buttons" onclick="saveForm()">注册</button>
+			<!--8.17 zmy 增加登录按钮-->
+			<button class="_input buttons gologin"  onclick="gologin()">普通会员在此登录激活账号
+
+</button>
+		</div>
+		<script type="text/javascript" src="/static/wechat/assets/js/app.js?ver=1481512129"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+		<script type="text/javascript" src="/static/forAPP/js/register2.js?ver=1481512122"></script>
+		<script>
+			initEdit();
+		</script>
+	</body>
+
+</html>

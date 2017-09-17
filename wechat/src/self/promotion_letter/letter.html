@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>推广信</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link href="/static/wechat/assets/css/base.css" type="text/css" rel="stylesheet">
+		<link href="/static/wechat/assets/css/lr.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<link rel="stylesheet" href="/static/wechat/src/admin/register/register_weixin.css" type="text/css" />
+		<link href="letter.css" type="text/css" rel="stylesheet">
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script src="/static/wechat/page/bootstrap/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+		<script type="text/javascript" src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	</head>
+
+	<body>
+		<!--<img src="/static/wechat/assets/images/letter_top.png" class="letter_img">-->
+		<div class="hide"></div>
+		<div class="choose">
+			<p>恭喜您注册成功！</p>
+			<div class="rePay" onclick="success()">现在升级</div>
+			<div class="close" onclick="download()">暂不升级</div>
+		</div>
+		<video width="100%" height="100%" controls="" id="video" src="http://video.liqiang365.com/video/videoclips/liqiang365Introduction.mp4" poster="/static/wechat/assets/images/letter_top.png">
+
+				Your browser does not support the video tag.
+			</video>
+		<div class="letter_content wid">
+			<h2>是前途无量？还是一事无成？</h2>
+			<p>为什么你的人生总是无法突破？为什么你的努力总是得不到回报？为什么你不能拥有成功的事业、满意的财富、甜蜜的爱情？</p>
+			<p>如果你是一位企业家，想要解决员工懈怠工作，高层疲于救火，人力内耗严重的问题。</p>
+			<p>想要带出一支指哪打哪的队伍？想要将理论规章制度落地实施？想要吸引投资合作伙伴加盟？注册李强365升级成为VIP会员，轻松学习商管天下的实战经验。</p>
+			<p>如果你是一位宝妈，因为结婚，你放弃了工作；因为孩子，你放弃了学习；那么请不要以任何名义放弃梦想和独立！注册李强365，给自己一份事业，给自己一次提升的机会，给自己一个看看外面世界的窗口。 </p>
+			<p>如果你是一位创业者，苦于项目不好找？投资风险大？人脉资源少？李强365是你不二的选择。你与成功者之间只差一个平台，李强365一个平台链接两个问题，解决学习的问题，提供创业的机会。</p>
+			<p>人生最可悲的三件事：“不知道”，“不相信”，“来不及”。观望会让你错失机会，拖延会让你落于人后。</p>
+			<p>你是否真的渴望成功？你是否真的渴望引爆利润？你是否真的渴望华丽逆袭？李强365一个金钱堆砌的厚利平台，一个知识创新的平台，一个商机无限的平台！李强365为每一个急于蜕变的你而存在。</p>
+		</div>
+		<img src="/static/wechat/assets/images/letter_bottom.png" class="letter_img">
+		<div class="wid">
+			<div class="form">
+				<p>
+					<input type="text" placeholder="请输入姓名" class="name" id="name" onkeyup="value=value.replace(/[^\w\u4E00-\u9FA5]/g, '')"  maxlength="11">
+				</p>
+				<p>
+					<input type="text" placeholder="请输入手机号" class="phone" id="account" type="number">
+				</p>
+				<p>
+					<input type="password" placeholder="设置登录密码(6~20位数字与字母组合)" class="password" id="password" onblur="picture_check()">
+				</p>
+				<p class="hidecode" id="hide_code">
+					<input class="codeCheck" style="width: 50%;" id="c_checkCode" placeholder="请输入图片验证码">
+					<img id="imgCheckCode" onclick="selectCodeCheck();" src="https://api.liqiang365.com/validcode/get" style="width:33%;float: right;margin-top: 0px;height: 3.5rem;">
+					 </p>
+				<p>
+					<input type="text" id="checkcode" class="code" placeholder="请输入短信验证码" type="number">
+					<button class="button" id="gain" onclick="getCheckcode()" style="background:none;border:1px solid #00a0e9;color:#00a0e9;">获取验证码</button>
+				</p>
+				<p>
+					<span type="text" class="person init" id="person">邀请人：<b></b></span>
+				</p>
+				<p>
+					<span type="text" class="beicode init" id="beicode">邀请码：<b></b></span>
+				</p>
+
+				<p class="agree">
+					<input type="checkbox" id="checkbox-1" checked/>
+					<label for="checkbox-1" id="lab"></label>
+					<span>同意</span>
+					<a href="/static/wechat/src/service/registerxy.html">《用户注册协议》</a>
+				</p>
+				<P>
+					<button type="submit" class="button" id="register" onclick="saveForm()">注册</button>
+				</P>
+				<p>
+					<button class="button" id="gologin" onClick="gologin()">普通会员在此登录激活账号</button>
+				</p>
+			</div>
+		</div>
+		<input type="hidden" id="obj">
+		<script src="/static/wechat/assets/js/app.js?ver=2016121313"></script>
+		<script type="text/javascript" src="letter.js?ver=2016121313"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	</body>
+
+</html>

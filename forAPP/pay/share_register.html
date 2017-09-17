@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>会员中心</title>
+		<link href="/static/wechat/assets/css/base.css" type="text/css" rel="stylesheet">
+		<link href="/static/forAPP/css/share_register.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+	</head>
+
+	<body>
+		<div class="hide"></div>
+		<div class="share_loading"><img src="../images/share_loading.gif" />
+			<p>信息提交中...</p>
+			<p>即将跳转至支付页面</p>
+		</div>
+		<div class="share_payFail">
+			<p>支付失败？</p>
+			<div class="rePay">重新支付</div>
+			<div class="close">取消</div>
+		</div>
+		<div class="share_href">
+			<p>您已注册过李强365，</p>
+			<p>是否进入登录支付界面？</p></p>
+			<div class="href_rePay">确认</div>
+			<div class="href_close">取消</div>
+		</div>
+		<div class="wrap">
+			<div class="title_top">
+				<div class="title_top_content">
+					<span>李强365</span>
+					<img src="../images/novip.png" />
+				</div>
+			</div>
+
+			<div class="content_form">
+				<div class="content_form_param">
+					<span>推广人：<span id="yaoqingren"></span></span>
+					<span>邀请码：<span id="beicode"></span></span>
+				</div>
+				<div class="content_form_register">
+					<div class="the">
+						<input type="text" class="register_name" placeholder="请填写您的姓名(必填)" />
+					</div>
+					<div class="the">
+						<input type="text" class="register_account" placeholder="请填写您的手机号(必填)"/>
+					</div>
+					<div class="the">
+						<input type="password" class="register_password" placeholder="设置密码(6~20位数字与字母组合)" onblur="picture_check()"/>
+					</div>
+					<div class="row hidecode">
+						<input class="register_imgCode" id="c_checkCode" placeholder="请输入图片验证">
+						<img id="imgCheckCode" onclick="selectCodeCheck();" style=" margin-top: -0.3rem;   margin-left: 11px;width:31%;float: right;height: 2.8rem;" src="https://api.liqiang365.com/validcode/get">
+					</div>
+					<div class="row">
+						<input type="text" class="register_Code" id="checkcode" class="code" placeholder="请输入验证码"><button class="button" id="gain" onclick="getCheckcode()">获取验证码</button>
+					</div>
+				</div>
+
+				<div class="content_form_thead">
+					<div class="price_title">
+						<span>会员期限</span>
+						<span>金额</span>
+					</div>
+					<div class="price">
+						<span>1年</span>
+						<span>365元</span>
+					</div>
+					<div class="check">
+						<img src="/static/forAPP/images/check.png" />
+						<span>微信支付</span>
+					</div>
+				</div>
+				<div class="isRegister" onclick="submit();">
+					<a href="javascript:void(0)">注册</a>
+				</div>
+				<div class="isLogin" onclick="goLogin();">
+					<a href="javascript:void(0)">普通会员升级</a>
+				</div>
+				<div class="go_seri">点击"确定"按钮，即表示同意
+					<a class="goXy" href="../registerxy.html">《会员服务协议》</a>
+				</div>
+				
+			</div>
+
+		</div>
+				<input type="hidden" id="obj">
+		<script type="text/javascript" src="/static/wechat/assets/js/app.js?ver=1481512130"></script>
+		<script type="text/javascript" src="/static/forAPP/js/share_register.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	</body>
+
+</html>

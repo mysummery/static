@@ -1,0 +1,369 @@
+/*
+*** author: 李思远;
+*** date: 2017-05-05;
+*/
+body {
+	background: #f2f8fa; 
+	font-family: '微软雅黑';
+	font-size: 1.2rem;
+}
+a,
+input {
+	-webkit-tap-highlight-color:transparent;
+}
+header {
+	margin-top: .85rem;
+	height: 8.95rem;
+	background: #fff;
+}
+.indent-sub-container {
+	width: 94.6%;
+	margin: 0 auto;
+}
+.indent-sub-img {
+	width: 8.95rem;
+	height: 8.95rem;
+}
+.indent-sub-img > img {
+	width: 8.95rem;
+	height: 8.95rem;
+	max-width: 100%;
+}
+.indent-sub-text {
+	width: 20.5rem;
+	height: 3rem;
+	line-height: 1.4;
+	margin: 1.3rem 0;
+	color: #000;
+	font-size: 1.2rem;
+	font-weight: 400;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.indent-sub-num > a {
+	float: left;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	padding: 0 .7rem;
+	color: #999;
+	font-size: 1.6rem;
+	border: 1px solid #e3e3e3;
+	border-radius: 3px;
+}
+#indent-sub-num-add {
+	border-left: none;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0; 
+}
+#indent-sub-num-minus {
+	padding: 0 .8rem;
+	border-right: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0; 
+}
+.indent-sub-num-input {
+	width: 15.3rem;
+	height: 2.5rem;
+	color: #00a0e9;
+	font-size: 1.2rem;
+	border: 1px solid #e3e3e3;
+	text-align: center;
+}
+
+/*内容*/
+section {
+	margin-top: .85rem;
+	background: #fff;
+}
+.indent-sub-change {
+	border-bottom: 1px solid #f0f0f0;
+	overflow: hidden;
+}
+.indent-sub-title {
+	width: 3.1rem;
+	margin-top: 1.3rem;
+	padding-top: .4rem;
+	color: #666;
+}
+.indent-sub-type {
+	width: 26.4rem;
+}
+.indent-sub-title > span, 
+.indent-sub-type > span {
+	font-size: 1.4rem;
+}
+.indent-sub-type ul li {
+	float: left;
+	margin-left: .9rem;
+
+	padding: .4rem 1rem;
+	color: #999;
+}
+.indent-sub-type ul li.current {
+	color: #00a0e9;
+	background: #f2f8fa;
+}
+.indent-sub-invoice-type {
+	color: #999;
+}
+.need-indent {
+	height: 3.9rem;
+	line-height: 3.9rem;
+	border-bottom: 1px solid #f0f0f0;
+}
+.invoice-information-all {
+	display: none;
+}
+.indent-sub-invoice-information {
+	padding-bottom: 1rem;
+}
+.indent-sub-invoice-type,
+.indent-sub-invoice-information {
+	margin-top: 1.3rem;
+	font-size: 1.4rem;
+}
+.need-indent > span,
+.indent-sub-invoice-type > span,
+.indent-sub-invoice-information > span {
+	display: inline-block;
+	width: 6rem;
+	color: #666;
+	font-size: 1.4rem;
+}
+.invoice-information-change {
+	display: inline-block;
+}
+.invoice-information-change a {
+	color: #999;
+	font-size: 1.4rem;
+}
+.invoice-information-change a:first-child {
+	margin-right: 2.5rem;
+}
+.invoice-information-change i {
+	display: inline-block;
+	width: 1.4rem;
+	height: 1.4rem;
+	margin-right: .5rem;
+	border: 1px solid #999;
+	border-radius: 50%;
+	vertical-align: sub;
+}
+.invoice-information-change .current {
+	color: #00a0e9;
+}
+.invoice-information-change .current i {
+	border-color: #00a0e9;
+	background-image: url('/static/wechat/assets/images/invoice.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: .8rem .6rem;   
+}
+
+/*转换按钮*/
+
+.list-block .item-input {
+    width: 100%;
+    margin-top: -.4rem;
+    margin-bottom: -.35rem;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    -webkit-flex-shrink: 1;
+    -ms-flex: 0 1 auto;
+    -webkit-flex-shrink: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
+}
+
+.label-switch {
+    position: relative;
+    display: inline-block;
+    width: 5.3rem;
+    height: 2.7rem;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    vertical-align: middle;
+    cursor: pointer;
+    border-radius: 1.6rem;
+    -ms-flex-item-align: center;
+    -webkit-align-self: center;
+    align-self: center;
+    -webkit-tap-highlight-color:transparent;
+}
+
+.label-switch input[type="checkbox"] {
+    position: absolute;
+    z-index: 1;
+    width: 5.3rem;
+    height: 2.7rem;
+    opacity: 0;
+}
+
+.label-switch input[type="checkbox"]:checked + .checkbox {
+    background: #00a0e9;
+}
+
+.label-switch .checkbox {
+    position: relative;
+    z-index: 0;
+    width: 5.3rem;
+    height: 2.7rem;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    background: #e5e5e5;
+    border: none;
+    border-radius: 1.6rem;
+    -webkit-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+}
+
+.label-switch input[type="checkbox"]:checked + .checkbox:before {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transform: scale(0);
+}
+
+.label-switch .checkbox:before {
+	border:1px solid #e3e3e3;
+    position: absolute;
+    
+    left: .1rem;
+    z-index: 1;
+    width: 4.5rem;
+    height: 2.2rem;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    content: ' ';
+    background: #fff;
+    border-radius: 1.4rem;
+    -webkit-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.label-switch input[type="checkbox"]:checked + .checkbox:after {
+    -webkit-transform: translateX(2.7rem);
+    -ms-transform: translateX(2.7rem);
+    -o-transform: translateX(2.7rem);
+    transform: translateX(2.7rem);
+}
+
+.label-switch .checkbox:after {
+    position: absolute;
+
+    left: .1rem;
+    z-index: 2;
+    width: 2rem;
+    height: 2rem;
+    content: ' ';
+    background: #fff;
+    border-radius: 1.6rem;
+    box-shadow: 0 .1rem .25rem rgba(0, 0, 0, .4);
+    -webkit-transition-duration: 300ms;
+    -o-transition-duration: 300ms;
+    transition-duration: 300ms;
+    -webkit-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+    transform: translateX(0px);
+}
+
+/*按钮end*/
+
+.edit-corporate-name {
+	display: none;
+	
+	margin-bottom: 1rem;
+
+}
+.edit-corporate-name > input {
+	width: 28.5rem;
+	line-height: 1;
+	padding: 1rem .5rem;
+	color: #999;
+	font-size: 1.4rem;
+	border: none;
+	outline: none;
+	background: #f2f8fa;
+}
+.indent-sub-invoice-content {
+	border-bottom: 1px solid #f0f0f0;
+}
+.indent-sub-invoice-content p {
+	margin-top: .3rem;
+	color: #666;
+	font-size: 1.4rem;
+}
+.indent-sub-invoice-content ul li {
+	float: left;
+	width: 50%;
+	margin: 1rem 0;
+}
+.indent-sub-invoice-content ul li a {
+	color: #666;
+	font-size: 1.4rem;
+}
+.indent-sub-invoice-content ul li a i {
+	display: inline-block;
+	width: 1.4rem;
+	height: 1.4rem;
+	margin-right: 1rem;
+	border: 1px solid #999;
+	border-radius: 50%;
+	vertical-align: sub;
+}
+.indent-sub-invoice-content ul li.current a {
+	color: #00a0e9;
+}
+.indent-sub-invoice-content ul li.current a i {
+	border-color: #00a0e9;
+	background-image: url('/static/wechat/assets/images/invoice.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: .8rem .6rem; 
+}
+.indent-sub-msg textarea {
+	width: 29rem;
+	height: 3.6rem;
+	margin-top: 1rem;
+	padding: .5rem;
+	font-family: '微软雅黑';
+	font-size: 1.4rem;
+	color: #999;
+	border: 1px solid #e3e3e3;
+	resize: none;
+}
+.indent-sub-btn {
+	margin-top: 5rem;
+	padding-bottom: 7.8rem;
+	background: #fff;
+	text-align: center;
+}
+.indent-sub-btn input {
+	width: 26rem;
+	height: 4rem;
+	line-height: 4rem;
+	color: #fff;
+	font-family: '微软雅黑';
+	font-size: 1.4rem;
+	background: #00a0e9;
+	text-align: center;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+}

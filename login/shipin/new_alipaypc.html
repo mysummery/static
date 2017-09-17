@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>页面跳转中</title>
+		<script src="./js/jquery-1.8.3.min.js" type="text/javascript"></script>
+		<script src="/static/wechat/assets/js/app.js"></script>
+		<link rel="stylesheet" type="text/css" href="./css/weiyih5.css">
+	</head>
+	<body>
+		
+	</head>
+	<body>
+		<div class="box">
+			
+		</div>
+		<p style="text-align: center; font-size: 1.6em; margin-top: 70%;">
+			支付跳转中...
+		</p>
+		<script type="text/javascript">
+	
+	/**
+	 * 获取URL参数
+	 */
+	function getQueryString(name) {
+		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+		var r = window.location.search.substr(1).match(reg);
+		if (r != null)
+			return unescape(r[2]);
+		return null;
+	}
+
+	var token = getQueryString("token");
+	var updateVersion = getQueryString("updateVersion");
+	var uid = getQueryString("uid");
+	var orderId = getQueryString("oid");
+	var action="https://dev-pay.liqiang365.com/alipay/pay";
+	ajaxWebPostAsyncData(action, {
+			"token": token,
+			"updateVersion": updateVersion,
+			"uid": uid,
+			"orderId": orderId
+		}, false, function(data) {
+		
+			if(data.code == "40000") {
+				var resdata = data.resobj;
+				    console.log(resdata);
+				    
+				    $(".box").html(resdata);	
+
+			}
+		}, 'json')
+	</script>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<title>会员中心</title>
+		<link href="/static/forAPP/css/share_login.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+
+	</head>
+
+	<body>
+		<div class="hide"></div>
+		<div class="share_loading"><img src="../images/share_loading.gif" />
+			<p>信息提交中...</p>
+			<p>即将跳转至支付页面</p>
+		</div>
+		<div class="share_payFail">
+			<p>支付失败？</p>
+			<div class="rePay">重新支付</div>
+			<div class="close">取消</div>
+		</div>
+		<div class="wrap">
+			<div class="share_login">
+				<div class="input_form">
+					<input type="text" placeholder="请输入您的账户" class="register_account" />
+				</div>
+				<div class="input_form">
+					<input type="password" placeholder="请输入您的密码" class="register_password" />
+				</div>
+				<div class="isRegister" onclick="login();">
+					<a href="javascript:void(0)">登录升级</a>
+				</div>
+			</div>
+
+		</div>
+		<span id="beicode" style="display: none;"></span>
+		</div>
+		<script type="text/javascript" src="/static/wechat/assets/js/app.js?ver=1481512130"></script>
+		<script type="text/javascript" src="/static/forAPP/js/share_login.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	</body>
+
+</html>

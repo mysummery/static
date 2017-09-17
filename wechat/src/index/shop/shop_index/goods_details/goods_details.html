@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link href="/static/wechat/assets/css/base.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<link rel="stylesheet" href="goods_details.css" type="text/css" />
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+	</head>
+	<body>
+		<!-- 商城用户显示 -->
+		<div class="shopMark" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 3rem; z-index: 9;">
+			<img style="width: 100%;" src="/static/wechat/assets/images/goApp.png">
+			<a href="/static/wechat/src/admin/download.html" style="position: absolute; right: 4rem; top: 1rem; width: 7rem; height: 1.5rem; cursor: pointer;"></a>
+			<i style="position: absolute; right: 0; top: .5rem; display: inline-block; width: 1rem; height: 1rem; padding: 10px;  cursor: pointer; "></i>
+		</div>
+
+
+		<div class="total">
+			<video width="100%" height="100%" controls id="video" src="" >
+
+				Your browser does not support the video tag.
+			</video>
+			<div class="wid">
+				<p class="zc_top">
+					<span class="zc_state"></span>
+					<span class="zc_name"></span>
+				</p>
+				<p class="zc_intro">
+					
+				</p>
+			</div>
+		</div>
+		<div class="total">
+			<div class="wid">
+				<p class="zc_starts">项目发起人：
+					<span class="zc_start">北京博睿思远网络科技有限公司</span>
+					<a href="tel:400-9009-365" class="phone fr"><img src="/static/wechat/assets/images/zc_phone.png"></a>
+				</p>
+				<p class="progress clearfix">
+					<span class="t left fl"></span>
+					<span class="percent"></span>
+					<span class="t right fr"></span>
+				</p>
+				<p class="already_get">
+					<span>已筹：<b class="blue money"></b></span>
+					<span class="fr">已进行：<b class="blue day"></b></span>
+				</p>
+			</div>
+			<ul class="contents clearfix">
+					<li>
+						<p class="blue target"></p>
+						<p>目标金额</p>
+					</li>
+					<li>
+						<p class="blue deadline"></p>
+						<p>剩余时间</p>
+					</li>
+					<li>
+						<p class="blue personnum"></p>
+						<p>支持人数</p>
+					</li>
+				</ul>
+		</div>
+		<div class="total contents_details">
+			<div class="wid">
+				<img src="/static/wechat/assets/images/zc_details.png" class="details_icon">项目详情
+				
+			</div>
+			<div class="goods_introduce"></div>
+			<div class="wid">
+				<p class="agree">
+					<input type="checkbox" id="checkbox-1" checked="checked">
+					<label for="checkbox-1" id="lab" class="label_checked"></label>
+					<span>阅读并同意</span>
+					<a href="/static/wechat/src/service/crowdAgreement.html" class="blue">《支持者协议》</a>
+				</p>
+			</div>
+		</div>
+		<button class="join">参与众筹</button>
+		<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+		<script type="text/javascript" src="goods_details.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	</body>
+</html>

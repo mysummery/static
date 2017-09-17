@@ -1,0 +1,100 @@
+html,
+body,
+* {
+	font-family: 'Microsoft YaHei', 宋体, Tahoma, Helvetica, Arial, 宋体, sans-serif;
+}
+
+html,
+body {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-size: 62.5%;
+	background-color: #f5f5f5;
+}
+
+._input {
+	height: 4rem;
+	border: none;
+	border-radius: 5px;
+	box-shadow: none;
+	text-shadow: none;
+	outline: none;
+	padding: 0 0 0 5%;
+	font-size: 1.4rem;
+	width: 95%;
+	margin-bottom: 1rem;
+}
+
+.title {
+	padding-left: 2%;
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+.container {
+	padding-left: 3%;
+	padding-right: 3%;
+	color: #0071c1;
+	font-size: 1.4rem;
+}
+
+#jjImg {
+	width: 100%;
+}
+
+iframe {
+	width: 100%;
+}
+
+.checkcode {
+	width: 55%;
+}
+
+.button_ {
+	height: 4rem;
+	background-color: #A5DE37;
+	width: 36%;
+	margin-left: 2%;
+	font-size: 1.4rem;
+	color: #f8f8f8;
+	padding: 0;
+	float: right;
+}
+
+.load {
+	margin: 0;
+	background-color: #E0DEDE;
+	line-height: 4rem;
+	color: #A7A7A7;
+	margin-bottom: 1rem;
+}
+
+.texts {
+	padding-left: 0.25rem;
+}
+
+.agree {
+	margin-top: 0.5rem;
+	font-size: 1.4rem;
+	color: #333;
+}
+
+.buttons {
+	width: 100%;
+	background-color: #1b9af7;
+	color: #f8f8f8;
+	padding: 0;
+	margin-top: 1rem;
+	font-size:1.4rem;
+	margin-bottom:0.5rem;
+}
+
+.gologin {
+	color: #1b9af7;
+	border: 1px solid #1b9af7;
+	background: none;
+	margin-top: 0.25rem;
+	margin-bottom:1rem;
+}

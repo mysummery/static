@@ -1,0 +1,956 @@
+* {
+	-webkit-tap-highlight-color:transparent;
+}
+body {
+	position: relative;
+	font-family: '微软雅黑';
+	font-size: 1.1rem;
+	background-image: url('/static/wechat/assets/images/live_bg.png');
+	background-size: cover;
+}
+
+html,
+body{
+	width: 100%;
+	overflow: hidden;
+}
+/*视频*/
+video {
+	width: 100%;
+	height: 100%;
+	object-fit: fill;
+}
+
+.prism-player .prism-big-play-btn {
+	width: 4.8rem;
+	height: 4.8rem;
+	background: url('/static/wechat/assets/images/live_play.png');
+	background-size: 100% 100%;
+	z-index: 999;
+}
+
+.prism-player .prism-cover {
+	background-size: cover;
+}
+
+.prism-player .prism-cover p {
+	position: absolute;
+	top: 49%;
+	left: 50%;
+	margin-left: -4.2rem;
+	font-size: 1.2rem;
+	text-align: center;
+	color: #fff;
+	z-index: 9;
+}
+/*聊天室信息*/
+.chatroom-information {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	width: 8.6rem;
+	height: 3rem;
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 3rem;
+}
+
+.teacher-img {
+	width: 3rem;
+	height: 3rem;
+	border-radius: 50%;
+}
+
+.teacher-img img {
+	width: 100%;
+	height: 100%;
+	max-width: 100%;
+	border-radius: 50%;
+}
+
+.chatroom-num {
+	width: 5.6rem;
+	height: 3rem;
+	color: #fff;
+	font-size: .9rem;
+	text-align: center;
+}
+
+.chatroom-num p {
+	line-height: 1rem;
+}
+
+.chatroom-num p:first-child {
+	padding-top: .5rem;
+}
+
+.chatroom-num p:last-child {
+	padding-top: .2rem;
+}
+
+.chatroom-img {
+	position: absolute;
+	top: 1.4rem;
+	right: 1rem;
+	width: 62.5%;
+	height: 2.2rem;
+	white-space:nowrap;
+	overflow: hidden;
+}
+
+.chatroom-img img {
+	float: right;
+	width: 2.2rem;
+	height: 2.2rem;
+	margin-left: .5rem;
+	white-space:nowrap;
+	border-radius: 50%;
+}
+/*问题列表*/
+.question-list-content {
+	position: absolute;
+	top: 5.5rem;
+	left: 1rem;
+	right: 1rem;
+}
+
+.question-list {
+
+}
+
+.question-sublist {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-bottom: .3rem;
+}
+
+.question-sublist strong {
+	display: none;
+}
+
+.question-information {
+	height: 1.7rem;
+	line-height: 1.7rem;
+	margin-bottom: .1rem;
+	overflow: hidden;
+}
+
+.question-information > i {
+	display: inline-block;
+	width: 1.7rem;
+	height: 1.7rem;
+	line-height: 1.8rem;
+	text-align: center;
+	color: #fff;
+	background-color: #00a0e9;
+	border-radius: 50%;
+	font-style: normal;
+	vertical-align: top;
+}
+
+.question-information > p {
+	position: relative;
+	display: inline-block;
+	width: 92%;
+	height: 1.7rem;
+	line-height: 1.8rem;
+	color: #00a0e9;
+	text-shadow: 1px 1px 1px #666;
+	word-break: keep-all;
+	white-space: nowrap;
+	font-size: 1.3rem;
+	overflow: hidden;
+}
+
+.question-information > p span {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.question-operate {
+	position: relative;
+	height: 1rem;
+	color: #fff;
+	text-shadow: 1px 1px 1px #666;
+	font-size: 1rem;
+}
+
+.question-support {
+	margin-left: 1.2rem;
+	cursor: pointer;
+}
+
+.question-money {
+	position: absolute; 
+	top: 0;
+	left: 60%;
+	cursor: pointer;
+}
+
+.question-money i {
+	display: inline-block;
+	width: .7rem;
+	height: 1rem;
+	margin-right: .2rem;
+	background-image: url('/static/wechat/assets/images/live_money.png');
+	background-size: 100% 100%;
+	vertical-align: middle;
+}
+
+.question-support {
+	position: absolute;
+	top: 0;
+	left: 80%;
+}
+
+.question-support i {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	margin-right: .2rem;
+	background-image: url('/static/wechat/assets/images/live_best.png');
+	background-size: 100% 100%;
+	vertical-align: middle;
+}
+
+.question-slide {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -4rem;
+}
+
+.question-slide i {
+	display: inline-block;
+	width: 3rem;
+	height: 3rem;
+	background-image: url('/static/wechat/assets/images/live_slide.png');
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.question-slide p {
+	position: absolute;
+	top: .6rem;
+	right: 0;
+	font-size: 1rem;
+	color: #00a0e9;
+	text-shadow: 1px 1px 1px #666;
+}
+/*聊天室*/
+.msg-content {
+	position: absolute;
+	left: 1rem;
+	right: 1rem;
+	bottom: 8.8rem;
+	height: 12.4rem;
+	overflow: auto;
+}
+
+.msg-content p {
+	color: #fff;
+	font-size: 1.4rem;
+	text-shadow: 1px 1px 1px #666;
+}
+
+.msg-content p span {
+	font-size: 1.4rem;
+	color: #fff;
+	text-shadow: 1px 1px 1px #666;
+	word-break: break-all;
+}
+
+.msg-content p.mine-msg {
+	color: #fff;
+	font-size: 1.4rem;
+	text-shadow: 1px 1px 1px #666;
+}
+
+.msg-content p.mine-msg span {
+	color: #fff;
+	font-size: 1.4rem;
+	text-shadow: 1px 1px 1px #666;
+}
+/*等级*/
+.msg-content .groupbuylevelimg {
+	width: 1rem;
+	height: 1rem;
+	max-width: 100%;
+	margin-right: .5rem;
+	vertical-align: inherit;
+}
+
+.msg-content .gradeimg {
+	width: 2.4rem;
+	height: 1.1rem;
+	max-width: 100%;
+	margin-right: .5rem;
+	vertical-align: middle;
+}
+/*管理员信息*/
+
+.msg-content p.warden-msg {
+	font-size: 1.4rem;
+	line-height: 1;
+	text-shadow: 1px 1px 1px #666;
+	color: #00ffff;
+}
+
+.msg-content p.warden-msg img {
+	width: 2.5rem;
+	height: 1.2rem;
+	max-width: 100%;
+	margin-right: .5rem;
+	vertical-align: middle;
+}
+
+.msg-content p.warden-msg span {
+	display: inline-block;
+	padding: 3px 5px;
+	color: #333;
+	background-color: #00ffff;
+	border-radius: 5px;
+	text-shadow: 0 0 0 #666;
+	font-size: 1.4rem;
+}
+
+.msg-content p.kick-msg {
+	font-size: 1.4rem;
+	color: #fff;
+	text-shadow: 1px 1px 1px #666;
+}
+
+.msg-content p.kick-msg span {
+	font-size: 1.4rem;
+	color: #00fdff;
+	text-shadow: 1px 1px 1px #666;
+}
+/*进入房间提示*/
+.msg-content p.entry-hint {
+	color: #0ff;
+	font-size: 1.4rem;
+	text-shadow: 1px 1px 1px #666;
+}
+
+.msg-content p.entry-hint span {
+	color: #fff;
+	font-size: 1.4rem;
+	text-shadow: 1px 1px 1px #666;
+}
+/*禁言*/
+.msg-content p.ban-msg {
+	color: #fff;
+	font-size: 1.4rem;
+	text-shadow: 1px 1px 1px #666;
+}
+
+.msg-content p.ban-msg span {
+	color: #00fdff;
+	font-size: 1.4rem;
+	text-shadow: 1px 1px 1px #666;
+}
+/*支付成功返回消息*/
+.msg-content p.pay-msg {
+	color: #fff200;
+	font-size: 1.4rem;
+	text-shadow: 1px 1px 1px #666;
+}
+/*直播结束消息*/
+.msg-content p.end-msg {
+	color: #fff200;
+	font-size: 1.4rem;
+	text-shadow: 1px 1px 1px #666;
+}
+/*控制按钮*/
+.chatroom-control {
+	position: absolute;
+	left: 1rem;
+	bottom: 3rem;
+	right: 1rem;
+}
+
+.chatroom-control i {
+	position: absolute;
+	bottom: 1.5rem;
+	right: 0rem;
+	display: inline-block;
+	padding: .2rem 1rem;
+	background: rgba(0, 0, 0, .5);
+	border-radius: 3rem;
+	cursor: pointer;
+	color: #fff;
+	font-size: 1.1rem;
+	font-style: normal;
+}
+
+.close-live,
+.need-talk {
+	position: absolute;
+	bottom: 1.5rem;
+	right: 0rem;
+	display: inline-block;
+	width: 3rem;
+	height: 3rem;
+	background-color: rgba(0, 0, 0, .5);
+	background-image: url('/static/wechat/assets/images/talk.png');
+	background-repeat: no-repeat;
+	background-size: 2rem 1.9rem;
+	background-position: center center;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.need-talk {
+	right: 4.7rem;
+}
+/*聊天输入框*/
+.chatroom-input {
+	position: absolute;
+	bottom: 1rem;
+	left: 4%;
+	width: 92%;
+	height: 3rem;
+	line-height: 3rem;
+	background-color: rgba(231, 171, 9, .4);
+	border-radius: 2rem;
+}
+
+.chatroom-input input {
+	width: 80%;
+	height: 2.4rem;
+	margin-left: 3%;
+	padding-left: 3%;
+	padding-right: 10%;
+	border: none;
+	background: none;
+	font-size: 1.4rem;
+    vertical-align: initial;
+}
+
+#send-btn,
+#manager-btn,
+#login-btn {
+	position: absolute;
+    right: 0;
+    width: 100%;
+    line-height: 3rem;
+    color: #fff;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background: none;
+}
+
+#send-btn,
+#manager-btn {
+	top: .4rem;
+	right: 3%;
+	width: 5rem;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	border-radius: 2rem;
+	background: #e7ab09;
+	color: #fff;
+	display: none;
+}
+
+/*登录modal*/
+.chatroom-login {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .5);
+	z-index: 99;
+}
+
+.chatroom-login-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 66%;
+	height: 8rem;
+	margin-top: -4rem;
+	margin-left: -33%;
+	background: #fff;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.chatroom-login-box p {
+	height: 4rem;
+	line-height: 4rem;
+	border-bottom: 1px solid #e7e7e7;
+	font-size: 1.5rem;
+	color: #333;
+}
+
+.chatroom-login-box a {
+	display: inline-block;
+	width: 49%;
+	height: 3.9rem;
+	line-height: 4rem;
+	color: #f8b500;
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+.chatroom-login-box a:last-child {
+	border-left: 1px solid #e7e7e7;
+	color: #999;
+}
+/*前往下载APP*/
+.go-app {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, .5);
+	z-index: 99;
+}
+
+.go-app-box {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 66%;
+	height: 8rem;
+	margin-top: -4rem;
+	margin-left: -33%;
+	background: #fff;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.go-app-box p {
+	height: 4rem;
+	line-height: 4rem;
+	border-bottom: 1px solid #e7e7e7;
+	font-size: 1.5rem;
+	color: #333;
+}
+
+.go-app-box a {
+	display: inline-block;
+	width: 49%;
+	height: 3.9rem;
+	line-height: 4rem;
+	color: #f8b500;
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+.go-app-box a:last-child {
+	border-left: 1px solid #e7e7e7;
+	color: #999;
+}
+/*emoji*/
+.emojis span {
+	-webkit-tap-highlight-color:transparent;
+	cursor: pointer;
+}
+
+#emoji-btn {
+	position: absolute;
+    top: .3rem;
+    right: 6rem;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    -webkit-tap-highlight-color:transparent;
+    cursor: pointer;
+}
+
+.emojitotal {
+	position: absolute;
+	bottom: 3rem;
+	left: 0;
+} 
+
+.emojis {
+	display: none;
+	background: rgba(0, 0, 0, .5);
+}
+
+#emoji-btn .RC_Expression {
+	vertical-align: sub;
+}
+
+.RC_Expression {
+	vertical-align: middle
+}
+
+/*swiper*/
+
+
+.swiper-container {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	overflow: initial;
+	z-index: 9;
+}
+
+.swiper-slide{
+	height: 20rem;
+}
+
+.swiper-slide-active {
+	height: auto;
+}
+
+
+/*全部问题列表*/
+.all-question-list {
+	min-height: 100%;
+	background: rgb(242, 248, 250);
+	overflow: scroll;
+}
+
+.all-question-sublist {
+	position: relative;
+	width: 100%;
+	padding-bottom: .5rem;
+	margin-bottom: 1rem;
+	background: #fff;
+}
+
+.all-question-sublist-head {
+	height: 4rem;
+	line-height: 4rem;
+	margin: 0 1rem ;
+	overflow: hidden;
+}
+
+.all-question-sublist-head > i {
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	line-height: 2rem;
+	margin-right: .5rem;
+	font-style: normal;
+	font-size: 1.1rem;
+	color: #fff;
+	background-color: #00a0e9;
+	border-radius: 50%;
+	text-align: center;
+}
+
+.all-question-sublist-head > span {
+	font-size: 1.2rem;
+	color: #999;
+}
+
+.all-question-sublist-head > p {
+	float: right;
+	color: #00a0e9;
+	font-size: 1rem;
+}
+
+.all-question-sublist-head > p span {
+	font-size: 1.2rem;
+}
+
+.all-question-sublist-body {
+	margin: 0 1rem;
+	font-size: 1.2rem; 
+	color: #333;
+	word-break: break-all;
+}
+
+.all-question-sublist-body h6 {
+	max-height: 3.2rem;
+	line-height: 1.5;
+	font-size: 1.2rem;
+	font-weight: normal;
+	color: #333;
+	overflow: hidden;
+}
+
+.all-question-sublist-body p {
+	margin-top: .5rem;
+}
+
+.all-question-sublist-body p span {
+	display: inline-block;
+	padding: .1rem .5rem;
+	font-size: 1rem;
+	color: #999;
+	border: 1px solid #999;
+	border-radius: 5px;
+}
+
+.all-question-sublist-foot {
+	margin: 0 1rem;
+	margin-top: 1rem;
+}
+
+.all-question-sublist-foot strong {
+	font-weight: normal;
+	color: #00a0e9;
+	line-height: 2.5;
+}
+
+.support-num {
+	display: inline-block;
+	padding: .4rem 1rem;
+	border: 1px solid #999;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.support-num b {
+	font-weight: normal;
+	color: #999;
+}
+
+.active b {
+	color: #00a0e9;
+}
+
+.all-question-sublist-foot span {
+	line-height: 1;
+	font-size: 1rem;
+}
+
+.all-question-sublist-foot span:last-child {
+	display: inline-block;
+	width: 5rem;
+	padding: .4rem 0;
+	margin-right: 2rem;
+	text-align: center;
+	border: 1px solid #999;
+	border-radius: 5px;
+}
+
+.all-question-sublist-foot span.active-color {
+	color: #00a0e9;
+	border-color: #00a0e9;
+	cursor: pointer;
+}
+
+.all-question-sublist-foot span i {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	margin-right: .5rem;
+	background-image: url('/static/wechat/assets/images/live_nosupport.png'); 
+	background-size: 100% 100%;
+	vertical-align: middle;
+}
+
+.all-question-sublist-foot span.active {
+	color: #00a0e9;
+	border-color: #00a0e9;
+}
+
+.all-question-sublist-foot span.active i {
+	background-image: url('/static/wechat/assets/images/live_hassupport.png');
+}
+
+.all-question-go-back {
+	display: none;
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	width: 1.2rem;
+	padding: .2rem .2rem;
+	font-size: 1.2rem;
+	color: #fff;
+	background: rgba(0, 0, 0, .5);
+	border-radius: 5px;
+	z-index: 9;
+}
+
+/*问题竞价*/
+.question-bid {
+	display: none;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 4.5rem;
+	text-align: center;
+}
+
+.question-bid img {
+	width: 3.9rem;
+	height: 3.9rem;
+	cursor: pointer;
+}
+
+
+/*提问问题*/
+.ask-question-content {
+	display: none;
+	position: absolute; 
+	left: 0; 
+	right: 0;
+	bottom: 0; 
+	width: 100%; 
+	min-height: 1rem;
+	background: rgba(0,0,0,0.5);
+	z-index: 101;
+	transition: all 1s;
+	-webkit-transition: all 1s;
+	-moz-transition: all 1s;
+	-o-transition: all 1s;
+	-ms-transition: all 1s;
+	transform: translateY(100%);
+}
+
+.ask-qusetion-close {
+	margin: 0 1rem;
+	text-align: right;
+}
+
+.ask-qusetion-close img {
+	width: 1.3rem;
+	height: 1.3rem;
+	max-width: 100%;
+	padding: 1rem 0 1rem 3rem;
+	cursor: pointer;
+}
+
+.ask-question-entry,
+.ask-question-money {
+	margin: 0 1rem;
+}
+
+.ask-question-textarea {
+	margin: 0 .5rem;
+	margin-top: .5rem;
+}
+
+.ask-question-entry {
+	display: none;
+	margin-bottom: 2rem;
+}
+
+.ask-question-entry p,
+.ask-question-money p {
+	font-size: 1.3rem;
+	color: #fff;
+}
+
+.ask-question-entry textarea {
+	width: 100%;
+	height: 4rem;
+	line-height: 2.1rem;
+	padding: 0rem .5rem;
+	margin-left: -.5rem;
+	resize: none;
+	font-size: 1.1rem;
+	color: #999;
+	border: 1px solid #a9a9a9;
+	border-radius: 5px;
+	outline: none;
+	cursor: pointer;
+}
+
+.support-question {
+	display: none;
+	margin: 0 1rem;
+}
+
+.support-question p {
+	margin-bottom: 2rem;
+	font-size: 1.3rem;
+	color: #fff;
+}
+
+.support-question p span {
+	color: #00a0e9;
+}
+
+.change-money ul {
+	margin-top: .5rem;
+}
+
+.change-money ul li {
+	width: 49.3%;
+	height: 3rem;
+	line-height: 3rem;
+	background: #d8d7d7;
+	font-size: 1.3rem;
+	color: #999;
+	text-align: center;
+	border: 1px solid #e3e3e3;
+	cursor: pointer;
+}
+
+.change-money ul li:nth-child(1) {
+	border-top-left-radius: 5px;
+}
+
+.change-money ul li:nth-child(2) {
+	border-top-right-radius: 5px;
+}
+
+.change-money ul li:nth-child(5) {
+	border-bottom-left-radius: 5px;
+}
+
+.change-money ul li:nth-child(6) {
+	border-bottom-right-radius: 5px;
+}
+
+.change-money ul li.checked-money {
+	background: #fff;
+	color: #00a0e9;
+	border-color: #00a0e9;
+}
+
+.custom-money {
+	display: none;
+	position: relative;
+	margin-top: .5rem;
+	color: #00a0e9;
+}
+
+.custom-money input {
+	display: block;
+	width: 92%;
+	padding-left: 2rem;
+	margin: 0 auto;
+	outline: none;
+	border: none;
+	background: #fff;
+	border-radius: 5px;
+	height: 3rem;
+	line-height: 3rem;
+	color: #00a0e9;
+	font-size: 1.4rem;
+}
+
+.custom-money span {
+	position: absolute;
+	top: .6rem;
+	left: 1rem;
+	font-size: 1.4rem;
+}
+
+.ask-question-btn,
+.support-question-btn {
+	display: none;
+	margin-top: 4rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+.ask-question-btn button,
+.support-question-btn button {
+	width: 81%;
+	height: 3rem;
+	line-height: 3rem;
+	color: #fff;
+	font-size: 1.5rem;
+	text-align: center;
+	background: #00a0e9;
+	border: none;
+	border-radius: 5px;
+}

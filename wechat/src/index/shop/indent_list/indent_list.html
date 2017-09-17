@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>订单</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="/static/wechat/page/iscroll5/iscroll.css">
+	<link rel="stylesheet" type="text/css" href="/static/wechat/assets/css/base.css">
+	<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+	<link rel="stylesheet" href="/static/wechat/src/index/shop/indent_list/indent_list.css">
+	<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="/static/wechat/page/iscroll5/iscroll5.js"></script>
+</head>
+<body onload="loaded()">
+	<div id="wrapper">
+		<div id="scroll" style="position: relative;">
+			<div class="header">
+				<div class="indent-list-tab clearfix">
+					 <ul id="indent-list-ul">
+					 	<li class="current"><a href="javascript:;">全部</a></li>
+					 	<li><a href="javascript:;">待付款</a></li>
+					 	<li><a href="javascript:;">支付成功</a></li>
+					 	<li><a href="javascript:;">订单完成</a></li>
+					 	<li><a href="javascript:;">退款</a></li>
+					 </ul>
+				</div>
+			</div>
+
+			<div class="indent-list-container"></div>
+
+			<div id="scroller-pullUp" style="padding: 0px 0px;">
+				<span id="up-icon" class="icon-double-angle-up pull-up-icon"></span>
+				<span id="pullUp-msg" class="pull-up-msg">上拉刷新</span>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- 查看失败原因modal -->
+	<div id="mark">
+		<div class="reason-box">
+			<div class="reason-box-information">
+				<h5>退款失败原因</h5>
+				<p></p>
+			</div>
+			<div class="reason-box-sure">
+				确定
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+	<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+	<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+	<script src="/static/wechat/src/index/shop/indent_list/indent_list.js"></script>
+</body>
+</html>

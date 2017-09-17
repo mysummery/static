@@ -1,0 +1,271 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+.withdraw_date {
+	text-align: center;
+	font-size: 1.3rem;
+	color: #999999;
+	padding-top: 0.8rem;
+}
+
+.logo {
+	width: 80%;
+	background: #e8e8e8;
+	border: none !important;
+	padding-top: 1.2rem;
+	padding-bottom: 1rem;
+	margin-bottom: 0px;
+}
+
+.bankcode {
+	width: 50%;
+	color: #112976;
+	text-align: center;
+}
+
+.bankcode img {
+	width: 30%;
+	margin-left: 10%;
+}
+
+.bank {
+	color: #999999;
+	float: right;
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	font-size: 1.3rem;
+}
+
+.amount {
+	margin-bottom: 0.25rem;
+}
+
+.white {
+	background: #fff;
+	margin-top: 0px;
+	margin-bottom: 0.8rem;
+}
+
+.charge {
+	background: none;
+	line-height: 2.5rem;
+	width:80%;
+}
+
+.white .amount {
+	margin-bottom: 1.3rem;
+}
+
+.all {
+	margin-top: 0.5rem;
+	font-size: 1.2rem;
+	color: #d3d3d3;
+	border-top: 1px solid #d3d3d3;
+	padding-top: 0.8rem;
+	padding-bottom: 1rem;
+}
+
+.all b {
+	font-weight: normal;
+}
+
+.all a {
+	color: #112976;
+	text-decoration: underline;
+}
+
+.tx {
+	float: right;
+	font-size: 0.8rem;
+	border-top: none;
+	margin-top: 0px;
+	padding-top: 0px;
+	margin-right: 5%;
+}
+
+.tc_password {
+	width: 76%;
+	margin-left: 12%;
+}
+
+.tc_password .top {
+	text-align: center;
+	height: 5.2rem;
+	line-height: 5.3rem;
+	font-size: 1.5rem;
+}
+
+.tc_password .input_bg {
+	border: 1px solid #ccc;
+	width: 75.6%;
+	height: 3.5rem;
+	margin-left: 9%;
+	font-size: 1.2rem;
+	line-height: 3.5rem;
+	word-spacing: 0.4rem;
+	letter-spacing: 2.4rem;
+	padding-left: 6%;
+	text-align: center;
+	border-radius: 0.5rem;
+}
+
+#div_load_bg {
+	display: none;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
+	z-index: 1001;
+	-moz-opacity: 0.7;
+	opacity: .70;
+	filter: alpha(opacity=70);
+	background: #000;
+}
+
+#div_load_show {
+	display: none;
+	position: absolute;
+	top: 45%;
+	left: 23%;
+	width: 45%;
+	height: 45%;
+	padding: 8px;
+	z-index: 1002;
+	overflow: auto;
+}
+
+.checkcode {
+	background: none;
+	width: 80%;
+}
+
+/*.checkcode input {
+	width: 48%;
+	background: url(/static/wechat/assets/images/code.png) no-repeat 0.5rem center #fff;
+	background-size: 10%;
+	border: 1px solid #d5d5d5;
+	color: #ccc;
+	height: 3rem;
+	border-radius: 0.4rem;
+	padding-left: 10%;
+	float: left;
+	font-size: 1.4rem;
+}*/
+.code{
+	background: url(/static/wechat/assets/images/codeCheck.png) no-repeat 0.5rem center #fff !important;
+	    background-size: 10% !important;
+}
+.checkcode button {
+	height: 3rem ;
+		border: 1px solid #ff9600;
+	color: #ff9600;
+	float: right;
+	width: 36%;
+	border-radius: 0.4rem;
+	font-size: 1.4rem;
+	background: #f1f0f8;
+}
+
+.logo {
+	padding-bottom: 0px;
+	width: 92%;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+#card {
+	font-size: 1.3rem;
+	background: none;
+	background: url(/static/wechat/assets/images/slide_down.png) no-repeat 94% center #e8e8e8;
+	background-size: 4%;
+}
+
+ 
+
+.wrapper1 {
+	position: relative;
+	width: 100%;
+	height: 4.5rem;
+	background: #e8e8e8;
+	overflow: hidden;
+}
+
+#card_list {
+	position: absolute;
+	width: 100%;
+	background: #fff;
+}
+
+#card_list dd {
+	line-height: 4.5rem;
+	height: 4.5rem;
+	position: relative;
+	padding-left: 5%;
+}
+
+.amount {
+	padding-left: 5%;
+	color: #333333;
+}
+
+.bank {
+	width: 34%;
+	text-align: right;
+	padding-right: 11%;
+}
+
+.white {
+	padding-left: 4%;
+	padding-right: 4%;
+	width: 84%;
+	border-radius: 0px 0px 0.5rem 0.5rem;
+}
+
+.slide {
+	overflow: visible;
+}
+
+.checkcode {
+	background: none;
+	width: 80%;
+}
+
+.checkcode input {
+	width: 48%;
+	background: url(/static/wechat/assets/images/code.png) no-repeat 0.5rem center #fff;
+	background-size: 10%;
+	border: 1px solid #d5d5d5;
+	color: #ccc;
+	height: 3rem;
+	border-radius: 0.4rem;
+	padding-left: 10%;
+	float: left;
+	font-size: 1.4rem;
+}
+
+.checkcode button {
+	height: 3rem;
+	border: 1px solid #ff9600;
+	color: #ff9600;
+	float: right;
+	width: 36%;
+	border-radius: 0.4rem;
+	font-size: 1.4rem;
+	background: #f1f0f8;
+}
+.checkcode img {
+	height: 3rem;
+	color: #ff9600;
+	float: right;
+	width: 36%;
+	border-radius: 0.4rem;
+	font-size: 1.4rem;
+	background: #f1f0f8;
+}
+
+#card_list dd:nth-child(2) {
+	display: none;
+}

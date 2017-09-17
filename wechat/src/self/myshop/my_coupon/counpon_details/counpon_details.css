@@ -1,0 +1,67 @@
+html,
+body {
+	background: #f2f8fa;
+	/*padding-top:0.86rem;*/
+}
+
+#wrapper {
+	background: none;
+	top: 0;
+	bottom: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-overflow-scrolling: touch;
+}
+
+.counpon {
+	width: 100%;
+	background: #fff;
+	overflow: hidden;
+	margin-top:0.85rem;
+	
+}
+.counpon .wid {
+	width: 94%;
+	/*overflow:hidden;*/
+}
+.counpon .goodsname {
+	height: 3.84rem;
+	line-height: 3.84rem;
+	font-size:1.28rem;
+	color:#333333;
+	border-bottom: 1px solid #E3E3E3;
+}
+.counpon .time {
+	height: 2.56rem;
+	line-height: 2.56rem;
+	font-size:1rem;
+	color:#999999;
+	width: 100%;
+}
+.goodsname .deduct {
+
+	color:#FF0000;
+	
+}
+.goodsname .add {
+
+	color:#008E59;
+	
+}
+.indent-sublist-no {
+    text-align: center;
+}
+.indent-sublist-no img {
+    width: 8rem;
+    height: 10rem;
+    margin-top: 14rem;
+    margin-bottom: 1.5rem;
+}
+.indent-sublist-no p {
+    font-size: 1.5rem;
+    color: #999;
+    text-align: center;
+}

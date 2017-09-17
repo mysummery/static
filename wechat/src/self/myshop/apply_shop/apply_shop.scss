@@ -1,0 +1,127 @@
+/**
+***
+*** lsy date by 2017/07/25
+***
+*/
+#apply-edit {
+	margin-top: (1.71rem/2);
+	padding: 0 (1.71rem/2);
+	background-color: #fff;
+	> div {
+		height: (7.68rem/2);
+		line-height: (7.68rem/2);
+		border-bottom: 1px solid #e3e3e3;
+		> input {
+			width: 70%;
+			font-size: (2.56rem/2);
+			color: #666;
+			border: none;
+			vertical-align: initial;
+		}
+		
+		> textarea {
+			width: 70%;
+		    height: 100%;
+		    margin-top: -.3rem;
+		    font-size: 1.2rem;
+		    color: #999;
+		    border: none;
+		    resize: none;
+		    vertical-align: text-top;
+		}
+	}
+	.apply-name {
+		input {
+			color: #999;
+		}
+	}
+	> .apply-street {
+		height: 7.3rem;
+		border-bottom: none;
+		overflow: hidden;
+	}
+	> .apply-city {
+		position: relative;
+		> img {
+			position: absolute;
+		    top: (2.45rem/2);
+		    right: (1.71rem/2);
+		    width: .8rem;
+		    height: (2.41rem/2);
+		}
+	}
+	span {
+		display: inline-block;
+    	width: (13.31rem/2);
+    	font-size: (2.56rem/2);
+    	color: #666;
+	}
+}
+
+#apply-apply {
+	> p {
+		width: 94.8%;
+		margin: 0 auto;
+		font-size: (2.2rem/2);
+		color: #333;
+		> span {
+			color: #f00;
+		}
+		span:last-child {
+			color: #333;
+		}
+		b {
+			font-weight: normal;
+			font-style: normal;
+			font-size: (2.2rem/2);
+			color: #333;
+		}
+		em {
+			display: none;
+			font-weight: normal;
+			font-style: normal;
+			font-size: (2.2rem/2);
+			color: #333;
+		}
+	}
+	i {
+		display: inline-block;
+		width: (1.37rem/2);
+		height: (1.6rem/2);
+		margin-right: (.93rem/2);
+		border: 1px solid #e3e3e3;
+		vertical-align: middle;
+		cursor: pointer;
+	}
+	i.active {
+		background: url(/static/wechat/assets/images/goods_agree.png) no-repeat center center;
+		background-size: 100%;
+		border: 1px solid #469FE3;
+	}
+}
+
+#agree-agreement {
+	width: 94.8%;
+	margin: 0 auto;
+	margin-top: (1.69rem/2);
+	font-size: (2rem/2);
+	> a {
+		color: #469FE3;
+	}
+}
+
+#apply-btn {
+	display: block;
+	width: 81.25%;
+	height: (6.83rem/2);
+	line-height: (6.83rem/2);
+	margin: 0 auto;
+	margin-top: (8.47rem/2);
+	margin-bottom: (4.26rem/2);
+	font-size: (2.9rem/2);
+	border: 1px solid #00a0e9;
+	border-radius: 4px;
+	cursor: pointer;
+	background-color: #00a0e9;
+	color: #fff;
+}

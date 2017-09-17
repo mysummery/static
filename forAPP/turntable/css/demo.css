@@ -1,0 +1,190 @@
+body,
+html {
+	font-size: 100%;
+	padding: 0;
+	margin: 0;
+	/*padding-top:1rem;*/
+}
+
+
+/* Reset */
+
+*,
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+
+.clearfix:before,
+.clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+body {
+	color: #D5D6E2;
+	font-weight: 500;
+	font-size: 1.05em;
+	font-family: "Microsoft YaHei", "Segoe UI", "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: rgba(255, 255, 255, 0.6);
+	outline: none;
+	text-decoration: none;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+}
+
+a:hover,
+a:focus {
+	color: #74777b;
+	text-decoration: none;
+}
+
+.htmleaf-container {
+	margin: 0 auto;
+}
+
+
+/* Header */
+
+.htmleaf-header {
+	padding: 1em 190px 1em;
+	letter-spacing: -1px;
+	text-align: center;
+}
+
+.htmleaf-header h1 {
+	color: #FFF596;
+	font-weight: 600;
+	font-size: 2em;
+	line-height: 1;
+	margin-bottom: 0;
+	margin-bottom: 15px;
+	text-shadow: 1px 1px 1px #E54B17;
+}
+
+.htmleaf-header h1 span {
+	display: block;
+	font-size: 60%;
+	font-weight: 400;
+	padding: 0.8em 0 0.5em 0;
+	color: #FFF596;
+}
+
+#lottery {
+	background-size: 100%;
+	position: relative;
+	left: 0.6rem;
+	width: 100%;
+	height: 25.4rem;
+	margin: 0px auto;
+}
+
+.lottery {
+	background: url(/static/forAPP/turntable/images/point1.png) no-repeat;
+}
+
+.lottery_bg {
+	background: url(/static/forAPP/turntable/images/point2.png) no-repeat;
+}
+
+#lottery table td {
+	position: relative;
+	width: 8.5rem;
+	height: 6.9rem;
+	text-align: center;
+	color: #333;
+	font-index: -999
+}
+
+.gift_0 {
+	background: url(/static/forAPP/turntable/images/gift_0.png) no-repeat center center;
+	display: inline-block;
+	width: 90%;
+	margin: 0 auto;
+	background-size: 100%;
+	padding-top: 68%;
+	height: 32%;
+}
+
+#playbtn{
+	width: 98%;
+	height: 97%;
+	display: block;
+	text-decoration: none;
+	background: url(/static/forAPP/turntable/images/10.png) no-repeat center center;
+	background-size: contain;
+	border:none;
+}
+
+#playbtn.active {
+	background: url(/static/forAPP/turntable/images/9.png) no-repeat center center;
+	background-size: contain;
+}
+
+#lottery table td.active .gift_content {
+	background: url(/static/forAPP/turntable/images/bg2.png) no-repeat;
+	background-size: cover;
+}
+
+.mask {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(255, 255, 255, 0.5);
+	display: none;
+}
+
+.gift_content {
+	background: url(/static/forAPP/turntable/images/bg1.png) no-repeat;
+	width: 97%;
+	height: 98%;
+	border-radius: 0.5rem;
+	line-height: 6.5rem;
+	background-size: cover;
+}
+
+table {
+	width: 90%;
+	position: absolute;
+	left: 5.5%;
+	top: 4.5%;
+}
+
+.gift_t {
+	line-height: 1rem;
+}
+
+.gift_t img {
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 0.9rem;
+}
+
+.gift_l img {
+	margin-top: 0.3rem;
+}
+
+.close_cover {
+	position: absolute;
+	top: 1.7rem;
+	right: 1.3rem;
+	font-size: 4rem;
+}
+.playnum{color:#fff100;}
+.blk span {
+    display: block;
+}

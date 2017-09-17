@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>拆分</title>
+		<link rel="stylesheet" href="/static/pc/assets/css/common.css" />
+		<link rel="stylesheet" href="/static/pc/assets/css/base.css" />
+		<link rel="stylesheet" href="/static/pc/page/jbox/jbox.css" />
+	</head>
+	<style>
+		.wrap-right a {
+			color: #3d64e3;
+			display: inline-block;
+			float: left;
+		}
+		
+		.mess-form div {
+			height: 40px;
+			margin-bottom: 22px;
+		}
+		
+		.mess-form .level i {
+			font-style: normal;
+			margin-right: 30px;
+			font-size: 14px;
+			color: #999;
+			cursor: pointer;
+		}
+		
+		.mess-form .level .current {
+			font-style: normal;
+			padding: 7px 7px;
+			color: #ffa800;
+			border: 1px solid #ffa800;
+			border-radius: 8px;
+		}
+		
+		.mess-form .level span {
+			width: 110px;
+			font-size: 14px;
+			display: inline-block;
+		}
+		
+		.wrap-right .mess-form {
+			margin-top: 50px;
+			margin-left: 228px;
+		}
+		
+		.mess-form div input {
+			font-size: 14px;
+			height: 30px;
+			width: 340px;
+			border: 1px solid #cbcbcb;
+			box-shadow: inset 0px 1px 4px #cbcbcb;
+			border-bottom: 1px solid #efefef;
+			padding-left: 5px;
+		}
+		
+		.mess-form .item {
+			height: 60px;
+		}
+		
+		.mess-form .item>div>span {
+			width: 120px;
+			font-size: 14px;
+			display: inline-block;
+		}
+		
+		.mess-form .prompt {
+			font-size: 12px;
+			margin-left: 124px;
+			width: 380px;
+			line-height: 20px;
+			color: #999;
+		}
+		
+		.mess-form .promp-num {
+			color: red;
+		}
+		
+		.mess-form .item>div {
+			margin-bottom: 0;
+		}
+		
+		.mess-form div input:focus {
+			border: 1px solid #ffa800;
+			box-shadow: 0 0 1px #ffa800;
+		}
+		
+		.mess-form #identiCode {
+			width: 265px;
+		}
+		
+		.mess-form button {
+			width: 100px;
+			height: 35px;
+			color: #ffa800;
+			background: #fff;
+			border-radius: 10px;
+			border: 1px solid #ffa800;
+		}
+		
+		.wrap #new-split-reserve {
+			background: #ffa800;
+			color: #fff;
+			width: 85px;
+			height: 35px;
+			border: none;
+			margin: 56px 0 0 293px;
+			border-radius: 5px;
+			font-size: 14px;
+			display: block;
+			margin: 40px auto;
+			cursor: pointer;
+		}
+	</style>
+
+	<body>
+		<div class="newmanagebank">
+			<div class="header">
+
+			</div>
+			<div class="navpart">
+
+			</div>
+
+			<div class="center">
+				<div class="center-con">
+					<a href="javascript:0;">个人中心</a>
+				</div>
+			</div>
+			<div class="wrap">
+				<div class="wrap-left wrap-left-photo fl">
+
+				</div>
+				<div class="wrap-right fr">
+					<div class="tittle">
+						<a href="/static/pc/src/self/groupbuy/new_groupbuy.html">团购管理></a>
+						<a href="/static/pc/src/self/groupbuy/split/new_split.html">拆分</a>
+					</div>
+					<div class="mess-form">
+						<div class="level">
+							<span>选择拆分级别</span>
+							<i class="current" data-level="1">4500团购</i>
+							<i data-level="2">2.5万团购</i>
+							<i data-level="3">6.5万团购</i>
+						</div>
+						<div class="item">
+							<div>
+								<span>拆分对象邀请码</span>
+								<input type="text" id="new-split-code" />
+							</div>
+							<span class="prompt">温馨提示：您还有<span class="promp-num">2300</span>个团购卡可供拆分</span>
+						</div>
+
+					</div>
+					<div class="reserve">
+						<button class="" type="submit" value="提交" id="new-split-reserve">提 交</button>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="footer">
+
+			</div>
+
+		</div>
+		<script src="/static/pc/page/jquery-1.8.3.min.js"></script>
+		<script src="/static/pc/assets/js/top_bottom.js"></script>
+		<script src="/static/pc/assets/js/common.js"></script>
+		<script src="/static/wechat/assets/js/app.js"></script>
+		<script src="/static/pc/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script src="/static/pc/page/jbox/jquery.jBox-zh-CN.js"></script>
+		<script src="/static/pc/src/self/new_usercenter.js"></script>
+		<script src="/static/pc/src/self/groupbuy/split/new_split.js"></script>
+
+	</body>
+
+</html>

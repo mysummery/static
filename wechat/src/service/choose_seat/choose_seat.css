@@ -1,0 +1,176 @@
+body {
+	width: 100%;
+	min-height: 100%;
+	background: url('/static/wechat/assets/images/choose_seat_bg.png');
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+.user-information {
+	padding-top: 7rem;
+}
+
+.user-name,
+.user-tel {
+	width: 80%;
+	height: 3.4rem;
+	line-height: 3.4rem;
+	margin: 0 auto;
+	border: 1px solid #eaeaea;
+	border-radius: 5px;
+	background: rgba(255, 255, 255, .7);
+}
+
+.user-name {
+	margin-bottom: 2rem;
+}
+
+.user-name span,
+.user-tel span {
+	margin-left: 1rem;
+	margin-right: .5rem;
+	font-size: 1.4rem;
+	color: #666;
+}
+
+.user-name input,
+.user-tel input {
+	font-size: 1.3rem;
+	color: #999;
+	vertical-align: initial;
+	border: none;
+	outline: none;
+	background: none;
+}
+
+
+.choose-seat-img {
+	width: 100%;
+	height: 4.2rem;
+	line-height: 4.2rem;
+	margin-top: 3.4rem;
+	text-align: center;
+	border-top: 1px solid #00a0e9;
+	border-bottom: 1px solid #00a0e9;
+	background: rgba(0, 160, 233, .15);
+}
+
+.choose-seat-img img {
+	width: 9.2rem;
+	max-width: 100%;
+}
+
+.choose-seat-list {
+	width: 85%;
+	height: 2.8rem;
+	margin: 0 auto;
+	margin-top: 3.3rem;
+}
+
+.choose-seat-type {
+	width: 3.6rem;
+	height: 2.8rem;
+	text-align: center;
+}
+
+.choose-seat-type p {
+	font-size: 1.2rem;
+	color: #00a0e9;
+}
+
+.choose-seat-type i {
+	display: inline-block;
+	width: 1.75rem;
+	height: 1.3rem;
+	background-size: 100% 100%; 
+}
+
+.choose-seat-list:nth-child(1) i {
+	background-image: url('/static/wechat/assets/images/choose_seat_crown.png');
+}
+
+.choose-seat-list:nth-child(2) i {
+	background-image: url('/static/wechat/assets/images/choose_seat_diamond.png');
+}
+
+.choose-seat-list:nth-child(3) i {
+	background-image: url('/static/wechat/assets/images/choose_seat_vip.png');
+}
+
+.choose-seat-money {
+	position: relative;
+	margin-left: 1.5rem;
+	height: 2.8rem;
+}
+
+.choose-seat-money span {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 1rem;
+}
+
+.choose-seat-money strong {
+	position: absolute;
+	bottom: 0;
+	left: 1.2rem;
+	line-height: 1;
+	font-size: 1.8rem;
+	color: #333;
+}
+
+.choose-seat-num {
+	height: 2.5rem;
+	text-align: center;
+	border-radius: 5px;
+	border: 1px solid #999;
+}
+
+.choose-seat-num input {
+	width: 4.3rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	font-size: 1.5rem;
+	color: #00a0e9;
+	text-align: center;
+	font-weight: bold;
+	vertical-align: top;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+.choose-seat-num a {
+	display: inline-block;
+	width: 2.5rem;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	color: #999;
+	font-size: 2.5rem;
+}
+
+.choose-seat-num a:first-child {
+	border-right: 1px solid #999;
+}
+
+.choose-seat-num a:last-child {
+	border-left: 1px solid #999;
+}
+
+.choose-seat-submit {
+	margin-top: 4.2rem;
+	padding-bottom: 6rem;
+	text-align: center;
+}
+
+.choose-seat-submit  button {
+	width: 15rem;
+	height: 3.4rem;
+	line-height: 3.4rem;
+	color: #fff;
+	font-size: 1.5rem;
+	background-color: #00a0e9;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+}

@@ -1,0 +1,197 @@
+html,
+body {
+	background: #f2f8fa;
+}
+
+.header {
+	background: #fff;
+}
+
+.indent-list-tab {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.indent-list-tab> ul li {
+	float: left;
+	/*margin-right: .3rem;*/
+	width:33.33%;
+	text-align:center;
+	padding: 1rem 0;
+}
+
+.indent-list-tab> ul li.current {
+	/*border-bottom: 2px solid #00a0e9;*/
+}
+
+.indent-list-tab> ul li a {
+	color: #999;
+	font-size: 1.4rem;
+	padding: .2rem .6rem;
+}
+
+.indent-list-tab> ul li:last-child {
+	margin-right: 0;
+}
+
+.indent-list-tab> ul li.current a {
+	color: #00a0e9;
+	border-bottom: 2px solid #00a0e9;
+}
+
+.indentList {
+	padding-top: 1rem;
+}
+
+.list-con {
+	padding-top: 1.75rem;
+}
+
+.list-box {
+	margin-bottom: 1rem;
+	position: relative;
+	background: #fff;
+	overflow: hidden;
+	padding: 1rem 0rem 0.5rem 0rem;
+}
+
+.list-box p {
+	overflow: hidden;
+	/*margin-bottom: 0.12rem;*/
+	font-size: 1rem;
+}
+
+.list-box .status {
+	color: #0ea5ea;
+	margin-right: 1rem;
+	    font-size: 1.2rem;
+}
+
+.list-box .tit {
+	padding-left: 3rem;
+	font-size: 1.2rem;
+	/*padding-top: 0.05rem;*/
+}
+
+.list-box b {
+	display: inline-block;
+	width: 1.9rem;
+	height: 1.5rem;
+	position: absolute;
+	left: 1rem;
+	top: 1rem;
+}
+
+.list-box b.vip {
+	background: url(/static/wechat/assets/images/memgrade.png)no-repeat center center;
+	background-size: contain;
+}
+
+.list-box b.dy {
+	background: url(/static/wechat/assets/images/ly_indent_icon.png)no-repeat center center;
+	background-size: contain;
+}
+
+.list-box b.chargemoney {
+	background: url(/static/wechat/assets/images/chargeicon.png)no-repeat center center;
+	background-size: contain;
+}
+
+.list-box b.answer {
+	background: url(/static/wechat/assets/images/answericon.png)no-repeat center center;
+	background-size: contain;
+}
+.list-box b.weshop {
+	background: url(/static/wechat/assets/images/indent_coupon.png)no-repeat center center;
+	background-size: contain;
+}
+
+.box-con {
+	/*border-top:0.05rem solid #ececec;*/
+	/*border-bottom:0.05rem solid #ececec;*/
+	height: 6.45rem;
+	width: 100%;
+	background: #f8f8f8;
+	padding: 0rem 0.9rem;
+	box-sizing: border-box;
+}
+
+.box-con .big-bg {
+	width: 6.5rem;
+	height: 100%;
+	margin-right: 0.4rem;
+}
+
+.big-bg img {
+	width: 100%;
+	height: 100%;
+}
+
+.box-con span {
+	display: inline-block;
+	    color: #6e6e6e;
+}
+
+.list-text .one {
+	margin-top: 0.7rem;
+}
+
+.list-text .two {
+	margin-top: 1.3rem;
+}
+
+.box-con .text-tit {
+	font-size: 1.2rem;
+	color: #515151;
+	width: 15rem;
+	margin-top: 1rem;
+}
+
+.box-con .text-time {
+	width: 20.5rem;
+	color: #6e6e6e;
+}
+
+.list-text .price span {
+	color: #03a1e9;
+	font-size: 1.75rem;
+}
+
+.list-box .btn {
+	float: right;
+}
+
+.list-box button {
+	    width: 8rem;
+    background: #00a0e9;
+    border: none;
+    border-radius: 0.4rem;
+    color: #ffffff;
+    height: 2.6rem;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+#wrapper {
+	background: none;
+	top: 0;
+	bottom: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-overflow-scrolling: touch;
+}
+
+.indent-sublist-no {
+	text-align: center;
+}
+
+.indent-sublist-no img {
+	width: 8rem;
+	height: 10rem;
+	margin-top: 14rem;
+	margin-bottom: 1.5rem;
+}

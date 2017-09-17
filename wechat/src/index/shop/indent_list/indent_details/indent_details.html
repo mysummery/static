@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>订单详情</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link href="/static/wechat/assets/css/base.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<link rel="stylesheet" href="indent_details.css" type="text/css" />
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+	</head>
+	<body onload="loades()">
+		<div class="total">
+			<div class="wid">
+				<p class="address_top">
+					<img src="/static/wechat/assets/images/shop_address.png" class="address_img">
+					<span class="name"></span>
+					<span class="phone"></span>
+				</p>
+				<p class="address_bottom"></p>
+				<p class="address_top logistics">
+					<img src="/static/wechat/assets/images/shop_logistics.png" class="logistics_image">
+					<span>物流单号: <b class="logistics_number">1233222222</b></span>
+					<span class="logistics_state fr"></span>
+				</p>
+			</div>
+		</div>
+		<div class="total number">
+			<div>
+				<div class="wid">
+					<p class="number_top">
+						<span>订单编号： <b class="indent_number">111111111111111</b></span>
+						<b class="fr blue indent_state"></b>
+					</p>	
+				</div>	
+				<div class="big clearfix">
+					<div class="wid">
+						<img src="/static/wechat/assets/images/indent_submit_goods.jpg" class="goods_img fl">
+						<div class="fr goods_details">
+							<p class="goods_name"></p>
+							<p class="goods_price">￥<span class="price blue"></span></p>
+							<p class="goods_xq">
+								<span class="goodscol">规格：<b class="goods_color"></b></span>
+								<span class="goodstype">型号：<b class="goods_xh"></b></span>
+								<span class="fr blue">×<b class="goods_num"></b></span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="total content">
+			<div class="wid hides">
+				<p class="invoice clearfix pf">
+					<span class="fl">发票</span>
+					<span class="fr title"></span>
+				</p>
+				<p class="invoice_bottom clearfix">
+					<span class="fl">纳税人识别号</span>
+					<span class="fr companyname"></span>
+				</p>
+				<div class="pay_send">
+					<p class="pay clearfix">
+						<span class="fl">支付方式</span>
+						<span class="fr paytype"></span>
+					</p>
+					<p class="send sends clearfix">
+						<span class="fl">发货日期：<b class="send_date"></b></span>
+						<span class="fr sendcompany"></span>
+					</p>
+				</div>
+				<div class="tips">
+					<textarea placeholder="请输入退款理由"></textarea>
+				</div>
+				<div class="remark">
+					<p></p>
+				</div>
+				<p class="border_line"></p>
+			</div>
+		</div>
+		<div class="total content content_bottom">
+			<div class="wid">
+				<p class="commission clearfix ">
+					<span class="fl blue">返佣金</span>
+					<span class="fr blue">￥<b class="commissionprice">0</b></span>
+				</p>
+				<p class="invoice goods clearfix">
+					<span class="fl">商品单价</span>
+					<span class="fr commonprice">￥<b class="price  blue"></b></span>
+				</p>
+				<p class="invoice goods goods_light clearfix">
+					<span class="fl">VIP单价</span>
+					<span class="fr vipprice">￥<b class="price_light blue"></b></span>
+				</p>
+				<p class="pay goods clearfix">
+					<span class="fl">商品数量</span>
+					<span class="fr">共计<b class="goods_num blue"></b>件</span>
+				</p>
+				<p class="send goods clearfix">
+					<span class="fl">+运费</span>
+					<span class="fr">￥<b class="goods_yf">0.00</b></span>
+				</p>
+				<div class="pay_total">
+					<p><span><b class="paytype_">需付</b>款：￥</span><span class="total_money blue"></span></p>
+					<p class="ddsj">订单时间：<span class="indent_date"></span></p>
+				</div>
+				<div class="fail_reason">
+					<p>
+						<span>退款失败原因：</span>
+						<span class="fail_reason_content"></span>
+					</p>
+				</div>
+				<!--按钮-->
+				<!--订单完成-->
+				<div class="buttons done">
+					<button class="button del_indent" id="done_delete" >删除订单</button>
+				</div>
+				<!--退款成功-->
+				<div class="buttons t_success">
+					
+				</div>
+				<!--退款失败-->
+				<div class="buttons t_fail">
+					<button class="button" id="fail_contact"><a href="tel:400-9009-365" >联系客服</a></button>
+					<button class="button del_indent" id="fail_confirm" >删除订单</button>
+				</div>
+				<!--退款中-->
+				<div class="buttons t_ing">
+					<button class="button" id="cancel_t">取消退款</button>
+				</div>
+				<!--支付成功-->
+				<div class="buttons pay_success">
+					<button class="button t_money">退款</button>
+				</div>
+				<!--已发货-->
+				<div class="buttons send_done">
+					<button class="button t_money">退款</button>
+					<button class="button" id="send_confirm">确认收货</button>
+				</div>
+				<!--确认订单-->
+				<div class="buttons confirm">
+					<button class="button pay_go" >去付款</button>
+				</div>
+				<!--待付款-->
+				<div class="buttons wait_pay">
+					<button class="button" id="cancel_indent">取消订单</button>
+					<button class="button pay_go">去付款</button>
+				</div>
+				<!--已取消-->
+				<div class="buttons cancel">
+					<button class="button" id="cancel_delete">删除订单</button>
+					
+				</div>
+			</div>
+		</div>
+		<div class="cover">
+			
+		</div>
+		<!-- 取消订单 -->
+		<div class="cancel_tc handle_tc" id="cancel_tc">
+			
+				<p class="cancel_title">取消订单<span class="close"><span class="close"><img src="/static/wechat/assets/images/close.png"></span></p>
+				<p class="cancel_title1">请选择取消订单原因（必选）：</p>
+				<p class="chooses hover" onclick="label(this)">
+					<i  class="wrapper" >
+						<span class="span">
+	      					<input type="checkbox" class="input_check" id="check1" name="iCheck" value="1"  onclick="check_input(this)" checked="checked">
+	      					<label for="check1" class="checked che"  value="1"></label>
+	     				</span>
+	     				<span class="reson">订单不能按预计时间送达</span>
+					</i>
+				</p>
+				<p class="chooses" onclick="label(this)">
+					<i  class="wrapper" >
+						<span class="span">
+	      					<input type="checkbox" class="input_check" id="check2" name="iCheck" value="2"  onclick="check_input(this)" >
+	      					<label for="check2" class="che"  value="2"></label>
+	     				</span>
+	     				<span class="reson">商品买错了（颜色、型号、数量等弄错了）；</span>
+					</i>
+				</p>
+				<p class="chooses" onclick="label(this)">
+					<i  class="wrapper">
+						<span class="span">
+	      					<input type="checkbox" class="input_check" id="check3" name="iCheck" value="3"  onclick="check_input(this)" >
+	      					<label for="check3" class="che"  value="3"></label>
+	     				</span>
+	     				<span class="reson">重复下单/误下单；</span>
+					</i>
+				</p>
+				<p class="chooses" onclick="label(this)">
+					<i class="wrapper" >
+						<span class="span">
+	      					<input type="checkbox" class="input_check" id="check4" name="iCheck" value="4"  onclick="check_input(this)" >
+	      					<label for="check4" class="che"  value="4"></label>
+	     				</span>
+	     				<span class="reson">支付方式有误/无法支付。</span>
+					</i>
+				</p>
+				<p class="bottom_buttons">
+					<button class="button submit_cancel_indent">提交</button>
+				</p>
+			
+		</div>
+		<!-- 退款 -->
+		<div class="refund_tc handle_tc" id="refund_tc">
+			
+				<p class="cancel_title">退款订单<span class="close"><span class="close"><img src="/static/wechat/assets/images/close.png"></span></p>
+				<p class="cancel_title1">请选择退款原因（必选）：</p>
+				<p class="chooses hover" onclick="label(this)">
+					<i  class="wrapper" >
+						<span class="span">
+	      					<input type="checkbox" class="input_check" id="t_check1" name="iCheck" value="1"  onclick="check_input(this)" checked="checked">
+	      					<label for="t_check1" class="checked che"  value="1"></label>
+	     				</span>
+	     				<span class="reson">订单不能按预计时间送达</span>
+					</i>
+				</p>
+				<p class="chooses" onclick="label(this)">
+					<i  class="wrapper" >
+						<span class="span">
+	      					<input type="checkbox" class="input_check" id="t_check2" name="iCheck" value="2"  onclick="check_input(this)" >
+	      					<label for="t_check2" class="che"  value="2"></label>
+	     				</span>
+	     				<span class="reson">商品买错了（颜色、型号、数量等弄错了）；</span>
+					</i>
+				</p>
+				<p class="chooses" onclick="label(this)">
+					<i  class="wrapper">
+						<span class="span">
+	      					<input type="checkbox" class="input_check" id="t_check3" name="iCheck" value="3"  onclick="check_input(this)" >
+	      					<label for="t_check3" class="che"  value="3"></label>
+	     				</span>
+	     				<span class="reson">重复下单/误下单；</span>
+					</i>
+				</p>
+				<p class="chooses" onclick="label(this)">
+					<i class="wrapper" >
+						<span class="span">
+	      					<input type="checkbox" class="input_check" id="t_check4" name="iCheck" value="4"  onclick="check_input(this)" >
+	      					<label for="t_check4" class="che"  value="4"></label>
+	     				</span>
+	     				<span class="reson">支付方式有误/无法支付。</span>
+					</i>
+				</p>
+				<p class="bottom_buttons">
+					<button class="button submit_refund_indent">提交</button>
+				</p>
+			
+		</div>
+
+
+		<div class="cancel_tc pay_tc" id="pay_tc">
+			
+				<p class="cancel_title">付款方式<span class="close"><img src="/static/wechat/assets/images/close.png"></span></p>
+				<p class="chooses" onclick="label(this)">
+					<i href="javascript:;" class="wrapper ye" >
+						<span class="span">
+	      					<input type="checkbox" class="input_check" id="check1" name="iCheck" value="1"  onclick="check_input(this)" checked="checked">
+	      					<label for="check1" class="checked che"  value="1"></label>
+	     				</span>
+	     				<span class="reson">余额支付</span><span id="yue"></span>
+					</i>
+				</p>
+				<p class="chooses" onclick="label(this)">
+					<i href="javascript:;" class="wrapper wx" >
+						<span class="span">
+	      					<input type="checkbox" class="input_check" id="check1" name="iCheck" value="2"  onclick="check_input(this)" >
+	      					<label for="check1" class="che"  value="2"></label>
+	     				</span>
+	     				<span class="reson">微信支付</span>
+					</i>
+				</p>
+				<p class="chooses" onclick="label(this)">
+					<i href="javascript:;" class="wrapper yl" >
+						<span class="span">
+	      					<input type="checkbox" class="input_check" id="check1" name="iCheck" value="3"  onclick="check_input(this)" >
+	      					<label for="check1" class="che"  value="3"></label>
+	     				</span>
+	     				<span class="reson">银联支付</span>
+					</i>
+				</p>
+				<p class="pay_bottom">
+					<span>需付款：<b class="blue">￥</b><b class="total_money blue">310.00</b></span>
+				</p>
+				<p class="bottom_buttons">
+					<button class="button submit">确认付款</button>
+				</p>
+			
+		</div>
+		
+		
+		<!--删除订单-->
+		<div class="choose cancel_indent_tc">
+			<p>确认删除订单？</p>
+			<p><button class="one delete_indent_confirm" >确认删除</button></p>
+			<p><button class="close_choose" >暂不删除</button></p>
+		</div>
+		<!--查看完整订单号-->
+		<div class="choose indent_number_tc">
+			<p>订单号</p>
+			<p class="numbers"></p>
+		</div>
+		<!--申请退款-->
+		<!-- <div class="choose tk_tc">
+			<p>确认申请退款？</p>
+			<p><button class="one tk_confirm" >确认申请</button></p>
+			<p><button class="close_choose" >暂不申请</button></p>
+		</div> -->
+		<!--取消退款-->
+		<div class="choose qx_tc">
+			<p>确认取消退款？</p>
+			<p><button class="one tk_qx" >确认取消</button></p>
+			<p><button class="close_choose" >暂不取消</button></p>
+		</div>
+		<!--确认收货-->
+		<div class="choose sh_tc">
+			<p>确认收货？</p>
+			<p><button class="one qr_sh" >确认收货</button></p>
+			<p><button class="close_choose" >暂不确认</button></p>
+		</div>
+		<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+		<script type="text/javascript" src="indent_details.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	</body>
+</html>

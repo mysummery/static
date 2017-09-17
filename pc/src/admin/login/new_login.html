@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" href="/static/pc/assets/css/base.css" />
+		<link rel="stylesheet" href="/static/pc/page/jbox/jbox.css" />
+		<link rel="stylesheet" href="/static/pc/src/admin/login/new_login.css" />
+		<script src="/static/pc/page/jquery-1.8.3.min.js"></script>
+		<script src="/static/wechat/assets/js/app.js"></script>
+		<script src="/static/pc/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script src="/static/pc/page/jbox/jquery.jBox-zh-CN.js"></script>
+		<script src="/static/pc/src/admin/login/new_login.js"></script>
+	</head>
+
+
+	<body onkeydown="keyLogin();">
+		<div class="newlogin">
+			<div class="header-top">
+				<div class="header">
+					<span class="tel fl">客服热线：400-9009-365</span>
+					<span class="welcome">您好，欢迎来到李强365！</span>
+
+					<span clss="person">请
+	              	<a class="login" href="/static/pc/src/admin/login/new_login.html">登录</a> |
+	              	<a class="register" href="/static/pc/src/admin/register/new_register.html">注册</a>
+	            </span>
+				</div>
+			</div>
+			<div class="login-bg">
+				
+				<div class="wrap">
+				<div class="con-login">
+					<ul>
+						<li>
+							<input type="text" placeholder="请输入手机号" class="name" id="account" />
+
+						</li>
+						
+						<li>
+							<input type="password" placeholder="请输入密码" class="password" id="password" />
+
+						</li>
+						
+						
+						<li class="item" style="display:none;">
+							<p class="agree">
+					       <input type="checkbox" id="checkbox-1" checked/>
+					       <label for="checkbox-1" id="lab"></label>
+					      
+					      <a href="javascript:0;">下次自动登录</a>
+				          </p>
+						</li>
+						<li>
+							<button id="rebtn" type="button" onclick="login()" class="regist-btn">登录</button>
+						</li>
+						<li class="last">
+							<a class="fl" href="/static/pc/src/admin/register/new_register.html">立即注册</a>
+							<a class="fr" href="/static/pc/src/admin/forget/new_forgetpwd.html">忘记密码？</a>
+						</li>
+					</ul>
+				</div>
+				</div>
+			
+			</div>
+				<div class="footer">
+				<div class="footer-wrap">
+					<div class="about-us">
+						<ul>
+							<li class="one">
+								<a href="/static/pc/src/service/aboutus/new_aboutus.html">关于我们</a>
+							</li>
+							<li>
+								<a href="/static/pc/src/service/advice/new_advice.html">意见反馈</a>
+							</li>
+							<li>
+								<a href="/static/pc/src/service/answer/new_answer.html">常见问题</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-bottom">
+						<p>Copyright <span>&copy;</span> 2016-2017 北京博睿思远网络科技有限公司All Rights Reserved</p>
+						<p>京ICP备16024892</p>
+					</div>
+				</div>
+
+		</div>
+	</body>
+
+</html>

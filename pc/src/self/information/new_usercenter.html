@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>个人中心</title>
+
+		<link rel="stylesheet" href="/static/pc/assets/css/common.css" />
+		<link rel="stylesheet" href="/static/pc/assets/css/base.css" />
+		<link rel="stylesheet" href="/static/pc/page/jbox/jbox.css" />
+		<link rel="stylesheet" href="/static/pc/src/self/information/new_usercenter.css" />
+
+	</head>
+
+	<body>
+		<div class="newusercenter">
+			<div class="header">
+
+			</div>
+			<div class="navpart">
+
+			</div>
+
+			<div class="center">
+				<div class="center-con">
+					<a href="javascript:0;">个人中心</a>
+				</div>
+			</div>
+			<div class="wrap">
+				<div class="wrap-left wrap-left-photo fl">
+
+				</div>
+				<div class="wrap-right wrap-info fr">
+					<div class="tittle">
+						基本资料
+					</div>
+
+					<div class="mess-total">
+						<p class="fl">当前头像</p>
+						<div class="photo-bg fl">
+
+							<b class="edit-bg">
+                            	<a href="/static/pc/src/self/information/useravater/new_useravater.html">
+							</a>
+                            </b>
+							<img class="moren" src="/static/pc/assets/images/morenphoto.png" alt="" />
+						</div>
+
+					</div>
+					<div class="mess-form">
+						<div>
+							<span>真实姓名</span>
+							<input type="text" id="idcardname" disabled="disabled" />
+						</div>
+						<div>
+							<span>账号</span>
+							<input type="text" id="account" disabled="disabled" />
+						</div>
+						<div>
+							<span>昵称</span>
+							<input type="text" id="username" maxlength="30"/>
+						</div>
+						<div class="Sex">
+							<span>性别</span>
+							<input type="radio" id="1" value="1" name="radio" />&nbsp;男
+							<input type="radio" id="0" value="0" name="radio" />&nbsp;女
+							<input type="hidden" id="sex" />
+						</div>
+						<!--	<div>
+							<span>生日</span>
+							<select id="year" onChange="swap_day()"></select>年
+							<select id="month" onChange="swap_day()"></select>月
+							<select id="day"></select>日
+						</div>-->
+						<div>
+							<span>联系电话</span>
+							<input id="phone" type="text" disabled="disabled"/>
+						</div>
+						<div>
+							<span class="fl">联系地址</span>
+							<textarea id="address"></textarea>
+						</div>
+
+					</div>
+					<div class="reserve">
+						<button class="" type="button" value="保存" id="reserve">保存</button>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="footer">
+
+			</div>
+			<script src="/static/pc/page/jquery-1.8.3.min.js"></script>
+			<script src="/static/pc/assets/js/top_bottom.js"></script>
+
+			<script src="/static/pc/assets/js/common.js"></script>
+			<script src="/static/wechat/assets/js/app.js"></script>
+
+			<script src="/static/pc/page/jbox/jquery.jBox-2.3.min.js"></script>
+			<script src="/static/pc/page/jbox/jquery.jBox-zh-CN.js"></script>
+			<script src="/static/pc/src/self/new_usercenter.js"></script>
+
+			<script>
+				$(function() {
+					$(".usercenter").addClass("current");
+				})
+			</script>
+
+	</body>
+
+</html>

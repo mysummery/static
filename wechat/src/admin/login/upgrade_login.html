@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>登录</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link href="/static/wechat/assets/css/base.css" type="text/css" rel="stylesheet">
+		<link href="/static/wechat/assets/css/lr.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script src="/static/wechat/page/bootstrap/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+
+	</head>
+
+	<body>
+		<div class="wid">
+			<div class="logo">
+				<img src="/static/wechat/assets/images/logo.png">
+			</div>
+			<div class="form">
+				<p><input type="text" placeholder="请输入手机号" class="phone" id="account"></p>
+				<p><input type="password" placeholder="请输入密码" class="password" id="password"></p>
+				<p class="clearfix">
+					<a href="javascript:;" onClick="forget_password()">忘记密码？</a>
+					<a href="javascript:;" class="a" onClick="goregister()">快速注册</a>
+				</p>
+				<button type="submit" class="button" id="login" onclick="login()">登录</button>
+			</div>
+		</div>
+		<script src="/static/wechat/assets/js/app.js"></script>
+		<script type="text/javascript" src="login.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>团队管理</title>
+		<link rel="stylesheet" href="./css/new_useravater.css" />
+		<link rel="stylesheet" href="./css/new_teammanager.css" />
+		<link rel="stylesheet" href="./css/base.css" />
+		<link rel="stylesheet" href="./css/common.css" />
+		<script src="./js/jquery-1.8.3.min.js"></script>
+		<script src="./js/jquery.jBox-2.3.min.js"></script>
+		<script src="./js/jquery.jBox-zh-CN.js"></script>
+		<link rel="stylesheet" href="./css/jbox.css" type="text/css" />
+		<script src="./shipinjs/top_bottom.js"></script>
+		<script type="text/javascript" src="./shipinjs/common.js"></script>
+		<script src="/static/wechat/assets/js/app.js"></script>
+		<script src="./shipinjs/new_usercenter.js"></script>
+
+	</head>
+
+	<body>
+		<div class="newteammanger">
+			<div class="header">
+
+			</div>
+			<div class="navpart">
+
+			</div>
+
+			<div class="center">
+				<div class="center-con">
+					<a href="javascript:0;">个人中心</a>
+				</div>
+			</div>
+			<div class="wrap">
+				<div class="wrap-left wrap-left-photo fl">
+
+				</div>
+				<div class="wrap-right fr">
+					<div class="tittle">
+						<a href="javascript:0;">团队管理></a>
+						<a href="javascript:0;">一级</a>
+						<p class="fr">学员积分：<span id="integral">0</span>分 <b class="blank"></b>收益总计：<span id="total_income">0</span>元</p>
+					</div>
+					<div class="rank-tittle">
+						<ul>
+							<li>等级</li>
+							<li class="option">全部</li>
+							<li class="option">普通学员</li>
+							<li class="option">VIP学员</li>
+							<li class="option">创客</li>
+							<li class="option">助理讲师</li>
+							<li class="option">讲师</li>
+							<li class="option">国内游</li>
+							<li class="option">海外游</li>
+
+						</ul>
+					</div>
+					<div class="search-phone">
+						<div class="search-box">
+							<input placeholder="请搜索手机号查询" type="text" id="search_input" />
+							<b></b>
+							<span onclick="search_()">搜索</span>
+						</div>
+					</div>
+					<div class="content">
+						<div class="con-top">
+							<ul>
+								<li class="serialnum">序号</li>
+								<li class="rank">等级</li>
+								<li class="name">姓名</li>
+								<li class="peonum">学员人数
+									<b id="asc" class="i"></b>
+									<i id="desc" class="b"></i>
+
+								</li>
+								<li class="phone">手机号</li>
+							</ul>
+						</div>
+						<div class="con-bottom">
+							<ul id="indent_table_id">
+
+							</ul>
+						</div>
+						<div class="page">
+							<ul class="pager">
+								<!--<li>
+										<a href="javascript:0;">上一页</a>
+									</li>
+									<li>
+										<a href="javascript:0;">下一页</a>
+									</li>-->
+								<li>
+									<a href="javascript:0;" id="Previous" class="unable">上一页</a>
+								</li>
+								<li>
+									<a href="javascript:0;" id="next">下一页</a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="footer">
+
+			</div>
+
+		</div>
+
+	</body>
+	<script src="/static/login/shipin/shipinjs/new_teammanager.js"></script>
+
+</html>

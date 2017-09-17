@@ -1,0 +1,195 @@
+.header {
+	width: 1200px;
+	height: 40px;
+	margin: 0 auto;
+	text-align: right;
+	line-height: 40px;
+}
+
+.header .tel {
+	padding-left: 25px;
+	margin-left: 10px;
+	background: url("/static/pc/assets/images/tel.png") no-repeat 0 10px;
+	height: 30px;
+	display: inline-block;
+	color:#666;
+}
+
+.register-bg {
+	position: relative;
+	margin-bottom: 280px;
+}
+
+.register-bg img {
+	width: 100%;
+	/*height:359px;*/
+}
+
+.cont-box {
+	width: 400px;
+
+	border: 1px solid transparent;
+	background: #fff;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	margin-left: -200px;
+	border-radius: 10px;
+	box-shadow: 0 0 8px #999;
+	margin-bottom: 78px;
+	padding: 30px 85px 0 85px;
+	box-sizing: border-box;
+}
+
+.cont-box #btn {
+	margin-bottom:40px;
+}
+
+.cont-box>a {
+	color: #fff;
+	position: absolute;
+	top: -21px;
+	right: 0;
+	font-size: 14px;
+}
+
+.cont-box input {
+	width: 100%;
+	height: 26px;
+	border: 1px solid #d3d3d3;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+.cont-box .name {
+	background: url("/static/pc/assets/images/reusername.png") no-repeat 200px center;
+}
+
+.cont-box .phone {
+	background: url("/static/pc/assets/images/rephone.png") no-repeat 200px center;
+}
+
+.cont-box .password {
+	background: url("/static/pc/assets/images/repassword.png") no-repeat 200px center;
+}
+.cont-box .beicode {
+	background: url("/static/pc/assets/images/newbacode.png") no-repeat 200px center;
+}
+
+.cont-box .checkCode {
+	width: 137px;
+	height: 26px;
+}
+
+.cont-box .phoneCode {
+	width: 137px;
+	height: 26px;
+}
+
+.cont-box .imgCode {
+	width: 82px;
+	height: 28px;
+	border: 1px solid #ccc;
+}
+
+.cont-box .btnCode {
+	width: 81px;
+	height: 30px;
+	background: #ffa800;
+	color: #fff;
+	border-radius: 5px;
+	font-size: 12px;
+}
+
+.cont-box .item {
+	margin: -20px 0 10px 0;
+}
+
+.cont-box #checkbox-1 {
+	display: none;
+}
+
+.cont-box label {
+	border: 1px solid #d7d7d7;
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	position: relative;
+    top:2px;
+}
+
+.cont-box #checkbox-1+ label {
+	background: #fff;
+}
+
+.cont-box #checkbox-1:checked+ label {
+	background: url("/static/pc/assets/images/regichecked.png") no-repeat center center;
+	background-size: 50%;
+}
+
+.cont-box .agree {
+	color: #666666;
+	font-size: 1rem;
+	padding-left: 1%;
+	margin-top: 0.8rem;
+	line-height: 1.2rem;
+}
+
+.cont-box .agree a {
+
+	font-size:12px;
+	color:#999999;
+}
+
+.cont-box .regist-btn {
+	width: 100%;
+	height: 30px;
+	background: #ffa800;
+	font-size: 14px;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.footer {
+	width: 100%;
+	background: #eff2fd;
+}
+
+.footer-wrap {
+	width: 1200px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 40px 181px 40px 235px;
+}
+
+.footer-wrap .about-us {
+	overflow: hidden;
+	margin-bottom: 30px;
+	padding-left:145px;
+}
+
+.footer-wrap li {
+	padding: 0 45px;
+	float: left;
+	border-right: 1px solid #666;
+}
+
+.footer-wrap .one {
+	border-left: 1px solid #666;
+}
+
+.footer-wrap a {
+	font-size: 14px;
+	color: #666;
+}
+
+.footer-bottom p {
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+	line-height:23px;
+}
+.footer-bottom span {
+	font-size:14px;
+	font-family:Arial, Helvetica, sans-serif;
+}

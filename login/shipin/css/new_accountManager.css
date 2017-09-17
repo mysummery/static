@@ -1,0 +1,156 @@
+	.wrap-right .tittle a {
+		color: #3d64e3;
+		display: inline-block;
+		float: left;
+	}
+	
+	.mess-form .mess-top {
+		margin: 25px 0 30px 10px;
+		overflow: hidden;
+	}
+	.mess-form .mess-con {
+		display:none;
+	}
+	.mess-form .mess-con .balance {
+		margin-right: 40px;
+	}
+	.mess-form .mess-hide .balance {
+		margin-right: 40px;
+	}
+	
+	.mess-form .mess-con .bal_num {
+		font-size: 30px;
+		font-family: "microsoft yahei";
+		font-style: bold;
+	}
+	.mess-form .mess-hide .bal_num {
+		font-size: 30px;
+		font-family: "microsoft yahei";
+		font-style: bold;
+	}
+	
+	.mess-form .bal_tit {
+		font-size: 14px;
+	}
+	
+	.mess-form .mess-con .way {
+		margin-top: 20px;
+	}
+	.mess-form .mess-hide .way a{
+		display:inline-block;
+		border-right:1px solid #ffa800;
+		color:#ffa800;
+		font-size:14px;
+		padding-right: 6px;
+	}
+	.mess-form .mess-con .way a {
+		display: inline-block;
+		width: 60px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 14px;
+		color: #fff;
+		background: #ffa800;
+		text-align: center;
+		border-radius: 10px;
+		margin-left: -5px;
+	}
+	.mess-form .mess-hide .way .last {
+		border-right:none;
+	}
+	
+	.mess-form .switch {
+		margin-top: 40px;
+		font-size: 12px;
+		color: #999;
+		margin-right: 10px;
+		cursor: pointer;
+	}
+	
+	.mess-form .nav-record {
+		height: 60px;
+		line-height: 60px;
+	}
+	
+	.mess-form .nav-record li {
+		float: left;
+		padding: 0 10px;
+		font-size: 14px;
+		color: #999999;
+		cursor: pointer;
+	}
+	
+	.mess-form .nav-record .total {
+		float: right;
+		font-size: 18px;
+		font-family: "microsoft yahei";
+		color: #ffa800;
+	}
+	
+	.mess-form .record-box {
+		height: 540px;
+		border-bottom: 1px solid #efefef;
+		box-shadow: inset 0px 1px 4px #cbcbcb;
+		overflow: auto;
+		padding: 20px 20px 0 10px;
+		box-sizing: border-box;
+	}
+	
+	.mess-form .record-box .one {
+		height: 25px;
+		line-height: 25px;
+		background: #eff2fd;
+		font-size: 14px;
+		color: #666666;
+		padding-left: 10px;
+		position: relative;
+	}
+	
+	.mess-form .record-box .time {
+		margin: 0 130px 0 10px;
+	}
+	
+	.mess-form .record-box .sum {
+		margin: 0 140px 0 130px;
+	}
+	
+	.mess-form .record-box .status {
+		margin-right: 110px;
+	}
+	
+	.mess-form .record-box .mess {
+		cursor: pointer;
+		width: 50px;
+		display: inline-block;
+	}
+	
+	.mess-form .record-box b {
+		height: 8px;
+		width: 8px;
+		right: 53px;
+		position: absolute;
+		top: 5px;
+		border: 1px solid #666666;
+		border-right: none;
+		border-top: none;
+		display: inline-block;
+		transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+	}
+	
+	.mess-form .record-box .mess-box {
+		width: 863px;
+		height: 40px;
+		left:0;
+		line-height:40px;
+		text-align:center;
+		border-radius: 10px;
+		position:absolute;
+		box-shadow: 0 1px 3px #a5a5a5;
+		border-top: 1px solid #f0f0f0;
+		z-index:99;
+		background:#fff;
+	}

@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+#qa {
+	padding-top: 0.5rem;
+	border-bottom: 1px solid #d3d3d3;
+}
+#qa li {
+	background: #ffffff;
+	color: #999999;
+	font-size: 1rem;
+	line-height: 2rem;
+	padding-left: 4%;
+	padding-bottom: 0.5rem;
+}
+#qa li p {
+	padding-right: 4%;
+}
+#qa li:first-child {
+	border-top: 1px solid #dfdfdf;
+	padding-top: 0.5rem;
+}
+#qa li p:last-child {
+	border-bottom: 1px solid #d3d3d3;
+	padding-bottom: 0.5rem;
+}
+#qa li:last-child p:last-child {
+	border-bottom: none;
+}
+#qa li p span:first-child {
+	font-size: 1.28rem;
+	margin-left: 1rem;
+	color:#666;
+}
+.add {
+	color: #ff9600;
+}
+.subtract {
+	color: #112976;
+}
+#qa li:last-child {
+	padding-bottom: 0px;
+}
+#qa li p i {
+	font-style: normal;
+}
+#qa li p i .turn {
+	display: block;
+	color:#333;
+}
+#qa li p b {
+	float: right;
+	font-weight: normal;
+}
+#qa li p span.money {
+	float: right;
+	font-size: 1.4rem;
+	display: block;
+}
+#qa li p b span:first-child {
+	font-size: 1rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+}
+#qa li p b span:nth-child(3) {
+	margin-left: 0.25rem;
+}

@@ -1,0 +1,81 @@
+html,
+body {
+	font-size: 1.2rem;
+	background: #fff;
+}
+
+#main canvas {
+	/*background: #88a2ff;*/
+
+}
+
+#main {
+	width: 100%;
+	height: 22rem;
+
+	/*width: 600px;
+	height: 400px;*/
+}
+
+#main div {
+	
+}
+.top{
+	text-align:center;
+	background:#ffffff;
+	/*height:16rem;*/
+	padding-top:1rem;
+}
+.top .tabs{
+	
+	margin-left:4.6rem;
+	width:22rem;
+	height:2.4rem;
+	border:2px solid #4c70e5;
+	border-radius:0.5rem;
+}
+.top .tabs li{
+	float:left;
+	width:49.7%;
+	height:2.4rem;
+	line-height:2.4rem;
+	color:#4c70e5;
+}
+.top .tabs li.tab_bg{
+	background:#4c70e5;
+	color:#ffffff;
+}
+.top .tabs li:first-child{
+	border-radius:0.5rem 0 0 0.5rem;
+	/*border-right:2px solid #4c70e5;*/
+}
+.top .tabs li:last-child{
+	float:right;
+	border-radius:0 0.5rem 0.5rem 0;
+	/*border-left:2px solid #4c70e5;*/
+}
+.info  {
+	margin-top:3.75rem;
+}
+.info li {
+	width:45%;
+	float:left;
+	height:3.8rem;
+}
+.info li:nth-child(odd){
+	margin-right:10%;
+}
+.info ul {
+	padding:0 2.15rem;
+}
+.info span {
+	display:inline-block;
+	height:100%;
+	
+}
+.info .type {
+	float:left;
+}
+.info .num {
+	float:right;
+}

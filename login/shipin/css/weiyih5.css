@@ -1,0 +1,122 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin: 0; padding: 0;}
+html{ min-height: 100%; }
+body{ min-height: 100%; overflow-x:hidden;}
+div,p,dl,dd,a,b,u,em,input,textarea,button,select,form,section,label,span,td,li,nav,footer,body,ul,i{-webkit-box-sizing:border-box;-webkit-tap-highlight-color:rgba(0,0,0,0);word-wrap:break-word;word-break:break-all;padding:0;margin:0}
+div,h1,h2,h3,h4,h5,h6,p,ul,li,dl,dd,dt,ol,em{ margin: 0; padding: 0; font-style: normal; }
+.fl{ float:left;}
+.fr{ float:right;}
+.db{ display:block;}
+.ovfl{overflow: hidden;}
+a:focus,a:active{outline:0}
+img,a,input{-webkit-touch-callout:none}
+table{border-collapse:collapse}
+body,td,input,textarea,option,select,button{font-family:Arial,Helvetica,sans-serif;font-size:1em;-webkit-text-size-adjust:none}
+body,td{font-size:.95em;color:#333}
+body{background:#f2f2f2;}
+img,ul{border:0;list-style:none; width:100%;}
+img{ display: block;}
+a{color:#000;text-decoration:none}
+
+.clear{ clear:both;}
+.or{ color:#ff6600;}
+.red{ color:#f15b4e!important;}
+.green{ color:#31b4b2;}
+.blue{ color:#2b74ab;}
+.clear{ clear: both;}
+.positonr{ position: relative;}
+.writebg{ background: #ffffff;}
+select{
+	width:100%;color:#555;background-color:#fff;border:1px solid #ccc;border-radius:5px;padding:7px; height:35px;
+	}
+input[type=text] {
+	width:95%;color:#555;background-color:#fff;border:1px solid #ccc;border-radius:0px;background-image:url(../../poc/images/white.png);
+	background-repeat:repeat;
+}
+input[type=radio] {
+	background-color:#e60012;
+	border:none;
+	padding:5px;
+}
+input[type=button] {min-width:25%;background-color:#727171;color:#fff;border:none;border-radius:0px;padding:5px;
+	margin:3px;
+}
+input[type=button].lightButton {
+	background-color:#b5b5b7;background: -webkit-linear-gradient(left top, #b8b8ba, #b5b5b7);
+}
+input[type=button].checked {
+	background-color:#e60012;background-image:url(../../poc/images/red.png);background-repeat:repeat;
+}
+textarea {
+	color:#555;width:95%;background-color:#fff;border:1px solid #ccc;border-radius:0px;padding:4px;background-image:url(../../poc/images/white.png);background-repeat:repeat;
+}
+
+/**/
+body{ background:#f2f2f2;}
+header{ display: block; width: 100%; background: #31b4b2; height: 44px; line-height: 44px; color: #ffffff; text-align: center; font-size: 1.8em;}
+.iconimg{ width: 24px; height: 24px;}
+.back{   position:absolute; top: 7px; left: 3%;}
+h3{ font-size: 1.6em; color: #2c2c2c; line-height:1.6em; padding: 10px 3%;}
+.date{ color:#9c9c9c; padding: 0px 3%;}
+.container{ margin:2% 0 3%; background:#ffffff; border-top: solid 1px #dddddd;border-bottom: solid 1px #dddddd; color: #666666;}
+.container p{ padding: 0 3% 3%; line-height: 1.6em;}
+
+/*yjdetail*/
+.content{ position: relative; overflow-x: hidden;}
+.money{ height: 35px; line-height: 35px; border-bottom: solid 1px #dddddd; text-align: right; padding-right:3%; padding-left: 3%; color: #666666;  font-size: 1.6em;background: #ffffff;}
+.money span{ display: block;}
+.texts{ font-size: 1em;}
+.bangfu{ background: rgba(49,180,178,0.4); border-radius: 14px;   color: #ffffff; width: 40%; padding: 1% 3%; position: absolute; right: -4%; top: 10%;} 
+.touxiang{ float: left; margin-top: 2% ; margin-left: 3%;}
+.touxiang img{ width: 29px; height: 29px; border-radius: 50%;}
+.peoplelogo{ text-align: center;  font-size: .85em;}
+.peoplelogo img{display: inline-block;}
+.peoplelogo p{height:20px; overflow: hidden;}
+.name{ line-height: 25px; width:50%; margin-top: 2.5%; color: #2d2d2d; margin-left: 3%; font-size: 1.4em; overflow: hidden;}
+.titlename{ border-bottom: solid 1px #dddddd; color: #31b4b2; margin:0 3%; padding:3% 0 2%; font-size: 1.6em; line-height: 1.6em;}
+.titlename i{ display: block; width: 4px; height: 16px; background: #31b4b2; margin-right: 3%; float: left; margin-top: 1%; }
+.logo0{padding-bottom: 3%;}
+.titlename .more{ color: #31b4b2; font-size: 0.85em; display: block; float: right;}
+.groupinfo{ font-size: .85em; margin-left: 23%;}
+.yjinfo{ }
+.yjinfo p{ text-indent: 2em;}
+
+
+.time{line-height: 25px;  margin-top: 3%; color: #9c9c9c; margin-right: 3%;  font-size: 0.95em;}
+
+
+
+.jk_btn{ height: 45px; background: #ffffff; border-top: solid 1px #dddddd; position: absolute; bottom: 0; width: 100%;} 
+.jk_btn1{ width:24%; margin-top: 1%;  margin-right: 2%;}
+.jk_btn1 button{ padding: 8px 10px;}
+button{ display: block; text-align: center; background: #31b4b2; border-radius: 5px; border: none; margin: 2%; width: 96%; padding: 3%; color: #ffffff;} 
+button:hover{ background: #cacaca;}
+/*download*/
+.downloadbg{ background: url(../img/h5download2.png) no-repeat; background-size: 100%; min-height: 45px;}
+.iosdw{ display: inline-block; float: left; width: 32%; height: 40px;  margin-left: 25%;}
+.androiddw{ display: inline-block; float: right; width: 32%; height: 40px;   margin-right: 3%;}
+/*download*/
+
+/*活动详情*/
+.timebg{ background: #f3f3f3; height: 30px; border-left: solid 3px #31b4b2; line-height: 30px; margin:0 3% 2%; padding-left: 3%;}
+.overtime{ line-height: 1.6em; margin: 2% 3%;}
+.onelist{ padding: 3%;}
+.conmentnum{ background: #f7f7f7; height: 30px; line-height: 30px;   color:#2c2c2c; padding-left: 3%;}
+.conment ul{padding-bottom: 3%; background: #fff;}
+.conment p{ padding: 3% 0;  margin:0 3%;border-bottom: solid 1px #cccccc; color: #666666;}
+.line{ border-bottom: solid 1px #dddddd; padding-bottom: 2%;}
+/*活动详情*/
+@media screen and (min-width: 320px) {html{font-size:62.5%;}}       
+@media screen and (min-width: 360px) {html{font-size:70.3125%;}}      
+@media screen and (min-width: 400px) {html{font-size:78.125%;}} 
+@media screen and (min-width: 440px) {html{font-size:85.9375%;}} 
+@media screen and (min-width: 480px) {html{font-size:93.75%;}} 
+@media screen and (min-width: 520px) {html{font-size:101.5625%;}}
+@media screen and (min-width: 560px) {html{font-size:109.375%;}} 
+@media screen and (min-width: 600px) {html{font-size:117.1875%;}}  
+@media screen and (min-width: 640px) {html{font-size:125%;}} 
+@media screen and (min-width: 680px) {html{font-size:132.8125%;}}
+@media screen and (min-width: 720px) {html{font-size:140.625%;}}
+@media screen and (min-width: 760px) {html{font-size:148.4375%;}}
+@media screen and (min-width: 800px) {html{font-size:156.25%;}}

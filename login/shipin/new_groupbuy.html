@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>团购管理</title>
+		<link rel="stylesheet" href="./css/common.css" />
+		<link rel="stylesheet" href="./css/base.css" />
+		<link rel="stylesheet" href="./css/jbox.css" />
+		<link rel="stylesheet" href="./css/new_groupbuy.css" />
+		<script src="./js/jquery-1.8.3.min.js"></script>
+		<script src="./shipinjs/top_bottom.js"></script>
+		<script src="./shipinjs/new_usercenter.js"></script>
+		<script type="text/javascript" src="./shipinjs/common.js"></script>
+		<script src="/static/wechat/assets/js/app.js"></script>
+		<script src="./js/jquery.jBox-2.3.min.js"></script>
+		<script src="./js/jquery.jBox-zh-CN.js"></script>
+
+	</head>
+
+	<body>
+		<div class="newusercenter">
+			<div class="header">
+
+			</div>
+			<div class="navpart">
+
+			</div>
+
+			<div class="center">
+				<div class="center-con">
+					<a href="javascript:0;">个人中心</a>
+				</div>
+			</div>
+			<div class="wrap">
+				<div class="wrap-left wrap-left-photo fl">
+
+				</div>
+				<div class="wrap-right fr">
+					<div class="tittle">
+						团购管理
+						<p class="fr" style="display:none;">学习卡总量<span class="study_total">--</span>余量<span class="study_surplus">--</span>张；礼品卡总量<span class="gift_total">--</span>张，余量<span class="gift_surplus">--</span>张</p>
+					</div>
+					<div class="mess-form">
+						<div class="mess-top">
+							<div class="mess-con" style="display:none;">
+								<div class="fl balance">
+									<div class="bal_tit">卡余量</div>
+									<div class="bal_num"></div>
+								</div>
+								<div class="fl way">
+									<a href="new_groupbuyApply.html">团购</a>
+									<a href="new_split.html">拆分</a>
+									<a href="new_transferCard.html">转换</a>
+									<p class="fr">已拆分<span id="card_count1">--</span>张，零售<span id="card_count2">--</span>张，激活量<span id="jihuocount">--</span>张</p>
+								</div>
+							</div>
+							<div class="mess-hide">
+								<div class="fl balance">
+									<div class="bal_tit">卡余量</div>
+									<div class="bal_n">****</div>
+								</div>
+								<div class="fl way">
+									<a href="new_groupbuyApply.html">团购</a>
+									<a href="new_split.html">拆分</a>
+									<a href="new_transferCard.html" class="last">转换</a>
+									<p class="fr">已拆分<span>**</span>张，零售<span>**</span>张，激活量<span>**</span>张</p>
+								</div>
+							</div>
+							<div class="fr switch">隐藏</div>
+
+						</div>
+						<div class="tittle">
+							<a href="javascript:0;">团购管理></a>
+							<a href="javascript:0;">交易记录</a>
+						</div>
+						<div class="nav-record">
+							<ul>
+								<li class="option" id="option_group">团购记录</li>
+								<li class="option" id="option_split">拆分记录 </li>
+								<li class="option" id="option_money">佣金记录</li>
+								<li class="option" id="option_gift">礼品卡记录</li>
+								<li class="fr total">团购总计：<span id="teamBuyCanCount"></span>张</li>
+							</ul>
+						</div>
+						<div class="record-box">
+							<!--团购记录start-->
+							<div class="group_content contents option_group" id="group_content">
+								<div class="title-top">
+									<ul class="record_content group-record">
+										<li>
+											<div>
+												<span class="time">时间</span>
+												<span class="activeCode">数量</span>
+												<span class="money">金额</span>
+												<span class="status">状态</span>
+											</div>
+
+										</li>
+
+									</ul>
+								</div>
+
+								<ul class="record_content group-record" id="group-record">
+
+								</ul>
+							</div>
+							<!--团购记录end-->
+							<!--拆分记录start-->
+							<div class="split_content contents option_split" id="split_content">
+								<div class="title-top">
+									<ul class="split-tittle">
+										<li>
+											<div>
+												<span class="time">时间</span>
+												<span class="activeCode">昵称</span>
+												<span class="account">账户</span>
+												<span class="activeCode">数量</span>
+												<span class="mess">详情<b></b></span>
+											</div>
+
+										</li>
+
+									</ul>
+								</div>
+								<ul class="split-record">
+
+								</ul>
+							</div>
+							<!--拆分记录end-->
+							<!--佣金记录start-->
+							<div class="money_content contents option_money" id="money_content">
+								<div class="title-top">
+									<ul class="commi-tittle">
+										<li>
+											<div>
+												<span class="time">时间</span>
+												<span class="money">金额</span>
+												<span class="mess">详情<b></b></span>
+											</div>
+
+										</li>
+
+									</ul>
+								</div>
+								<ul class="commi-record">
+
+								</ul>
+							</div>
+							<!--佣金记录end-->
+							<!--礼品卡记录start-->
+							<div class="gift_content contents option_gift" id="gift_content">
+								<div class="title-top">
+									<ul class="commi-tittle">
+										<li>
+											<div>
+												<span class="noactived">未激活</span>
+												<span class="actived">已激活</span>
+												
+											</div>
+
+										</li>
+
+									</ul>
+								</div>
+								<ul class="gift-record">
+									
+
+								</ul>
+							</div>
+							<!--礼品卡记录end-->
+						</div>
+
+					</div>
+					<div class="page">
+						<ul class="pager">
+							<!--<li>
+										<a href="javascript:0;">上一页</a>
+									</li>
+									<li>
+										<a href="javascript:0;">下一页</a>
+									</li>-->
+							<li>
+								<a href="javascript:;" id="Previous" class="unable">上一页</a>
+							</li>
+							<li>
+								<a href="javascript:;" id="next">下一页</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+			<div class="clear"></div>
+
+			<div class="footer">
+
+			</div>
+
+		</div>
+
+	</body>
+	<script src="./shipinjs/new_groupbuy.js"></script>
+
+</html>

@@ -1,0 +1,142 @@
+/**
+***
+*** lsy date by 2017/07/25
+***
+*/
+header {
+	height: (28.67rem/2);
+	background: url("/static/wechat/assets/images/myshop_apply_success_bg.png");
+	background-size: 100% 100%;
+	> h3 {
+		padding-top: (10.9rem/2);
+		margin-bottom: (1.68rem/2);
+		font-size: (4.267rem/2);
+		font-weight: 600;
+		color: #333;
+		text-align: center;
+	}
+	> p {
+		font-size: (2rem/2);
+		color: #666;
+		text-align: center;
+	}
+}
+
+/*推荐商品*/
+
+.crowd-top {
+	color: #333333;
+	height: 3.8rem;
+	line-height: 3.8rem;
+	padding-left: 3rem;
+	font-size: 1.3rem;
+	box-sizing: border-box;
+	position: relative;
+	background: url("/static/wechat/assets/images/icon_recommend.png") no-repeat 0.7rem center;
+	background-size: 1.7rem;
+}
+
+.crowd-con {
+	margin-left: 0.7rem;
+}
+
+.crowd-box:nth-child(odd) {
+	margin-right: 0.7rem;
+}
+
+.crowd-box {
+	float: left;
+	background: #fff;
+	box-shadow: 0 1px 3px #a5a5a5;
+	margin-bottom: 1.5rem;
+	border-radius: 0.4rem;
+	width: 14.7rem;
+	overflow: hidden;
+}
+
+.crowd-box img {
+	width: 14.75rem;
+	height: 8.25rem;
+}
+
+.crowd-text p {
+	font-size: 1.1rem;
+	line-height: 1.8rem;
+	height: 1.8rem;
+	color: #333;
+	margin-top: 0.1rem;
+	margin-bottom: -0.8rem;
+	font-family: "microsoft yahei";
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+.crowd-text>span {
+	display: inline-block;
+	width: 100%;
+	height: 0.25rem;
+	border-radius: 0.2rem;
+	background: #90dcff;
+	position: relative;
+	overflow: hidden;
+}
+
+.crowd-text>span b {
+	top: 0;
+	left: 0;
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	border-radius: 0.2rem;
+	background: #00a0e9;
+}
+
+.crowd-num b {
+	font-weight: normal;
+	float: right;
+	color: #00a0e9;
+}
+
+.crowd-num {
+	color: #666;
+	/* margin-top: 0.25rem; */
+	font-size: 1rem;
+}
+
+.crowd-num span {
+	color: #00a0e9;
+}
+
+.crowd {
+	background: #ffffff;
+}
+
+.crowd-text {
+	padding: 0 .4rem 0 .35rem;
+	margin-bottom: .3rem;
+	width: 14rem;
+}
+
+/*end推荐商品*/
+footer {
+	background: #fff;
+	overflow: hidden;
+	> a {
+		display: block;
+		width: 81.75%;
+		height: (6.83rem/2);
+		line-height: (6.83rem/2);
+		margin: 0 auto;
+		margin-top: (5.86rem/2);
+		margin-bottom: (13.1rem/2);
+		background-color: #00a0e9;
+		color: #fff;
+		font-size: (2.9rem/2);
+		text-align: center;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+}

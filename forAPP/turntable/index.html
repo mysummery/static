@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>抽奖</title>
+		<meta charset="utf-8">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="renderer" content="webkit">
+		<link rel="stylesheet" type="text/css" href="/static/wechat/assets/css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css?ver=123">
+		<script src="/static/wechat/assets/js/j.js" type="text/javascript" charset="utf-8"></script>
+		<script src="/static/wechat/assets/js/ajaxSubmit.js"></script>
+		<!-- 提示框 start -->
+		<script src="/static/wechat/page/bootstrap/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+		<!-- 提示框 end -->
+		<script type="text/javascript" src="js/index.js?ver=112344123"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+	</head>
+
+	<body>
+		<div class="g-content">
+			<div class="g-lottery-case clearfix">
+				<div class="g-left">
+					<h2><img src="images/gift.png">
+        <p>您还有<span class="playnum"></span>次抽奖机会</p>
+      </h2>
+					<div id="lottery" class="lottery">
+						<table border="0" cellpadding="0" cellspacing="0">
+							<tr>
+								<td class="lottery-unit lottery-unit-0">
+									<div class="gift_content">再接再厉</div>
+								</td>
+								<td class="lottery-unit lottery-unit-1">
+									<div class="gift_content  gift_t"><img src="images/gift_0.png"><span>特等奖</span></div>
+								</td>
+								<td class="lottery-unit lottery-unit-2">
+									<div class="gift_content">谢谢参与</div>
+									<div class="mask"></div>
+								</td>
+							</tr>
+							<tr>
+								<td class="lottery-unit lottery-unit-7">
+									<div class="gift_content gift_t"><img src="images/gift_1.png"><span>一等奖</span></div>
+								</td>
+								<td>
+									<button id="playbtn"></button>
+								</td>
+								<td class="lottery-unit lottery-unit-3">
+									<div class="gift_content gift_t gift_l blk"><img class="zs" src="images/zzzzz.png"><span>二等奖</span></div>
+								</td>
+							</tr>
+							<tr>
+								<td class="lottery-unit lottery-unit-6">
+									<div class="gift_content">谢谢参与</div>
+									<div class="mask"></div>
+								</td>
+								<td class="lottery-unit lottery-unit-5">
+									<div class="gift_content gift_t gift_l"><img src="images/gift_3.png"><span>三等奖</span></div>
+									<div class="mask"></div>
+								</td>
+								<td class="lottery-unit lottery-unit-4">
+									<div class="gift_content">再接再厉</div>
+									<div class="mask"></div>
+								</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="btns">
+			<div class="lists" id="scroll-container">
+				<div id="indemo">
+					<ul id="demo1">
+
+					</ul>
+					<ul id="demo2"></ul>
+				</div>
+			</div>
+		</div>
+		<div class="rules"> <img src="images/rules.png" style="width:100%;"> </div>
+
+		<!-- 获奖的样式start-->
+		<div class="alert" id="win">
+			<p class="gift_name red win_name nums">获得三等奖</p>
+			<button class="go" id="goto_recive"></button>
+		</div>
+		<!-- 获奖的样式end-->
+
+		<!-- 没中样式的start-->
+		<div class="alert" id="fill">
+			<!--<span class="close_cover" onClick="close_(this)">×</span>-->
+			<p class="gift_name orange nums">还有<span class="playnum">3</span>次机会</p>
+			<button class="go continue" onClick="close_(this)"></button>
+		</div>
+		<!-- 没中样式的end-->
+
+		<!-- 没中没机会样式的start-->
+		<div class="alert" id="fill_no">
+			<!--<span class="close_cover" onClick="close_(this)">×</span>-->
+			<button class="go" id="goon_sign"></button>
+		</div>
+		<!-- 没中没机会样式的end-->
+		<div class="cover"></div>
+		<input type="hidden" id="gift">
+		<input type="hidden" id="zjid">
+		<input type="hidden" id="gift_c">
+		<audio src="music/music.mp3" id="myAudio" ></audio>
+	</body>
+
+</html>
+<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+<script>
+	var aTag = document.getElementById('goto_recive');
+	aTag.addEventListener('click', function() {
+		var jiangid = $('#gift_c').val();
+		var zjid = $('#zjid').val();
+		var receive = jiangid + '#' + zjid;
+		//alert(jiangid);
+		//alert(zjid);
+		//调用android本地方法,领取奖品
+		rollObj.intoReceive(receive);
+		return false;
+	}, false);
+	var bTag = document.getElementById('goon_sign');
+	bTag.addEventListener('click', function() {
+		//调用android本地方法,继续签到
+		rollObj.continueToSign();
+		return false;
+	}, false);
+	var playbtn = document.getElementById('playbtn');
+	playbtn.addEventListener('click', function() {
+		//调用android本地方法,禁用返回按钮
+		rollObj.onLottery();
+		return false;
+	}, false);
+</script>

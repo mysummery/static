@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>直播</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=no">
+<!--	<link rel="stylesheet" type="text/css" href="/static/wechat/page/iscroll5/iscroll.css">-->
+	<link rel="stylesheet" type="text/css" href="/static/wechat/page/swiper/swiper-3.3.1.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/wechat/assets/css/base.css">
+	<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+	<link rel="stylesheet" href="/static/wechat/live/live/live.css">	
+	<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+    <!--<script type="text/javascript" src="/static/wechat/page/iscroll5/iscroll5.js"></script>-->
+	<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+	<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+	<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+	<script src="/static/wechat/page/swiper/swiper-3.3.1.min.js"></script>
+</head>
+<body >
+	<header>
+		
+		<div class="top_img">
+			<img src="/static/wechat/assets/images/letter_top.png" class="top_img_bac">
+			<img src="/static/wechat/assets/images/live_playbtn.png" class="live_playbtn">
+			<div class="top_cover">
+				
+			</div>
+		</div>
+		<!-- 倒计时 -->
+		<div class="count-down-box">
+			<div class="count-down">
+				倒计时：
+				<strong id="day_show">0天</strong>
+				<strong id="hour_show">00</strong>
+				:
+				<strong id="minute_show">00</strong>
+				:
+				<strong id="second_show">00</strong>
+				<a class="fr appointment-btn-top" href="javascript:;"><span class="appointnum"></span>人已预约</a>
+			</div>
+		</div>
+	</header>
+	
+	<section>
+
+		<div class="msg-content"></div>
+		
+		<!-- 简介及评论 -->
+		<div class="introduction-comment">
+			<div class="tabs"> 
+				<a href="javascript:;" class="current"><span>简介</span></a><a href="javascript:;"><span>评论</span></a>
+			</div>
+			<div id="tabs-container" class="swiper-container swiper-container-horizontal">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide swiper-slide-active" style="width: 318px;">
+			        	<div class="content-slide">
+			        		<!-- 授课讲师 -->
+				        	<div class="live-teacher">
+				        		<i></i>授课讲师
+				        		<div class="teacher-information">
+				        			<img src="" alt="" class="teacherphoto">
+				        			<span class="teachername"></span>
+				        			<p class="live_intro">【李强365】是由创始人李强老师研发提供的一个互联网学习平台。李阳老师是北京巨思特企业管理顾问有限公司。</p>
+				        		</div>
+				        		<i></i>课程介绍
+				        		<div class="class-information">
+				        			<p>课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍课程介绍</p>
+				        		</div>
+				        	</div>
+			        	</div>
+
+			      	</div>
+			      	<div class="swiper-slide swiper-slide-next" style="width: 318px;">
+			        	<div class="content-slide">
+				        	<div id="wrapper">
+								<div id="iscroll" style="position:relative;">
+									<ul class="comment_contents communications">
+										
+									</ul>
+									<ul class="comment_contents users">
+										
+									</ul>
+								</div>
+							</div>
+			        	</div>
+			      	</div>
+				</div>
+			</div>
+			<button class="appointment-btn appointment-btn-top" type="button">预约</button>
+			<button class="comment-btn" type="button">参与评论</button>
+			<div class="comments-btn">
+				<input type="text" class="send_contents">
+				<button class="send_comment">发送</button>
+			</div>
+		</div>
+	</section>
+	
+	<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	<script src="/static/wechat/live/live/live.js"></script>
+</body>
+</html>

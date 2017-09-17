@@ -1,0 +1,43 @@
+.new_answer .wrap {
+	margin-top: 20px;
+	height: 800px;
+}
+
+.answer-con {
+	margin-top: 30px;
+}
+
+.answer-con p {
+	margin-bottom: 20px;
+}
+
+.answer-con span {
+	margin-left: 10px;
+}
+
+.answer-con b {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	background: #3d64e3;
+	color: #fff;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.answer-con i {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	background: #fe9b0f;
+	color: #fff;
+	text-align: center;
+	font-style: normal;
+	margin-top: 0px;
+}
+
+.answer-con div {
+	margin-bottom: 30px;
+}

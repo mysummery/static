@@ -1,0 +1,284 @@
+nav {
+	display: flex;
+	position: relative;
+	background: #fff;
+}
+
+.nav-wrapper {
+	width: 60.4%;
+	height: 28px;
+	margin: 10px auto;
+	font-size: 0;
+	border: 1px solid #00a0e9;
+	border-radius: 5px;
+}
+
+.nav-item {
+	display: inline-block;
+	flex: 1;
+	width: 50%;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	-webkit-tap-highlight-color:rgba(255,255,255,0);
+	cursor: pointer;
+}
+
+.nav-item span {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	font-size: 16px;
+	color: #00a0e9;	
+}
+
+.nav-item span.active {
+	color: #fff;
+	background: #00a0e9;
+}
+
+.content-item {
+	display: none;
+}
+
+.content-item.active-div {
+	display: block;
+}
+
+.ranking-code,
+.ranking-explain {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 15px 10px;
+	-webkit-tap-highlight-color:rgba(255,255,255,0);
+	cursor: pointer;
+}
+
+.ranking-code img,
+.ranking-explain img {
+	width: 20px;
+	height: 20px;
+	vertical-align: top;
+}
+
+.ranking-explain {
+	padding: 10px;
+}
+
+/*周榜，月榜，总榜*/
+.ranking-tab {
+	display: flex;
+	align-items: center;
+	height: 40px;
+	margin-top: 10px;
+	background: #fff;
+}
+
+.ranking-tab-item {
+	display: inline-block;
+	flex: 1;
+	line-height: 22.5px;
+	text-align: center;
+	font-size: 15px;
+	color: #999;
+	-webkit-tap-highlight-color:rgba(255,255,255,0);
+	cursor: pointer;
+}
+
+.ranking-tab-item span {
+	display: inline-block;
+	width: 34.4%;
+	border-bottom: 2px solid #fff;
+}
+
+.ranking-tab-item span.ranking-tab-active {
+	color: #00a0e9;
+	border-bottom: 2px solid #00a0e9;
+}
+
+.ranking-list {
+	position: relative;
+}
+
+.ranking-list-item {
+	display: none;
+}
+
+.ranking-list-active {
+	display: block;
+}
+
+/*前3*/
+.top-three,
+.team-top-three {
+	display: flex;
+	padding: 0 9.6%;
+	box-sizing: border-box;
+	background-image: url('/static/wechat/assets/images/rankingBg.png');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+.rank-two,
+.rank-three {
+	flex: 0 0 26%;
+}
+
+.rank-two img,
+.rank-three img {
+	width: 100%;
+	max-width: 100%;
+	margin-top: 52px;
+}
+
+.rank-two p,
+.rank-three p,
+.team-rank-two p,
+.team-rank-three p {
+	line-height: 1;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+}
+
+.rank-two h6,
+.rank-three h6,
+.team-rank-two h6,
+.team-rank-three h6 {
+	line-height: 1;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 15px;
+	color: #00a0e9;
+}
+
+.rank-one {
+	flex: 1;
+	text-align: center;
+}
+
+.rank-one img {
+	margin-top: 15px;
+	width: 67%;
+}
+
+.rank-one p,
+.team-rank-one p {
+	line-height: 1;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+}
+
+.rank-one h6,
+.team-rank-one h6 {
+	line-height: 1;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 18px;
+	color: #00a0e9;
+}
+
+.rank-after {
+	box-sizing: border-box;
+	padding: 0 3%;
+	margin-top: 10px;
+	background: #fff;
+}
+
+.rank-after ul li {
+	display: flex;
+    align-items: center;
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.rank-after ul li em {
+	margin-left: 4px;
+	font-size: 15px;
+	font-style: normal;
+	color: #666;
+}
+
+.rank-after ul li img {
+	width: 30px;
+	height: 30px;
+	margin: 0 10px 0 15px;
+}
+
+.rank-after ul li span {
+	flex: 1;
+	font-size: 14px;
+	color: #666;
+}
+
+.rank-after ul li strong {
+	font-weight: normal;
+	font-size: 15px;
+	color: #00a0e9;
+}
+
+.rank-after ul li:last-child {
+	border-bottom: none;
+}
+
+/*分享榜前3*/
+.team-wrapper {
+	position: relative;
+}
+
+.team-top-three {
+	padding: 0 8.5%;
+}
+
+.team-rank-two,
+.team-rank-three {
+	flex: 0 0 28.4%;
+}
+
+.team-rank-two img,
+.team-rank-three img {
+	width: 100%;
+	max-width: 100%;
+	margin-top: 62px;
+}
+
+.team-rank-one {
+	flex: 1;
+	text-align: center;
+}
+
+.team-rank-one img {
+	width: 82.8%;
+	margin-top: 24px;
+}
+/*我的排名*/
+.mine-ranking {
+	position: absolute;
+	top: 5px;
+	left: 10px;
+	height: 32px;
+	text-align: center;
+	background: linear-gradient(to top right, rgb(255,150,0) 0%, rgb(255,182,78) 45%, rgb(255,214,156) 100%);
+	border-radius: 5px;
+}
+
+.mine-ranking p {
+	box-sizing: border-box;
+	margin: 0 3px;
+	padding: 2px 0;
+	line-height: 1;
+	font-size: 12px;
+	color: #fff;
+}
+
+.mine-ranking p:first-child {
+	border-bottom: 1px solid #e3e3e3;
+}

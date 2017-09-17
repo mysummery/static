@@ -1,0 +1,45 @@
+/**
+***
+*** lsy date by 2017/07/25
+***
+*/
+#cancel-container {
+	background-color: #fff;
+	> h4 {
+		margin-bottom: (2.38rem/2);
+		padding-top: (4.53rem/2);
+		font-size: (2.9rem/2);
+		color: #333;
+		text-align: center;
+	}
+	> p {
+		margin: 0 (1.67rem/2);
+		font-size: (2.2rem/2);
+		color: #666;
+		line-height: 1.6rem;
+	}
+	> button {
+		display: block;
+		width: 81.25%;
+		height: (6.83rem/2);
+		line-height: (6.83rem/2);
+		font-size: (2.9rem/2);
+		border: 1px solid #00a0e9;
+		border-radius: 4px;
+		cursor: pointer;
+	}
+}
+
+#cancel-sure {
+	margin: 0 auto;
+	margin-top: (17.07rem/2);
+	margin-bottom: (1.7rem/2);
+	background-color: #00a0e9;
+	color: #fff;
+}
+
+#cancel-cancel {
+	margin: 0 auto;
+	background-color: #fff;
+	color: #00a0e9;
+}

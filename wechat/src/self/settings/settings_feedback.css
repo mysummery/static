@@ -1,0 +1,78 @@
+.wid {
+	width: 82%;
+}
+.form{
+	padding-top:1rem;
+}
+.wid .form .titles{
+	background:#fff;
+	border:1px solid #d5d5d5;
+	border-radius:0.5rem;
+	padding-left:4%;
+}
+.wid .form p.agree {
+	font-size: 1.25rem;
+	padding-left: 0px;
+	background:none;
+	border:none;
+}
+
+.wid .form p input {
+	float: none;
+	padding-left: 0px;
+}
+
+.wid .form .contents {
+	height: 18rem;
+	border-radius: 0.5rem;
+	margin-bottom: 1.25rem;
+	position: relative;
+	padding-left: 2%;
+}
+
+.wid .form .contents textarea {
+	width: 100%;
+	height: 80%;
+	border: none;
+	border-radius: 0.5rem;
+	padding-top: 2%;
+	background: none;
+	font-size: 1.2rem;
+	font-family: font-family: "Microsoft YaHei UI", "微软雅黑";
+	resize: none;
+}
+
+.wid .form .contents span {
+	position: absolute;
+	bottom: 0px;
+	right: 4%;
+	color: #9e9e9e;
+	height: 3rem;
+	font-size: 1rem;
+}
+
+.wid .form .contents span b {
+	font-weight: normal;
+}
+
+.wid .form p.contacts {
+	padding-bottom: 1px;
+	border-radius: 0.5rem;
+	padding-left: 4%;
+	background:#fff;
+	border:1px solid #d5d5d5;
+	text-align:left;
+}
+
+.wid .form .button {
+	width: 100%;
+	margin-top: 4.3rem;
+}
+
+.wid .form p.agree {
+	color: #333333;
+}
+.wid .form p input{
+	width:90%;
+	height:3.2rem;
+	}

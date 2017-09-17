@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>充值</title>
+		<link rel="stylesheet" href="./css/common.css" />
+		<link rel="stylesheet" href="./css/base.css" />
+		<link rel="stylesheet" href="./css/jbox.css" />
+		<link rel="stylesheet" href="./css/new_recharge.css" />
+		<script src="./js/jquery-1.8.3.min.js"></script>
+		<script src="./shipinjs/new_recharge.js"></script>
+		<script src="./shipinjs/top_bottom.js"></script>
+		<script src="./shipinjs/new_usercenter.js"></script>
+		<script type="text/javascript" src="./shipinjs/common.js"></script>
+		<script src="/static/wechat/assets/js/app.js"></script>
+		<script src="./js/jquery.jBox-2.3.min.js"></script>
+		<script src="./js/jquery.jBox-zh-CN.js"></script>
+	</head>
+	<style>
+
+	</style>
+
+	<body>
+		<div class="newmanagebank">
+			<div class="header">
+
+			</div>
+			<div class="navpart">
+
+			</div>
+
+			<div class="center">
+				<div class="center-con">
+					<a href="javascript:0;">个人中心</a>
+				</div>
+			</div>
+			<div class="wrap">
+				<div class="wrap-left wrap-left-photo fl">
+
+				</div>
+				<div class="wrap-right fr">
+					<div class="tittle">
+						<a href="new_purse.html">钱包管理></a>
+						<a href="new_recharge.html">充值</a>
+					</div>
+					<div class="mess-form">
+						<div>
+							<span>真实姓名</span>
+							<span class="idcardname"></span>
+						</div>
+						<div>
+							<span>充值金额</span>
+							<input type="text" id="recharge" onblur="chizhi()"/>
+						</div>
+						<div class="payway">
+							<span class="fl">充值方式</span>
+							<ul class="form fl">
+								<li class="weixin">
+									<a href="javascript:;" class="wrapper wx" onclick="label(this)">微信支付
+										<span>
+      <input type="checkbox" class="input_check" id="check1" name="iCheck" value="1"  onclick="check_input(this)">
+      <label for="check1" class="che"  value="1"></label>
+      </span>
+									</a>
+								</li>
+
+								<li class="zhibao">
+									<a href="javascript:;" class="wrapper yb" onclick="label(this)">支付宝支付<span>
+      <input type="checkbox" class="input_check" id="check2" name="iCheck" value="2" onclick="check_input(this)"  checked="checked">
+      <label for="check2"  class="checked che" value="2"></label>
+      </span></a>
+								</li>
+								<li class="yinlian">
+									<a href="javascript:;" class="wrapper jhm" onclick="label(this)">银联支付<span>
+      <input type="checkbox" class="input_check" id="check3" name="iCheck" value="3" onclick="check_input(this)" >
+      <label for="check3" class="che" value="3"></label>
+      </span></a>
+								</li>
+							</ul>
+						</div>
+						<input type="hidden" id="value" value="2" />
+						<div class="check" style="display:none;">
+							<span class="fl">图片验证码</span>
+							<input type="text" placeholder="输入图片验证码" class="checkCode fl" id="c_checkCode" />
+							<img id="imgCheckCode" onclick="selectCodeCheck();" class="imgCode fl" src="https://api.liqiang365.com/validcode/get" alt="" />
+
+						</div>
+						<div style="display:none;">
+							<span>验证码</span>
+							<input placeholder="请输入验证码" id="identiCode" type="text" />
+							<button type="button" onclick="getCheckcode()">获取验证码</button>
+						</div>
+
+					</div>
+					<div class="reserve">
+						<button class="" type="submit" value="保存" id="rechaReserve" onclick="queren()">确认支付</button>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="footer">
+
+			</div>
+
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link href="/static/wechat/assets/css/base.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="/static/wechat/page/swiper/swiper-3.3.1.min.css">
+		<link rel="stylesheet" href="lightning_detail.css" type="text/css" />
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/swiper/swiper-3.3.1.min.js"></script>
+	</head>
+
+	<body>
+		<!-- 商城用户显示 -->
+		<div class="shopMark" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 3rem; z-index: 9;">
+			<img style="width: 100%;" src="/static/wechat/assets/images/goApp.png">
+			<a href="/static/wechat/src/admin/download.html" style="position: absolute; right: 4rem; top: 1rem; width: 7rem; height: 1.5rem; cursor: pointer;"></a>
+			<i style="position: absolute; right: 0; top: .5rem; display: inline-block; width: 1rem; height: 1rem; padding: 10px;  cursor: pointer; "></i>
+		</div>
+
+
+		<div class="wrapper">
+			<!-- 轮播 -->
+			<div class="swiper-container swiper-container1">
+				<div class="swiper-wrapper">
+				</div>
+				<div class="swiper-pagination" style="position:absolute;left:0px;bottom:1rem;width:100%;"></div>
+			</div>
+			<div class="goodes_price">
+				<b></b>
+				<div class="price">
+					<div class="nowprice fl">￥<span class="spprice"><span class="beprice"></span><span class="dot">.</span><span class="afprice"></span>
+					</span>
+					</div>
+					<div class="price-num fl">
+						<del class="oldprice"></del>
+						<p class="progress clearfix">
+							<span class="t left fl"></span>
+							<span class="percent"></span>
+						</p>
+					</div>
+				</div>
+				<div class="time">
+					<p>距结束仅剩</p>
+					<!-- 倒计时 -->
+					<div class="count-down-box">
+						<div class="count-down">
+							<strong id="hour_show">00</strong>:<strong id="minute_show">00</strong>:<strong id="second_show">00</strong>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="goods_tittle">
+				<p class="intro"></p>
+				<p class="sub-title">12456</p>
+			</div>
+			<div class="distance"></div>
+			<!-- 默认选中规格样式等 -->
+			<div class="default-type">
+				<p>已选<span></span><span></span></p>
+				<h6>请选择 规格型号</h6>
+				<img src="/static/wechat/assets/images/right.png" alt="">
+			</div>
+
+
+			<div class="goods_tit">
+				<div class="goods_detail">
+					<img src="/static/wechat/assets/images/zc_details.png" class="details_icon">商品详情
+				</div>
+					
+			</div>
+			<div class="goods_des"></div>
+			
+		</div>
+		<button class="purchase">立即购买</button>
+		</div>
+
+		
+
+		<!-- 点击立即购买弹窗 -->
+		<div class="mark"></div>
+
+		<div id="buy-model">
+			<div class="buy-model-content">
+				
+				<div class="buy-model-header">
+					<img src="/static/wechat/assets/images/close.png" alt="">
+					<div class="buy-model-header-content">
+						<p>￥<span class="bin-price"></span></p>
+						<h6>请选择 规格型号</h6>
+						<p>已选：<span></span><span></span></p>
+					</div>
+					<a href="javascript:;" class="close-model"></a>
+				</div>
+				<!-- 颜色，规格等 -->
+				<div class="total">
+					<div class="wid">
+						<!-- 选择颜色 -->
+						<div class="indent-sub-change indent-sub-change-color">
+							<div class="indent-sub-title">
+								<span>规格</span>
+							</div>
+							<div class="indent-sub-type clearfix">
+								<ul class="colors"></ul>
+							</div>
+						</div>
+						<!-- 选择型号 -->
+						<div class="indent-sub-change indent-sub-change-model">
+							<div class="indent-sub-title">
+								<span>型号</span>
+							</div>
+							<div class="indent-sub-type clearfix">
+								<ul class="types"></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 立即购买按钮 -->
+			<button class="buy-btn">确定</button>
+		</div>
+
+		<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+		<script type="text/javascript" src="lightning_detail.js"></script>
+		<script src="/static/wechat/page/swiper/swiper-3.3.1.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+		
+	</body>
+
+</html>

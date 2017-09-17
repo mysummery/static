@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选择席位</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="/static/wechat/page/swiper/swiper-3.3.1.min.css">
+	<link rel="stylesheet" type="text/css" href="/static/wechat/assets/css/base.css">
+	<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+	<link rel="stylesheet" href="/static/wechat/src/service/choose_seat/choose_seat.css">
+	<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+
+</head>
+<body>
+	<!-- 用户填写信息 -->
+	<div class="user-information">
+		<div class="user-name">
+			<span>姓名</span>
+			<input type="text" placeholder="请输入您的姓名" maxlength="10">
+		</div>
+		<div class="user-tel">
+			<span>电话</span>
+			<input type="tel" placeholder="请输入您的联系方式" maxlength="11">
+		</div>
+	</div>
+
+	<div class="choose-seat-img">
+		<img src="/static/wechat/assets/images/choose_seat.png" alt="">
+	</div>
+	
+	<!-- 操作席位 -->
+	<div class="choose-seat">
+		<div class="choose-seat-list clearfix">
+			<div class="choose-seat-type fl">
+				<i></i>
+				<p>皇冠席</p>
+			</div>
+			<div class="choose-seat-money fl">
+				<span>￥</span><strong>9800</strong>
+			</div>
+			<div class="choose-seat-num fr">
+				<a href="javascript:;">-</a>
+				<input type="text" id="crown-num" readonly="readonly" value="0">
+				<a href="javascript:;">+</a>
+			</div>
+		</div>
+
+		<div class="choose-seat-list clearfix">
+			<div class="choose-seat-type fl">
+				<i></i>
+				<p>钻石席</p>
+			</div>
+			<div class="choose-seat-money fl">
+				<span>￥</span><strong>5980</strong>
+			</div>
+			<div class="choose-seat-num fr">
+				<a href="javascript:;">-</a>
+				<input type="text" id="diamond-num" readonly="readonly" value="0">
+				<a href="javascript:;">+</a>
+			</div>
+		</div>
+
+		<div class="choose-seat-list clearfix">
+			<div class="choose-seat-type fl">
+				<i></i>
+				<p>VIP席</p>
+			</div>
+			<div class="choose-seat-money fl">
+				<span>￥</span><strong>2980</strong>
+			</div>
+			<div class="choose-seat-num fr">
+				<a href="javascript:;">-</a>
+				<input type="text" id="vip-num" readonly="readonly" value="0">
+				<a href="javascript:;">+</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- 提交 -->
+	<div class="choose-seat-submit">
+		<button type="button">提交</button>
+	</div>
+
+	
+	<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+	<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+	<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+	<script type="text/javascript" src="/static/wechat/src/service/choose_seat/choose_seat.js"></script>
+</body>
+</html>

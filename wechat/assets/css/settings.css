@@ -1,0 +1,57 @@
+@charset "utf-8";
+/* CSS Document */
+.logo {
+	width: 78%;
+	margin: 0 auto;
+}
+.logo img {
+	width: 100%;
+}
+.wid {
+	width: 100%;
+}
+.wid ul.form {
+	border-top: 1px solid #dfdfdf;
+	border-bottom: 1px solid #dfdfdf;
+}
+.wid ul.form li {
+	padding-left: 4%;
+	line-height: 3.8rem;
+	font-size: 1.3rem;
+	background: url(/static/wechat/assets/images/right.png) no-repeat 96% center #fff;
+	background-size:2.8%;
+}
+.wid ul.form li a {
+	display: block;
+	border-bottom: 1px solid #dfdfdf;
+	color: #333333;
+	background: url(/static/wechat/assets/images/s_lock.png) no-repeat 0.5rem center;
+	padding-left: 9%;
+	background-size:6%;
+}
+.wid ul.form li a.rubbish {
+	background: url(/static/wechat/assets/images/rubbish.png) no-repeat 0.5rem center;
+	background-size:6%;
+}
+.wid ul.form li a.feedback {
+	background: url(/static/wechat/assets/images/s_message.png) no-repeat 0.5rem center;
+	border-bottom: none;
+	background-size:6%;
+}
+.wid ul.bottom {
+	border-top: 1px solid #dfdfdf;
+	margin-top: 0.65rem;
+}
+.wid ul.bottom li a.contact {
+	background: url(/static/wechat/assets/images/s_phone.png) no-repeat 0.5rem center;
+	background-size:6%;
+}
+.wid ul.bottom li a.about {
+	background: url(/static/wechat/assets/images/s_about.png) no-repeat 0.5rem center;
+	border-bottom: none;
+	background-size:6%;
+}
+.wid .form .button {
+	width: 80%;
+	margin-left: 10%;
+}

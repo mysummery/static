@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>会员支付</title>
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta content="telephone=no" name="format-detection" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<link href="/static/wechat/assets/css/base.css" type="text/css" rel="stylesheet">
+		<link href="/static/wechat/assets/css/lr.css" type="text/css" rel="stylesheet">
+		<link href="/static/wechat/assets/css/settings.css" type="text/css" rel="stylesheet">
+		<link href="confirm.css" type="text/css" rel="stylesheet">
+		<script src="/static/wechat/page/j.js"></script>
+		<script src="/static/wechat/assets/js/app.js"></script>
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+		<script src="/static/wechat/src/service/tiaozhuan/tiaozhuan_gongzhong.js"></script>
+	</head>
+
+	<body class="body_">
+		<div class="zhe_" onclick="close_();"> <img src="/static/wechat/assets/images/right-top.png" /> </div>
+		<!-- added by 张明月 at 2016.11.18 for 修改布局 begin -->
+		<div class="logo">
+			<div class="amount">
+				<span>金额</span>
+				<b class="fr" style="display:inline;text-align:right;width:auto;">
+					<span class="money">¥</span>
+					<input id="charge" class="charge " value="365" type="text" readonly="readonly">
+				</b>
+			</div>
+		</div>
+		<div class="logo describe">
+			请选择支付方式
+		</div>
+		<div class="wid">
+			<ul class="form">
+				<li>
+					<a href="javascript:;" class="wrapper wx" onclick="label(this)">微信支付<span>
+      <input type="checkbox" class="input_check" id="check1" name="iCheck" value="2"  onclick="check_input(this)" checked="checked">
+      <label for="check1" class="checked che"  value="2"></label>
+      </span></a>
+				</li>
+				<!--<li>
+					<a href="javascript:;" class="wrapper" onclick="label(this)">支付宝支付<span>
+      <input type="checkbox" class="input_check" id="check2" name="iCheck" value="1" onclick="check_input(this)">
+      <label for="check2"  class="che" value="1"></label>
+      </span></a>
+				</li>-->
+				<li>
+					<a href="javascript:;" class="wrapper yb" onclick="label(this)">银联支付<span>
+      <input type="checkbox" class="input_check" id="check4" name="iCheck" value="4" onclick="check_input(this)">
+      <label for="check4"  class="che" value="4"></label>
+      </span></a>
+				</li>
+				<!--<li>
+					<a href="javascript:;" class="wrapper jhm" onclick="label(this)">使用激活码<span>
+      <input type="checkbox" class="input_check" id="check3" name="iCheck" value="3" onclick="check_input(this)" >
+      <label for="check3" class="che" value="3"></label>
+      </span></a>
+				</li>-->
+			</ul>
+			<!--added by 张明月 at 2017.08.22 for 商城升级增加邀请码 begin -->
+			<ul class="form shop_user">
+				<li>
+					<a href="javascript:;"><input type="text" id="invitecode" placeholder="请输入邀请码"></a>
+				</li>
+			</ul>
+			<p class="tips">若无邀请码时，可拨打客服热线<a href="tel:400-9009-365">400-9009-365</a></p>
+			<!--added by 张明月 at 2017.08.22 for 商城升级增加邀请码 end -->
+			<p class="form">
+				<button class="button" id="pay" onclick="queren();">确认支付</button>
+			</p>
+			<p class="form">
+				<button class="button" id="no" onclick="return1()">暂不升级</button>
+			</p>
+		</div>
+		<!-- added by 张明月 at 2016.11.18 for 修改布局 end -->
+		<!-- deleted by 张明月at 2016.11.18 for 修改布局 begin -->
+		<!--<p style="height:50px;line-height:50px;font-size:17px;text-align:center;background-color: white;margin-top:10px;font-weight:600;font-family: '微软雅黑';color:#736A6A;">支付成功升级为李强365-VIP学员</p>
+<div class="xuanze">
+          <div class="shang_">
+    <input type="radio" name="iCheck" data-va="2" checked />
+    <img src="images/wxzf.jpg" style="width: 92px;" /> </div>
+          <div class="next_">
+    <input type="radio" name="iCheck" data-va="1" />
+    <img src="images/zfb.jpg" style="width: 92px;" /> </div>
+          <div style="margin-top:15px;">
+    <input type="radio" name="iCheck" data-va="3" />
+    <img src="images/active.jpg" style="width: 106px;position:relative;top:8px;" /> </div>
+        </div>-->
+		<!-- deleted by 张明月at 2016.11.18 for 修改布局 end -->
+		<input type="hidden" id="mycode" />
+		<input type="hidden" id="uid" />
+		<input type="hidden" id="openid" />
+		<input type="hidden" id="value" value="2" />
+		<script type="text/javascript" src="lib.js"></script>
+		<script type="text/javascript" src="jquery.SuperSlide.js"></script>
+	</body>
+
+</html>
+<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>

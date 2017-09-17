@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+html {
+	background: #fff;
+	height: 100%;
+}
+#qa li p b {
+	float: none;
+}
+#qa li p span.money {
+	height: 4rem;
+	line-height: 4rem;
+	color: #112976;
+}
+#qa li p b {
+	float: none;
+}
+#qa li p span.money {
+	height: 4rem;
+	line-height: 4rem;
+}
+.turn {
+	color: #333333;
+}
+.total {
+	background: #fff;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+.total p {
+	border: 1px solid #112976;
+	color: #112976;
+	width: 88%;
+	margin-left: 6%;
+	font-size: 1.4rem;
+	line-height: 3.2rem;
+	border-radius: 0.5rem;
+	text-align: center;
+}

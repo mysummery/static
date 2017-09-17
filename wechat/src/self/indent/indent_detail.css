@@ -1,0 +1,454 @@
+html,
+body {
+	background: #f2f8fa;
+	padding-top: 0.45rem;
+}
+
+.total {
+	width: 100%;
+	background: #ffffff;
+}
+
+.wid {
+	width: 94%;
+}
+
+.total.number {
+	margin-bottom: 0.9rem;
+}
+
+.address_top {
+	line-height: 3.8rem;
+	font-size: 1.4rem;
+	background: url(/static/wechat/assets/images/right.png) no-repeat right center #fff;
+	background-size: 1rem;
+}
+
+.address_top .name {
+	color: #333333;
+}
+
+.address_top .phone {
+	color: #666666;
+	font-size: 1.2rem;
+}
+
+.address_img {
+	width: 1rem;
+	margin-right: 0.5rem;
+}
+
+.address_bottom {
+	padding-left: 1.5rem;
+	padding-bottom: 1.7rem;
+	font-size: 1.2rem;
+	color: #666666;
+}
+
+.logistics {
+	border-top: 1px solid #e3e3e3;
+	font-size: 1.2rem;
+}
+
+.logistics_image {
+	width: 1.5rem;
+}
+
+.logistics_state {
+	margin-right: 1.6rem;
+}
+
+.logistics_number {
+	font-weight: normal;
+}
+
+.content p {
+	line-height: 2.4rem;
+	font-size: 1.3rem;
+	color: #666666;
+}
+
+.send_date {
+	color: #999999;
+}
+
+.pay_send {
+	    padding: 1rem 0;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.content_bottom {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.send_date {
+	font-weight: normal;
+}
+
+.goods_img {
+	width: 29%;
+}
+
+.blue {
+	color: #00a0e9;
+}
+.con-box {
+	padding:0 1rem;
+	background:#f8f8f8;
+}
+
+.number_top {
+	line-height: 2.8rem;
+	font-size: 1.2rem;
+	/*border-bottom: 1px solid #e3e3e3;*/
+	    width: 94%;
+    margin: 0 auto;
+}
+
+.indent_state {
+	font-size: 1.4rem;
+	font-weight: bold;
+}
+
+.indent_number {
+	color: #999999;
+}
+
+.goods_details span {
+	display: inline-block;
+	    color: #6e6e6e;
+}
+
+.goods_details .one {
+	margin-top: 1.7rem;
+	overflow: hidden;
+}
+
+.goods_details .two {
+	margin-top: 1.3rem;
+	overflow: hidden;
+}
+
+.goods_details .text-tit {
+	font-size: 1.2rem;
+	color: #515151;
+	margin-top: 0.5rem;
+}
+
+.goods_details .text-time {
+	color: #6e6e6e;
+}
+
+.goods_details .price {
+	color: #999;
+}
+
+.goods_details .price span {
+	color: #03a1e9;
+	font-size: 1.75rem;
+}
+
+.goods_details {
+	width: 67%;
+}
+
+.pay_total {
+	border-top: 1px solid #e3e3e3;
+	text-align: right;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.total_money {
+	font-size: 1.4rem;
+}
+
+.content_bottom .pay_total p {
+	font-size: 1.1rem;
+	line-height: 2.2rem;
+}
+
+.dosign {
+	color: #999;
+}
+.shopPrice {
+	color: #999;
+}
+.buttons {
+	text-align: right;
+	display: none;
+}
+
+.done {
+	display: none;
+}
+
+.button {
+	width: 8rem;
+	background: #00a0e9;
+	border: none;
+	border-radius: 0.4rem;
+	color: #ffffff;
+	height: 3rem;
+	font-size: 1.2rem;
+	margin-top: 2rem;
+	margin-left: 1rem;
+}
+
+.tips textarea {
+	height: 3.8rem;
+	width: 100%;
+	resize: none;
+	text-align: left;
+	color: #666666;
+	border: 1px solid #e3e3e3;
+	margin-top: 0.5rem;
+	display: none;
+}
+
+.cover {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 3;
+	top: 0px;
+	left: 0px;
+}
+
+.cancel_tc {
+	height: 28rem;
+	background: #ffffff;
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	z-index: 4;
+	width: 100%;
+}
+
+.cancel_tc .wrapper {
+	font-size: 1.3rem;
+	display: block;
+	color: #666666;
+}
+
+.chooses {
+	line-height: 3.3rem;
+	padding: 0 0.9rem;
+}
+
+.checked {
+	background: url(/static/wechat/assets/images/cancel_choosed.png) center center no-repeat;
+	background-size: contain;
+}
+
+label {
+	display: inline-block;
+	width: 1rem;
+	height: 1rem;
+	background: url(/static/wechat/assets/images/pay_bg.png) center center no-repeat;
+	height: 3.3rem;
+	width: 1.5rem;
+	background-size: contain;
+	float: left;
+	margin-right: 1rem;
+}
+
+.cancel_tc {
+	display: none;
+}
+
+.cancel_tc p a input {
+	background: none;
+	width: 20%;
+	height: 2.5rem;
+	background: url(/static/wechat/assets/images/pay_bg.png) no-repeat center center;
+}
+
+.cancel_tc input {
+	float: right;
+}
+
+.wrapper .input_check {
+	position: absolute;
+	width: 1rem;
+	height: 1rem;
+	visibility: hidden;
+}
+
+.span {
+	position: absolute;
+	display: block;
+	width: 1rem;
+	height: 1rem;
+	margin-right: 10%;
+}
+
+.reson {
+	margin-left: 2.2rem;
+}
+
+.cancel_title {
+	line-height: 5rem;
+	text-align: center;
+	position: relative;
+	font-size: 1.3rem;
+	padding: 0 0.9rem;
+}
+
+.cancel_title .close {
+	position: absolute;
+	right: 0.9rem;
+	top: -0.3rem;
+	font-size: 3rem;
+	font-weight: normal;
+}
+
+.cancel_title1 {
+	line-height: 2.8rem;
+	font-size: 1.4rem;
+	padding: 0 0.9rem;
+}
+
+.button.submit {
+	width: 26rem;
+	height: 3.5rem;
+}
+
+.bottom_buttons {
+	text-align: center;
+}
+
+.fail_reason {
+	padding: 1rem 0px;
+	border-bottom: 1px solid #e3e3e3;
+}
+
+.fail_reason p {
+	color: #333333;
+	line-height: 1.6rem;
+	font-size: 1.2rem;
+}
+
+.fail_reason_content {
+	color: #666666;
+}
+
+.t_fail button {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+.pay_tc .wrapper {
+	background: url(/static/wechat/assets/images/pay_chat.png) no-repeat 0.5rem center;
+	padding-left: 9%;
+	background-size: 6%;
+}
+
+.pay_tc .wrapper label {
+	background: none;
+}
+
+.pay_tc .wrapper .reson {
+	margin-left: 1rem;
+}
+
+.pay_tc .ye {
+	background: url(/static/wechat/assets/images/pay_ye.png) no-repeat 0.5rem center;
+	background-size: 6%;
+}
+
+.pay_tc .yl {
+	background: url(/static/wechat/assets/images/pay_yi.png) no-repeat 0.5rem center;
+	background-size: 6%;
+}
+
+#yue {
+	float: right;
+}
+
+.pay_bottom {
+	text-align: right;
+	padding-right: 0.9rem;
+	font-size: 1.2rem;
+}
+
+.pay_bottom .total_money {
+	font-size: 2rem;
+}
+
+.fail_reason {
+	display: none;
+}
+
+.hover {
+	background: #f2f8fa;
+}
+
+i {
+	font-style: normal;
+}
+
+.choose {
+	bottom: 20rem;
+	left: 20%;
+	width: 32rem;
+}
+
+.choose {
+	display: none;
+	position: absolute;
+	padding: 8px;
+	/* top: 96rem; */
+	margin-left: -93px;
+	overflow: auto;
+	text-align: center;
+	z-index: 1002;
+	color: #fff;
+}
+
+.choose p {
+	text-indent: 1rem;
+	letter-spacing: 1px;
+	line-height: 3rem;
+}
+
+.choose .one {
+	color: #ffffff;
+	width: 14rem;
+	height: 3rem;
+	background: #00a0ea;
+	border: 1px solid #00a0ea;
+	line-height: 3rem;
+	border-radius: 5px;
+}
+
+.choose .close_choose {
+	background: none;
+	color: #00a0ea;
+}
+
+.choose .close_choose {
+	width: 14rem;
+	height: 3rem;
+	border: 1px solid #00a0ea;
+	line-height: 3rem;
+	border-radius: 5px;
+	margin-top: 17px;
+}
+
+.vippay,
+.pay_go,
+.answerpay,
+.weshopPay,
+.chargepay {
+	width: 8rem;
+	background: #00a0e9;
+	border: none;
+	border-radius: 0.4rem;
+	color: #ffffff;
+	height: 3rem;
+	font-size: 1.2rem;
+	margin-top: 2rem;
+	margin-left: 1rem;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="stylesheet" href="./css/new_register.css" />
+		<link rel="stylesheet" href="./css/base.css" />
+		<link rel="stylesheet" href="./css/jbox.css" />
+	
+		
+		
+	</head>
+	
+	<body onkeydown="keyLogin();">
+		<div class="newlogin">
+			<div class="header">
+				<span class="tel fl">客服热线：400-9009-365</span>
+			</div>
+			<div class="register-bg">
+				<img src="./images/registerbg.png" alt="" />
+				<div class="cont-box">
+					<a href="new_login.html">直接登录</a>
+					<ul>
+						<li>
+							<input type="text" placeholder="用户名" class="name" id="name" />
+
+						</li>
+						<li>
+							<input type="text" placeholder="手机号" class="phone" id="account" onblur="picture_check()"/>
+
+						</li>
+						<li>
+							<input type="password" placeholder="请输入6到20位数字和字母的结合" class="password" id="password" />
+
+						</li>
+
+						<li class="hidecode" style="display:none">
+							<input type="text" placeholder="输入图片验证码"  class="checkCode fl" id="c_checkCode" />
+							<img  id="imgCheckCode" onclick="selectCodeCheck();" class="imgCode fr" src="https://api.liqiang365.com/validcode/get" alt="" />
+						</li>
+						<li>
+							<input type="text" placeholder="输入手机验证码" class="phoneCode" id="checkcode"/>
+							<button type="button" onclick="getCheckcode()" class="btnCode">获取验证码</button>
+						</li>
+						<li>
+							<input type="text" placeholder="请输入邀请码" class="beicode" id="beicode" />
+
+						</li>
+						<li class="item">
+							<p class="agree">
+					       <input type="checkbox" id="checkbox-1" checked/>
+					       <label for="checkbox-1" id="lab"></label>
+					      
+					      <a href="../registerxy.html">通行证服务条款</a>
+				          </p>
+						</li>
+					
+						<li>
+							<button id="btn" type="button" onclick="registe()" class="regist-btn">注册</button>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<div class="footer">
+				<div class="footer-wrap">
+					<div class="about-us">
+						<ul>
+							<li class="one">
+								<a href="new_aboutus.html">关于我们</a>
+							</li>
+							</li>
+							<li>
+								<a href="new_advice.html">意见反馈</a>
+							</li>
+							<li>
+								<a href="new_answer.html">常见问题</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer-bottom">
+						<p>Copyright <span>&copy;</span> 2016-2017  北京博睿思远网络科技有限公司All Rights Reserved</p>
+						<p>京ICP备16024892</p>
+					</div>
+				</div>
+			</div>
+			<input type="hidden" id="obj">
+			<script src="./js/jquery-1.8.3.min.js"></script>
+			<script src="/static/wechat/assets/js/app.js"></script>
+			<script src="./shipinjs/new_register.js"></script>
+				
+		
+		<script src="./js/jquery.jBox-2.3.min.js"></script>
+		<script src="./js/jquery.jBox-zh-CN.js"></script>
+
+	</body>
+
+</html>

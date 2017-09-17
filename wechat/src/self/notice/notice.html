@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>系统通知</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="/static/wechat/assets/css/base.css">
+		<link href="notice.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="/static/wechat/page/iscroll5/iscroll.css">
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/iscroll5/iscroll5.js"></script>
+	</head>
+
+	<body onload="loaded();">
+		<div id="wrapper">
+			<div id="iscroll" style="position:relative;">
+				<!--选项卡选中的加class=choosed-->
+				<dl class="choice clearfix">
+					<dd id="personal" onClick="personal(this)">个人通知</dd>
+					<dd id="stage" class="choosed" onClick="stage(this)">平台消息</dd>
+				</dl>
+				<!--通知中未读的加class=red-->
+				<ul id="personal_notice" class="qa">
+					<!--	<li>
+    	<p class="notice_top clearfix"><span class="notice_title fl red">李强365重要功能更新通知</span><span  class="notice_date fr">2016.09.07<b>12:20</b></span></p>
+        <p class="notice_content"><span>李强365重要功能更新通知！李强365重要功能更新通知！李强365重要功能更新通知！李强365重要功能更新通知！</span></p>
+    </li>
+    <li>
+    	<p class="notice_top clearfix"><span class="notice_title fl ">李强365重要功能更新通知</span><span  class="notice_date fr">2016.09.07<b>12:20</b></span></p>
+        <p class="notice_content"><span>李强365重要功能更新通知！李强365重要功能更新通知！李强365重要功能更新通知！李强365重要功能更新通知！</span></p>
+    </li>-->
+				</ul>
+				<ul id="stage_notice" class="qa">
+					<!--<li>
+    	<p class="notice_top clearfix"><span class="notice_title fl red">李强365更新通知</span><span  class="notice_date fr">2016.09.07<b>12:20</b></span></p>
+        <p class="notice_content"><span>李强365重要功能更新通知！李强365重要功能更新通知！李强365重要功能更新通知！李强365重要功能更新通知！</span></p>
+    </li>
+    <li>
+    	<p class="notice_top clearfix"><span class="notice_title fl ">李强365更新通知</span><span  class="notice_date fr">2016.09.07<b>12:20</b></span></p>
+        <p class="notice_content"><span>李强365重要功能更新通知！李强365重要功能更新通知！李强365重要功能更新通知！李强365重要功能更新通知！</span></p>
+    </li>-->
+				</ul>
+				<div id="scroller-pullUp">
+					<span id="up-icon" class="icon-double-angle-up pull-up-icon"></span>
+					<span id="pullUp-msg" class="pull-up-msg">上拉刷新</span>
+				</div>
+			</div>
+		</div>
+		<script src="/static/wechat/assets/js/app.js"></script>
+		<script type="text/javascript" src="notice.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	</body>
+
+</html>

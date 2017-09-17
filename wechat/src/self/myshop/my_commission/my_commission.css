@@ -1,0 +1,80 @@
+html,
+body {
+	background: #f2f8fa;
+	/*padding-top:0.86rem;*/
+}
+
+#wrapper {
+	background: none;
+	top: 0;
+	bottom: 0;
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-overflow-scrolling: touch;
+}
+
+
+.commission {
+	width: 100%;
+	background: #fff;
+	overflow: hidden;
+	margin-top:0.85rem;
+}
+
+.commission .wid {
+	width: 94%;
+}
+.wid span{
+	display:inline-block;
+	
+}
+.commission .goodsname {
+	height: 3.84rem;
+	line-height: 3.84rem;
+	font-size:1.28rem;
+	color:#333333;
+	border-bottom: 1px solid #E3E3E3;
+}
+.commission .time {
+	height: 2.56rem;
+	line-height: 2.56rem;
+	font-size:1rem;
+	color:#999999;
+	width: 100%;
+}
+
+.goodsname .deduct {
+
+	color:#FF0000;
+	
+}
+.goodsname .add {
+
+	color:#008E59;
+	
+}
+.freeze_icon{
+    margin-top: 1.2rem;
+    margin-left: 0.5rem;
+    width: 2.6rem;
+}
+.indent-sublist-no {
+    text-align: center;
+}
+.indent-sublist-no img {
+    width: 8rem;
+    height: 10rem;
+    margin-top: 14rem;
+    margin-bottom: 1.5rem;
+}
+.indent-sublist-no p {
+    font-size: 1.5rem;
+    color: #999;
+    text-align: center;
+}
+.blue{
+	color:#00a0e9;
+}

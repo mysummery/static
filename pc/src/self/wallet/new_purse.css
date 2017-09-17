@@ -1,0 +1,271 @@
+	.wrap-right .tittle a {
+		color: #3d64e3;
+		display: inline-block;
+		float: left;
+	}
+	
+	.mess-form .mess-top {
+		margin: 25px 0 30px 10px;
+		overflow: hidden;
+	}
+	
+	.mess-form .mess-hide {
+		display: none;
+	}
+	
+	.mess-form .mess-con .balance {
+		margin-right: 40px;
+	}
+	
+	.mess-form .mess-hide .balance {
+		margin-right: 40px;
+	}
+	
+	.mess-form .mess-con .bal_num {
+		font-size: 30px;
+		font-family: "microsoft yahei";
+		font-style: bold;
+	}
+	
+	.mess-form .mess-hide .bal_n {
+		font-family: "microsoft yahei";
+		font-size: 30px;
+	}
+	
+	.mess-form .bal_tit {
+		font-size: 14px;
+	}
+	
+	.mess-form .mess-con .way {
+		margin-top: 20px;
+	}
+	
+	.mess-form .mess-hide .way a {
+		display: inline-block;
+		border-right: 1px solid #ffa800;
+		color: #ffa800;
+		font-size: 14px;
+		padding-right: 6px;
+	}
+	
+	.mess-form .mess-hide .way .tixian {
+		border-right: none;
+	}
+	
+	.mess-form .mess-con .way a {
+		display: inline-block;
+		width: 58px;
+		height: 26px;
+		line-height: 26px;
+		font-size: 14px;
+		color: #fff;
+		background: #ffa800;
+		text-align: center;
+		border-radius: 5px;
+	}
+	
+	.mess-form .mess-hide .way .last {
+		border-right: none;
+	}
+	
+	.mess-form .mess-top span {
+		display: inline-block;
+		margin-top: 40px;
+		font-size: 12px;
+		color: #999;
+		margin-right: 10px;
+		cursor: pointer;
+	}
+	
+	.mess-form .record-box {
+		border-bottom: 1px solid #efefef;
+	}
+	
+	.mess-form .nav-record {
+		height: 60px;
+		line-height: 60px;
+	}
+	
+	.mess-form .nav-record li {
+		float: left;
+		padding: 0 10px;
+		font-size: 14px;
+		color: #999999;
+		cursor: pointer;
+		line-height: 60px;
+	}
+	
+	.nav-record li:hover {
+		color: #ffa800;
+	}
+	
+	.mess-form .nav-record .on {
+		color: #ffa800;
+	}
+	
+	.mess-form .nav-record .total {
+		float: right;
+		font-size: 18px;
+		font-family: "microsoft yahei";
+		color: #ffa800;
+	}
+	
+	.mess-form .box-tittle {
+		overflow: hidden;
+		overflow: hidden;
+		width: 100%;
+		background: #acbeff;
+		/*border-bottom: 1px solid #efefef;
+		box-shadow: inset 0px 1px 4px #cbcbcb;
+		overflow: auto;
+		padding: 20px 20px 0 10px;
+		box-sizing: border-box;*/
+	}
+	
+	.mess-form .box-tittle li {
+		float: left;
+		height: 38px;
+		width: 146px;
+		border-left: 1px solid #fff;
+		text-align: center;
+		color: #fff;
+		background: #acbeff;
+		line-height: 38px;
+		;
+	}
+	
+	.mess-form .box-tittle .time {
+		width: 175px;
+	}
+	
+	.mess-form .box-cont {
+		height: 430px;
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+	
+	.mess-form .box-cont ul {
+		width: 915px !important;
+		height: 430px;
+		overflow-y: scroll;
+		overflow-x: hidden;
+	}
+	
+	.mess-form .box-cont .bigbox {
+		width: 915px;
+	}
+	
+	.mess-form .box-cont li {
+		height: 32px;
+		line-height: 32px;
+		font-size: 14px;
+		color: #666666;
+		position: relative;
+	}
+	
+	.mess-form .box-cont li span {
+		text-align: center;
+		width: 148px;
+		display: inline-block;
+	}
+	
+	.mess-form .box-cont .time {
+		width: 175px;
+	}
+	
+	.mess-form .box-cont li:nth-child(odd) {
+		background: #eff2fd;
+	}
+	
+	.mess-form .box-cont li:nth-child(even) {
+		background: #fff;
+	}
+	
+	.mess-form .box-cont .mess {
+		cursor: pointer;
+		/*width: 50px;*/
+		display: inline-block;
+	}
+	
+	.mess-form .box-cont b {
+		height: 8px;
+		width: 8px;
+		right: 28px;
+		position: absolute;
+		top: 9px;
+		border: 1px solid #666666;
+		border-right: none;
+		border-top: none;
+		display: inline-block;
+		transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+	}
+	
+	.mess-form .box-cont .mess-box {
+		width: 879px;
+		/*height: 39px;*/
+		left: 9px;
+		line-height: 26px;
+		padding: 8px 0;
+		text-align: center;
+		border-radius: 10px;
+		position: absolute;
+		box-shadow: 0 1px 3px #a5a5a5;
+		border-top: 1px solid #f0f0f0;
+		z-index: 99;
+		background: #fff;
+	}
+	
+	.mess-form .box-cont .mess-box p {
+		color: #ffa800;
+		padding: 0 50px;
+	}
+	
+	.mess-form .page {
+		width: 252px;
+		height: 50px;
+		margin: 0 auto;
+		background: #fff;
+		margin-top: 50px;
+	}
+	
+	.page li {
+		margin-right: 40px;
+		float: left;
+	}
+	
+	.page li .end {
+		color: #ddd;
+	}
+	
+	.page li a {
+		color: #fff;
+		display: inline-block;
+		background: #ffa800;
+		cursor: pointer;
+		height: 34px;
+		line-height: 34px;
+		font-size: 14px;
+		text-align: center;
+		width: 86px;
+		cursor: pointer;
+		border-radius: 5px;
+	}
+	
+	.page li .end {
+		color: #999;
+		font-family: "SimSun";
+		font-size: 14px;
+		padding: 0;
+		background: #eff2fd;
+		cursor: pointer;
+		height: 34px;
+		line-height: 34px;
+		text-align: center;
+		width: 86px;
+		cursor: pointer;
+		border-radius: 5px;
+	}

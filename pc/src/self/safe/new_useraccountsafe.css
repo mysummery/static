@@ -1,0 +1,21 @@
+
+.wrap .mess-total p{
+	margin-top:50px;
+	font-size:14px;
+	
+}
+
+.wrap .wrap-right .step {
+	font-size:14px;
+
+	 margin:50px 0 0 374px;
+}
+.wrap .wrap-right .step li {
+	height:60px;
+	
+}
+
+.wrap .wrap-right .step a {
+	color:#ffa800;
+	font-size:14px;
+}

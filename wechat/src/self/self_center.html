@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>个人中心</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link href="/static/wechat/assets/css/base.css" type="text/css" rel="stylesheet">
+		<link href="/static/wechat/assets/css/lr.css" type="text/css" rel="stylesheet">
+		<link href="/static/wechat/assets/css/settings.css" type="text/css" rel="stylesheet">
+		<link href="center.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script src="/static/wechat/page/bootstrap/bootstrap.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+	</head>
+
+	<body>
+		<div class="logo" style="background-size:cover;position:relative;">
+			<div class="head" style="position:relative;">
+				<img src="/static/wechat/assets/images/head_photo.png" id="imgurl">
+			</div>
+			<div class="level">
+				<p id="level">
+
+				</p>
+			</div>
+
+			<div class="information">
+				<p><span id="name"></span>
+					<!--<a ><img src="images/write.png" class="write"></a>--><img src="" id="icon"></p>
+				<p><span id="use-time">有效期</span><span id="deadline">0</span><span id="dayNum" style="position:relative;left:-1.1rem;">天</span>
+					<span id="invite"></span></p>
+			</div>
+		</div>
+		<!--<div class="sigin">
+			<a href="javascript:void(0);">
+				签到
+			</a>
+		</div>-->
+		<div class="wid">
+			<ul class="form">
+				<li>
+					<a href="javascript:;" id="myteam" onclick="myteam()">我的团队</a>
+				</li>
+				<li>
+					<a href="javascript:;" id="group" onclick="group()">团购管理</a>
+				</li>
+				<li>
+					<a href="javascript:;" id="mywallet" onclick="wallet()">我的钱包</a>
+				</li>
+			</ul>
+			<ul class="form">
+				<li>
+					<a href="javascript:;" id="myshop" onclick="myshop()">我的微店</a>
+				</li>
+				<li>
+					<a href="/static/wechat/src/index/shop/indent_list/indent_list.html"  id="myindent">商城订单</a>
+				</li>
+				<li>
+					<a href="/static/wechat/src/self/indent/indent.html"id="myindent_sw">虚拟订单</a>
+				</li>
+			</ul>
+			<ul class="form">
+			    <li>
+					<a href="/static/wechat/src/self/rankandhonor/honor/honor.html" id="myhonor">我的勋章</a>
+				</li>
+				<li>
+					<a href="/static/wechat/src/self/collection/mycollection.html" id="mycollection">我的收藏</a>
+				</li>
+			</ul>
+			<ul class="form">
+				<li class="letter">
+					<a href="javascript:;" id="letter" onclick="letter()">推广信</a>
+				</li>
+				<li>
+					<a href="/static/wechat/src/self/notice/notice.html" id="notice">系统通知</a>
+				</li>
+			</ul>
+			<ul class="form">
+				<li>
+					<a href="javascript:;" id="settings" onClick="settings()">设置</a>
+				</li>
+			</ul>
+			</ul>
+		</div>
+		<div class="form1">
+			<p><img src="/static/wechat/assets/images/share_icon.png"><span>一年只需<b>365</b>元</span><button class="button" id="upgrade">升级VIP</button></p>
+		</div>
+		<input type="hidden" class="hide_name">
+		<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+		<script type="text/javascript" src="self_center.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	</body>
+
+</html>

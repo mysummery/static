@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>提交订单</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+		<link href="/static/wechat/assets/css/base.css" type="text/css" rel="stylesheet">
+		<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+		<link rel="stylesheet" href="indent_confirm.css" type="text/css" />
+		<link rel="stylesheet" href="indent_submit.css" type="text/css" />
+		<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+		<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+	</head>
+	<body>
+		<div class="total">
+			<div class="wid addresses">
+				<p class="address_top">
+					<img src="/static/wechat/assets/images/shop_address.png" class="address_img">
+					<span class="name">李强</span>
+					<span class="phone">18899993333</span>
+				</p>
+				<p class="address_bottom">北京市朝阳区望京街道望京花园小区105号楼1236室</p>
+				
+			</div>
+			
+		</div>
+		<div class="total number">
+			<div class="con_detail">
+				<div class="con_wid">
+				<div class="clearfix">
+					<img src="" class="goods_img fl">
+					<div class="fr goods_details">
+						<p class="goods_name">李强老师签名书</p>
+						<p class="goods_price">￥<span class="price blue">300.00</span></p>
+
+					</div>
+					<div class="fr querys">
+						<p>
+							<span class="color"><b>规格:</b><span class="querycolor"></span></span>
+							<span class="type"><b>型号:</b><span class="querytype"></span></span>
+							
+							<b class="clicknum fr">x<span class="goods_num "></span></b>
+						</p>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	<div class="total totaltips">
+			<div class="tips">
+				<p class="goods_xq">
+					<span class="fl">购买数量</span>
+					<a id="indent-sub-num-add" class="fr" href="javascript:;">+</a>
+					<input type="tel" id="indent-sub-num-input" class="indent-sub-num-input fr" pattern="[0-9]*" onkeyup="checkinput_zzjs(event)" value="1">
+					<a id="indent-sub-num-minus" class="fr" href="javascript:;">-</a>
+				</p>
+				<div class="areabox">
+					<div class="mes">留言</div>
+					<textarea placeholder="请输入您的留言或您对商品发货的的意见"></textarea>
+				</div>
+				
+			</div>
+		</div>
+		<div class="total content content_bottom">
+			<div class="wid">
+				<p class="invoice clearfix">
+					<span class="fl">商品单价</span>
+					<span class="fr blue">￥<b class="price blue"></b></span>
+				</p>
+				<!--<p class="huiyuan clearfix">
+					<span class="fl">VIP单价</span>
+					<span class="fr">￥<del class="vipprice"></del><span class="vipprice blue"></span></span>
+				</p>-->
+				
+				<p class="pay clearfix">
+					<span class="fl">商品数量</span>
+					<span class="fr">共计<b class="goods_num blue">1</b>件</span>
+				</p>
+				<p class="send clearfix">
+					<span class="fl">+运费</span>
+					<span class="fr">￥<b class="goods_yf">0.00</b></span>
+				</p>
+				
+				
+				<!--按钮-->
+				
+				<!--确认订单-->
+				<div class="buttons confirm ">
+					<span>需付款：￥</span><span class="total_money totalprice price blue">300.00</span><button class="button pay_go" >提交订单</button>
+				</div>
+				
+			</div>
+		</div>
+		<div class="cover">
+			
+		</div>
+		
+		
+		<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+		<script type="text/javascript" src="indent_submit.js"></script>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+		<meta name="keywords" content="" />
+		<meta name="description" content="" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<link href="css/share_index.css" type="text/css" rel="stylesheet">
+        <script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+	</head>
+
+	<body>
+		<div class="top_bg">
+			<img src="images/share_index.png" />
+		</div>
+		<div class="now_login">
+			<a href="javascript:nowLogin()">立即加入</a>
+		</div>
+		<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	</body>
+	<script type="text/javascript" src="/static/wechat/assets/js/app.js?ver=1481512130"></script>
+	<script>
+		function nowLogin() {
+
+
+			var obj = getRequest();
+//			window.location.href = "/static/forAPP/share_register.html?mycode=" + obj.mycode + "&name=" + obj.name;
+			var rurl = encodeURIComponent( api + "/static/forAPP/pay/share_register.html?mycode=" +  obj.mycode  + "&name=" + obj.name);
+			window.location.href = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=" +
+				appid +
+				"&redirect_uri=" +
+				rurl +
+				"&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect";
+		}
+	</script>
+
+</html>

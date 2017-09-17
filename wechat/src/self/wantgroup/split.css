@@ -1,0 +1,193 @@
+ @charset "utf-8";
+ /* CSS Document */
+ 
+ html,
+ body {
+ 	max-width: none;
+ }
+ 
+ .wid {
+ 	width: 100%;
+ }
+ 
+ p.prompt {
+ 	color: #999999;
+ 	text-align: center;
+ 	font-size: 1.1rem;
+ 	line-height: 3rem;
+ }
+ 
+ .wid ul {
+ 	color: #666666;
+ 	font-size: 1.3rem;
+ 	background: #fff;
+ 	border-top: 1px solid #d3d3d3;
+ 	border-bottom: 1px solid #d3ded3;
+ }
+ 
+ .wid ul li {
+ 	line-height: 3.5rem;
+ }
+ 
+ .wid ul li div.li {
+ 	border-bottom: 1px solid #d3d3d3;
+ 	position: relative;
+ 	width: 96%;
+ 	margin-left: 2%;
+ 	padding-left: 2%;
+ }
+ 
+ .wid ul li:last-child div.li {
+ 	border-bottom: none;
+ }
+ 
+ .wid ul li div.li span.text {
+ 	display: inline-block;
+ 	width: 31%;
+ }
+ 
+ .split {
+ 	color: #333333;
+ 	border: none;
+ 	font-size: 1.4rem;
+ 	color: #333333;
+ 	line-height: 3rem;
+ }
+ 
+ .wid ul li div.select {
+ 	color: #112976;
+ 	width: 34%;
+ 	border: 1px solid #d3d3d3;
+ 	background: #fff;
+ 	height: 2rem;
+ 	position: relative;
+ 	line-height: 2rem;
+ 	top: 0.75rem;
+ 	border-radius: 0.25rem;
+ 	font-size: 1rem;
+ 	margin-right: 5%;
+ }
+ 
+ #price {
+ 	display: inline-block;
+ 	padding-left: 11%;
+ 	width: 75%;
+ 	margin-left: 7%;
+ 	background: url(/static/wechat/assets/images/slide.png) no-repeat 100% center;
+ 	background-size: 11%;
+ }
+ 
+ .wid ul li div.select dl {
+ 	display: none;
+ 	position: absolute;
+ 	top: 2rem;
+ 	background: #fff;
+ 	width: 100%;
+ }
+ 
+ .wid ul li div.select dl dd {
+ 	padding-left: 11%;
+ 	width: 75%;
+ 	margin-left: 7%;
+ 	border-top: 1px solid #d3d3d3;
+ }
+ 
+ #checkbox-1 {
+ 	display: none;
+ }
+ 
+ label {
+ 	border: 1px solid #112976;
+ 	display: inline-block;
+ 	width: 2.9%;
+ 	height: 0.79rem;
+ 	position: relative;
+ 	top: 0.1rem;
+ }
+ 
+ #checkbox-1+ label {
+ 	background: #fff;
+ }
+ 
+ #checkbox-1:checked+ label {
+ 	background: url(/static/wechat/assets/images/split_agree.png) no-repeat center center;
+ 	background-size: 90%;
+ }
+ 
+ .wid ul li div.pos {
+ 	position: absolute;
+ 	top: 0.75rem;
+ 	left: 61%;
+ 	height: 6.3rem;
+ }
+ 
+ .wid ul li div.pos1 {
+ 	position: absolute;
+ 	top: 0.75rem;
+ 	right: 8%;
+ 	height: 10.6rem;
+ }
+ 
+ .agree {
+ 	color: #666666;
+ 	font-size: 1rem;
+ 	padding-left: 4%;
+ 	margin-top: 0.8rem;
+ 	line-height: 1.2rem;
+ }
+ 
+ .agree a {
+ 	color: #112976;
+ }
+ 
+ .button {
+ 	width: 90%;
+ 	margin-left: 5%;
+ 	background: #00a0e9;
+ 	color: #fff;
+ 	border: none;
+ 	line-height: 3rem;
+ 	font-size: 1.4rem;
+ 	margin-top: 4.3rem;
+ 	border-radius: 0.5rem;
+ }
+ 
+ .top {
+ 	margin-top: 1rem;
+ 	margin-bottom: 1.5rem;
+ }
+ 
+ .group_grade {
+ 	position: relative;
+ 	z-index: 10;
+ }
+ 
+ .wid ul li div.select {
+ 	right: 8%;
+ }
+ 
+ .self_account {
+ 	display: none;
+ }
+ 
+ .split {
+ 	width: 60%;
+ }
+ 
+ .split_jibie {
+ 	border: 1px solid #d3d3d3;
+ 	appearance: none;
+ 	-moz-appearance: none;
+ 	-webkit-appearance: none;
+ 	background: url(/static/wechat/assets/images/slide.png) no-repeat 100%;
+ 	background-size: 11%;
+ 	width: 34%;
+ 	height: 2rem;
+ 	border-radius: 0.25rem;
+ 	padding-left: 7%;
+ 	margin-left: 8.5rem;
+ }
+ 
+ .split_jibie::-ms-expand {
+ 	display: none;
+ }

@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+/* CSS Document */
+.hide {
+	display: none;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 113%;
+	background-color: black;
+	z-index: 1001;
+	-moz-opacity: 0.7;
+	opacity: .70;
+	filter: alpha(opacity=70);
+}
+.choose {
+	display: none;
+	position: absolute;
+	padding: 8px;
+	top: 96rem;
+	left: 52%;
+	margin-left: -93px;
+	overflow: auto;
+	text-align: center;
+	z-index: 1002;
+	color: #fff;
+}
+
+.choose p {
+	text-indent:1rem;
+	letter-spacing: 1px;
+	line-height:3rem;
+}
+
+.choose .rePay {
+	width: 14rem;
+	height: 3rem;
+	background: #00a0ea;
+	border: 1px solid #00a0ea;
+	line-height: 3rem;
+	border-radius: 5px;
+}
+
+.choose .close {
+	width: 14rem;
+	height: 3rem;
+	border: 1px solid #00a0ea;
+	line-height: 3rem;
+	border-radius: 5px;
+	margin-top: 17px;
+}
+
+
+b {
+	font-weight: normal;
+}
+
+.letter_img {
+	width: 100%;
+}
+
+html,
+body {
+	background: url(/static/wechat/assets/images/letter_bg.png) no-repeat;
+	background-size: cover;
+}
+
+.letter_content h2 {
+	font-size: 1.4rem;
+	line-height: 5rem;
+	text-align: center;
+}
+
+.letter_content p {
+	font-siZe: 1.2rem;
+	line-height: 2rem;
+	color: #666666;
+	text-indent: 2em;
+}
+
+.letter_content.wid {
+	width: 94%;
+	padding-bottom: 2rem;
+}
+
+.form {
+	margin-top: 2rem;
+}
+
+#checkbox-1:checked+ label {
+	background: url(/static/wechat/assets/images/letter_agree.png) no-repeat center center;
+	background-size: 90%;
+}
+
+label {
+	border: 1px solid #ff9600;
+}
+
+.wid .form p span.init {
+	display: block;
+	font-size: 1.4rem;
+	width: 85%;
+	padding-left: 14%;
+	border: 1px solid #dfdfdf;
+	height: 3.4rem;
+	border-radius: 0.5rem;
+	margin-bottom: 1rem;
+	line-height: 3.4rem;
+	color: #999999;
+}
+
+.wid .form p .person {
+	background: url(/static/wechat/assets/images/invite_code.png) no-repeat 0.9rem center #ffffff;
+	background-size: 6.5%;
+}
+
+.wid .form p .beicode {
+	background: url(/static/wechat/assets/images/invate_code.png) no-repeat 0.9rem center #ffffff;
+	background-size: 6.5%;
+}
+
+#gologin {
+	margin-bottom: 1rem;
+}
+
+.hidecode {
+	display: none;
+}

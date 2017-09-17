@@ -1,0 +1,15 @@
+.wid .logo {
+	padding-top: 0.5rem;
+	padding-bottom: 1rem;
+}
+
+.wid .logo img {
+	width: 100%;
+}
+
+.wid .form p {
+	font-size: 0.9rem;
+	line-height: 1.6rem;
+	color: #333333;
+	letter-spacing: 0.05rem;
+}

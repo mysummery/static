@@ -1,0 +1,301 @@
+html,body{
+	background:#ffffff;
+	overflow-x: hidden;
+}
+body{
+	padding-bottom: 2.5rem;
+}
+/*推荐商品*/
+
+.crowd-top {
+	color: #333333;
+	height: 3.8rem;
+	line-height: 3.8rem;
+	padding-left: 3rem;
+	font-size: 1.3rem;
+	box-sizing: border-box;
+	position: relative;
+	background: url("/static/wechat/assets/images/icon_recommend.png") no-repeat 0.7rem center;
+	background-size: 1.7rem;
+}
+
+.crowd-con {
+	margin-left: 0.7rem;
+}
+
+.crowd-box:nth-child(odd) {
+	margin-right: 0.8rem;
+}
+
+.crowd-box {
+	float: left;
+	/* margin: 0 0.35rem; */
+	/* margin-left: 0.4rem; */
+	background: #fff;
+	box-shadow: 0px 1px 1px #a5a5a5;
+	margin-bottom: 1.5rem;
+	border-radius: 0.4rem;
+	width: 14.7rem;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.crowd-box img {
+	width: 14.75rem;
+	height: 8.25rem;
+}
+
+.crowd-text p {
+	font-size: 1.1rem;
+	line-height: 1.8rem;
+	height: 1.8rem;
+	color: #333;
+	margin-top: 0.1rem;
+	margin-bottom: -0.8rem;
+	font-family: "microsoft yahei";
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 1;
+	-webkit-box-orient: vertical;
+}
+
+.crowd-text>span {
+	display: inline-block;
+	width: 100%;
+	height: 0.25rem;
+	border-radius: 0.2rem;
+	background: #90dcff;
+	position: relative;
+	overflow: hidden;
+}
+
+.crowd-text>span b {
+	top: 0;
+	left: 0;
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	border-radius: 0.2rem;
+	background: #00a0e9;
+}
+
+.crowd-num b {
+	font-weight: normal;
+	float: right;
+	color: #00a0e9;
+}
+
+.crowd-num {
+	color: #666;
+	/* margin-top: 0.25rem; */
+	font-size: 1rem;
+}
+
+.crowd-num span {
+	color: #00a0e9;
+	/* float: left; */
+}
+
+.crowd {
+	background: #ffffff;
+}
+
+.crowd-text {
+	/* padding: 0 0.5rem; */
+	padding: 0 0.4rem 0 0.35rem;
+	margin-bottom: 0.3rem;
+	width: 14rem;
+}
+
+
+/*顶部*/
+
+.counpon_top {
+	background:#F2F8FA;
+	color: #999999;
+	height: 7.4rem;
+    width: 95%;
+    padding: 0.8rem;
+    padding-top: 0.1rem;
+}
+.counpon_wrapper{
+	background: url("/static/wechat/assets/images/counpon_bg.png") no-repeat left center #ffffff;
+	background-size: 5.8rem;
+	height: 7.2rem;
+	border-radius: 0.3rem;
+	box-shadow: 0 2px 3px 0 rgba(100,100,100,0.39);
+}
+
+.counpon_top p {
+	line-height: 4.6rem;
+	font-size: 1.1rem;
+	margin-top: 0.9rem;
+	border-bottom:1px dashed #E3E3E3;
+	margin-left: 6.5rem;
+}
+
+.nowprice {
+	display: inline-block;
+	height: 100%;
+	/* width: 10rem; */
+	line-height: 4.6rem;
+	text-align: center;
+	font-size: 1.5rem;
+	margin-right: 1.5rem;
+	color: #fff;
+}
+
+.spprice {
+	color: #333333;
+	font-size: 2rem;
+}
+
+.dot {
+	font-size: 1.4rem;
+}
+
+.afprice {
+	font-size: 1.5rem;
+}
+
+.counpon_top p.counpon_describe {
+	font-size: 1rem;
+    color: #FFF000;
+    line-height: 1rem;
+    padding: 0px 1rem 0.5rem 0px;
+    margin-top: 0.5rem;
+    border: none;
+}
+
+.counpon_top p.counpon_describe .fl{
+	color:#666666;
+}
+
+.counpon_top p.counpon_describe .fr{
+	color:#999999;
+}
+
+b {
+	font-weight: normal;
+}
+
+/*明细*/
+ul.form {
+	padding:0.8rem 0;
+	background: #F2F8FA;
+}
+ul.form li {
+
+    line-height: 3.8rem;
+    font-size: 1.3rem;
+    background: url("/static/wechat/assets/images/right.png") no-repeat 96% center #fff;
+    background-size: 2.8%;
+}
+ul.form li a {
+    display: block;
+    color: #333333;
+    background: url("/static/wechat/assets/images/counpon_details_icon.png") no-repeat 0.8rem center;
+    padding-left: 9%;
+    background-size: 1.7rem;
+    text-align: left;
+}
+/*按钮*/
+
+.form{
+	text-align: center;
+}
+.form a{
+	color:#ffffff;
+	display: block;
+	width:100%;
+	height: 3rem;
+	line-height: 3rem;
+}
+.button {
+    background: #00A0E9;
+    text-align: center;
+    border: none;
+    border-radius: 0.2rem;
+    color: #fff;
+    width: 80%;
+    height: 3.4rem;
+    font-size: 1.3rem;
+    margin-top: 2.3rem;
+}
+.button_bottom {
+    background: none;
+    border: 1px solid #00A0E9;
+    color: #00A0E9;
+    margin-top: 1rem;
+}
+
+/*弹出框*/
+
+.turn_tc {
+    height: 30rem;
+    background: #ffffff;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    z-index: 4;
+    width: 100%;
+    padding: 0 0.9rem;
+    display: none;
+}
+
+.turn_title {
+    line-height: 8rem;
+    text-align: center;
+    position: relative;
+    font-size: 1.3rem;
+    padding: 0 0.9rem;
+}
+
+.turn_title .close {
+    position: absolute;
+    right: 1.8rem;
+    top: -2.5rem;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.cover {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+}
+.money_account{
+	line-height:3.4rem;
+	margin-bottom:1.2rem;
+}
+.input_money{
+	display: inline-block;
+	width:23rem;
+	height:3.4rem;
+	background: #F2F8FA;
+	margin-left: 1.2rem;
+	padding-left:1rem;
+}
+.money_account input{
+	height:3.4rem;
+	border:none;
+	background: none;
+	font-size:1.5rem;
+	color:#00A0E9;
+}
+.notices{
+	line-height:1.5rem;
+	font-size:1rem;
+	color: #999999;
+}
+.notice_left{
+	width:6rem;
+	display: inline-block;
+	color: #FF0000;
+}

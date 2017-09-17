@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>确认订单</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="/static/wechat/assets/css/base.css">
+	<link rel="stylesheet" href="/static/wechat/page/jbox/jbox.css" type="text/css" />
+	<link rel="stylesheet" href="/static/wechat/src/index/shop/indent_handle/indent_confirm/indent_confirm.css">
+</head>
+<body>
+	<!-- 商品详情 -->
+	<header>
+		<div class="indent-sub-container clearfix">
+			<div class="fl indent-sub-img">
+				<img src="/static/wechat/assets/images/indent_submit_goods.jpg" alt="">
+			</div>
+			<div class="fr indent-sub-describe">
+				<div class="indent-sub-text">
+					<span>李强老师签名书 【世界那么大 我想去看看】李强老师签名书 【世界那么大 我想去看看】</span>
+				</div>
+				<div class="indent-sub-num clearfix">
+					<a id="indent-sub-num-minus" class="fl" href="javascript:;">—</a>
+					<input type="number" id="indent-sub-num-input" class="indent-sub-num-input fl blue" pattern="[0-9]*" value="1">
+					<a id="indent-sub-num-add" class="fr" href="javascript:;">+</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- 商品操作 -->
+	<section>
+		<div class="indent-sub-container">
+
+			<!-- 选择颜色 -->
+			<div class="indent-sub-change indent-sub-change-color clearfix">
+				<div class="indent-sub-title fl">
+					<span>颜色</span>
+				</div>
+				<div class="indent-sub-type fl">
+					<ul>
+						<li class="current">白色</li>
+						<li>黑色</li>
+						<li>粉色</li>
+						<li>棕色</li>
+						<li>褐色</li>
+						<li>米白色</li>
+						<li>红粉渐变色</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 选择型号 -->
+			<div class="indent-sub-change indent-sub-change-model clearfix">
+				<div class="indent-sub-title fl">
+					<span>型号</span>
+				</div>
+				<div class="indent-sub-type fl">
+					<ul>
+						<li class="current">10*15</li>
+						<li>15*20</li>
+						<li>20*30</li>
+						<li>40*50</li>
+						<li>60*100</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 发票 -->
+			<div class="indent-sub-invoice">
+				<!-- 开具发票 -->
+				<div class="need-indent clearfix">
+					<span>开具发票</span>
+					<div class="item-input fr">
+						<label class="label-switch">
+							<input type="checkbox">
+							<div class="checkbox"></div>
+						</label>
+					</div>
+				</div>
+				<!-- 发票所有信息 -->
+				<div class="invoice-information-all">
+					<!-- 发票类型 -->
+					<div class="indent-sub-invoice-type">
+						<span>发票类型</span>
+						纸质发票
+					</div>
+					<!-- 发票信息 -->
+					<div class="indent-sub-invoice-information">
+						<span>发票信息</span>
+						<div class="invoice-information-change">
+							<a class="current" href="javascript:;"><i></i>个人</a>
+							<a href="javascript:;"><i></i>单位</a>
+						</div>
+					</div>
+					<!-- 公司名称 -->
+					<div class="edit-corporate-name">
+						<input type="text" placeholder="请输入公司名称">
+					</div>
+					<!-- 发票内容 -->
+					<div class="indent-sub-invoice-content">
+						<p>发票内容</p>
+						<ul class="clearfix">
+							<li class="current"><a href="javascript:;"><i></i><span>电脑配件</span></a></li>
+							<li><a href="javascript:;"><i></i><span>耗材</span></a></li>
+							<li><a href="javascript:;"><i></i><span>明细</span></a></li>
+							<li><a href="javascript:;"><i></i><span>办公用品</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 发票 end -->
+			<!-- 留言 -->
+			<div class="indent-sub-msg">
+				<textarea name="" id="" placeholder="请输入您的留言"></textarea>
+			</div>
+			<!-- 提交订单 -->
+			<div class="indent-sub-btn">
+				<input type="button" value="提交订单">
+			</div>
+		</div>
+
+	</section>
+
+
+	<script type="text/javascript" src="/static/wechat/page/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="/static/wechat/assets/js/media.js"></script>
+	<script type="text/javascript" src="/static/wechat/assets/js/app.js"></script>
+	<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-2.3.min.js"></script>
+	<script type="text/javascript" src="/static/wechat/page/jbox/jquery.jBox-zh-CN.js"></script>
+	<script src="/static/wechat/src/index/shop/indent_handle/indent_confirm/indent_confirm.js"></script>
+
+</body>
+</html>

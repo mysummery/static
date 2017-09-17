@@ -1,0 +1,113 @@
+html,
+body {
+	height: 100%;
+	BACKGROUND:#FFF;
+}
+
+.wid {
+	width: 90%;
+}
+
+.white {
+	height:100%;
+	background: #fff;
+}
+
+.top {
+	line-height: 6rem;
+	font-size: 1.5rem;
+	padding: 0rem 0.8rem;
+}
+
+.vip_gray {
+	width: 5rem;
+}
+
+.deadline {
+	color: #666666;
+	font-size: 1.2rem;
+}
+
+#video {
+	width: 100%;
+	background: url(../images/video_bg.png) no-repeat;
+	background-size: cover;
+}
+
+.prompt_img {
+	width: 50%;
+	margin-left: 16%;
+	margin-top: 2.7rem;
+	margin-bottom: 1.2rem;
+}
+
+.prompt_text {
+	text-align: center;
+	color: #f8b500;
+}
+
+.inputs {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.inputs input {
+	background: url(/static/wechat/assets/images/lock.png) no-repeat left center;
+	background-size: 1.8rem;
+	border: none;
+	height: 2.6rem;
+	line-height: 2.4rem;
+	border-bottom: 1px solid #cccccc;
+	width: 90%;
+	padding-left: 10%;
+	margin-top: 1.9rem;
+	font-size: 1.2rem;
+}
+
+.download {
+	width: 100%;
+	height: 3.5rem;
+	border: none;
+	background: #00a0e9;
+	border-radius: 5px;
+	font-size: 1.5rem;
+	color: #fff;
+	margin-top: 4.2rem;
+}
+
+.bottom_text {
+	text-align: center;
+	line-height: 4rem;
+	color: #999999;
+	margin-top: 1rem;
+}
+
+.last_img {
+	width: 100%;
+}
+
+.top_last {
+	height: 5rem;
+	border: 1px solid #d2d2d2;
+	margin-top: 1.6rem;
+	border-radius: 5px;
+	line-height: 2.2rem;
+	padding-top: 1rem;
+	background: #F2F2F2;
+}
+
+.deadline_last {
+	display: inline-block;
+	width: 100%;
+}
+
+.text_last {
+	text-align: center;
+	color: #00a0e9;
+	font-size: 1.9rem;
+	margin-top: 2.6rem;
+}
+
+.look {
+	line-height: 2.8rem;
+}
